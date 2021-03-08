@@ -164,13 +164,15 @@ textarea {
   content: " ";
   display: table;
 }
-
 .clearfix::after {
   clear: both;
 }
 
+/*
+Earth To Sky Bootstrap Carousel Approach CSS
+*/
 .carousel-inner {
-    border: 2px solid red;
+  /*border: 2px solid red;*/
 }
 .carousel-inner h2 {
   color: #fff;
@@ -187,6 +189,9 @@ textarea {
   background-repeat: no-repeat;
   background-position: center;
 }
+/*
+Earth To Sky Bootstrap Carousel Approach CSS - END
+*/
 
 /* ==========================================================================
    EXAMPLE Media Queries for Responsive Design.
