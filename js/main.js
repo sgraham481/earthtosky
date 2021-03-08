@@ -1,6 +1,17 @@
-window.addEventListener("load", function(){
+var isMobile = false;
+
+$(function(){
+	console.log("jquery ready");
+	checkMobile();
+	if (isMobile){
+		console.log("adding html class");
+		$('html').addClass('mobile');
+	}
+});
+
+function checkMobile(){
   // (A) CHECK FOR MOBILE
-  var isMobile = navigator.userAgent.toLowerCase().match(/mobile/i);
+  isMobile = navigator.userAgent.toLowerCase().match(/mobile/i);
  
   // (B) DO SOMETHING...
   if (isMobile) {
@@ -8,11 +19,4 @@ window.addEventListener("load", function(){
   } else {
     console.log("Not mobile device");
   }
-});
-
-$(function(){
-	console.log("jquery ready");
-	if (isMobile){
-		$('html').addClass('mobile');
-	}
-}); 
+};
