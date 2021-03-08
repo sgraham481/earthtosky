@@ -1,10 +1,10 @@
 var isMobile = false;
 
 $(function(){
-	console.log("jquery ready");
+	//console.log("jquery ready");
 	checkMobile();
 	if (isMobile){
-		console.log("adding html class");
+		//console.log("adding html class");
 		$('html').addClass('mobile');
 	}
 });
