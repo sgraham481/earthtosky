@@ -171,9 +171,7 @@ textarea {
 /*
 Earth To Sky Bootstrap Carousel Approach CSS
 */
-.carousel-inner {
-  /*border: 2px solid red;*/
-}
+
 .carousel-inner h2 {
   color: #fff;
   text-align: center;
@@ -185,9 +183,7 @@ Earth To Sky Bootstrap Carousel Approach CSS
   line-height: 1.35;
 };
 #myCarousel2 {
-  background-image: url('img/assets1/part_1_bg.svg');
-  background-repeat: no-repeat;
-  background-position: center;
+    margin: 0 -15px;
 }
 @media screen and (orientation: portrait) {
   html.mobile {
