@@ -175,16 +175,17 @@ Earth To Sky Bootstrap Carousel Approach CSS
 .carousel-inner h2 {
   color: #fff;
   text-align: center;
-};
+}
 .carousel-inner p {
   color: #fff;
   font-size: 18px;
   margin: 36px 0 24px;
   line-height: 1.35;
-};
-#myCarousel {
+}
+.container .carousel {
     margin: 0 -15px;
 }
+
 @media screen and (orientation: portrait) {
   html.mobile {
     transform: rotate(-90deg);
