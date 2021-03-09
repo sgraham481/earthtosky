@@ -108,7 +108,7 @@ function goCarouselItem(item){
 	$("#myCarousel").carousel(item);
 };
 function resetInterval(){
-	clearInterval(carouselTimer);
+	clearInterval(carouselInterval);
 	setCarouselInterval(duration);
 };
 function setCarouselInterval(duration) {
