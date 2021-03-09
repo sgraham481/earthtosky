@@ -18,10 +18,10 @@ window.addEventListener("orientationchange", function(event) {
   	    if (event.target.screen.orientation.angle != null || event.target.screen.orientation.angle != undefined){
 			if (event.target.screen.orientation.angle === 0){ /* 0 = portrait, 90 = landscape */
 				orientationDetected = true;
-				$('html').addClass('portrait');
+				$('html').removeClass('landscape').addClass('portrait');
 			} else if (event.target.screen.orientation.angle === 90){
 				orientationDetected = true;
-				$('html').addClass('landscape');
+				$('html').removeClass('portrait').addClass('landscape');
 			}
 		}
 		// if not set, default to height width comparison;
@@ -33,9 +33,9 @@ window.addEventListener("orientationchange", function(event) {
 
 function setMobileOrientationViaWHCompare(){
 	if(window.innerHeight > window.innerWidth){
-	    $('html').addClass('landscape');
+	    $('html').removeClass('landscape').addClass('portrait');
 	} else {
-		$('html').addClass('portrait');
+		$('html').removeClass('portrait').addClass('landscape');
 	}
 }
 function checkMobile(){
