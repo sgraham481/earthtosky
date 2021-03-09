@@ -9,6 +9,10 @@ $(function(){
 	}
 });
 
+window.addEventListener("orientationchange", function(event) {
+  console.log("the orientation of the device is now " + event.target.screen.orientation.angle);
+});
+
 function checkMobile(){
   // (A) CHECK FOR MOBILE
   isMobile = navigator.userAgent.toLowerCase().match(/mobile/i);
