@@ -202,7 +202,7 @@ Earth To Sky Bootstrap Carousel Approach CSS
     height: 100%;
 }
 #part-1.carousel-static-background {
-    background-image: url(img/assets/part_1_bg.svg);
+    background-image: url(../img/assets/part_1_bg.svg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
