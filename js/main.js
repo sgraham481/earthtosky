@@ -73,10 +73,11 @@ function closeFullscreen() {
 	}
 }
 var carouselTimer;
+var duration = 3000;
 function setUpCarouselNavigation() {
 	// Activate Carousel
  	$("#myCarousel").carousel();
- 	
+
 	// Enable Carousel Indicators
 	/*$(".item1").click(function(){
 		$("#myCarousel").carousel(0);
@@ -90,18 +91,26 @@ function setUpCarouselNavigation() {
 	$(".item4").click(function(){
 		$("#myCarousel").carousel(3);
 	});*/
-	carouselTimer = setTimeout(function(){ $("#myCarousel").carousel("next"); }, 3000);
+	setCarouselTimer(duration);
 	// Enable Carousel Controls
 	$(".left").click(function(){
-		$("#myCarousel").carousel("prev");
+		goCarouselItem("prev");
 		resetInterval();
 	});
 	$(".right").click(function(){
-		$("#myCarousel").carousel("next");
+		goCarouselItem("next");
 		resetInterval();
 	});
 };
+function goCarouselItem(item){
+	console.log("item: "+item);
+	console.log("current active: "+$(".item.active").attr("data-id"));
+	$("#myCarousel").carousel(item);
+};
 function resetInterval(){
 	clearInterval(carouselTimer);
-	carouselTimer = setTimeout(function(){ $("#myCarousel").carousel("next"); }, 3000);
-}
+	setCarouselTimer(duration);
+};
+function setCarouselTimer(duration) {
+	carouselTimer = setTimeout(function(){ goCarouselItem("next"); }, duration);
+};
