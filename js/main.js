@@ -74,6 +74,9 @@ function closeFullscreen() {
 }
 var carouselTimer;
 function setUpCarouselNavigation() {
+	// Activate Carousel
+ 	$("#myCarousel").carousel();
+ 	
 	// Enable Carousel Indicators
 	/*$(".item1").click(function(){
 		$("#myCarousel").carousel(0);
