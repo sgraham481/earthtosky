@@ -235,7 +235,39 @@ Earth To Sky Bootstrap Carousel Approach CSS
     line-height: 1.4;
     color: #fff;
 }
-
+.d-flex {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.quote {
+    color: #f5eb8e;
+    font-style: italic;
+    text-align: right;
+    padding: 0 0 0 12vw;
+    font-size: 12px;
+}
+.quote span {
+    display: block;
+    margin: 0 0 5vh 0;
+}
+.carousel-static-background.half-width div {
+    width: 48vw;
+}
+.carousel-static-background.half-width .quote {
+    width: 52vw;
+}
+.carousel-static-background.half-width .display-image {
+    width: 44vw;
+}
+.display-image {
+    padding: 2% 0 4% 0;
+    height: 100%;
+}
+.display-image img {
+    height: 100%;
+    width: auto;
+}
 @media screen and (orientation: portrait) {
   html.mobile {
     transform: rotate(-90deg);
