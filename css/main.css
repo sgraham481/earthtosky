@@ -200,7 +200,7 @@ Earth To Sky Bootstrap Carousel Approach CSS
     width: 100%;
     height: 100%;
 }
-#part-1.carousel-static-background {
+.part-1.carousel-static-background {
     background-image: url(../img/assets/part_1_bg.svg);
     background-position: center;
     background-repeat: no-repeat;
@@ -210,6 +210,8 @@ Earth To Sky Bootstrap Carousel Approach CSS
     height: 50%;
     top: initial;
     bottom: 0;
+}
+.quote-background {
     background-image: url(../img/assets/quotes_area.svg);
     background-position: center;
     background-repeat: no-repeat;
