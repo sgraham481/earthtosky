@@ -226,17 +226,14 @@ Earth To Sky Bootstrap Carousel Approach CSS
     padding: 0 12%;
 }
 
-
-
 .container .carousel .item-container .h1 {
     color: #fff;
     text-align: center;
-    font-size: 1.2rem;
     margin-top: 2rem;
     margin-bottom: 1.2rem;
 }
 .container .carousel .item-container .main-content {
-    font-size: 12px;
+    font-size: 18px;
     line-height: 1.4;
     color: #fff;
 }
@@ -250,7 +247,7 @@ Earth To Sky Bootstrap Carousel Approach CSS
     font-style: italic;
     text-align: right;
     padding: 0 0 0 12%;
-    font-size: 12px;
+    font-size: 18px;
 }
 .quote span {
     display: block;
@@ -298,6 +295,15 @@ Earth To Sky Bootstrap Carousel Approach CSS
 .mobile .carousel-static-background.half-width .display-image {
     width: 44vw;
 }
+.mobile .container .carousel .item-container .h1 {
+    font-size: 1.2rem;
+}
+.mobile .container .carousel .item-container .main-content {
+    font-size: 12px;
+}
+.mobile .quote {
+    font-size: 12px;
+}
 
 @media screen and (orientation: portrait) {
   html.mobile {
@@ -309,6 +315,15 @@ Earth To Sky Bootstrap Carousel Approach CSS
     top: 100%;
     left: 0;
   }
+}
+@media (min-width: 768px) {
+
+}
+@media (min-width: 992px) {
+  
+}
+@media (min-width: 1200px) {
+  
 }
 /*
 Earth To Sky Bootstrap Carousel Approach CSS - END
