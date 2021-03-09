@@ -6,18 +6,38 @@ $(function(){
 	if (isMobile){
 		//console.log("adding html class");
 		$('html').addClass('mobile');
+		setMobileOrientationViaWHCompare();
 	}
 });
 
 window.addEventListener("orientationchange", function(event) {
-  console.log("the orientation of the device is now " + event.target.screen.orientation.angle);
-  if (event.target.screen.orientation.angle){ /* 0 = portrait, 90 = landscape */
-  	closeFullscreen();
-  } else {
-  	openFullscreen();
-  }
+	console.log("the orientation event change " + event.target.screen.orientation.angle);
+    if (isMobile) {
+  	    var orientationDetected = false;
+  	    // has to be a value;
+  	    if (event.target.screen.orientation.angle != null || event.target.screen.orientation.angle != undefined){
+			if (event.target.screen.orientation.angle === 0){ /* 0 = portrait, 90 = landscape */
+				orientationDetected = true;
+				$('html').addClass('portrait');
+			} else if (event.target.screen.orientation.angle === 90){
+				orientationDetected = true;
+				$('html').addClass('landscape');
+			}
+		}
+		// if not set, default to height width comparison;
+	    if (!orientationDetected){
+	    	setMobileOrientationViaWHCompare();
+		}
+	}
 });
 
+function setMobileOrientationViaWHCompare(){
+	if(window.innerHeight > window.innerWidth){
+	    $('html').addClass('landscape');
+	} else {
+		$('html').addClass('portrait');
+	}
+}
 function checkMobile(){
   // (A) CHECK FOR MOBILE
   isMobile = navigator.userAgent.toLowerCase().match(/mobile/i);
