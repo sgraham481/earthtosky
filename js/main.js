@@ -11,7 +11,7 @@ $(function(){
 });
 
 window.addEventListener("orientationchange", function(event) {
-	console.log("the orientation event change " + event.target.screen.orientation.angle);
+	//console.log("the orientation event change " + event.target.screen.orientation.angle);
     if (isMobile) {
   	    var orientationDetected = false;
   	    // has to be a value;
@@ -43,11 +43,11 @@ function checkMobile(){
   isMobile = navigator.userAgent.toLowerCase().match(/mobile/i);
  
   // (B) DO SOMETHING...
-  if (isMobile) {
+  /*if (isMobile) {
     console.log("Is mobile device");
   } else {
     console.log("Not mobile device");
-  }
+  }*/
 };
 
 /* Get the documentElement (<html>) to display the page in fullscreen */
