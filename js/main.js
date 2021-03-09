@@ -112,5 +112,6 @@ function resetInterval(){
 	setCarouselInterval(duration);
 };
 function setCarouselInterval(duration) {
+	$("#myCarousel").toggleClass("carousel-fade");
 	carouselInterval = setInterval(function(){ goCarouselItem("next"); }, duration);
 };
