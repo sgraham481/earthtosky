@@ -8,6 +8,7 @@ $(function(){
 		$('html').addClass('mobile');
 		setMobileOrientationViaWHCompare();
 	}
+	setUpCarouselNavigation();
 });
 
 window.addEventListener("orientationchange", function(event) {
@@ -41,13 +42,6 @@ function setMobileOrientationViaWHCompare(){
 function checkMobile(){
   // (A) CHECK FOR MOBILE
   isMobile = navigator.userAgent.toLowerCase().match(/mobile/i);
- 
-  // (B) DO SOMETHING...
-  /*if (isMobile) {
-    console.log("Is mobile device");
-  } else {
-    console.log("Not mobile device");
-  }*/
 };
 
 /* Get the documentElement (<html>) to display the page in fullscreen */
@@ -77,4 +71,34 @@ function closeFullscreen() {
 	    document.msExitFullscreen();
 	  }
 	}
+}
+var carouselTimer;
+function setUpCarouselNavigation() {
+	// Enable Carousel Indicators
+	/*$(".item1").click(function(){
+		$("#myCarousel").carousel(0);
+	});
+	$(".item2").click(function(){
+		$("#myCarousel").carousel(1);
+	});
+	$(".item3").click(function(){
+		$("#myCarousel").carousel(2);
+	});
+	$(".item4").click(function(){
+		$("#myCarousel").carousel(3);
+	});*/
+	carouselTimer = setTimeout(function(){ $("#myCarousel").carousel("next"); }, 3000);
+	// Enable Carousel Controls
+	$(".left").click(function(){
+		$("#myCarousel").carousel("prev");
+		resetInterval();
+	});
+	$(".right").click(function(){
+		$("#myCarousel").carousel("next");
+		resetInterval();
+	});
+};
+function resetInterval(){
+	clearInterval(carouselTimer);
+	carouselTimer = setTimeout(function(){ $("#myCarousel").carousel("next"); }, 3000);
 }
