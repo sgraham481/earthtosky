@@ -207,8 +207,7 @@ Earth To Sky Bootstrap Carousel Approach CSS
     background-repeat: no-repeat;
     background-size: cover;
 }
-.container .carousel .item .item-container {
-    background-color: #cccccc;
+.container .carousel .item-container {
     position: absolute;
     top: 0;
     left: 0;
@@ -217,7 +216,7 @@ Earth To Sky Bootstrap Carousel Approach CSS
     opacity: .3;
     padding: 0 5rem;
 }
-.container .carousel .item .item-container .h1 {
+.container .carousel .item-container .h1 {
     color: #fff;
     text-align: center;
     font-size: 1.2rem;
@@ -226,7 +225,7 @@ Earth To Sky Bootstrap Carousel Approach CSS
 }
 
 
-.container .carousel .item .item-container .main-content {
+.container .carousel .item-container .main-content {
     font-size: 12px;
     line-height: 1.1;
     color: #fff;
