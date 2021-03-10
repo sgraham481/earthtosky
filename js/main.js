@@ -103,6 +103,7 @@ function setUpCarouselNavigation() {
 	});
 };
 function goCarouselItem(item){
+	$("#myCarousel").toggleClass("carousel-fade");
 	console.log("item: "+item);
 	console.log("current active: "+$(".item.active").attr("data-id"));
 	$("#myCarousel").carousel(item);
@@ -112,6 +113,5 @@ function resetInterval(){
 	setCarouselInterval(duration);
 };
 function setCarouselInterval(duration) {
-	$("#myCarousel").toggleClass("carousel-fade");
 	carouselInterval = setInterval(function(){ goCarouselItem("next"); }, duration);
 };
