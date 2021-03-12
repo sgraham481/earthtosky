@@ -226,9 +226,21 @@ Earth To Sky Bootstrap Carousel Approach CSS
     width: 100%;
     height: 100%;
 }
-.part-1.carousel-static-background,
-.absolute-full-cover-container.blue-vert-50-50 {
+.absolute-full-cover-container.blue-vert-50-50,
+.absolute-full-cover-container.blue-circle-right {
     background-image: url(../img/assets/part_1_bg.svg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.quote-background {
+    background-image: url(../img/assets/quotes_area.svg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.blue-circle-background {
+    background-image: url(../img/assets/circular_area.svg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -251,12 +263,6 @@ Earth To Sky Bootstrap Carousel Approach CSS
 .container .carousel .item-container.absolute-align-top {
     top: 0;
     bottom: auto;
-}
-.quote-background {
-    background-image: url(../img/assets/quotes_area.svg);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
 }
 .carousel-inner .item {
     height: 100%;
