@@ -74,6 +74,7 @@ function closeFullscreen() {
 }
 var carouselInterval;
 var duration = 3000;
+var isAuto = false;
 function setUpCarouselNavigation() {
 	// Activate Carousel
  	$("#myCarousel").carousel();
@@ -92,10 +93,8 @@ function setUpCarouselNavigation() {
 		$("#myCarousel").carousel(3);
 	});*/
 
+	setCarouselInterval(duration);
 
-	//setCarouselInterval(duration);
-
-	
 	// Enable Carousel Controls
 	$(".left").click(function(){
 		goCarouselItem("prev");
@@ -117,5 +116,7 @@ function resetInterval(){
 	setCarouselInterval(duration);
 };
 function setCarouselInterval(duration) {
-	carouselInterval = setInterval(function(){ goCarouselItem("next"); }, duration);
+	if (isAuto) {
+		carouselInterval = setInterval(function(){ goCarouselItem("next"); }, duration);
+	}
 };
