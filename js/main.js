@@ -91,7 +91,11 @@ function setUpCarouselNavigation() {
 	$(".item4").click(function(){
 		$("#myCarousel").carousel(3);
 	});*/
-	setCarouselInterval(duration);
+
+
+	//setCarouselInterval(duration);
+
+	
 	// Enable Carousel Controls
 	$(".left").click(function(){
 		goCarouselItem("prev");
