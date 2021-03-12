@@ -1,0 +1,79 @@
+{ 
+	"section":
+		[
+			{ 
+				"section":"Name of the Section",
+				"static-content":
+					[
+						{
+		                	"type":"background",
+		                	"version":"blue-half-and-half"
+		 				},
+		                {
+		                	"type":"h1",
+		                	"content":"Part 1: About Earth System Science"
+		 				},
+		 				{
+		                	"type":"main-content",
+		                	"content":"Earth system scientists take a holistic view of planet Earth, working to gain understanding of the influence of major and minor processes on Earth’s past, current and future conditions. Much of Earth systems science is focused on understanding what drives Earth’s global, regional and local climate patterns, including human activity. A major goal is to improve predictions of future climate under various scenarios of human actions and other variables."
+		 				}
+		            ],
+				"slide-1":
+					[
+						{
+							"type":"quote-and-image-half"
+						},
+		                {
+		                	"type":"quote",
+		                    "content":"Learn how to see. Realize that everything is connected to everything else.",
+		                    "quote-attribution":"- Leonardo Da Vinci, 1452-1519"
+		 				},
+		 				{
+		 					"display-image":"img/assets/davinci.png"
+		 				}
+		            ],
+		        "slide-2":
+					[
+						{
+							"type":"quote-and-image-half"
+						},
+		                {
+		                	"type":"quote",
+		                    "content":"It really boils down to this: that all life is interrelated. We are all caught in an inescapable network of mutuality, tied into a single garment of destiny. Whatever affects one destiny, affects all indirectly.",
+		                    "quote-attribution":"- Dr. Martin Luther King, Jr. (1929-1968), Christmas Eve sermon, 1967"
+		 				},
+		 				{
+		 					"display-image":"img/assets/king.png"
+		 				}
+		            ],
+		        "slide-3":
+					[
+						{
+							"type":"quote-and-image-half"
+						},
+		                {
+		                	"type":"quote",
+		                    "content":"In nature we never see anything isolated, but everything in connection with something else which is before it, beside it, under it and over it.",
+		                    "quote-attribution":"- Johann Wolfgang von Goethe"
+		 				},
+		 				{
+		 					"display-image":"img/assets/goethe.png"
+		 				}
+		            ],
+		        "slide-4":
+					[
+						{
+							"type":"quote-and-image-half"
+						},
+		                {
+		                	"type":"quote",
+		                    "content":"One could not pluck a flower without troubling a star.",
+		                    "quote-attribution":"- Francis Thompson"
+		 				},
+		 				{
+		 					"display-image":"img/assets/thompson.png"
+		 				}
+		            ]
+			}
+		]
+}
