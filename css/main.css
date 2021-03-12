@@ -193,23 +193,28 @@ Earth To Sky Bootstrap Carousel Approach CSS
     height: 100%;
     position: relative;
 }
-.carousel-static-background {
+.carousel-static-background,
+.absolute-full-cover-container {
     position: absolute;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
 }
-.part-1.carousel-static-background {
+.part-1.carousel-static-background,
+.absolute-full-cover-container.blue-vert-50-50 {
     background-image: url(../img/assets/part_1_bg.svg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
 }
-.carousel-static-background.half-height {
+.half-height {
     height: 50%;
     top: initial;
     bottom: 0;
+    position: absolute;
+    width: 100%;
+    left: 0;
 }
 .quote-background {
     background-image: url(../img/assets/quotes_area.svg);
