@@ -9,7 +9,6 @@ $(function(){
 		setMobileOrientationViaWHCompare();
 	}
 	setUpCarouselNavigation();
-	setUpHamburgerMenu();
 });
 
 window.addEventListener("orientationchange", function(event) {
@@ -86,10 +85,10 @@ function setUpCarouselNavigation() {
  	$("#myCarousel").carousel();
 
 	// Enable Carousel Indicators
-	/*$(".item1").click(function(){
-		$("#myCarousel").carousel(0);
+	$("li").click(function(){
+		console.log("click");
 	});
-	$(".item2").click(function(){
+	/*$(".item2").click(function(){
 		$("#myCarousel").carousel(1);
 	});
 	$(".item3").click(function(){
