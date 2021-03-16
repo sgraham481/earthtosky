@@ -86,7 +86,8 @@ function setUpCarouselNavigation() {
 
 	// Enable Carousel Indicators
 	$("li").click(function(){
-		console.log("click");
+		//console.log("click");
+		console.log($(this).attr("data-slide-to"));
 	});
 	/*$(".item2").click(function(){
 		$("#myCarousel").carousel(1);
