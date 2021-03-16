@@ -560,6 +560,13 @@ Earth To Sky Bootstrap Carousel Approach CSS
 }
 .carousel-table-of-contents li img {
     position: absolute;
+    height: 16px;
+    left: 2px;
+    top: 11px;
+    opacity: 0;
+}
+.carousel-table-of-contents li.active img {
+    opacity: 1;
 }
 .carousel-table-of-contents li:hover, 
 .carousel-table-of-contents li:focus, 
