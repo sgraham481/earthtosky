@@ -2,6 +2,7 @@ var isMobile = false;
 
 $(function(){
 	//console.log("jquery ready");
+	getJson();
 	checkMobile();
 	if (isMobile){
 		//console.log("adding html class");
@@ -10,7 +11,14 @@ $(function(){
 	}
 	setUpCarouselNavigation();
 });
-
+function getJson(){
+	console.log("getJson()");
+	$.getJSON("../json/carousel.json", function(result){
+	    $.each(result, function(i, field){
+	      console.log(result);
+	    });
+	});
+}
 window.addEventListener("orientationchange", function(event) {
 	//console.log("the orientation event change " + event.target.screen.orientation.angle);
     if (isMobile) {

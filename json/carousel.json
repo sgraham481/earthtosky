@@ -1,79 +1,98 @@
-{ 
-	"section":
-		[
-			{ 
-				"section":"Name of the Section",
-				"static-content":
-					[
-						{
-		                	"type":"background",
-		                	"version":"blue-half-and-half"
-		 				},
-		                {
-		                	"type":"h1",
-		                	"content":"Part 1: About Earth System Science"
-		 				},
-		 				{
-		                	"type":"main-content",
-		                	"content":"Earth system scientists take a holistic view of planet Earth, working to gain understanding of the influence of major and minor processes on Earth’s past, current and future conditions. Much of Earth systems science is focused on understanding what drives Earth’s global, regional and local climate patterns, including human activity. A major goal is to improve predictions of future climate under various scenarios of human actions and other variables."
-		 				}
-		            ],
-				"slide-1":
-					[
-						{
-							"type":"quote-and-image-half"
-						},
-		                {
-		                	"type":"quote",
-		                    "content":"Learn how to see. Realize that everything is connected to everything else.",
-		                    "quote-attribution":"- Leonardo Da Vinci, 1452-1519"
-		 				},
-		 				{
-		 					"display-image":"img/assets/davinci.png"
-		 				}
-		            ],
-		        "slide-2":
-					[
-						{
-							"type":"quote-and-image-half"
-						},
-		                {
-		                	"type":"quote",
-		                    "content":"It really boils down to this: that all life is interrelated. We are all caught in an inescapable network of mutuality, tied into a single garment of destiny. Whatever affects one destiny, affects all indirectly.",
-		                    "quote-attribution":"- Dr. Martin Luther King, Jr. (1929-1968), Christmas Eve sermon, 1967"
-		 				},
-		 				{
-		 					"display-image":"img/assets/king.png"
-		 				}
-		            ],
-		        "slide-3":
-					[
-						{
-							"type":"quote-and-image-half"
-						},
-		                {
-		                	"type":"quote",
-		                    "content":"In nature we never see anything isolated, but everything in connection with something else which is before it, beside it, under it and over it.",
-		                    "quote-attribution":"- Johann Wolfgang von Goethe"
-		 				},
-		 				{
-		 					"display-image":"img/assets/goethe.png"
-		 				}
-		            ],
-		        "slide-4":
-					[
-						{
-							"type":"quote-and-image-half"
-						},
-		                {
-		                	"type":"quote",
-		                    "content":"One could not pluck a flower without troubling a star.",
-		                    "quote-attribution":"- Francis Thompson"
-		 				},
-		 				{
-		 					"display-image":"img/assets/thompson.png"
-		 				}
-		            ]
+{
+	"part-1": {
+		"slide-1": {
+			"background":"blue-vert-50-50",
+			"params": {
+				"top-half": {
+					"persistent": true,
+					"header": "Part 1: About Earth System Science",
+					"p1":"Earth system scientists take a holistic view of planet Earth, working to gain understanding of the influence of major and minor processes on Earth’s past, current and future conditions. Much of Earth systems science is focused on understanding what drives Earth’s global, regional and local climate patterns, including human activity. A major goal is to improve predictions of future climate under various scenarios of human actions and other variables.",
+					"p2":"Thinking about nature being interconnected is not unique to Earth system scientists."
+				},
+				"bottom-half": {
+					"persistent": false,
+					"reveal": {
+						"type":"quote",
+						"params": {
+							"quote":"Learn how to see. Realize that everything is connected to everything else.",
+							"byline":"- Leonardo Da Vinci, 1452-1519",
+							"image":"img/assets/davinci.png"
+						}
+					},
+					"reveal": {
+						"type":"quote",
+						"params": {
+							"quote":"It really boils down to this: that all life is interrelated. We are all caught in an inescapable network of mutuality, tied into a single garment of destiny. Whatever affects one destiny, affects all indirectly.",
+							"byline":"- Dr. Martin Luther King, Jr. (1929-1968), Christmas Eve sermon, 1967",
+							"image":"img/assets/king.png"
+						}
+					},
+					"reveal": {
+						"type":"quote",
+						"params": {
+							"quote":"In nature we never see anything isolated, but everything in connection with something else which is before it, beside it, under it and over it.",
+							"byline":"- Johann Wolfgang von Goethe",
+							"image":"img/assets/goethe.png"
+						}
+					},
+					"reveal": {
+						"type":"quote",
+						"params": {
+							"quote":"One could not pluck a flower without troubling a star.",
+							"byline":"- Francis Thompson",
+							"image":"img/assets/thompson.png"
+						}
+					}
+				}
 			}
-		]
+		},
+		"slide-2": {
+			"background":"blue-circle-right",
+			"params": {
+				"full-size-image": {
+					"image":"img/media/image4.png"
+				}
+			}
+		},
+		"slide-3": {
+			"background":"blue-circle-right",
+			"params": {
+				"full-size-image": {
+					"image":"img/media/image5.png"
+				}
+			}
+		},
+		"slide-4": {
+			"background":"blue-circle-right",
+			"params": {
+				"full-size-image": {
+					"image":"img/media/image6.png"
+				}
+			}
+		},
+		"slide-5": {
+			"background":"blue-circle-right",
+			"params": {
+				"full-size-image": {
+					"image":"img/media/image7.png"
+				}
+			}
+		},
+		"slide-6": {
+			"background":"blue-circle-right",
+			"params": {
+				"full-size-image": {
+					"image":"img/media/image8.png"
+				}
+			}
+		},
+		"slide-7": {
+			"background":"blue-circle-right",
+			"params": {
+				"full-size-image": {
+					"image":"img/media/image9.png"
+				}
+			}
+		}
+	}
 }
