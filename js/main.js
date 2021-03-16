@@ -88,6 +88,8 @@ function setUpCarouselNavigation() {
 	$("li").click(function(){
 		//console.log("click");
 		console.log($(this).attr("data-slide-to"));
+		$(".carousel-table-of-contents li").removeClass("active");
+		$(".carousel-table-of-contents li").eq(Number($(this).attr("data-slide-to"))).addClass("active");
 	});
 	/*$(".item2").click(function(){
 		$("#myCarousel").carousel(1);
