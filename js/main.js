@@ -117,8 +117,9 @@ function goCarouselItem(item){
 	//$("#myCarousel").toggleClass("carousel-fade");
 	console.log("item: "+item);
 	console.log("current active: "+$(".item.active").attr("data-id"));
-	setTOCActiveSlide(Number($(".item.active").attr("data-id")));
+	
 	$("#myCarousel").carousel(item);
+	setTimer(function(){ setTOCActiveSlide(Number($(".carousel-indicators li.active").attr("data-slide-to"))); }, 200);
 };
 function resetInterval(){
 	clearInterval(carouselInterval);
