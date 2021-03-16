@@ -213,7 +213,6 @@ Earth To Sky Bootstrap Carousel Approach CSS
   line-height: 1.35;
 }
 .container .carousel {
-    margin: 0 -15px;
     width: 100%;
     height: 100%;
     position: relative;
@@ -359,7 +358,6 @@ Earth To Sky Bootstrap Carousel Approach CSS
     background-color: #011f3a;
     width: 100%;
     align-items: center;
-    margin: 0 -15px;
     padding: 0 12%;
 }
 .header .logo {
@@ -517,6 +515,23 @@ Earth To Sky Bootstrap Carousel Approach CSS
     left: 0!important;
     width: auto;
     top: -2px;
+}
+.carousel-pagination {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    background: rgba(255,255,255,.5);
+    border-radius: 14px 14px 0 0;
+    padding: 10px 30px;
+}
+.carousel-pagination span {
+    color: #00102e;
+    font-size: 24px;
+    text-shadow: 1px 1px rgb(255 255 255 / 10%);
+}
+.carousel-pagination span.concat-spacer {
+    padding: 0 4px;
 }
 @media screen and (orientation: portrait) {
   html.mobile {
