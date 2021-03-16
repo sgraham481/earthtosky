@@ -74,7 +74,9 @@ function closeFullscreen() {
 	}
 }
 function toggleHamburger(){
-	$("#hamburger-menu").hasClass('collapsed') ? $("#hamburger-menu").removeClass('collapsed') : $("#hamburger-menu").addClass('collapsed');
+	var isCollapsed = $("#hamburger-menu").hasClass('collapsed');
+	isCollapsed ? $("#hamburger-menu").removeClass('collapsed') : $("#hamburger-menu").addClass('collapsed');
+	isCollapsed ? $(".carousel-table-of-contents").removeClass('collapsed') : $(".carousel-table-of-contents").addClass('collapsed');
 };
 var carouselInterval;
 var duration = 3000;
