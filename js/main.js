@@ -13,7 +13,7 @@ $(function(){
 });
 function getJson(){
 	console.log("getJson()");
-	$.getJSON("../json/carousel.json", function(result){
+	$.getJSON("json/carousel.json", function(result){
 	    $.each(result, function(i, field){
 	      console.log(result);
 	    });
