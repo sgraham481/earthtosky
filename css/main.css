@@ -483,21 +483,39 @@ Earth To Sky Bootstrap Carousel Approach CSS
     background-color: transparent;
     border: 1px solid transparent;
 }
-.carousel-arrow-right {
+.carousel-arrow-right, 
+.carousel-arrow-left {
     position: absolute;
     top: 50%;
     right: 0;
     transform: translateY(-50%);
     background: #ffffff;
     border-radius: 14px 0 0 14px;
-    padding: 30px 10px 30px 10px;
+    padding: 30px 10px;
     width: 48px;
 }
-.carousel-arrow-right img {
+.carousel-arrow-left {
+    right: auto;
+    left: 0;
+    border-radius: 0 14px 14px 0;
+}
+.carousel-arrow-right img, 
+.carousel-arrow-left img {
     height: 45px;
 }
-.carousel-control.right {
+.carousel-arrow-left img {
+    transform: rotate(180deg);
+}
+.carousel-control.right, 
+.carousel-control.left {
     background-image: none!important;
+}
+.carousel-indicators {
+    margin: 0!important;
+    bottom: -11px;
+    opacity: .5;
+    left: 0!important;
+    width: auto;
 }
 @media screen and (orientation: portrait) {
   html.mobile {
