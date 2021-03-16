@@ -88,8 +88,8 @@ function setUpCarouselNavigation() {
 	$("li").click(function(){
 		//console.log("click");
 		console.log($(this).attr("data-slide-to"));
-		$(".carousel-table-of-contents li").removeClass("active");
-		$(".carousel-table-of-contents li").eq(Number($(this).attr("data-slide-to"))).addClass("active");
+		setTOCActiveSlide(Number($(this).attr("data-slide-to")));
+		
 	});
 	/*$(".item2").click(function(){
 		$("#myCarousel").carousel(1);
@@ -117,6 +117,7 @@ function goCarouselItem(item){
 	//$("#myCarousel").toggleClass("carousel-fade");
 	console.log("item: "+item);
 	console.log("current active: "+$(".item.active").attr("data-id"));
+	setTOCActiveSlide(Number($(".item.active").attr("data-id")));
 	$("#myCarousel").carousel(item);
 };
 function resetInterval(){
@@ -128,3 +129,7 @@ function setCarouselInterval(duration) {
 		carouselInterval = setInterval(function(){ goCarouselItem("next"); }, duration);
 	}
 };
+function setTOCActiveSlide(num){
+	$(".carousel-table-of-contents li").removeClass("active");
+	$(".carousel-table-of-contents li").eq(num).addClass("active");
+}
