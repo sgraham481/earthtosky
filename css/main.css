@@ -512,10 +512,11 @@ Earth To Sky Bootstrap Carousel Approach CSS
 }
 .carousel-indicators {
     margin: 0!important;
-    bottom: -11px;
-    opacity: .5;
+    bottom: auto;
+    opacity: .2;
     left: 0!important;
     width: auto;
+    top: -2px;
 }
 @media screen and (orientation: portrait) {
   html.mobile {
