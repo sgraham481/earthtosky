@@ -533,6 +533,14 @@ Earth To Sky Bootstrap Carousel Approach CSS
 .carousel-pagination span.concat-spacer {
     padding: 0 4px;
 }
+.carousel-table-of-contents {
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    z-index: 20;
+    width: 0;
+    list-style: none;
+}
 @media screen and (orientation: portrait) {
   html.mobile {
     transform: rotate(-90deg);
