@@ -543,9 +543,9 @@ Earth To Sky Bootstrap Carousel Approach CSS
     list-style: none;
     overflow: hidden;
     transition: right .5s;
-    background: rgba(1, 31, 58, .7);
+    background: rgba(1, 31, 58, .9);
     margin: 0;
-    padding: 30px;
+    padding: 20px;
     height: 100%;
     overflow-y: auto;
 }
@@ -555,8 +555,17 @@ Earth To Sky Bootstrap Carousel Approach CSS
 .carousel-table-of-contents li {
     color: #ffffff;
     font-size: 18px;
-    padding: 0 0 6px 0;
+    padding: 6px 0px 6px 20px;
     cursor: pointer;
+}
+.carousel-table-of-contents li img {
+    position: absolute;
+}
+.carousel-table-of-contents li:hover, 
+.carousel-table-of-contents li:focus, 
+.carousel-table-of-contents li.hover, 
+.carousel-table-of-contents li.active {
+    background: rgba(1, 31, 58, .9);
 }
 @media screen and (orientation: portrait) {
   html.mobile {
