@@ -378,7 +378,7 @@ Earth To Sky Bootstrap Carousel Approach CSS
     font-size: 2.5rem;
     font-weight: bold;
 }
-.header .hamburger-menu .hamburger-container {
+.header #hamburger-menu .hamburger-container {
     position: relative;
     padding: 8px 10px;
     border-radius: 6px;

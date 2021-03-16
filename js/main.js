@@ -73,19 +73,8 @@ function closeFullscreen() {
 	  }
 	}
 }
-function setUpHamburgerMenu(){
-	$(".GO-hamburger-wrapper").on('click', function(){
-        if ($(this).hasClass('collapsed')){
-            $(this).removeClass('collapsed');
-            //setAccordionHeight();
-            //setTimeout(function(){ $(".horiz-nav-wrapper#mobile-menu-target").removeClass('collapsed'); }, 100);
-            //setTimeout(function(){ $(".horiz-nav-wrapper#mobile-menu-target").addClass("expanded"); }, 700);
-        } else {
-            $(this).addClass('collapsed');
-            //$(".horiz-nav-wrapper#mobile-menu-target").removeClass("expanded").addClass('collapsed');
-            //resetMobileMenu();
-        }
-    });
+function toggleHamburger(){
+	$("#hamburger-menu").hasClass('collapsed') ? $("#hamburger-menu").removeClass('collapsed') : $("#hamburger-menu").addClass('collapsed');
 };
 var carouselInterval;
 var duration = 3000;
