@@ -9,6 +9,7 @@ $(function(){
 		setMobileOrientationViaWHCompare();
 	}
 	setUpCarouselNavigation();
+	setUpHamburgerMenu();
 });
 
 window.addEventListener("orientationchange", function(event) {
@@ -72,6 +73,20 @@ function closeFullscreen() {
 	  }
 	}
 }
+function setUpHamburgerMenu(){
+	$(".GO-hamburger-wrapper").on('click', function(){
+        if ($(this).hasClass('collapsed')){
+            $(this).removeClass('collapsed');
+            //setAccordionHeight();
+            //setTimeout(function(){ $(".horiz-nav-wrapper#mobile-menu-target").removeClass('collapsed'); }, 100);
+            //setTimeout(function(){ $(".horiz-nav-wrapper#mobile-menu-target").addClass("expanded"); }, 700);
+        } else {
+            $(this).addClass('collapsed');
+            //$(".horiz-nav-wrapper#mobile-menu-target").removeClass("expanded").addClass('collapsed');
+            //resetMobileMenu();
+        }
+    });
+};
 var carouselInterval;
 var duration = 3000;
 var isAuto = false;
