@@ -557,6 +557,7 @@ Earth To Sky Bootstrap Carousel Approach CSS
     font-size: 18px;
     padding: 6px 0px 6px 20px;
     cursor: pointer;
+    position: relative;
 }
 .carousel-table-of-contents li img {
     position: absolute;
