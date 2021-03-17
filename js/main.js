@@ -198,9 +198,11 @@ function populateCarousel(){
 								var slideType = params.attributes["slideType"].nodeValue;
 
 								// SETTING WRAPPER FOR THE SLIDE;
-								slideHtmlText += '<div class="item'+(totalslides === 0 ? 'active' : '')+'" data-id="'+totalslides+'" data-background="'+slideType+'">';
+								//slideHtmlText += '<div class="item'+(totalslides === 0 ? 'active' : '')+'" data-id="'+totalslides+'" data-background="'+slideType+'">';
 
+								console.log("fullsize image slide? "+slide.getElementsByTagName('full-size-image').length);
 									// if full-size-image, then stand in;
+									/*
 									if (slide.getElementsByTagName('full-size-image')){
 										var imgsrc = slide.getElementsByTagName('full-size-image')[0].attributes['src'].nodeValue;
 										slideHtmlText += '<img src="'+imgsrc+'" alt="'+''+'" style="width:100%;">';
@@ -211,11 +213,11 @@ function populateCarousel(){
 							            } else if ( slideType === "blue-circle-right"){
 											
 							            }
-							        }
+							        }*/
 
-					            slideHtmlText += '</div>';
+					            //slideHtmlText += '</div>';
 
-					            console.log(slideHtmlText);
+					            //console.log(slideHtmlText);
 							}
 						}
 					}
