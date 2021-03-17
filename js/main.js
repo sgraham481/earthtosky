@@ -11,7 +11,7 @@ $(function(){
 		$('html').addClass('mobile');
 		setMobileOrientationViaWHCompare();
 	}
-	setUpCarouselNavigation();
+	//setUpCarouselNavigation();
 });
 function getXML(){
 	console.log("getXML()");
@@ -242,6 +242,8 @@ function populateCarousel(){
 			}
 		}
 	}
+
+	setUpCarouselNavigation();
 }
 /**********************************************************
 BUILD CAROUSEL OPTIONS
