@@ -160,9 +160,13 @@ function populateCarousel(){
 	var x = xmlobj.documentElement.childNodes;
 	/*xmlobj = xml;
     $xml = $(xml);*/
-    for (i = 0; i < x.length ;i++) {
+    //console.log();
+    //console.log($xml.find("part").length);
+    //console.log($xml.find("part").length);
+    var totalslides = 0;
+    for (i = 0; i < x.length; i++) {
 		console.log(x[i].nodeName); +  //+ ": " + x[i].childNodes[0].nodeValue + "<br>";
-		console.log(" children: "+x[i].childNodes.length);
+		//console.log(" children: "+x[i].childNodes.length);
 		if (x[i].nodeName === "part"){
 			/*
 			SET PART VAR;
@@ -179,22 +183,38 @@ function populateCarousel(){
 
 						console.log("    children: "+slide.childNodes.length);
 						// has children;
-						if (slide.childNodes.length){
-							for (k = 0; k < slide.childNodes.length; k++) {
-								if (slide.childNodes[k].nodeName === "params"){
-							    	// ;
-							    } else if (slide.childNodes[k].nodeName === "params"){
-							    	// ;
-							    } else if (slide.childNodes[k].nodeName === "params"){
-							    	// ;
-							    }
-							    console.log("    >  " + slide.childNodes[k].nodeName);
-							    console.log("      attributes: "+slide.childNodes[k].attributes[0].nodeName+":"+slide.childNodes[k].attributes.length);
-							    console.log("      children: "+slide.childNodes[k].childNodes.length);
-							    if (slide.childNodes[k].nodeName === "params"){
-							        var params = slide.childNodes[k];
-							        console.log(params.attributes[0].nodeName+":"+params.attributes[0].nodeValue);
-							    }
+
+						var slideHtmlText = "";
+						// has params;
+						if (slide.getElementsByTagName('params')){
+
+							var params = slide.getElementsByTagName('params')[0];
+
+							// has the slideType which defines the layout of the slide;
+							if (params.attributes["slideType"]){
+
+								console.log(params.attributes["slideType"].nodeValue);
+
+								var slideType = params.attributes["slideType"].nodeValue;
+
+								// SETTING WRAPPER FOR THE SLIDE;
+								slideHtmlText += '<div class="item'+(totalslides === 0 ? 'active' : '')+'" data-id="'+totalslides+'" data-background="'+slideType+'">';
+
+									// if full-size-image, then stand in;
+									if (slide.getElementsByTagName('full-size-image')){
+										var el = slide.getElementsByTagName('full-size-image')[0];
+										slideHtmlText += '<img src="'+el.getElementsByTagName('image')[0].childNodes[0].nodeValue+'" alt="'+''+'" style="width:100%;">';
+									} else {
+										// into the type of side from the params;
+										if ( slideType === "blue-vert-50-50"){
+											
+							            } else if ( slideType === "blue-circle-right"){
+											
+							            }
+							        }
+					            slideHtmlText += '</div>';
+
+					            console.log(slideHtmlText);
 							}
 						}
 					}
@@ -209,7 +229,7 @@ BUILD CAROUSEL OPTIONS
 
 
 
-
+function create
 
 
 
