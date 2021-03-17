@@ -163,7 +163,7 @@ function populateCarousel(){
     //console.log();
     //console.log($xml.find("part").length);
     //console.log($xml.find("part").length);
-    var totalslides = 0;
+    var totalslides = 2;
     for (i = 0; i < x.length; i++) {
 		console.log(x[i].nodeName); //+ ": " + x[i].childNodes[0].nodeValue + "<br>";
 		//console.log(" children: "+x[i].childNodes.length);
@@ -186,6 +186,8 @@ function populateCarousel(){
 						// has children;
 
 						var slideHtmlText = "";
+						var carouselTocEl = "";
+						var carouselIndicator = "";
 						// has params;
 						if (slide.getElementsByTagName('params').length){
 
@@ -199,7 +201,7 @@ function populateCarousel(){
 								var slideType = params.attributes["slideType"].nodeValue;
 
 								// SETTING WRAPPER FOR THE SLIDE;
-								slideHtmlText += '<div class="item'+(totalslides === 0 ? 'active' : '')+'" data-id="'+totalslides+'" data-background="'+slideType+'">';
+								slideHtmlText += '<div class="item'+(totalslides === 0 ? ' active' : '')+'" data-id="'+totalslides+'" data-background="'+slideType+'">';
 
 								console.log("fullsize image slide? "+slide.getElementsByTagName('full-size-image').length);
 									// if full-size-image, then stand in;
@@ -218,7 +220,19 @@ function populateCarousel(){
 
 					            slideHtmlText += '</div>';
 
+					            carouselIndicator = "<li data-target='#myCarousel' data-slide-to='"+totalslides+"' class='"+(totalslides === 0 ? 'active' : '')+"'></li>";
+					            carouselTocEl = "<li data-target='#myCarousel' data-slide-to='"+totalslides+"'><img src='img/assets/nav_pointer.svg'>Slide #"+totalslides+"</li>";
+
+					            if (slide.getElementsByTagName('full-size-image').length){
+					            	$(".carousel-inner").append( $(slideHtmlText) );
+					            	$(".carousel-indicators").append( $(carouselIndicator) );
+					            	$(".carousel-table-of-contents").append( $(carouselTocEl) );
+					            }
 					            console.log(slideHtmlText);
+					            console.log(carouselIndicator);
+					            console.log(carouselTocEl);
+
+					            totalslides ++;
 							}
 						} else {
 							console.log("no params");
