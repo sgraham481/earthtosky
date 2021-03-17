@@ -229,28 +229,3 @@ BUILD CAROUSEL OPTIONS
 
 
 
-function create
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
