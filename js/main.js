@@ -157,16 +157,17 @@ function setTOCActiveSlide(num){
 BUILD CAROUSEL OPTIONS
 **********************************************************/
 function populateCarousel(){
+	var x = xmlobj.documentElement.childNodes;
 	/*xmlobj = xml;
     $xml = $(xml);*/
-    for (i = 0; i < xmlobj.length ;i++) {
-		console.log(xmlobj[i].nodeName); +  //+ ": " + x[i].childNodes[0].nodeValue + "<br>";
-		console.log(" children: "+xmlobj[i].childNodes.length);
-		if (xmlobj[i].nodeName === "part"){
+    for (i = 0; i < x.length ;i++) {
+		console.log(x[i].nodeName); +  //+ ": " + x[i].childNodes[0].nodeValue + "<br>";
+		console.log(" children: "+x[i].childNodes.length);
+		if (x[i].nodeName === "part"){
 			/*
 			SET PART VAR;
 			*/
-			var part = xmlobj[i];
+			var part = x[i];
 			if (part.childNodes.length){
 				for (j = 0; j < part.childNodes.length; j++) {
 					console.log("  >  " + part.childNodes[j].nodeName);
