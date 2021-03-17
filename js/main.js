@@ -163,7 +163,7 @@ function populateCarousel(){
     //console.log();
     //console.log($xml.find("part").length);
     //console.log($xml.find("part").length);
-    var totalslides = 2;
+    var totalslides = 3;
     for (i = 0; i < x.length; i++) {
 		console.log(x[i].nodeName); //+ ": " + x[i].childNodes[0].nodeValue + "<br>";
 		//console.log(" children: "+x[i].childNodes.length);
