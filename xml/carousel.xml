@@ -91,64 +91,27 @@
 		</slide>
 		<slide>
 			<params slideType="blue-circle-right"></params>
-			<full-size-image>
-				<image>
-					<![CDATA[
-						img/media/image4.png
-					]]>
-				</image>
-			</full-size-image>
+			<full-size-image src="img/media/image4.png"></full-size-image>
 		</slide>
 		<slide>
 			<params slideType="blue-circle-right"></params>
-			<full-size-image>
-				<image>
-					<![CDATA[
-						img/media/image5.png
-					]]>
-				</image>
-			</full-size-image>
+			<full-size-image src="img/media/image5.png"></full-size-image>
 		</slide>
 		<slide>
 			<params slideType="blue-circle-right"></params>
-			<full-size-image>
-				<image>
-					<![CDATA[
-						img/media/image6.png
-					]]>
-				</image>
-			</full-size-image>
+			<full-size-image src="img/media/image6.png"></full-size-image>
 		</slide>
 		<slide>
 			<params slideType="blue-circle-right"></params>
-			<full-size-image>
-				<image>
-					<![CDATA[
-						img/media/image7.png
-					]]>
-				</image>
-			</full-size-image>}
-			}
+			<full-size-image src="img/media/image7.png"></full-size-image>
 		</slide>
 		<slide>
 			<params slideType="blue-circle-right"></params>
-			<full-size-image>
-				<image>
-					<![CDATA[
-						img/media/image8.png
-					]]>
-				</image>
-			</full-size-image>
+			<full-size-image src="img/media/image8.png"></full-size-image>
 		</slide>
 		<slide>
 			<params slideType="blue-circle-right"></params>
-			<full-size-image>
-				<image>
-					<![CDATA[
-						img/media/image9.png
-					]]>
-				</image>
-			</full-size-image>
+			<full-size-image src="img/media/image9.png"></full-size-image>
 		</slide>
 	</part>
 </carousel>

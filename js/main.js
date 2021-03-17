@@ -202,8 +202,8 @@ function populateCarousel(){
 
 									// if full-size-image, then stand in;
 									if (slide.getElementsByTagName('full-size-image')){
-										var el = slide.getElementsByTagName('full-size-image')[0];
-										slideHtmlText += '<img src="'+el.getElementsByTagName('image')[0].childNodes[0].nodeValue+'" alt="'+''+'" style="width:100%;">';
+										var imgsrc = slide.getElementsByTagName('full-size-image')[0].attributes['src'].nodeValue;
+										slideHtmlText += '<img src="'+imgsrc+'" alt="'+''+'" style="width:100%;">';
 									} else {
 										// into the type of side from the params;
 										if ( slideType === "blue-vert-50-50"){
@@ -212,6 +212,7 @@ function populateCarousel(){
 											
 							            }
 							        }
+
 					            slideHtmlText += '</div>';
 
 					            console.log(slideHtmlText);
