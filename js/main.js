@@ -1,5 +1,6 @@
 var isMobile = false;
-var $carousel_xml;
+var xmlobj;
+var $xml;
 
 $(function(){
 	//console.log("jquery ready");
@@ -24,8 +25,9 @@ function getXML(){
 
 function parseDATAXml(xml) {
     console.log(xml);
-    $carousel_xml = $(xml);
-    
+    xmlobj = xml;
+    $xml = $(xml);
+    populateCarousel();
 };
 
 window.addEventListener("orientationchange", function(event) {
@@ -151,3 +153,83 @@ function setTOCActiveSlide(num){
 	$(".carousel-table-of-contents li").removeClass("active");
 	$(".carousel-table-of-contents li").eq(num).addClass("active");
 }
+/**********************************************************
+BUILD CAROUSEL OPTIONS
+**********************************************************/
+function populateCarousel(){
+	/*xmlobj = xml;
+    $xml = $(xml);*/
+    for (i = 0; i < x.length ;i++) {
+		console.log(x[i].nodeName); +  //+ ": " + x[i].childNodes[0].nodeValue + "<br>";
+		console.log(" children: "+x[i].childNodes.length);
+		if (x[i].nodeName === "part"){
+			/*
+			SET PART VAR;
+			*/
+			var part = x[i];
+			if (part.childNodes.length){
+				for (j = 0; j < part.childNodes.length; j++) {
+					console.log("  >  " + part.childNodes[j].nodeName);
+					if (part.childNodes[j].nodeName === "slide"){
+						/*
+						SET SLIDE VAR;
+						*/
+						var slide = part.childNodes[j];
+
+						console.log("    children: "+slide.childNodes.length);
+						// has children;
+						if (slide.childNodes.length){
+							for (k = 0; k < slide.childNodes.length; k++) {
+								if (slide.childNodes[k].nodeName === "params"){
+							    	// ;
+							    } else if (slide.childNodes[k].nodeName === "params"){
+							    	// ;
+							    } else if (slide.childNodes[k].nodeName === "params"){
+							    	// ;
+							    }
+							    console.log("    >  " + slide.childNodes[k].nodeName);
+							    console.log("      attributes: "+slide.childNodes[k].attributes[0].nodeName+":"+slide.childNodes[k].attributes.length);
+							    console.log("      children: "+slide.childNodes[k].childNodes.length);
+							    if (slide.childNodes[k].nodeName === "params"){
+							        var params = slide.childNodes[k];
+							        console.log(params.attributes[0].nodeName+":"+params.attributes[0].nodeValue);
+							    }
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+}
+/**********************************************************
+BUILD CAROUSEL OPTIONS
+**********************************************************/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
