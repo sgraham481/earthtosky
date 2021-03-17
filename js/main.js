@@ -159,14 +159,14 @@ BUILD CAROUSEL OPTIONS
 function populateCarousel(){
 	/*xmlobj = xml;
     $xml = $(xml);*/
-    for (i = 0; i < x.length ;i++) {
-		console.log(x[i].nodeName); +  //+ ": " + x[i].childNodes[0].nodeValue + "<br>";
-		console.log(" children: "+x[i].childNodes.length);
-		if (x[i].nodeName === "part"){
+    for (i = 0; i < xmlobj.length ;i++) {
+		console.log(xmlobj[i].nodeName); +  //+ ": " + x[i].childNodes[0].nodeValue + "<br>";
+		console.log(" children: "+xmlobj[i].childNodes.length);
+		if (xmlobj[i].nodeName === "part"){
 			/*
 			SET PART VAR;
 			*/
-			var part = x[i];
+			var part = xmlobj[i];
 			if (part.childNodes.length){
 				for (j = 0; j < part.childNodes.length; j++) {
 					console.log("  >  " + part.childNodes[j].nodeName);
