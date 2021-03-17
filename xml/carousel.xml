@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<carousel>
+	<part>
+		<slide>
+			<params slideType="blue-vert-50-50"></params>
+			<top>
+				<header>
+					<![CDATA[
+						Part 1: About Earth System Science
+					]]>
+				</header>
+				<p>
+					<![CDATA[
+						Earth system scientists take a holistic view of planet Earth, working to gain understanding of the influence of major and minor processes on Earth’s past, current and future conditions. Much of Earth systems science is focused on understanding what drives Earth’s global, regional and local climate patterns, including human activity. A major goal is to improve predictions of future climate under various scenarios of human actions and other variables.
+					]]>
+				</p>
+				<p>
+					<![CDATA[
+						Thinking about nature being interconnected is not unique to Earth system scientists.
+					]]>
+				</p>
+			</top>
+			<bottom>
+				<quote>
+					<![CDATA[
+						Learn how to see. Realize that everything is connected to everything else.
+					]]>
+				</quote>
+				<byline>
+					<![CDATA[
+						- Leonardo Da Vinci, 1452-1519
+					]]>
+				</byline>
+				<image>
+					<![CDATA[
+						img/assets/davinci.png
+					]]>
+				</image>
+			</bottom>
+			<bottom>
+				<quote>
+					<![CDATA[
+						It really boils down to this: that all life is interrelated. We are all caught in an inescapable network of mutuality, tied into a single garment of destiny. Whatever affects one destiny, affects all indirectly.
+					]]>
+				</quote>
+				<byline>
+					<![CDATA[
+						- Dr. Martin Luther King, Jr. (1929-1968), Christmas Eve sermon, 1967
+					]]>
+				</byline>
+				<image>
+					<![CDATA[
+						img/assets/king.png
+					]]>
+				</image>
+			</bottom>
+			<bottom>
+				<quote>
+					<![CDATA[
+						In nature we never see anything isolated, but everything in connection with something else which is before it, beside it, under it and over it.
+					]]>
+				</quote>
+				<byline>
+					<![CDATA[
+						- Johann Wolfgang von Goethe
+					]]>
+				</byline>
+				<image>
+					<![CDATA[
+						img/assets/goethe.png
+					]]>
+				</image>
+			</bottom>
+			<bottom>
+				<quote>
+					<![CDATA[
+						One could not pluck a flower without troubling a star.
+					]]>
+				</quote>
+				<byline>
+					<![CDATA[
+						- Francis Thompson
+					]]>
+				</byline>
+				<image>
+					<![CDATA[
+						img/assets/thompson.png
+					]]>
+				</image>
+			</bottom>
+		</slide>
+		<slide>
+			<params slideType="blue-circle-right"></params>
+			<full-size-image>
+				<image>
+					<![CDATA[
+						img/media/image4.png
+					]]>
+				</image>
+			</full-size-image>
+		</slide>
+		<slide>
+			<params slideType="blue-circle-right"></params>
+			<full-size-image>
+				<image>
+					<![CDATA[
+						img/media/image5.png
+					]]>
+				</image>
+			</full-size-image>
+		</slide>
+		<slide>
+			<params slideType="blue-circle-right"></params>
+			<full-size-image>
+				<image>
+					<![CDATA[
+						img/media/image6.png
+					]]>
+				</image>
+			</full-size-image>
+		</slide>
+		<slide>
+			<params slideType="blue-circle-right"></params>
+			<full-size-image>
+				<image>
+					<![CDATA[
+						img/media/image7.png
+					]]>
+				</image>
+			</full-size-image>}
+			}
+		</slide>
+		<slide>
+			<params slideType="blue-circle-right"></params>
+			<full-size-image>
+				<image>
+					<![CDATA[
+						img/media/image8.png
+					]]>
+				</image>
+			</full-size-image>
+		</slide>
+		<slide>
+			<params slideType="blue-circle-right"></params>
+			<full-size-image>
+				<image>
+					<![CDATA[
+						img/media/image9.png
+					]]>
+				</image>
+			</full-size-image>
+		</slide>
+	</part>
+</carousel>

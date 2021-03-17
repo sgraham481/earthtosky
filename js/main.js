@@ -1,8 +1,9 @@
 var isMobile = false;
+var $carousel_xml;
 
 $(function(){
 	//console.log("jquery ready");
-	getJson();
+	getXML();
 	checkMobile();
 	if (isMobile){
 		//console.log("adding html class");
@@ -11,14 +12,22 @@ $(function(){
 	}
 	setUpCarouselNavigation();
 });
-function getJson(){
-	console.log("getJson()");
-	$.getJSON("json/carousel.json", function(result){
-	    $.each(result, function(i, field){
-	      console.log(result);
-	    });
-	});
+function getXML(){
+	console.log("getXML()");
+	$.ajax({
+        type: "GET",
+        url: "xml/carousel.xml",
+        dataType: "xml",
+        success: parseDATAXml
+    });
 }
+
+function parseDATAXml(xml) {
+    console.log(xml);
+    $carousel_xml = $(xml);
+    
+};
+
 window.addEventListener("orientationchange", function(event) {
 	//console.log("the orientation event change " + event.target.screen.orientation.angle);
     if (isMobile) {
