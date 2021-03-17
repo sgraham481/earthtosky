@@ -165,7 +165,7 @@ function populateCarousel(){
     //console.log($xml.find("part").length);
     var totalslides = 0;
     for (i = 0; i < x.length; i++) {
-		console.log(x[i].nodeName); +  //+ ": " + x[i].childNodes[0].nodeValue + "<br>";
+		console.log(x[i].nodeName); //+ ": " + x[i].childNodes[0].nodeValue + "<br>";
 		//console.log(" children: "+x[i].childNodes.length);
 		if (x[i].nodeName === "part"){
 			/*
