@@ -421,20 +421,24 @@ function populateCarousel(){
 												                </div>
 												            </div>
 															*/
-
-															console.log("===========bottom quote object================");
-															for (var q=0; q<slide.getElementsByTagName('bottom')[b].childNodes.length; q++ ){
-																console.log(slide.getElementsByTagName('bottom')[b].childNodes[q].nodeName);
-															}
-
 															slideHtmlText += '<div class="d-flex w-100 h-100">';
 																slideHtmlText += '<div class="quote">';
-																	slideHtmlText += '<span class="quote-body">'+'=NO DATA='+'</span>';
-																	slideHtmlText += '<span class="quote-attribution">'+'=NO DATA='+'</span>';
-																slideHtmlText += '</div>';
-																slideHtmlText += '<div class="display-image">';
-																	slideHtmlText += '<img src="'+'=NO DATA='+'">';
-																slideHtmlText += '</div>';
+																console.log("===========bottom quote object================");
+																for (var q=0; q<slide.getElementsByTagName('bottom')[b].childNodes.length; q++ ){
+																	console.log(slide.getElementsByTagName('bottom')[b].childNodes[q].nodeName);
+																	if (slide.getElementsByTagName('bottom')[b].childNodes[q].nodeName === "quote"){
+																		slideHtmlText += '<span class="quote-body">'+slide.getElementsByTagName('bottom')[b].childNodes[q].childNodes[0].nodeValue+'</span>';
+																	} else if (slide.getElementsByTagName('bottom')[b].childNodes[q].nodeName === "byline"){
+																			slideHtmlText += '<span class="quote-attribution">'+slide.getElementsByTagName('bottom')[b].childNodes[q].childNodes[0].nodeValue+'</span>';
+																		slideHtmlText += '</div>';
+																	} else if (slide.getElementsByTagName('bottom')[b].childNodes[q].nodeName === "image"){
+																		slideHtmlText += '<div class="display-image">';
+																			slideHtmlText += '<img src="'+slide.getElementsByTagName('bottom')[b].childNodes[q].childNodes[0].nodeValue+'">';
+																		slideHtmlText += '</div>';
+																	}
+																}
+
+																
 															slideHtmlText += '</div>';
 
 
