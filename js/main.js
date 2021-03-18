@@ -404,6 +404,10 @@ function populateCarousel(){
 													totalslides ++;
 			          								*/
 			          								console.log(slideHtmlText);
+			          								
+			          								$(".carousel-inner").append( $(slideHtmlText) );
+													addNewIndicator(totalslides);
+													addNewTOCItem(totalslides);
 			          								totalslides++;
 			          								console.log("==============================");
 			          								console.log(" ");
