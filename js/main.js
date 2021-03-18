@@ -239,25 +239,8 @@ function populateCarousel(){
 
 										var slideType = params.attributes["slideType"].nodeValue;
 
+										
 										/*
-										<params slideType="blue-vert-50-50"></params>
-
-							            Attribute by Name: console.log(slide.getElementsByTagName('params')[0].attributes["slideType"]);
-							            Attribute Value: console.log(slide.getElementsByTagName('params')[0].attributes["slideType"].nodeValue);
-
-							            // can use .length with .getElementsByTagName to se if something exists;
-								            if (slide.getElementsByTagName('params').length === 0){
-								            	console.log("no params");
-								            }
-
-								        // can use undefined value with .attributes["attrName"] to see if something exists;
-							            	if (slide.getElementsByTagName('params')[0].attributes["slideType"] === undefined){
-							                	console.log("no attribute name");
-							                }
-
-
-
-
 							            <top>
 											<header>
 												<![CDATA[
@@ -278,81 +261,154 @@ function populateCarousel(){
 
 										*/
 
+										/*
+										<params slideType="blue-vert-50-50"></params>
+
+							            Attribute by Name: console.log(slide.getElementsByTagName('params')[0].attributes["slideType"]);
+							            Attribute Value: console.log(slide.getElementsByTagName('params')[0].attributes["slideType"].nodeValue);
+
+							            // can use .length with .getElementsByTagName to se if something exists;
+								            if (slide.getElementsByTagName('params').length === 0){
+								            	console.log("no params");
+								            }
+
+								        // can use undefined value with .attributes["attrName"] to see if something exists;
+							            	if (slide.getElementsByTagName('params')[0].attributes["slideType"] === undefined){
+							                	console.log("no attribute name");
+							                }
+
+										*/
+
 										// into the type of side from the params;
 										if ( slideType === "blue-vert-50-50"){
-											slideHtmlText += '<div class="item'+(totalslides === 0 ? ' active' : '')+'" data-id="'+totalslides+'" data-background="'+slideType+'">';
-												/*
-													GET 'TOP' NODE;
-													IF NO TOP NODE, LOG;
-												*/
 
-												slideHtmlText += "<div class='item-container half-height absolute-align-top'>";
-													/*
-														LOOK FOR HEADER;
-													*/
-													slideHtmlText += "<div class='h1'>"+'=============='+"</div>";
+											if (!hasEls(slide, 'bottom')){
 
-													/*
-														LOOP ON LOOK FOR P;
-													*/
-		              								slideHtmlText += "<div class='main-content'>"+'=============='+"</div>";
+								            	console.log("no bottom");
 
-	              								/*
-													CLOSE TOP (item-container);
-	              								*/
-	          									slideHtmlText += '</div>';
+								            } else {
+
+								            	for (var b=0; b<getTotalEls(slide, 'bottom'); b++){
+
+													slideHtmlText += '<div class="item'+(totalslides === 0 ? ' active' : '')+'" data-id="'+totalslides+'" data-background="'+slideType+'">';
+														/*
+															GET 'TOP' NODE;
+															IF NO TOP NODE, LOG;
+														*/
+														slideHtmlText += "<div class='item-container half-height absolute-align-top'>";
+														if (!hasEls(slide, 'top')){
+															// 'top' element is missing;
+															slideHtmlText += "<div class='h1'>"+'=NO DATA='+"</div>";
+															slideHtmlText += "<div class='main-content'>"+'=NO DATA='+"</div>";
+														} else {
+															// 'top' element present;
+															var top = getEl(slide, 'top', 0);
+															for (var c = 0; c < top.childNodes.length; c++) {
+												            	console.log(slide.childNodes[c].nodeName);
+												            	if (slide.childNodes[c].nodeName === 'header'){
+												            		slideHtmlText += "<div class='h1'>"+slide.childNodes[c].childNodes[0].nodeValue+"</div>";
+												            	} else if (slide.childNodes[c].nodeName === 'p') {
+												            		slideHtmlText += "<div class='main-content'>"+slide.childNodes[c].childNodes[0].nodeValue+"</div>";
+												            	}
+												            }
+															
+
+															//var header = hasEls(top, 'header') ? getElValue(top, 'header', 0) : false;
+															//if (!header){
+															//	slideHtmlText += "<div class='h1'>"+header+"</div>";
+															//}
+
+															//var header = hasEls(top, 'header') ? getElValue(top, 'header', 0) : '=NO DATA=';
+															//slideHtmlText += "<div class='h1'>"+'=NO DATA='+"</div>";
+															//slideHtmlText += "<div class='main-content'>"+'=NO DATA='+"</div>";
 
 
-	          									/*
-													LOOP ON BOTTOM
-													IF NO BOTTOM, LOG;
-	          									*/
-												slideHtmlText += '<div class="item-container half-height absolute-align-bottom">';
-
-													/*
-													HAS QUOTE?
-
-													<div class="d-flex w-100 h-100">
-										                <div class="quote">
-										                    <span class="quote-body">“Learn how to see. Realize that everything is connected to everything else.”</span>
-										                    <span class="quote-attribution">- Leonardo Da Vinci, 1452-1519</span>
-										                </div>
-										                <div class="display-image">
-										                    <img src="img/assets/davinci.png">
-										                </div>
-										            </div>
-													*/
-													slideHtmlText += '<div class="d-flex w-100 h-100">';
-														slideHtmlText += '<div class="quote">';
-															slideHtmlText += '<span class="quote-body">'+'=============='+'</span>';
-															slideHtmlText += '<span class="quote-attribution">'+'=============='+'</span>';
+														}
 														slideHtmlText += '</div>';
-														slideHtmlText += '<div class="display-image">';
-															slideHtmlText += '<img src="'+'=============='+'">';
-														slideHtmlText += '</div>';
-													slideHtmlText += '</div>';
 
 
-												/*
-													CLOSE BOTTOM (item-container);
-	              								*/
-	          									slideHtmlText += '</div>';
+														// are we missing 'top' element?
+														//var hasTop = hasEls(slide, 'top');
+														// assign the top element to the top var or null;
+														//var top = hasTop ? getEl(slide, 'top', 0) : null;
+														//var header = ((hasTop && top.getElementsByTagName('header').length > 0) ? top.getElementsByTagName('header')[0].childNodes[0].nodeValue
+														//var header = 
 
-	          								/*
-											CLOSE SLIDE ITEM;
-	          								*/
-	          								slideHtmlText += '</div>';
+														//slideHtmlText += "<div class='item-container half-height absolute-align-top'>";
 
-	          								/*
-											$(".carousel-inner").append( $(slideHtmlText) );
-											addNewIndicator(totalslides);
-											addNewTOCItem(totalslides);
-											totalslides ++;
-	          								*/
-	          								console.log(slideHtmlText);
-	          								console.log("==============================");
-	          								console.log(" ");
-	          								console.log("==============================");
+															/*
+																LOOK FOR HEADER;
+															
+															if (hasTop){
+																slideHtmlText += "<div class='h1'>"+((hasTop && top.getElementsByTagName('header').length === 0 ? top. : '=NO DATA=')+"</div>";
+															} else {
+																slideHtmlText += "<div class='h1'>"+'=NO DATA='+"</div>";
+															}
+															*/
+
+															/*
+																LOOP ON LOOK FOR P;
+															*/
+				              								//slideHtmlText += "<div class='main-content'>"+'=NO DATA='+"</div>";
+
+			              								/*
+															CLOSE TOP (item-container);
+			              								*/
+			          									//slideHtmlText += '</div>';
+
+
+			          									/*
+															LOOP ON BOTTOM
+															IF NO BOTTOM, LOG;
+			          									*/
+														slideHtmlText += '<div class="item-container half-height absolute-align-bottom">';
+
+															/*
+															HAS QUOTE?
+
+															<div class="d-flex w-100 h-100">
+												                <div class="quote">
+												                    <span class="quote-body">“Learn how to see. Realize that everything is connected to everything else.”</span>
+												                    <span class="quote-attribution">- Leonardo Da Vinci, 1452-1519</span>
+												                </div>
+												                <div class="display-image">
+												                    <img src="img/assets/davinci.png">
+												                </div>
+												            </div>
+															*/
+															slideHtmlText += '<div class="d-flex w-100 h-100">';
+																slideHtmlText += '<div class="quote">';
+																	slideHtmlText += '<span class="quote-body">'+'=NO DATA='+'</span>';
+																	slideHtmlText += '<span class="quote-attribution">'+'=NO DATA='+'</span>';
+																slideHtmlText += '</div>';
+																slideHtmlText += '<div class="display-image">';
+																	slideHtmlText += '<img src="'+'=NO DATA='+'">';
+																slideHtmlText += '</div>';
+															slideHtmlText += '</div>';
+
+
+														/*
+															CLOSE BOTTOM (item-container);
+			              								*/
+			          									slideHtmlText += '</div>';
+
+			          								/*
+													CLOSE SLIDE ITEM;
+			          								*/
+			          								slideHtmlText += '</div>';
+
+			          								/*
+													$(".carousel-inner").append( $(slideHtmlText) );
+													addNewIndicator(totalslides);
+													addNewTOCItem(totalslides);
+													totalslides ++;
+			          								*/
+			          								console.log(slideHtmlText);
+			          								console.log("==============================");
+			          								console.log(" ");
+			          								console.log("==============================");
+			          							}
+		          							}
 							            } else if ( slideType === "blue-circle-right"){
 											
 							            }
@@ -389,6 +445,20 @@ function populateCarousel(){
 	}
 
 	setUpCarouselNavigation();
+}
+function hasEls(el, name){
+	return el.getElementsByTagName(name).length > 0 ? true : false;
+}
+function getEl(el, name, num){
+	// could add hasEls here.;
+	return el.getElementsByTagName(name)[num];
+}
+function getElValue(el, name, num){
+	return el.getElementsByTagName(name)[num].childNodes[0].nodeValue;
+}
+function getTotalEls(el, name){
+	// could add hasEls here.;
+	return el.getElementsByTagName(name).length;
 }
 function addNewIndicator(num){
 	var el = "<li data-target='#myCarousel' data-slide-to='"+num+"' class='"+(num === 0 ? 'active' : '')+"'></li>";
