@@ -188,9 +188,22 @@ function populateCarousel(){
 						var slideHtmlText = "";
 						var carouselTocEl = "";
 						var carouselIndicator = "";
-						// has params;
-						if (slide.getElementsByTagName('params').length){
 
+
+						console.log("fullsize image slide? "+slide.getElementsByTagName('full-size-image').length);
+						// if full-size-image, then stand in;
+						
+						if (slide.getElementsByTagName('full-size-image').length > 0){
+							slideHtmlText += '<div class="item'+(totalslides === 0 ? ' active' : '')+'" data-id="'+totalslides+'" data-background="'+slideType+'">';
+								var imgsrc = slide.getElementsByTagName('full-size-image')[0].attributes['src'].nodeValue;
+								slideHtmlText += '<img src="'+imgsrc+'" alt="'+''+'" style="width:100%;">';
+							slideHtmlText += '</div>';
+							$(".carousel-inner").append( $(slideHtmlText) );
+							addNewIndicator(totalslides);
+							addNewTOCItem(totalslides);
+							totalslides ++;
+						} else if (slide.getElementsByTagName('params').length){
+							// has params;
 							var params = slide.getElementsByTagName('params')[0];
 
 							// has the slideType which defines the layout of the slide;
@@ -198,41 +211,173 @@ function populateCarousel(){
 
 								console.log(params.attributes["slideType"].nodeValue);
 
-								var slideType = params.attributes["slideType"].nodeValue;
+								
 
+								/*
+								DECIDE HOW TO SHOW THE MULTIPLE BOTTOMS WITH THE STATIC TOP SLIDE TYPE.;
+
+								
+								
+								*/
 								// SETTING WRAPPER FOR THE SLIDE;
-								slideHtmlText += '<div class="item'+(totalslides === 0 ? ' active' : '')+'" data-id="'+totalslides+'" data-background="'+slideType+'">';
-
-								console.log("fullsize image slide? "+slide.getElementsByTagName('full-size-image').length);
+								
+									/*
+									console.log("fullsize image slide? "+slide.getElementsByTagName('full-size-image').length);
 									// if full-size-image, then stand in;
 									
 									if (slide.getElementsByTagName('full-size-image').length){
-										var imgsrc = slide.getElementsByTagName('full-size-image')[0].attributes['src'].nodeValue;
-										slideHtmlText += '<img src="'+imgsrc+'" alt="'+''+'" style="width:100%;">';
+										slideHtmlText += '<div class="item'+(totalslides === 0 ? ' active' : '')+'" data-id="'+totalslides+'" data-background="'+slideType+'">';
+											var imgsrc = slide.getElementsByTagName('full-size-image')[0].attributes['src'].nodeValue;
+											slideHtmlText += '<img src="'+imgsrc+'" alt="'+''+'" style="width:100%;">';
+										slideHtmlText += '</div>';
+										$(".carousel-inner").append( $(slideHtmlText) );
+										addNewIndicator(totalslides);
+										addNewTOCItem(totalslides);
+										totalslides ++;
 									} else {
+										*/
+
+										var slideType = params.attributes["slideType"].nodeValue;
+
+										/*
+										<params slideType="blue-vert-50-50"></params>
+
+							            Attribute by Name: console.log(slide.getElementsByTagName('params')[0].attributes["slideType"]);
+							            Attribute Value: console.log(slide.getElementsByTagName('params')[0].attributes["slideType"].nodeValue);
+
+							            // can use .length with .getElementsByTagName to se if something exists;
+								            if (slide.getElementsByTagName('params').length === 0){
+								            	console.log("no params");
+								            }
+
+								        // can use undefined value with .attributes["attrName"] to see if something exists;
+							            	if (slide.getElementsByTagName('params')[0].attributes["slideType"] === undefined){
+							                	console.log("no attribute name");
+							                }
+
+
+
+
+							            <top>
+											<header>
+												<![CDATA[
+													Part 1: About Earth System Science
+												]]>
+											</header>
+											<p>
+												<![CDATA[
+													Earth system scientists take a holistic view of planet Earth, working to gain understanding of the influence of major and minor processes on Earth’s past, current and future conditions. Much of Earth systems science is focused on understanding what drives Earth’s global, regional and local climate patterns, including human activity. A major goal is to improve predictions of future climate under various scenarios of human actions and other variables.
+												]]>
+											</p>
+											<p>
+												<![CDATA[
+													Thinking about nature being interconnected is not unique to Earth system scientists.
+												]]>
+											</p>
+										</top>
+
+										*/
+
 										// into the type of side from the params;
 										if ( slideType === "blue-vert-50-50"){
-											
+											slideHtmlText += '<div class="item'+(totalslides === 0 ? ' active' : '')+'" data-id="'+totalslides+'" data-background="'+slideType+'">';
+												/*
+													GET 'TOP' NODE;
+													IF NO TOP NODE, LOG;
+												*/
+
+												slideHtmlText += "<div class='item-container half-height absolute-align-top'>";
+													/*
+														LOOK FOR HEADER;
+													*/
+													slideHtmlText += "<div class='h1'>"+'=============='+"</div>";
+
+													/*
+														LOOP ON LOOK FOR P;
+													*/
+		              								slideHtmlText += "<div class='main-content'>"+'=============='+"</div>";
+
+	              								/*
+													CLOSE TOP (item-container);
+	              								*/
+	          									slideHtmlText += '</div>';
+
+
+	          									/*
+													LOOP ON BOTTOM
+													IF NO BOTTOM, LOG;
+	          									*/
+												slideHtmlText += '<div class="item-container half-height absolute-align-bottom">';
+
+													/*
+													HAS QUOTE?
+
+													<div class="d-flex w-100 h-100">
+										                <div class="quote">
+										                    <span class="quote-body">“Learn how to see. Realize that everything is connected to everything else.”</span>
+										                    <span class="quote-attribution">- Leonardo Da Vinci, 1452-1519</span>
+										                </div>
+										                <div class="display-image">
+										                    <img src="img/assets/davinci.png">
+										                </div>
+										            </div>
+													*/
+													slideHtmlText += '<div class="d-flex w-100 h-100">';
+														slideHtmlText += '<div class="quote">';
+															slideHtmlText += '<span class="quote-body">'+'=============='+'</span>';
+															slideHtmlText += '<span class="quote-attribution">'+'=============='+'</span>';
+														slideHtmlText += '</div>';
+														slideHtmlText += '<div class="display-image">';
+															slideHtmlText += '<img src="'+'=============='+'">';
+														slideHtmlText += '</div>';
+													slideHtmlText += '</div>';
+
+
+												/*
+													CLOSE BOTTOM (item-container);
+	              								*/
+	          									slideHtmlText += '</div>';
+
+	          								/*
+											CLOSE SLIDE ITEM;
+	          								*/
+	          								slideHtmlText += '</div>';
+
+	          								/*
+											$(".carousel-inner").append( $(slideHtmlText) );
+											addNewIndicator(totalslides);
+											addNewTOCItem(totalslides);
+											totalslides ++;
+	          								*/
+	          								console.log(slideHtmlText);
+	          								console.log("==============================");
+	          								console.log(" ");
+	          								console.log("==============================");
 							            } else if ( slideType === "blue-circle-right"){
 											
 							            }
-							        }
+							       /* } */
 
-					            slideHtmlText += '</div>';
+					            //slideHtmlText += '</div>';
 
-					            carouselIndicator = "<li data-target='#myCarousel' data-slide-to='"+totalslides+"' class='"+(totalslides === 0 ? 'active' : '')+"'></li>";
-					            carouselTocEl = "<li data-target='#myCarousel' data-slide-to='"+totalslides+"'><img src='img/assets/nav_pointer.svg'>Slide #"+totalslides+"</li>";
+					            /*
+					            THIS SHOULD PROBABLY BE SOMETHING WE PUT TOGETHER IN A SEPERATE FUNCTION.
+					            MAYBE THEY ALL SHOULD BE...?
+					            
+					            */
+					            //carouselIndicator = "<li data-target='#myCarousel' data-slide-to='"+totalslides+"' class='"+(totalslides === 0 ? 'active' : '')+"'></li>";
+					            //carouselTocEl = "<li data-target='#myCarousel' data-slide-to='"+totalslides+"'><img src='img/assets/nav_pointer.svg'>Slide #"+totalslides+"</li>";
 
-					            if (slide.getElementsByTagName('full-size-image').length){
+					            /*if (slide.getElementsByTagName('full-size-image').length){
 					            	$(".carousel-inner").append( $(slideHtmlText) );
 					            	$(".carousel-indicators").append( $(carouselIndicator) );
 					            	$(".carousel-table-of-contents").append( $(carouselTocEl) );
-					            }
-					            console.log(slideHtmlText);
-					            console.log(carouselIndicator);
-					            console.log(carouselTocEl);
+					            }*/
+					            //console.log(slideHtmlText);
+					            //console.log(carouselIndicator);
+					            //console.log(carouselTocEl);
 
-					            totalslides ++;
+					            
 							}
 						} else {
 							console.log("no params");
@@ -244,6 +389,15 @@ function populateCarousel(){
 	}
 
 	setUpCarouselNavigation();
+}
+function addNewIndicator(num){
+	var el = "<li data-target='#myCarousel' data-slide-to='"+num+"' class='"+(num === 0 ? 'active' : '')+"'></li>";
+	$(".carousel-indicators").append( $(el) );
+}
+
+function addNewTOCItem(num){
+	var el = "<li data-target='#myCarousel' data-slide-to='"+num+"'><img src='img/assets/nav_pointer.svg'>Slide #"+num+"</li>";
+	$(".carousel-indicators").append( $(el) );
 }
 /**********************************************************
 BUILD CAROUSEL OPTIONS
