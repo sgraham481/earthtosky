@@ -304,13 +304,17 @@ function populateCarousel(){
 															slideHtmlText += "<div class='main-content'>"+'=NO DATA='+"</div>";
 														} else {
 															// 'top' element present;
-															var top = slide.getElementsByTagName('top')[0];
-															for (var c = 0; c < top.childNodes.length; c++) {
-												            	console.log(slide.childNodes[c].nodeName);
-												            	if (slide.childNodes[c].nodeName === 'header'){
-												            		slideHtmlText += "<div class='h1'>"+slide.childNodes[c].childNodes[0].nodeValue+"</div>";
+															//var top = slide.getElementsByTagName('top')[0];
+															//for (var c = 0; c < top.childNodes.length; c++) {
+																//console.log("top nodeName = "+slide.childNodes[c].nodeName);
+															//}
+															
+															for (var c = 0; c < slide.getElementsByTagName('top')[0].childNodes.length; c++) {
+												            	
+												            	if (slide.getElementsByTagName('top')[0].childNodes[c].nodeName === 'header'){
+												            		slideHtmlText += "<div class='h1'>"+slide.getElementsByTagName('top')[0].childNodes[c].childNodes[0].nodeValue+"</div>";
 												            	} else if (slide.childNodes[c].nodeName === 'p') {
-												            		slideHtmlText += "<div class='main-content'>"+slide.childNodes[c].childNodes[0].nodeValue+"</div>";
+												            		slideHtmlText += "<div class='main-content'>"+slide.getElementsByTagName('top')[0].childNodes[c].childNodes[0].nodeValue+"</div>";
 												            	}
 												            }
 															
