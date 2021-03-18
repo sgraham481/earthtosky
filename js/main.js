@@ -315,7 +315,6 @@ function populateCarousel(){
 											                	   		console.log("header present? = "+slide.childNodes[c].getElementsByTagName('header').length);
 											                	   		console.log("header nodeValue = "+slide.childNodes[c].childNodes[d].nodeValue);
 											                	   		console.log("header nodeValue = "+slide.childNodes[c].childNodes[d].childNodes[0].nodeValue);
-											                	   		console.log("header nodeValue = "+slide.childNodes[c].childNodes[d].childNodes[0].childNodes[0].nodeValue);
 											                	   		slideHtmlText += "<div class='h1'>"+slide.childNodes[c].childNodes[d].childNodes[0].nodeValue+"</div>";
 											                	   }
 											                       //console.log("top nodeValue = "+slide.childNodes[c].childNodes[d].childNodes[0].nodeValue);
