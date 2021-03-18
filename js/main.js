@@ -296,7 +296,7 @@ function populateCarousel(){
 															IF NO TOP NODE, LOG;
 														*/
 														slideHtmlText += "<div class='item-container half-height absolute-align-top'>";
-														if (slide.getElementsByTagName('top').length === 0){
+														if (!hasEls(slide, 'top')){
 															// 'top' element is missing;
 															slideHtmlText += "<div class='h1'>"+'=NO DATA='+"</div>";
 															slideHtmlText += "<div class='main-content'>"+'=NO DATA='+"</div>";
@@ -452,6 +452,7 @@ function populateCarousel(){
 	setUpCarouselNavigation();
 }
 function hasEls(el, name){
+	console.log("has "+name+"?"+el.getElementsByTagName(name).length);
 	return el.getElementsByTagName(name).length > 0 ? true : false;
 }
 function getEl(el, name, num){
