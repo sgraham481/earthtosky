@@ -311,13 +311,17 @@ function populateCarousel(){
 											                    //console.log(top);
 											                	for (var d = 0; d < slide.childNodes[c].childNodes.length; d++) {
 											                	   console.log("top nodeName = "+slide.childNodes[c].childNodes[d].nodeName);
-											                       console.log("top nodeValue = "+slide.childNodes[c].childNodes[d].childNodes[0].nodeValue);
+											                	   if (slide.childNodes[c].childNodes[d].nodeName === 'header'){
+											                	   		slideHtmlText += "<div class='h1'>"+slide.childNodes[c].childNodes[d].childNodes[0].nodeValue+"</div>";
+											                	   }
+											                       //console.log("top nodeValue = "+slide.childNodes[c].childNodes[d].childNodes[0].nodeValue);
 
-											                      if (slide.childNodes[c].childNodes[d].nodeName === 'header'){
+											                      /*if (slide.childNodes[c].childNodes[d].nodeName === 'header'){
 													            		slideHtmlText += "<div class='h1'>"+slide.childNodes[c].childNodes[d].childNodes[0].nodeValue+"</div>";
 													            	} else if (slide.childNodes[c].nodeName === 'p') {
 													            		slideHtmlText += "<div class='main-content'>"+slide.childNodes[c].childNodes[d].childNodes[0].nodeValue+"</div>";
-													            	}
+													            	}*/
+
 
 											                    }
 											                }
