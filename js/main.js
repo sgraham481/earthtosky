@@ -283,7 +283,7 @@ function populateCarousel(){
 										if ( slideType === "blue-vert-50-50"){
 
 											console.log("hasEls(slide, 'bottom') = "+hasEls(slide, 'bottom'));
-											if (!hasEls(slide, 'bottom')){
+											if (hasEls(slide, 'bottom') != true){
 
 								            	console.log("no bottom");
 
@@ -298,7 +298,7 @@ function populateCarousel(){
 														*/
 														slideHtmlText += "<div class='item-container half-height absolute-align-top'>";
 														console.log("hasEls(slide, 'top') = "+hasEls(slide, 'top'));
-														if (!hasEls(slide, 'top')){
+														if ( hasEls(slide, 'top') ){
 															// 'top' element is missing;
 															slideHtmlText += "<div class='h1'>"+'=NO DATA='+"</div>";
 															slideHtmlText += "<div class='main-content'>"+'=NO DATA='+"</div>";
