@@ -163,7 +163,7 @@ function populateCarousel(){
     //console.log();
     //console.log($xml.find("part").length);
     //console.log($xml.find("part").length);
-    var totalslides = 3;
+    var totalslides = 4;
     for (i = 0; i < x.length; i++) {
 		console.log(x[i].nodeName); //+ ": " + x[i].childNodes[0].nodeValue + "<br>";
 		//console.log(" children: "+x[i].childNodes.length);
@@ -366,7 +366,7 @@ function populateCarousel(){
 					            
 					            */
 					            //carouselIndicator = "<li data-target='#myCarousel' data-slide-to='"+totalslides+"' class='"+(totalslides === 0 ? 'active' : '')+"'></li>";
-					            //carouselTocEl = "<li data-target='#myCarousel' data-slide-to='"+totalslides+"'><img src='img/assets/nav_pointer.svg'>Slide #"+totalslides+"</li>";
+					            //carouselTocEl =     "<li data-target='#myCarousel' data-slide-to='"+totalslides+"'><img src='img/assets/nav_pointer.svg'>Slide #"+totalslides+"</li>";
 
 					            /*if (slide.getElementsByTagName('full-size-image').length){
 					            	$(".carousel-inner").append( $(slideHtmlText) );
@@ -397,7 +397,7 @@ function addNewIndicator(num){
 
 function addNewTOCItem(num){
 	var el = "<li data-target='#myCarousel' data-slide-to='"+num+"'><img src='img/assets/nav_pointer.svg'>Slide #"+num+"</li>";
-	$(".carousel-indicators").append( $(el) );
+	$(".carousel-table-of-contents").append( $(el) );
 }
 /**********************************************************
 BUILD CAROUSEL OPTIONS
