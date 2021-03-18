@@ -296,13 +296,13 @@ function populateCarousel(){
 															IF NO TOP NODE, LOG;
 														*/
 														slideHtmlText += "<div class='item-container half-height absolute-align-top'>";
-														if (!hasEls(slide, 'top')){
+														if (slide.getElementsByTagName('top').length === 0){
 															// 'top' element is missing;
 															slideHtmlText += "<div class='h1'>"+'=NO DATA='+"</div>";
 															slideHtmlText += "<div class='main-content'>"+'=NO DATA='+"</div>";
 														} else {
 															// 'top' element present;
-															var top = getEl(slide, 'top', 0);
+															var top = slide.getElementsByTagName('top')[0];
 															for (var c = 0; c < top.childNodes.length; c++) {
 												            	console.log(slide.childNodes[c].nodeName);
 												            	if (slide.childNodes[c].nodeName === 'header'){
@@ -404,7 +404,7 @@ function populateCarousel(){
 													totalslides ++;
 			          								*/
 			          								console.log(slideHtmlText);
-			          								
+
 			          								$(".carousel-inner").append( $(slideHtmlText) );
 													addNewIndicator(totalslides);
 													addNewTOCItem(totalslides);
