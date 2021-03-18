@@ -423,7 +423,7 @@ function populateCarousel(){
 															*/
 
 															console.log("===========bottom quote object================");
-															for (var q=0; q<slide.getElementsByTagName('bottom')[b].length; q++ ){
+															for (var q=0; q<slide.getElementsByTagName('bottom')[b].childNodes.length; q++ ){
 																console.log(slide.getElementsByTagName('bottom')[b].childNodes[q].nodeName);
 															}
 
