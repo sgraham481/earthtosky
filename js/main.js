@@ -298,6 +298,34 @@ function populateCarousel(){
 														*/
 														slideHtmlText += "<div class='item-container half-height absolute-align-top'>";
 														console.log("hasEls(slide, 'top') = "+hasEls(slide, 'top'));
+
+
+														for (var c = 0; c < slide.childNodes.length; c++) {
+											            	console.log(slide.childNodes[c].nodeName);
+											                if (slide.childNodes[c].nodeName === "top"){
+											                	console.log("in top");
+											                    console.log(slide.childNodes[c]);
+											                    console.log(slide.childNodes[c].childNodes.length);
+											                    console.log("==============");
+											                	//var top = xmlDoc = parser.parseFromString(slide.getElementsByTagName('top')[0],"text/xml");
+											                    //console.log(top);
+											                	for (var d = 0; d < slide.childNodes[c].childNodes.length; d++) {
+											                	   console.log("top nodeName = "+slide.childNodes[c].childNodes[d].nodeName);
+											                       console.log("top nodeValue = "+slide.childNodes[c].childNodes[d].childNodes[0].nodeValue);
+
+											                      if (slide.childNodes[c].childNodes[d].nodeName === 'header'){
+													            		slideHtmlText += "<div class='h1'>"+slide.childNodes[c].childNodes[d].childNodes[0].nodeValue+"</div>";
+													            	} else if (slide.childNodes[c].nodeName === 'p') {
+													            		slideHtmlText += "<div class='main-content'>"+slide.childNodes[c].childNodes[d].childNodes[0].nodeValue+"</div>";
+													            	}
+
+											                    }
+											                }
+											            }
+
+
+
+											            /*
 														if ( hasEls(slide, 'top') != true ){
 															// 'top' element is missing;
 															slideHtmlText += "<div class='h1'>"+'=NO DATA='+"</div>";
@@ -308,9 +336,11 @@ function populateCarousel(){
 															//for (var c = 0; c < top.childNodes.length; c++) {
 																//console.log("top nodeName = "+slide.childNodes[c].nodeName);
 															//}
-															
+															console.log("in top...");
 															for (var c = 0; c < slide.getElementsByTagName('top')[0].childNodes.length; c++) {
-												            	
+
+												            	console.log("top nodeName = "+slide.getElementsByTagName('top')[0].childNodes[c].nodeName);
+
 												            	if (slide.getElementsByTagName('top')[0].childNodes[c].nodeName === 'header'){
 												            		slideHtmlText += "<div class='h1'>"+slide.getElementsByTagName('top')[0].childNodes[c].childNodes[0].nodeValue+"</div>";
 												            	} else if (slide.childNodes[c].nodeName === 'p') {
@@ -329,7 +359,7 @@ function populateCarousel(){
 															//slideHtmlText += "<div class='main-content'>"+'=NO DATA='+"</div>";
 
 
-														}
+														}*/
 														slideHtmlText += '</div>';
 
 
