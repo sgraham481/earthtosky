@@ -163,7 +163,7 @@ function populateCarousel(){
     //console.log();
     //console.log($xml.find("part").length);
     //console.log($xml.find("part").length);
-    var totalslides = 4;
+    var totalslides = 0;
     for (i = 0; i < x.length; i++) {
 		console.log(x[i].nodeName); //+ ": " + x[i].childNodes[0].nodeValue + "<br>";
 		//console.log(" children: "+x[i].childNodes.length);
@@ -290,7 +290,7 @@ function populateCarousel(){
 
 								            	for (var b=0; b<getTotalEls(slide, 'bottom'); b++){
 
-													slideHtmlText += '<div class="item'+(totalslides === 0 ? ' active' : '')+'" data-id="'+totalslides+'" data-background="'+slideType+'">';
+													slideHtmlText = '<div class="item'+(totalslides === 0 ? ' active' : '')+'" data-id="'+totalslides+'" data-background="'+slideType+'">';
 														/*
 															GET 'TOP' NODE;
 															IF NO TOP NODE, LOG;
@@ -404,6 +404,7 @@ function populateCarousel(){
 													totalslides ++;
 			          								*/
 			          								console.log(slideHtmlText);
+			          								totalslides++;
 			          								console.log("==============================");
 			          								console.log(" ");
 			          								console.log("==============================");
