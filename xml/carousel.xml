@@ -48,7 +48,7 @@
 				<p><![CDATA[Earth system scientists employ systems thinking to gain understanding of how Earth’s overall system works.]]></p>
 				<p><![CDATA[A system can be defined as a group of interacting, interrelated, or interdependent components (or subsystems) that work together to form a complex whole.]]></p>
 			</element>
-			<element width="w-50">
+			<element width="w-50" padding="pl-5">
 				<image><![CDATA[img/assets/gears3.svg]]></image>
 			</element>
 		</slide>

@@ -262,7 +262,7 @@ function populateCarousel(){
 
 								            	for (var b=0; b<getTotalEls(slide, 'bottom'); b++){
 
-													slideHtmlText = '<div class="item blue-bkgd'+(totalslides === 0 ? ' active' : '')+'" data-id="'+totalslides+'" data-background="'+slideType+'">';
+													slideHtmlText = '<div class="item blue-bkgd blue-vert-50-50'+(totalslides === 0 ? ' active' : '')+'" data-id="'+totalslides+'" data-background="'+slideType+'">';
 														/*
 															GET 'TOP' NODE;
 															IF NO TOP NODE, LOG;
@@ -371,13 +371,15 @@ function populateCarousel(){
 		          							}
 							            } else if ( slideType === "blue-circle-right"){
 											
-							            	slideHtmlText = '<div class="item blue-bkgd'+(totalslides === 0 ? ' active' : '')+'" data-id="'+totalslides+'" data-background="'+slideType+'">';
+							            	slideHtmlText = '<div class="item blue-bkgd blue-circle-right'+(totalslides === 0 ? ' active' : '')+'" data-id="'+totalslides+'" data-background="'+slideType+'">';
 							            		slideHtmlText += '<div class="item-container d-flex">';
 
 							            			for (var c = 0; c < slide.childNodes.length; c++) {
 														if (slide.childNodes[c].nodeName === "element"){
 															var width = slide.childNodes[c].attributes['width'] === undefined ? 'w-50' : slide.childNodes[c].attributes['width'].nodeValue;
-															slideHtmlText += '<div class="'+width+'">';
+															var height = slide.childNodes[c].attributes['height'] === undefined ? '' : ' '+slide.childNodes[c].attributes['width'].nodeValue;
+															var padding = slide.childNodes[c].attributes['padding'] === undefined ? '' : ' '+slide.childNodes[c].attributes['padding'].nodeValue;
+															slideHtmlText += '<div class="'+width+height+padding+'">';
 															for (var d = 0; d < slide.childNodes[c].childNodes.length; d++) {
 																if (slide.childNodes[c].childNodes[d].nodeName === 'section'){
 																	slideHtmlText += '<h1 class="h1 section-header">'+slide.childNodes[c].childNodes[d].childNodes[0].nodeValue+'</h1>';
@@ -387,7 +389,6 @@ function populateCarousel(){
 																	slideHtmlText += '<img src="'+slide.childNodes[c].childNodes[d].childNodes[0].nodeValue+'">';
 																}
 															}
-
 															slideHtmlText += '</div>';
 														}
 													}
