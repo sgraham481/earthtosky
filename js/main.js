@@ -312,11 +312,11 @@ function populateCarousel(){
 															var elementType = slide.getElementsByTagName('bottom')[b].attributes['elementType'] ? slide.getElementsByTagName('bottom')[b].attributes['elementType'].nodeValue : "";
 															if (slide.getElementsByTagName('bottom')[b].attributes['elementType'] === undefined){
 																if (slide.childNodes[c].childNodes[d].nodeName === 'section'){
-										                	   		slideHtmlText += "<h1 class='h1 section-header'>"+slide.childNodes[c].childNodes[d].childNodes[0].nodeValue+"</h1>";
+										                	   		slideHtmlText += '<h1 class="h1 section-header">'+slide.childNodes[c].childNodes[d].childNodes[0].nodeValue+'</h1>';
 										                	    } else if (slide.childNodes[c].childNodes[d].nodeName === 'p'){
-										                	    	slideHtmlText += "<p class='main-content'>"+slide.childNodes[c].childNodes[d].childNodes[0].nodeValue+"</p>";
+										                	    	slideHtmlText += '<p class="main-content">'+slide.childNodes[c].childNodes[d].childNodes[0].nodeValue+'</p>';
 										                	    } else if (slide.childNodes[c].childNodes[d].nodeName === 'video'){
-										                	    	slideHtmlText += "<p class='main-content' data-src='"+slide.childNodes[c].childNodes[d].childNodes[0].nodeValue+"'>"+ADD VIDEO ELEMENT+"</p>";
+										                	    	slideHtmlText += '<p class="main-content" data-src="'+slide.childNodes[c].childNodes[d].childNodes[0].nodeValue+'">'+'ADD VIDEO ELEMENT'+'</p>';
 										                	    }
 															} else {
 																var elementType = slide.getElementsByTagName('bottom')[b].attributes['elementType'].nodeValue;
