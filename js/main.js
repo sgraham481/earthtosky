@@ -309,8 +309,7 @@ function populateCarousel(){
 															IF NO BOTTOM, LOG;
 			          									*/
 														slideHtmlText += '<div class="item-container half-height absolute-align-bottom">';
-															var elementType = slide.getElementsByTagName('bottom')[b].attributes['elementType'] ? slide.getElementsByTagName('bottom')[b].attributes['elementType'].nodeValue : "";
-															if (slide.getElementsByTagName('bottom')[b].attributes['elementType'] === undefined){
+															if (slide.getElementsByTagName('bottom')[b].attributes['elemType'] === undefined){
 																for (var q=0; q<slide.getElementsByTagName('bottom')[b].childNodes.length; q++ ){
 																	if (slide.getElementsByTagName('bottom')[b].childNodes[q].nodeName === 'section'){
 											                	   		slideHtmlText += '<h1 class="h1 section-header">'+slide.getElementsByTagName('bottom')[b].childNodes[q].childNodes[0].nodeValue+'</h1>';
@@ -318,10 +317,14 @@ function populateCarousel(){
 											                	    	slideHtmlText += '<p class="main-content">'+slide.getElementsByTagName('bottom')[b].childNodes[q].childNodes[0].nodeValue+'</p>';
 											                	    } else if (slide.getElementsByTagName('bottom')[b].childNodes[q].nodeName === 'video'){
 											                	    	slideHtmlText += '<p class="main-content" data-src="'+slide.getElementsByTagName('bottom')[b].childNodes[q].childNodes[0].nodeValue+'">'+'ADD VIDEO ELEMENT'+'</p>';
-											                	    }
+											                	    } else if (slide.getElementsByTagName('bottom')[b].childNodes[q].nodeName === 'image'){
+											                	    	slideHtmlText += '<div class="display-image">';
+																			slideHtmlText += '<img src="'+slide.getElementsByTagName('bottom')[b].childNodes[q].childNodes[0].nodeValue+'">';
+																		slideHtmlText += '</div>';
+																	}
 											                	}
 															} else {
-																var elementType = slide.getElementsByTagName('bottom')[b].attributes['elementType'].nodeValue;
+																var elementType = slide.getElementsByTagName('bottom')[b].attributes['elemType'].nodeValue;
 																if (elementType === "quote"){
 																	slideHtmlText += '<div class="d-flex w-100 h-100">';
 																		slideHtmlText += '<div class="quote">';
