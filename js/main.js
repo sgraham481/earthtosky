@@ -372,11 +372,11 @@ function populateCarousel(){
 							            } else if ( slideType === "blue-circle-right"){
 											
 							            	slideHtmlText = '<div class="item blue-bkgd'+(totalslides === 0 ? ' active' : '')+'" data-id="'+totalslides+'" data-background="'+slideType+'">';
-							            		slideHtmlText = '<div class="item-container d-flex">';
+							            		slideHtmlText += '<div class="item-container d-flex">';
 
 							            			for (var c = 0; c < slide.childNodes.length; c++) {
 														//if (slide.childNodes[c].nodeName === "left"){
-															slideHtmlText = '<div class="w-50">';
+															slideHtmlText += '<div class="w-50">';
 
 															for (var d = 0; d < slide.childNodes[c].childNodes.length; d++) {
 																if (slide.childNodes[c].childNodes[d].nodeName === 'section'){
