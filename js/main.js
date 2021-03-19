@@ -282,7 +282,7 @@ function populateCarousel(){
 											                    //console.log(top);
 											                	for (var d = 0; d < slide.childNodes[c].childNodes.length; d++) {
 											                	    //console.log("top nodeName = "+slide.childNodes[c].childNodes[d].nodeName);
-											                	    if (slide.childNodes[c].childNodes[d].nodeName === 'header'){
+											                	    if (slide.childNodes[c].childNodes[d].nodeName === 'section'){
 											                	   		//console.log("header present? = "+slide.childNodes[c].getElementsByTagName('header').length);
 											                	   		//console.log("header nodeValue = "+slide.childNodes[c].childNodes[d].nodeValue);
 											                	   		//console.log("header nodeValue = "+slide.childNodes[c].childNodes[d].childNodes[0].nodeValue);
@@ -309,25 +309,39 @@ function populateCarousel(){
 															IF NO BOTTOM, LOG;
 			          									*/
 														slideHtmlText += '<div class="item-container half-height absolute-align-bottom">';
-															slideHtmlText += '<div class="d-flex w-100 h-100">';
-																slideHtmlText += '<div class="quote">';
-																console.log("===========bottom quote object================");
-																for (var q=0; q<slide.getElementsByTagName('bottom')[b].childNodes.length; q++ ){
-																	console.log(slide.getElementsByTagName('bottom')[b].childNodes[q].nodeName);
-																	if (slide.getElementsByTagName('bottom')[b].childNodes[q].nodeName === "quote"){
-																		slideHtmlText += '<span class="quote-body">'+slide.getElementsByTagName('bottom')[b].childNodes[q].childNodes[0].nodeValue+'</span>';
-																	} else if (slide.getElementsByTagName('bottom')[b].childNodes[q].nodeName === "byline"){
-																			slideHtmlText += '<span class="quote-attribution">'+slide.getElementsByTagName('bottom')[b].childNodes[q].childNodes[0].nodeValue+'</span>';
-																		slideHtmlText += '</div>';
-																	} else if (slide.getElementsByTagName('bottom')[b].childNodes[q].nodeName === "image"){
-																		slideHtmlText += '<div class="display-image">';
-																			slideHtmlText += '<img src="'+slide.getElementsByTagName('bottom')[b].childNodes[q].childNodes[0].nodeValue+'">';
-																		slideHtmlText += '</div>';
-																	}
-																}
+															var elementType = slide.getElementsByTagName('bottom')[b].attributes['elementType'] ? slide.getElementsByTagName('bottom')[b].attributes['elementType'].nodeValue : "";
+															if (slide.getElementsByTagName('bottom')[b].attributes['elementType'] === undefined){
+																if (slide.childNodes[c].childNodes[d].nodeName === 'section'){
+										                	   		slideHtmlText += "<h1 class='h1 section-header'>"+slide.childNodes[c].childNodes[d].childNodes[0].nodeValue+"</h1>";
+										                	    } else if (slide.childNodes[c].childNodes[d].nodeName === 'p'){
+										                	    	slideHtmlText += "<p class='main-content'>"+slide.childNodes[c].childNodes[d].childNodes[0].nodeValue+"</p>";
+										                	    } else if (slide.childNodes[c].childNodes[d].nodeName === 'video'){
+										                	    	slideHtmlText += "<p class='main-content' data-src='"+slide.childNodes[c].childNodes[d].childNodes[0].nodeValue+"'>"+ADD VIDEO ELEMENT+"</p>";
+										                	    }
+															} else {
+																var elementType = slide.getElementsByTagName('bottom')[b].attributes['elementType'].nodeValue;
+																if (elementType === "quote"){
+																	slideHtmlText += '<div class="d-flex w-100 h-100">';
+																		slideHtmlText += '<div class="quote">';
+																		console.log("===========bottom quote object================");
+																		for (var q=0; q<slide.getElementsByTagName('bottom')[b].childNodes.length; q++ ){
+																			console.log(slide.getElementsByTagName('bottom')[b].childNodes[q].nodeName);
+																			if (slide.getElementsByTagName('bottom')[b].childNodes[q].nodeName === "quote"){
+																				slideHtmlText += '<span class="quote-body">'+slide.getElementsByTagName('bottom')[b].childNodes[q].childNodes[0].nodeValue+'</span>';
+																			} else if (slide.getElementsByTagName('bottom')[b].childNodes[q].nodeName === "byline"){
+																					slideHtmlText += '<span class="quote-attribution">'+slide.getElementsByTagName('bottom')[b].childNodes[q].childNodes[0].nodeValue+'</span>';
+																				slideHtmlText += '</div>';
+																			} else if (slide.getElementsByTagName('bottom')[b].childNodes[q].nodeName === "image"){
+																				slideHtmlText += '<div class="display-image">';
+																					slideHtmlText += '<img src="'+slide.getElementsByTagName('bottom')[b].childNodes[q].childNodes[0].nodeValue+'">';
+																				slideHtmlText += '</div>';
+																			}
+																		}
 
-																
-															slideHtmlText += '</div>';
+																	slideHtmlText += '</div>';
+																}
+															}
+
 
 
 														/*
