@@ -23,7 +23,7 @@
 
 html {
   color: #222;
-  font-size: 16px;
+  font-size: 30px;
   line-height: 1.36182;
 }
 
@@ -724,6 +724,22 @@ Earth To Sky Bootstrap Carousel Approach CSS
 @media (min-width: 1200px) {
   html {
     font-size: 16px;
+  }
+}
+@media (min-width: 1650px) {
+  html {
+    font-size: 24px;
+  }
+  .container {
+      width: 1600px;
+  }
+}
+@media (min-width: 1950px) {
+  html {
+    font-size: 30px;
+  }
+  .container {
+      width: 1920px;
   }
 }
 
