@@ -407,6 +407,11 @@ function populateCarousel(){
 											CLOSE SLIDE ITEM;
 	          								*/
 	          								slideHtmlText += '</div>';
+
+	          								$(".carousel-inner").append( $(slideHtmlText) );
+											addNewIndicator(totalslides);
+											addNewTOCItem(totalslides);
+	          								totalslides++;
 							            }
 							       /* } */
 
