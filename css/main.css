@@ -249,45 +249,36 @@ textarea {
 
 .section-header {
   font-weight: 700;
-  /*font-size: 50pt;
-  font-size: 66px;*/
-  font-size: 4.125rem;
+  /*font-size: 50pt;*/
+  font-size: 1.667rem;
 
 }
 .main-header {
   /* short titles */
   font-weight: 700;
-  /*font-size: 44pt;
-  font-size: 45px;*/
-  font-size: 2.813rem;
+  /*font-size: 44pt*/
+  font-size: 1.467rem;
 }
 
 .h2.sub-header {
   /*for groups of pages where most titles are full sentences, but no other title*/
   font-weight: 600;
-  /*font-size: 38px;*/
-  font-size: 2.375rem;
+  /*font-size: 40pt;*/
+  font-size: 1.333rem;
 }
 .h3.sub-header {
   /*introducing body text, if there’s further titling beyond H1/H2*/
   font-weight: 600;
-  /*font-size: 34px;*/
-  font-size: 2.125rem;
+  /*font-size: 36px;*/
+  font-size: 1.2rem;
 }
 
-p.main-content { /* p */
-  /*font-size: 30px;*/
-  font-size: 1.875rem;
+p.main-content {
+
 }
 
 p.main-content li { /* p */
   color: var(--ess-yellow);
-}
-.container .carousel .item-container p.small {
-    font-size: 1.5rem;
-}
-.container .carousel .item-container p.x-small {
-    font-size: 1.25rem;
 }
 
 /*Quote text*/

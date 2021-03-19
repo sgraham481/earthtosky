@@ -288,8 +288,7 @@ function populateCarousel(){
 											                	   		//console.log("header nodeValue = "+slide.childNodes[c].childNodes[d].childNodes[0].nodeValue);
 											                	   		slideHtmlText += "<h1 class='h1 main-header'>"+slide.childNodes[c].childNodes[d].childNodes[0].nodeValue+"</h1>";
 											                	    } else if (slide.childNodes[c].childNodes[d].nodeName === 'p'){
-											                	    	var textsize = slide.childNodes[c].childNodes[d].attributes["size"] ? (" "+slide.childNodes[c].childNodes[d].attributes["size"]) : "";
-											                	    	slideHtmlText += "<p class='main-content"+textsize+"'>"+slide.childNodes[c].childNodes[d].childNodes[0].nodeValue+"</p>";
+											                	    	slideHtmlText += "<p class='main-content'>"+slide.childNodes[c].childNodes[d].childNodes[0].nodeValue+"</p>";
 											                	    }
 											                       //console.log("top nodeValue = "+slide.childNodes[c].childNodes[d].childNodes[0].nodeValue);
 
