@@ -375,9 +375,9 @@ function populateCarousel(){
 							            		slideHtmlText += '<div class="item-container d-flex">';
 
 							            			for (var c = 0; c < slide.childNodes.length; c++) {
-														//if (slide.childNodes[c].nodeName === "left"){
-															slideHtmlText += '<div class="w-50">';
-
+														if (slide.childNodes[c].nodeName === "element"){
+															var width = slide.childNodes[c].attributes['width'] === undefined ? 'w-50' : slide.childNodes[c].attributes['width'].nodeValue;
+															slideHtmlText += '<div class="'+width+'">';
 															for (var d = 0; d < slide.childNodes[c].childNodes.length; d++) {
 																if (slide.childNodes[c].childNodes[d].nodeName === 'section'){
 																	slideHtmlText += '<h1 class="h1 section-header">'+slide.childNodes[c].childNodes[d].childNodes[0].nodeValue+'</h1>';
@@ -389,7 +389,7 @@ function populateCarousel(){
 															}
 
 															slideHtmlText += '</div>';
-														//}
+														}
 													}
 
 													/*

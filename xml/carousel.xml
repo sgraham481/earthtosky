@@ -43,14 +43,14 @@
 		</slide>
 		<slide>
 			<params slideType="blue-circle-right"></params>
-			<left width="w-50">
+			<element width="w-50">
 				<section><![CDATA[Systems Thinking]]></section>
 				<p><![CDATA[Earth system scientists employ systems thinking to gain understanding of how Earth’s overall system works.]]></p>
 				<p><![CDATA[A system can be defined as a group of interacting, interrelated, or interdependent components (or subsystems) that work together to form a complex whole.]]></p>
-			</left>
-			<right width="w-50">
+			</element>
+			<element width="w-50">
 				<image><![CDATA[img/assets/gears3.svg]]></image>
-			</right>
+			</element>
 		</slide>
 		<slide>
 			<params slideType="blue-circle-right"></params>
