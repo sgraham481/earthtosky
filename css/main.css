@@ -275,13 +275,19 @@ textarea {
   font-size: 2.125rem;
 }
 
-p {
+p.main-content { /* p */
   /*font-size: 30px;*/
   font-size: 1.875rem;
 }
 
-p li {
+p.main-content li { /* p */
   color: var(--ess-yellow);
+}
+.container .carousel .item-container p.small {
+    font-size: 1.5rem;
+}
+.container .carousel .item-container p.x-small {
+    font-size: 1.25rem;
 }
 
 /*Quote text*/

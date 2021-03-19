@@ -286,9 +286,10 @@ function populateCarousel(){
 											                	   		//console.log("header present? = "+slide.childNodes[c].getElementsByTagName('header').length);
 											                	   		//console.log("header nodeValue = "+slide.childNodes[c].childNodes[d].nodeValue);
 											                	   		//console.log("header nodeValue = "+slide.childNodes[c].childNodes[d].childNodes[0].nodeValue);
-											                	   		slideHtmlText += "<div class='h1 section-header'>"+slide.childNodes[c].childNodes[d].childNodes[0].nodeValue+"</div>";
+											                	   		slideHtmlText += "<h1 class='h1 main-header'>"+slide.childNodes[c].childNodes[d].childNodes[0].nodeValue+"</h1>";
 											                	    } else if (slide.childNodes[c].childNodes[d].nodeName === 'p'){
-											                	    	slideHtmlText += "<div class='main-content'>"+slide.childNodes[c].childNodes[d].childNodes[0].nodeValue+"</div>";
+											                	    	var textsize = slide.childNodes[c].childNodes[d].attributes["size"] ? (" "+slide.childNodes[c].childNodes[d].attributes["size"]) : "";
+											                	    	slideHtmlText += "<p class='main-content"+textsize+"'>"+slide.childNodes[c].childNodes[d].childNodes[0].nodeValue+"</p>";
 											                	    }
 											                       //console.log("top nodeValue = "+slide.childNodes[c].childNodes[d].childNodes[0].nodeValue);
 
