@@ -31,6 +31,7 @@ body .container {
     font-family: var(--open-sans);
     font-weight: 400;
     font-style: normal;
+    color: #000000;
 }
 
 
@@ -239,34 +240,44 @@ textarea {
       font-style: italic;
     }
 */
-
+.blue-bkgd {
+    color: #ffffff;
+}
 .italic {
   font-style: italic;
 } 
 
 .section-header {
   font-weight: 700;
-  font-size: 50pt;
+  /*font-size: 50pt;
+  font-size: 66px;*/
+  font-size: 4.125rem;
+
 }
 .main-header {
   /* short titles */
   font-weight: 700;
-  font-size: 44pt;
+  /*font-size: 44pt;
+  font-size: 45px;*/
+  font-size: 2.813rem;
 }
 
 .h2.sub-header {
   /*for groups of pages where most titles are full sentences, but no other title*/
   font-weight: 600;
-  font-size: 40pt*;
+  /*font-size: 38px;*/
+  font-size: 2.375rem;
 }
 .h3.sub-header {
   /*introducing body text, if there’s further titling beyond H1/H2*/
   font-weight: 600;
-  font-size: 36pt;
+  /*font-size: 34px;*/
+  font-size: 2.125rem;
 }
 
 p {
-  font-size: 29pt;
+  /*font-size: 30px;*/
+  font-size: 1.875rem;
 }
 
 p li {
@@ -278,7 +289,8 @@ p li {
 .quote-body,
 .quote-attribution {
   font-weight: 600;
-  font-size: 29pt;
+  /*font-size: 30px;*/
+  font-size: 1.875rem;
   color: var(--ess-yellow);
 }
 
@@ -289,7 +301,8 @@ p li {
 
 .note,
 .hint {
-  font-size: 25pt;
+  /*font-size: 25pt;*/
+  font-size: 1.625rem;
   font-style: italic;
 }
 
@@ -316,7 +329,7 @@ Earth To Sky Bootstrap Carousel Approach CSS
 }
 .carousel-inner p {
   color: #fff;
-  font-size: 18px;
+  /*font-size: 18px;*/
   margin: 36px 0 24px;
   line-height: 1.35;
 }
@@ -385,7 +398,6 @@ Earth To Sky Bootstrap Carousel Approach CSS
 }
 
 .container .carousel .item-container .h1 {
-    color: #fff;
     text-align: center;
     margin-top: 2rem;
     margin-bottom: 1.2rem;
@@ -694,13 +706,19 @@ Earth To Sky Bootstrap Carousel Approach CSS
   }
 }
 @media (min-width: 768px) {
-
+  html {
+    font-size: 12px;
+  }
 }
 @media (min-width: 992px) {
-  
+  html {
+    font-size: 14px;
+  }
 }
 @media (min-width: 1200px) {
-  
+  html {
+    font-size: 16px;
+  }
 }
 
 /*

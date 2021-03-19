@@ -262,7 +262,7 @@ function populateCarousel(){
 
 								            	for (var b=0; b<getTotalEls(slide, 'bottom'); b++){
 
-													slideHtmlText = '<div class="item'+(totalslides === 0 ? ' active' : '')+'" data-id="'+totalslides+'" data-background="'+slideType+'">';
+													slideHtmlText = '<div class="item blue-bkgd'+(totalslides === 0 ? ' active' : '')+'" data-id="'+totalslides+'" data-background="'+slideType+'">';
 														/*
 															GET 'TOP' NODE;
 															IF NO TOP NODE, LOG;
@@ -286,7 +286,7 @@ function populateCarousel(){
 											                	   		//console.log("header present? = "+slide.childNodes[c].getElementsByTagName('header').length);
 											                	   		//console.log("header nodeValue = "+slide.childNodes[c].childNodes[d].nodeValue);
 											                	   		//console.log("header nodeValue = "+slide.childNodes[c].childNodes[d].childNodes[0].nodeValue);
-											                	   		slideHtmlText += "<div class='h1'>"+slide.childNodes[c].childNodes[d].childNodes[0].nodeValue+"</div>";
+											                	   		slideHtmlText += "<div class='h1 section-header'>"+slide.childNodes[c].childNodes[d].childNodes[0].nodeValue+"</div>";
 											                	    } else if (slide.childNodes[c].childNodes[d].nodeName === 'p'){
 											                	    	slideHtmlText += "<div class='main-content'>"+slide.childNodes[c].childNodes[d].childNodes[0].nodeValue+"</div>";
 											                	    }
