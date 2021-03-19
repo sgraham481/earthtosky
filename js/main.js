@@ -270,7 +270,6 @@ function populateCarousel(){
 														slideHtmlText += "<div class='item-container half-height absolute-align-top'>";
 														//console.log("hasEls(slide, 'top') = "+hasEls(slide, 'top'));
 
-
 														for (var c = 0; c < slide.childNodes.length; c++) {
 											            	//console.log(slide.childNodes[c].nodeName);
 											                if (slide.childNodes[c].nodeName === "top"){
@@ -372,6 +371,42 @@ function populateCarousel(){
 		          							}
 							            } else if ( slideType === "blue-circle-right"){
 											
+							            	slideHtmlText = '<div class="item blue-bkgd'+(totalslides === 0 ? ' active' : '')+'" data-id="'+totalslides+'" data-background="'+slideType+'">';
+							            		slideHtmlText = '<div class="item-container d-flex">';
+
+							            			for (var c = 0; c < slide.childNodes.length; c++) {
+														//if (slide.childNodes[c].nodeName === "left"){
+															slideHtmlText = '<div class="w-50">';
+
+															for (var d = 0; d < slide.childNodes[c].childNodes.length; d++) {
+																if (slide.childNodes[c].childNodes[d].nodeName === 'section'){
+																	slideHtmlText += '<h1 class="h1 section-header">'+slide.childNodes[c].childNodes[d].childNodes[0].nodeValue+'</h1>';
+																} else if (slide.childNodes[c].childNodes[d].nodeName === 'p'){
+																	slideHtmlText += '<p class="main-content">'+slide.childNodes[c].childNodes[d].childNodes[0].nodeValue+'</p>';
+																} else if (slide.childNodes[c].childNodes[d].nodeName === 'image'){
+																	slideHtmlText += '<img src="'+slide.childNodes[c].childNodes[d].childNodes[0].nodeValue+'">';
+																}
+															}
+
+															slideHtmlText += '</div>';
+														//}
+													}
+
+													/*
+													    <div class="w-50">
+													        <h1 class="h1 section-header">Part 1: About Earth System Science</h1>
+															<p class="main-content">Earth system scientists take a holistic view of planet Earth, working to gain understanding of the influence of major and minor processes on Earth’s past, current and future conditions.</p>
+													    </div>
+													    <div class="w-50">
+													        <img src="img/assets/gears3.svg">
+													    </div>
+
+													*/
+												slideHtmlText += '</div>';
+											/*
+											CLOSE SLIDE ITEM;
+	          								*/
+	          								slideHtmlText += '</div>';
 							            }
 							       /* } */
 
