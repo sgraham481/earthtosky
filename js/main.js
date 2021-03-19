@@ -286,7 +286,7 @@ function populateCarousel(){
 											                	   		//console.log("header present? = "+slide.childNodes[c].getElementsByTagName('header').length);
 											                	   		//console.log("header nodeValue = "+slide.childNodes[c].childNodes[d].nodeValue);
 											                	   		//console.log("header nodeValue = "+slide.childNodes[c].childNodes[d].childNodes[0].nodeValue);
-											                	   		slideHtmlText += "<h1 class='h1 main-header'>"+slide.childNodes[c].childNodes[d].childNodes[0].nodeValue+"</h1>";
+											                	   		slideHtmlText += "<h1 class='h1 section-header'>"+slide.childNodes[c].childNodes[d].childNodes[0].nodeValue+"</h1>";
 											                	    } else if (slide.childNodes[c].childNodes[d].nodeName === 'p'){
 											                	    	slideHtmlText += "<p class='main-content'>"+slide.childNodes[c].childNodes[d].childNodes[0].nodeValue+"</p>";
 											                	    }
