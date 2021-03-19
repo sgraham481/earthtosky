@@ -274,7 +274,7 @@ textarea {
 }
 
 p.main-content {
-
+  font-size: 1rem;
 }
 
 p.main-content li { /* p */
@@ -286,8 +286,7 @@ p.main-content li { /* p */
 .quote-body,
 .quote-attribution {
   font-weight: 600;
-  /*font-size: 30px;*/
-  font-size: 1.875rem;
+  font-size: 1rem;
   color: var(--ess-yellow);
 }
 
@@ -298,8 +297,7 @@ p.main-content li { /* p */
 
 .note,
 .hint {
-  /*font-size: 25pt;*/
-  font-size: 1.625rem;
+  font-size: 0.867rem;
   font-style: italic;
 }
 
@@ -325,10 +323,7 @@ Earth To Sky Bootstrap Carousel Approach CSS
   text-align: center;
 }
 .carousel-inner p {
-  color: #fff;
-  /*font-size: 18px;*/
-  margin: 36px 0 24px;
-  line-height: 1.35;
+  margin: 1rem 0 .75rem;
 }
 .container .carousel {
     width: 100%;
@@ -399,11 +394,11 @@ Earth To Sky Bootstrap Carousel Approach CSS
     margin-top: 2rem;
     margin-bottom: 1.2rem;
 }
-.container .carousel .item-container .main-content {
+/*.container .carousel .item-container .main-content {
     font-size: 18px;
     line-height: 1.4;
     color: #fff;
-}
+}*/
 .d-flex {
     display: flex;
     justify-content: space-between;
