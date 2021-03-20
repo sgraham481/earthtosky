@@ -480,7 +480,12 @@ Earth To Sky Bootstrap Carousel Approach CSS
     left: 0;
     width: 100%;
     height: 100%;
+}
+.slide-backgrounds {
     display:none;
+}
+.slide-backgrounds.on {
+    display:block;
 }
 .absolute-full-cover-container.blue-vert-50-50,
 .absolute-full-cover-container.blue-circle-right {

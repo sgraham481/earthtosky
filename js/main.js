@@ -135,11 +135,19 @@ function setUpCarouselNavigation() {
 function goCarouselItem(item){
 	//$("#myCarousel").toggleClass("carousel-fade");
 	//console.log("item: "+item);
-	console.log("current active: "+$(".item.active").attr("data-id"));
+	//console.log("current active: "+$(".item.active").attr("data-id"));
 	
 	$("#myCarousel").carousel(item);
-	console.log("new active: "+$(".item.next").length);
-	console.log("new active: "+$(".item.prev").length);
+	//console.log("new active: "+$(".item.next").length);
+	//console.log("new active: "+$(".item.prev").length);
+
+	if ($(".item.next").length){
+		$(".slide-backgrounds.on").removeClass("on");
+		$(".slide-backgrounds."+$(".item.next").attr("data-background")).addClass("on");
+	} else if ($(".item.prev").length){
+		$(".slide-backgrounds.on").removeClass("on");
+		$(".slide-backgrounds."+$(".item.prev").attr("data-background")).addClass("on");
+	}
 	setTimeout(function(){ setTOCActiveSlide(Number($(".carousel-indicators li.active").attr("data-slide-to"))); }, 200);
 };
 function resetInterval(){
