@@ -502,9 +502,9 @@ Earth To Sky Bootstrap Carousel Approach CSS
 }
 .blue-circle-background {
     background-image: url(../img/assets/circular_area.svg);
-    background-position: center;
+    background-position: 100% center;
     background-repeat: no-repeat;
-    background-size: cover;
+    height: 100%;
 }
 .half-height,
 .container .carousel .item-container.half-height {
