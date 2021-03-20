@@ -59,7 +59,7 @@
 				<p><![CDATA[]]></p>
 				<p><![CDATA[A system can be defined as a group of interacting, interrelated, or interdependent <italic>components</italic> (or subsystems) that work together to form a complex whole.]]></p>
 			</element>
-			<element width="w-50">
+			<element width="w-50" height="h-80" classes="h-center-overflow">
 				<image><![CDATA[img/assets/human_subsystems.png]]></image>
 			</element>
 		</slide>
