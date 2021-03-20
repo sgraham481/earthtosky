@@ -138,7 +138,8 @@ function goCarouselItem(item){
 	console.log("current active: "+$(".item.active").attr("data-id"));
 	
 	$("#myCarousel").carousel(item);
-	console.log("new active: "+$(".item.active").attr("data-id"));
+	console.log("new active: "+$(".item.next").length);
+	console.log("new active: "+$(".item.prev").length);
 	setTimeout(function(){ setTOCActiveSlide(Number($(".carousel-indicators li.active").attr("data-slide-to"))); }, 200);
 };
 function resetInterval(){
