@@ -134,10 +134,11 @@ function setUpCarouselNavigation() {
 };
 function goCarouselItem(item){
 	//$("#myCarousel").toggleClass("carousel-fade");
-	console.log("item: "+item);
+	//console.log("item: "+item);
 	console.log("current active: "+$(".item.active").attr("data-id"));
 	
 	$("#myCarousel").carousel(item);
+	console.log("new active: "+$(".item.active").attr("data-id"));
 	setTimeout(function(){ setTOCActiveSlide(Number($(".carousel-indicators li.active").attr("data-slide-to"))); }, 200);
 };
 function resetInterval(){
