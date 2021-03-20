@@ -377,7 +377,7 @@ function populateCarousel(){
 							            			for (var c = 0; c < slide.childNodes.length; c++) {
 														if (slide.childNodes[c].nodeName === "element"){
 															var width = slide.childNodes[c].attributes['width'] === undefined ? 'w-50' : slide.childNodes[c].attributes['width'].nodeValue;
-															var height = slide.childNodes[c].attributes['height'] === undefined ? '' : ' '+slide.childNodes[c].attributes['width'].nodeValue;
+															var height = slide.childNodes[c].attributes['height'] === undefined ? '' : ' '+slide.childNodes[c].attributes['height'].nodeValue;
 															var padding = slide.childNodes[c].attributes['padding'] === undefined ? '' : ' '+slide.childNodes[c].attributes['padding'].nodeValue;
 															slideHtmlText += '<div class="'+width+height+padding+'">';
 															for (var d = 0; d < slide.childNodes[c].childNodes.length; d++) {
