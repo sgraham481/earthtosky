@@ -129,9 +129,23 @@
 				<image><![CDATA[img/media/image4.png]]></image>
 			</element>
 		</slide>
-		<slide>
+		<slide data-slideid="5">
 			<params slideType="blue-circle-right"></params>
-			<full-size-image src="img/media/image7.png"></full-size-image>
+			<element width="w-50" height="h-100" padding="pr-5">
+				<section><![CDATA[Modes of Inquiry]]></section>
+				<p><![CDATA[You may wonder how a scientist could test hypotheses about Earth processes or run an experiment on the entire planet. Scientists employ a variety of modes of inquiry in their analysis of Earth’s systems and processes, including]]></p>
+				<list type="bullet">
+					<item><![CDATA[Conducting laboratory experiments]]></item>
+					<item><![CDATA[Observing change over time]]></item>
+					<item><![CDATA[Comparing ancient artifacts with products of current day processes]]></item>
+					<item><![CDATA[Observing spatial gradients]]></item>
+					<item><![CDATA[Use of physical models]]></item>
+					<item><![CDATA[Computer modeling]]></item>
+				</list>
+			</element>
+			<element width="w-50" height="h-80" classes="v-center-overflow">
+				<image><![CDATA[img/media/image5.png]]></image>
+			</element>
 		</slide>
 		<slide>
 			<params slideType="blue-circle-right"></params>
