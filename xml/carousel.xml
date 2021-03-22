@@ -111,6 +111,24 @@
 				<image><![CDATA[img/media/image3.png]]></image>
 			</element>
 		</slide>
+		<slide data-slideid="4">
+			<params slideType="blue-circle-right"></params>
+			<element width="w-50" height="h-100" padding="pr-5">
+				<section><![CDATA[Science Methods]]></section>
+				<p><![CDATA[Earth system scientists use the scientific method; a simplified version is outlined here.]]></p>
+				<list type="numbered">
+					<item><![CDATA[Make observations]]></item>
+					<item><![CDATA[Ask a question]]></item>
+					<item><![CDATA[Make a prediction that is testable (a hypothesis)]]></item>
+					<item><![CDATA[Test the prediction]]></item>
+					<item><![CDATA[Share the results with peers (usually via a science journal or at a science conference)]]></item>
+					<item><![CDATA[Use the results and peer feedback to refine the question, ask new questions, make new predictions and/or solidify predictions.]]></item>
+				</list>
+			</element>
+			<element width="w-50" height="h-80" classes="v-center-overflow">
+				<image><![CDATA[img/media/image4.png]]></image>
+			</element>
+		</slide>
 		<slide>
 			<params slideType="blue-circle-right"></params>
 			<full-size-image src="img/media/image7.png"></full-size-image>
