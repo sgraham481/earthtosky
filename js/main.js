@@ -210,9 +210,14 @@ function populateCarousel(){
 							slideHtmlText += '</div>';
 							$(".carousel-inner").append( $(slideHtmlText) );
 							addNewIndicator(totalslides);
-							addNewTOCItem(totalslides);
+							//addNewTOCItem(totalslides);
 							totalslides ++;
 						} else if (slide.getElementsByTagName('params').length){
+							if (slide.getElementsByTagName('toc').length){
+								var toctitle = slide.getElementsByTagName('toc')[0].childNodes[0].nodeValue;
+								addNewTOCItem(toctitle, totalslides);
+							}
+							
 							// has params;
 							var params = slide.getElementsByTagName('params')[0];
 
@@ -448,7 +453,7 @@ function populateCarousel(){
 
 	          								$(".carousel-inner").append( $(slideHtmlText) );
 											addNewIndicator(totalslides);
-											addNewTOCItem(totalslides);
+											//addNewTOCItem(totalslides);
 	          								totalslides++;
 							            }
 							       /* } */
@@ -505,8 +510,8 @@ function addNewIndicator(num){
 	$(".carousel-indicators").append( $(el) );
 }
 
-function addNewTOCItem(num){
-	var el = "<li data-target='#myCarousel' data-slide-to='"+num+"'><img src='img/assets/nav_pointer.svg'>Slide #"+num+"</li>";
+function addNewTOCItem(title, num){
+	var el = "<li data-target='#myCarousel' data-slide-to='"+num+"'><img src='img/assets/nav_pointer.svg'>"+title+"</li>";
 	$(".carousel-table-of-contents").append( $(el) );
 }
 /**********************************************************

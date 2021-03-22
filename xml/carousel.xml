@@ -3,6 +3,7 @@
 	<part>
 		<slide data-slideid="1a">
 			<params slideType="blue-vert-50-50"></params>
+			<toc>About Earth System Science</toc>
 			<top>
 				<section><![CDATA[Part 1: About Earth System Science]]></section>
 				<p><![CDATA[Earth system scientists take a holistic view of planet Earth, working to gain understanding of the influence of major and minor processes on Earth’s past, current and future conditions. Much of Earth systems science is focused on understanding what drives Earth’s global, regional and local climate patterns, including human activity. A major goal is to improve predictions of future climate under various scenarios of human actions and other variables.]]></p>
@@ -43,6 +44,7 @@
 		</slide>
 		<slide data-slideid="2a">
 			<params slideType="blue-circle-right"></params>
+			<toc>Systems Thinking</toc>
 			<element width="w-50" height="h-100">
 				<section><![CDATA[Systems Thinking]]></section>
 				<p><![CDATA[Earth system scientists employ systems thinking to gain understanding of how Earth’s overall system works.]]></p>
@@ -84,6 +86,7 @@
 		</slide>
 		<slide data-slideid="3a">
 			<params slideType="blue-circle-right"></params>
+			<toc>Components of the Earth System</toc>
 			<element width="w-50" height="h-100" padding="pr-5">
 				<section><![CDATA[Components of the Earth System]]></section>
 				<p><![CDATA[In Earth systems science, the main components of planet Earth are considered to be]]></p>
@@ -113,6 +116,7 @@
 		</slide>
 		<slide data-slideid="4">
 			<params slideType="blue-circle-right"></params>
+			<toc>Science Methods</toc>
 			<element width="w-50" height="h-100" padding="pr-5">
 				<section><![CDATA[Science Methods]]></section>
 				<p><![CDATA[Earth system scientists use the scientific method; a simplified version is outlined here.]]></p>
@@ -131,6 +135,7 @@
 		</slide>
 		<slide data-slideid="5">
 			<params slideType="blue-circle-right"></params>
+			<toc>Modes of Inquiry</toc>
 			<element width="w-50" height="h-100" padding="pr-5">
 				<section><![CDATA[Modes of Inquiry]]></section>
 				<p><![CDATA[You may wonder how a scientist could test hypotheses about Earth processes or run an experiment on the entire planet. Scientists employ a variety of modes of inquiry in their analysis of Earth’s systems and processes, including]]></p>
@@ -204,6 +209,7 @@
 		</slide>
 		<slide data-slideid="5summary">
 			<params slideType="blue-circle-right"></params>
+			<toc>Summary</toc>
 			<element width="w-50" height="h-100" padding="pr-5">
 				<section><![CDATA[Summary]]></section>
 				<p><![CDATA[The discipline of Earth system science is characterized by a holistic systems-thinking approach to studying our home planet.]]></p>
