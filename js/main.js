@@ -418,7 +418,10 @@ function populateCarousel(){
 																	slideHtmlText += '</'+listtype+'>';
 																} else if (slide.childNodes[c].childNodes[d].nodeName === 'youtube'){
 																	var yturlsplitarray = slide.childNodes[c].childNodes[d].childNodes[0].nodeValue.split('/');
-																	slideHtmlText += '<iframe id="ytplayer" type="text/html" src="https://www.youtube.com/embed/'+yturlsplitarray[yturlsplitarray.length]+'?autoplay=1&amp;origin='+slide.childNodes[c].childNodes[d].childNodes[0].nodeValue+'" frameborder="0"></iframe>';
+																	console.log("video");
+																	console.log("slide.childNodes[c].childNodes[d].childNodes[0].nodeValue");
+																	console.log("yturlsplitarray length = "+yturlsplitarray.length);
+																	slideHtmlText += '<iframe id="ytplayer" type="text/html" width="640" height="360" src="https://www.youtube.com/embed/'+yturlsplitarray[yturlsplitarray.length]+'?autoplay=1&amp;origin='+slide.childNodes[c].childNodes[d].childNodes[0].nodeValue+'" frameborder="0"></iframe>';
 																} else if (slide.childNodes[c].childNodes[d].nodeName === 'hint'){
 																	slideHtmlText += '<button class="btn seenotes"><img src="img/assets/nav_pointer.svg"><span>See Notes</span></button>';
 																}
