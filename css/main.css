@@ -37,7 +37,10 @@ img {
     width: 100%;
     height: auto;
 }
-
+ol, ul {
+    font-size: 1rem;
+    padding-left: 1rem;
+}
 
 
 /*
@@ -362,6 +365,20 @@ textarea {
     align-items: center;
 }
 
+button.seenotes {
+    display: flex;
+    align-items: center;
+    padding-left: 0;
+}
+button.seenotes img {
+    height: 15px;
+    max-width: 15px;
+    margin-right: 10px;
+}
+button.seenotes span {
+    font-size: 1rem;
+    font-style: italic;
+}
 /* ------------------------------------------------ */
 /*    FONT STYLING
   ------------------------------------------------ */
