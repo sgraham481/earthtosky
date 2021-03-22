@@ -583,7 +583,7 @@ Earth To Sky Bootstrap Carousel Approach CSS
     color: #f5eb8e;
     font-style: italic;
     text-align: right;
-    padding: 0 0 0 12%;
+    padding: 0 0 0 6%;
     font-size: 18px;
 }
 .quote span {
@@ -778,21 +778,24 @@ Earth To Sky Bootstrap Carousel Approach CSS
     right: 0;
     transform: translateY(-50%);
     background: #ffffff;
-    border-radius: 14px 0 0 14px;
-    padding: 30px 10px;
-    width: 48px;
+    border-radius: 10px 0 0 10px;
+    padding: 20px 5px;
+    width: 35px;
 }
 .carousel-arrow-left {
     right: auto;
     left: 0;
-    border-radius: 0 14px 14px 0;
+    border-radius: 0 10px 10px 0;
 }
 .carousel-arrow-right img, 
 .carousel-arrow-left img {
-    height: 45px;
+    height: 30px;
 }
 .carousel-arrow-left img {
     transform: rotate(180deg);
+}
+.carousel-control {
+    width: 7%;
 }
 .carousel-control.right, 
 .carousel-control.left {
@@ -812,12 +815,13 @@ Earth To Sky Bootstrap Carousel Approach CSS
     left: 50%;
     transform: translateX(-50%);
     background: rgba(255,255,255,.5);
-    border-radius: 14px 14px 0 0;
-    padding: 10px 30px;
+    border-radius: 10px 10px 0 0;
+    padding: 6px 24px 2px;
+    z-index: 2;
 }
 .carousel-pagination span {
     color: #00102e;
-    font-size: 24px;
+    font-size: 18px;
     text-shadow: 1px 1px rgb(255 255 255 / 10%);
 }
 .carousel-pagination span.concat-spacer {
@@ -884,6 +888,31 @@ Earth To Sky Bootstrap Carousel Approach CSS
   .header {
     padding: 0 10%;
   }
+  .carousel-control {
+    width: 7%;
+  }
+  .carousel-arrow-right {
+    border-radius: 10px 0 0 10px;
+  }
+  .carousel-arrow-left {
+      border-radius: 0 10px 10px 0;
+  }
+  .carousel-arrow-left,
+  .carousel-arrow-right {
+    padding: 20px 5px;
+    width: 35px;
+  }
+  .carousel-arrow-right img, 
+  .carousel-arrow-left img {
+      height: 30px;
+  }
+  .carousel-pagination span {
+    font-size: 18px;
+  }
+  .carousel-pagination {
+    border-radius: 10px 10px 0 0;
+    padding: 6px 24px 2px;
+  }
 }
 @media (min-width: 992px) {
   html {
@@ -893,6 +922,31 @@ Earth To Sky Bootstrap Carousel Approach CSS
   .header {
     padding: 0 9%;
   }
+  .carousel-control {
+    width: 6%;
+  }
+  .carousel-arrow-right {
+    border-radius: 12px 0 0 12px;
+  }
+  .carousel-arrow-left {
+      border-radius: 0 12px 12px 0;
+  }
+  .carousel-arrow-left,
+  .carousel-arrow-right {
+    padding: 25px 7px;
+    width: 40px;
+  }
+  .carousel-arrow-right img, 
+  .carousel-arrow-left img {
+      height: 35px;
+  }
+  .carousel-pagination span {
+    font-size: 20px;
+  }
+  .carousel-pagination {
+    border-radius: 12px 12px 0 0;
+    padding: 8px 24px 4px;
+  }
 }
 @media (min-width: 1200px) {
   html {
@@ -901,6 +955,30 @@ Earth To Sky Bootstrap Carousel Approach CSS
   .container .carousel .item-container,
   .header {
     padding: 0 8%;
+  }
+  .carousel-control {
+    width: 5%;
+  }
+  .carousel-arrow-left,
+  .carousel-arrow-right {
+    padding: 30px 10px;
+    width: 48px;
+  }
+  .carousel-arrow-left {
+    border-radius: 0 14px 14px 0;
+  }
+  .carousel-arrow-right {
+    border-radius: 14px 0 0 14px;
+  }
+  .carousel-arrow-right img, .carousel-arrow-left img {
+    height: 45px;
+  }
+  .carousel-pagination span {
+    font-size: 24px;
+  }
+  .carousel-pagination {
+    border-radius: 14px 14px 0 0;
+    padding: 10px 30px;
   }
 }
 @media (min-width: 1650px) {
@@ -914,6 +992,9 @@ Earth To Sky Bootstrap Carousel Approach CSS
   .header {
     padding: 0 6%;
   }
+  .carousel-control {
+    width: 4%;
+  }
 }
 @media (min-width: 1950px) {
   html {
@@ -921,6 +1002,9 @@ Earth To Sky Bootstrap Carousel Approach CSS
   }
   .container {
       width: 1920px;
+  }
+  .carousel-control {
+    width: 3%;
   }
 }
 
