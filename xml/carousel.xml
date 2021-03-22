@@ -56,7 +56,6 @@
 			<params slideType="blue-circle-right"></params>
 			<element width="w-50" height="h-100" padding="pr-5">
 				<section><![CDATA[Systems Thinking]]></section>
-				<p><![CDATA[]]></p>
 				<p><![CDATA[A system can be defined as a group of interacting, interrelated, or interdependent <italic>components</italic> (or subsystems) that work together to form a complex whole.]]></p>
 			</element>
 			<element width="w-50" height="h-70" classes="h-center-overflow">
@@ -65,17 +64,33 @@
 		</slide>
 		<slide data-slideid="2c">
 			<params slideType="blue-circle-right"></params>
-			<full-size-image src="img/media/image6.png"></full-size-image>
+			<element width="w-50" height="h-100" padding="pr-5">
+				<section><![CDATA[Systems Thinking]]></section>
+				<p><![CDATA[Each component is made up of <i>elements</i>. For example, the elements of the circulatory system include blood cells, veins, arteries and heart.]]></p>
+			</element>
+			<element width="w-50" height="h-80">
+				<image><![CDATA[img/media/image2c.png]]></image>
+			</element>
 		</slide>
-		<slide data-slideid="2d">
+		<slide data-slideid="2c">
+			<params slideType="blue-circle-right"></params>
+			<element width="w-50" height="h-100" padding="pr-5">
+				<section><![CDATA[Systems Thinking]]></section>
+				<p><![CDATA[The interaction of components and their interrelated processes create system behavior.]]></p>
+			</element>
+			<element width="w-50" height="h-80">
+				<image><![CDATA[img/media/image2d.png]]></image>
+			</element>
+		</slide>
+		<slide>
 			<params slideType="blue-circle-right"></params>
 			<full-size-image src="img/media/image7.png"></full-size-image>
 		</slide>
-		<slide data-slideid="3a">
+		<slide>
 			<params slideType="blue-circle-right"></params>
 			<full-size-image src="img/media/image8.png"></full-size-image>
 		</slide>
-		<slide data-slideid="3b">
+		<slide>
 			<params slideType="blue-circle-right"></params>
 			<full-size-image src="img/media/image9.png"></full-size-image>
 		</slide>
