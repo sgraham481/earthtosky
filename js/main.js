@@ -426,7 +426,7 @@ function populateCarousel(){
 																	console.log("video");
 																	console.log(slide.childNodes[c].childNodes[d].childNodes[0].nodeValue);
 																	console.log("yturlsplitarray length = "+yturlsplitarray.length);
-																	slideHtmlText += '<iframe id="ytplayer" type="text/html" width="640" height="360" src="https://www.youtube.com/embed/'+yturlsplitarray[(yturlsplitarray.length-1)]+'?autoplay=1&amp;origin='+slide.childNodes[c].childNodes[d].childNodes[0].nodeValue+'" frameborder="0" allowfullscreen></iframe>';
+																	slideHtmlText += '<iframe id="ytplayer" type="text/html" width="640" height="360" src="https://www.youtube.com/embed/'+yturlsplitarray[(yturlsplitarray.length-1)]+'?autoplay=0&amp;origin='+slide.childNodes[c].childNodes[d].childNodes[0].nodeValue+'" frameborder="0" allowfullscreen></iframe>';
 																} else if (slide.childNodes[c].childNodes[d].nodeName === 'hint'){
 																	slideHtmlText += '<button class="btn seenotes"><img src="img/assets/nav_pointer.svg"><span>See Notes</span></button>';
 																}
