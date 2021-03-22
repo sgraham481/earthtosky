@@ -72,14 +72,43 @@
 				<image><![CDATA[img/media/image2c.png]]></image>
 			</element>
 		</slide>
-		<slide data-slideid="2c">
+		<slide data-slideid="2d">
 			<params slideType="blue-circle-right"></params>
 			<element width="w-50" height="h-100" padding="pr-5">
 				<section><![CDATA[Systems Thinking]]></section>
 				<p><![CDATA[The interaction of components and their interrelated processes create system behavior.]]></p>
 			</element>
-			<element width="w-50" height="h-80">
+			<element width="w-50" height="h-80" classes="v-center-overflow">
 				<image><![CDATA[img/media/image2d.png]]></image>
+			</element>
+		</slide>
+		<slide data-slideid="3a">
+			<params slideType="blue-circle-right"></params>
+			<element width="w-50" height="h-100" padding="pr-5">
+				<section><![CDATA[Components of the Earth System]]></section>
+				<p><![CDATA[In Earth systems science, the main components of planet Earth are considered to be]]></p>
+				<list type="bullet">
+					<item><![CDATA[Air (Atmosphere)]]></item>
+					<item><![CDATA[Land (Geosphere)]]></item>
+					<item><![CDATA[Water - the ocean and freshwater (Hydrosphere)]]></item>
+					<item><![CDATA[Ice, snow, glaciers, ice sheets, ice caps (Cryosphere)]]></item>
+					<item><![CDATA[All living things (Biosphere)]]></item>
+				</list>
+				<hint><![CDATA[Some scientists include Cryosphere as a component of the Hydrosphere, and some scientists include the Pedosphere, a.k.a. soils, as a component of the Geosphere.]]></hint>
+			</element>
+			<element width="w-50" height="h-80" classes="v-center-overflow">
+				<image><![CDATA[img/media/image3.png]]></image>
+			</element>
+		</slide>
+		<slide data-slideid="3b">
+			<params slideType="blue-circle-right"></params>
+			<element width="w-50" height="h-100" padding="pr-5">
+				<section><![CDATA[Components of the Earth System]]></section>
+				<p><![CDATA[Earth system scientists seek to improve understanding of each of these spheres, as well as the interactions between them, to better predict long and short-term changes on our planet.]]></p>
+				<hint><![CDATA[Some scientists include Cryosphere as a component of the Hydrosphere, and some scientists include the Pedosphere, a.k.a. soils, as a component of the Geosphere.]]></hint>
+			</element>
+			<element width="w-50" height="h-80" classes="v-center-overflow">
+				<image><![CDATA[img/media/image3.png]]></image>
 			</element>
 		</slide>
 		<slide>

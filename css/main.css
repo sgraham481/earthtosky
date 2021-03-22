@@ -33,7 +33,10 @@ body .container {
     font-style: normal;
     color: #000000;
 }
-
+img {
+    width: 100%;
+    height: auto;
+}
 
 
 
@@ -353,6 +356,10 @@ textarea {
 .h-center-overflow img {
     height: 100%;
     width: auto;
+}
+.v-center-overflow {
+    display: flex;
+    align-items: center;
 }
 
 /* ------------------------------------------------ */

@@ -398,6 +398,12 @@ function populateCarousel(){
 																	slideHtmlText += '<p class="main-content">'+slide.childNodes[c].childNodes[d].childNodes[0].nodeValue+'</p>';
 																} else if (slide.childNodes[c].childNodes[d].nodeName === 'image'){
 																	slideHtmlText += '<img src="'+slide.childNodes[c].childNodes[d].childNodes[0].nodeValue+'">';
+																} else if (slide.childNodes[c].childNodes[d].nodeName === 'list'){
+																	slideHtmlText += '<ol>';
+																	slideHtmlText += '<li>total list items: '+slide.childNodes[c].childNodes[d].childNodes.length+'</li>';
+																	slideHtmlText += '</ol>';
+																} else if (slide.childNodes[c].childNodes[d].nodeName === 'hint'){
+																	slideHtmlText += '<button><img src="img/assets/nav_pointer.svg">See Notes</button>';
 																}
 															}
 															slideHtmlText += '</div>';
