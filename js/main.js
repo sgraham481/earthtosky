@@ -104,10 +104,16 @@ function setUpCarouselNavigation() {
  	$("#myCarousel").carousel();
 
 	// Enable Carousel Indicators
-	$("li").click(function(){
+	$(".carousel-indicators li").click(function(){
 		//console.log("click");
-		console.log($(this).attr("data-slide-to"));
-		setTOCActiveSlide(Number($(this).attr("data-slide-to")));
+		console.log($(this).attr("data-slideid"));
+		setTOCActiveSlide($(this).attr("data-slideid"));
+		
+	});
+	$(".carousel-table-of-contents li").click(function(){
+		//console.log("click");
+		console.log($(this).attr("id"));
+		setTOCActiveSlide($(this).attr("id"));
 		
 	});
 	/*$(".item2").click(function(){
@@ -148,7 +154,7 @@ function goCarouselItem(item){
 		$(".slide-backgrounds.on").removeClass("on");
 		$(".slide-backgrounds."+$(".item.prev").attr("data-background")).addClass("on");
 	}
-	setTimeout(function(){ setTOCActiveSlide(Number($(".carousel-indicators li.active").attr("data-slide-to"))); }, 200);
+	setTimeout(function(){ setTOCActiveSlide($(".carousel-indicators li.active").attr("data-slideid")); }, 200);
 };
 function resetInterval(){
 	clearInterval(carouselInterval);
@@ -159,9 +165,12 @@ function setCarouselInterval(duration) {
 		carouselInterval = setInterval(function(){ goCarouselItem("next"); }, duration);
 	}
 };
-function setTOCActiveSlide(num){
+function setTOCActiveSlide(slideid){
+	console.log("setTOCActiveSlide = "+slideid);
 	$(".carousel-table-of-contents li").removeClass("active");
-	$(".carousel-table-of-contents li").eq(num).addClass("active");
+	$(".carousel-table-of-contents li#"+slideid).addClass("active");
+	var pagenum = $(".carousel-table-of-contents li#"+slideid).attr("data-page");
+	$(".carousel-pagination .this-page").html(pagenum);
 }
 /**********************************************************
 BUILD CAROUSEL OPTIONS
@@ -182,6 +191,7 @@ function populateCarousel(){
 			SET PART VAR;
 			*/
 			var part = x[i];
+			var slideid = "";
 			if (part.childNodes.length){
 				for (j = 0; j < part.childNodes.length; j++) {
 					
@@ -198,7 +208,12 @@ function populateCarousel(){
 						var slideHtmlText = "";
 						var carouselTocEl = "";
 						var carouselIndicator = "";
-
+						
+						if (slide.getElementsByTagName('toc').length){
+							slideid = "slide-"+slide.attributes['data-slideid'].nodeValue;
+							var toctitle = slide.getElementsByTagName('toc')[0].childNodes[0].nodeValue;
+							addNewTOCItem(toctitle, slideid, totalslides);
+						}
 
 						//console.log("fullsize image slide? "+slide.getElementsByTagName('full-size-image').length);
 						// if full-size-image, then stand in;
@@ -209,14 +224,11 @@ function populateCarousel(){
 								slideHtmlText += '<img src="'+imgsrc+'" alt="'+''+'" style="width:100%;">';
 							slideHtmlText += '</div>';
 							$(".carousel-inner").append( $(slideHtmlText) );
-							addNewIndicator(totalslides);
+							addNewIndicator(slideid, totalslides);
 							//addNewTOCItem(totalslides);
 							totalslides ++;
 						} else if (slide.getElementsByTagName('params').length){
-							if (slide.getElementsByTagName('toc').length){
-								var toctitle = slide.getElementsByTagName('toc')[0].childNodes[0].nodeValue;
-								addNewTOCItem(toctitle, totalslides);
-							}
+							
 							
 							// has params;
 							var params = slide.getElementsByTagName('params')[0];
@@ -380,8 +392,8 @@ function populateCarousel(){
 			          								//console.log(slideHtmlText);
 
 			          								$(".carousel-inner").append( $(slideHtmlText) );
-													addNewIndicator(totalslides);
-													addNewTOCItem(totalslides);
+													addNewIndicator(slideid, totalslides);
+													//addNewTOCItem(totalslides);
 			          								totalslides++;
 			          								//console.log("==============================");
 			          								//console.log(" ");
@@ -452,7 +464,8 @@ function populateCarousel(){
 	          								slideHtmlText += '</div>';
 
 	          								$(".carousel-inner").append( $(slideHtmlText) );
-											addNewIndicator(totalslides);
+
+											addNewIndicator(slideid, totalslides);
 											//addNewTOCItem(totalslides);
 	          								totalslides++;
 							            }
@@ -505,14 +518,18 @@ function getTotalEls(el, name){
 	// could add hasEls here.;
 	return el.getElementsByTagName(name).length;
 }
-function addNewIndicator(num){
-	var el = "<li data-target='#myCarousel' data-slide-to='"+num+"' class='"+(num === 0 ? 'active' : '')+"'></li>";
+function addNewIndicator(slideid, num){
+	var el = "<li data-target='#myCarousel' data-slide-to='"+num+"' data-slideid='"+slideid+"' class='"+(num === 0 ? 'active' : '')+"'></li>";
 	$(".carousel-indicators").append( $(el) );
 }
-
-function addNewTOCItem(title, num){
-	var el = "<li data-target='#myCarousel' data-slide-to='"+num+"'><img src='img/assets/nav_pointer.svg'>"+title+"</li>";
+var tocpage = 1;
+//addNewTOCItem(toctitle, slideid, totalslides);
+function addNewTOCItem(title, slideid, num){
+	var el = "<li id='"+slideid+"' class='"+(tocpage === 1 ? "active" : "")+"' data-target='#myCarousel' data-page='"+tocpage+"' data-slide-to='"+num+"'><img src='img/assets/nav_pointer.svg'>"+title+"</li>";
 	$(".carousel-table-of-contents").append( $(el) );
+	$(".carousel-pagination .total-pages").html(tocpage);
+	tocpage++;
+
 }
 /**********************************************************
 BUILD CAROUSEL OPTIONS
