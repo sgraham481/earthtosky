@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <carousel>
 	<part>
-		<slide>
+		<slide data-slideid="1a">
 			<params slideType="blue-vert-50-50"></params>
 			<top>
 				<section><![CDATA[Part 1: About Earth System Science]]></section>
@@ -13,7 +13,7 @@
 				<video><![CDATA[https://nasa-external-ocomm.app.box.com/s/6dtrji1vnjf4yh5829mczvmh1rthdbvh]]></video>
 			</bottom>
 		</slide>
-		<slide>
+		<slide data-slideid="1a-2bc">
 			<params slideType="blue-vert-50-50"></params>
 			<top>
 				<section><![CDATA[Part 1: About Earth System Science]]></section>
@@ -41,7 +41,7 @@
 				<image><![CDATA[img/assets/thompson.png]]></image>
 			</bottom>
 		</slide>
-		<slide>
+		<slide data-slideid="2a">
 			<params slideType="blue-circle-right"></params>
 			<element width="w-50" height="h-100">
 				<section><![CDATA[Systems Thinking]]></section>
@@ -52,7 +52,7 @@
 				<image><![CDATA[img/assets/gears3.svg]]></image>
 			</element>
 		</slide>
-		<slide>
+		<slide data-slideid="2b">
 			<params slideType="blue-circle-right"></params>
 			<element width="w-50" height="h-100" padding="pr-5">
 				<section><![CDATA[Systems Thinking]]></section>
@@ -63,19 +63,19 @@
 				<image><![CDATA[img/assets/human_subsystems.png]]></image>
 			</element>
 		</slide>
-		<slide>
+		<slide data-slideid="2c">
 			<params slideType="blue-circle-right"></params>
 			<full-size-image src="img/media/image6.png"></full-size-image>
 		</slide>
-		<slide>
+		<slide data-slideid="2d">
 			<params slideType="blue-circle-right"></params>
 			<full-size-image src="img/media/image7.png"></full-size-image>
 		</slide>
-		<slide>
+		<slide data-slideid="3a">
 			<params slideType="blue-circle-right"></params>
 			<full-size-image src="img/media/image8.png"></full-size-image>
 		</slide>
-		<slide>
+		<slide data-slideid="3b">
 			<params slideType="blue-circle-right"></params>
 			<full-size-image src="img/media/image9.png"></full-size-image>
 		</slide>
