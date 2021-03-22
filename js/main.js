@@ -296,6 +296,8 @@ function populateCarousel(){
 											                	   		//console.log("header nodeValue = "+slide.childNodes[c].childNodes[d].nodeValue);
 											                	   		//console.log("header nodeValue = "+slide.childNodes[c].childNodes[d].childNodes[0].nodeValue);
 											                	   		slideHtmlText += "<h1 class='h1 section-header'>"+slide.childNodes[c].childNodes[d].childNodes[0].nodeValue+"</h1>";
+											                	   	} else if (slide.childNodes[c].childNodes[d].nodeName === 'main'){
+											                	   		slideHtmlText += "<h1 class='h1 main-header'>"+slide.childNodes[c].childNodes[d].childNodes[0].nodeValue+"</h1>";
 											                	    } else if (slide.childNodes[c].childNodes[d].nodeName === 'p'){
 											                	    	slideHtmlText += "<p class='main-content'>"+slide.childNodes[c].childNodes[d].childNodes[0].nodeValue+"</p>";
 											                	    }
@@ -322,6 +324,8 @@ function populateCarousel(){
 																for (var q=0; q<slide.getElementsByTagName('bottom')[b].childNodes.length; q++ ){
 																	if (slide.getElementsByTagName('bottom')[b].childNodes[q].nodeName === 'section'){
 											                	   		slideHtmlText += '<h1 class="h1 section-header">'+slide.getElementsByTagName('bottom')[b].childNodes[q].childNodes[0].nodeValue+'</h1>';
+											                	   	} else if (slide.getElementsByTagName('bottom')[b].childNodes[q].nodeName === 'main'){
+											                	   		slideHtmlText += '<h1 class="h1 main-header">'+slide.getElementsByTagName('bottom')[b].childNodes[q].childNodes[0].nodeValue+'</h1>';
 											                	    } else if (slide.getElementsByTagName('bottom')[b].childNodes[q].nodeName === 'p'){
 											                	    	slideHtmlText += '<p class="main-content">'+slide.getElementsByTagName('bottom')[b].childNodes[q].childNodes[0].nodeValue+'</p>';
 											                	    } else if (slide.getElementsByTagName('bottom')[b].childNodes[q].nodeName === 'video'){
@@ -394,6 +398,8 @@ function populateCarousel(){
 															for (var d = 0; d < slide.childNodes[c].childNodes.length; d++) {
 																if (slide.childNodes[c].childNodes[d].nodeName === 'section'){
 																	slideHtmlText += '<h1 class="h1 section-header">'+slide.childNodes[c].childNodes[d].childNodes[0].nodeValue+'</h1>';
+																} else if (slide.childNodes[c].childNodes[d].nodeName === 'main'){
+																	slideHtmlText += '<h1 class="h1 main-header">'+slide.childNodes[c].childNodes[d].childNodes[0].nodeValue+'</h1>';
 																} else if (slide.childNodes[c].childNodes[d].nodeName === 'p'){
 																	slideHtmlText += '<p class="main-content">'+slide.childNodes[c].childNodes[d].childNodes[0].nodeValue+'</p>';
 																} else if (slide.childNodes[c].childNodes[d].nodeName === 'image'){

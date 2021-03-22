@@ -147,6 +147,17 @@
 				<image><![CDATA[img/media/image5.png]]></image>
 			</element>
 		</slide>
+		<slide data-slideid="5a">
+			<params slideType="blue-circle-right"></params>
+			<element width="w-50" height="h-100" padding="pr-5">
+				<section><![CDATA[Modes of Inquiry]]></section>
+				<main><![CDATA[Laboratory Experiment]]></main>
+				<p><![CDATA[For example, scientists can test chemical reactions and physical processes on small scales in lab settings, such as exposing tanks of phytoplankton to various temperatures to determine the effect of warming oceans on plankton blooms.]]></p>
+			</element>
+			<element width="w-50" height="h-80" classes="v-center-overflow">
+				<image><![CDATA[img/media/image5a.png]]></image>
+			</element>
+		</slide>
 		<slide>
 			<params slideType="blue-circle-right"></params>
 			<full-size-image src="img/media/image8.png"></full-size-image>
