@@ -398,8 +398,8 @@ function populateCarousel(){
 															for (var d = 0; d < slide.childNodes[c].childNodes.length; d++) {
 																if (slide.childNodes[c].childNodes[d].nodeName === 'section'){
 																	slideHtmlText += '<h1 class="h1 section-header">'+slide.childNodes[c].childNodes[d].childNodes[0].nodeValue+'</h1>';
-																} else if (slide.childNodes[c].childNodes[d].nodeName === 'main'){
-																	slideHtmlText += '<h1 class="h1 main-header">'+slide.childNodes[c].childNodes[d].childNodes[0].nodeValue+'</h1>';
+																} else if (slide.childNodes[c].childNodes[d].nodeName === 'h2subheader'){
+																	slideHtmlText += '<h2 class="h2 sub-header">'+slide.childNodes[c].childNodes[d].childNodes[0].nodeValue+'</h2>';
 																} else if (slide.childNodes[c].childNodes[d].nodeName === 'p'){
 																	slideHtmlText += '<p class="main-content">'+slide.childNodes[c].childNodes[d].childNodes[0].nodeValue+'</p>';
 																} else if (slide.childNodes[c].childNodes[d].nodeName === 'image'){
@@ -416,6 +416,9 @@ function populateCarousel(){
 																		}
 																	}
 																	slideHtmlText += '</'+listtype+'>';
+																} else if (slide.childNodes[c].childNodes[d].nodeName === 'youtube'){
+																	var yturlsplitarray = slide.childNodes[c].childNodes[d].childNodes[0].nodeValue.split('/');
+																	slideHtmlText += '<iframe id="ytplayer" type="text/html" src="https://www.youtube.com/embed/'+yturlsplitarray[yturlsplitarray.length]+'?autoplay=1&amp;origin='+slide.childNodes[c].childNodes[d].childNodes[0].nodeValue+'" frameborder="0"></iframe>';
 																} else if (slide.childNodes[c].childNodes[d].nodeName === 'hint'){
 																	slideHtmlText += '<button class="btn seenotes"><img src="img/assets/nav_pointer.svg"><span>See Notes</span></button>';
 																}

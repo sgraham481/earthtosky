@@ -151,7 +151,7 @@
 			<params slideType="blue-circle-right"></params>
 			<element width="w-50" height="h-100" padding="pr-5">
 				<section><![CDATA[Modes of Inquiry]]></section>
-				<main><![CDATA[Laboratory Experiment]]></main>
+				<h2subheader><![CDATA[Laboratory Experiment]]></h2subheader>
 				<p><![CDATA[For example, scientists can test chemical reactions and physical processes on small scales in lab settings, such as exposing tanks of phytoplankton to various temperatures to determine the effect of warming oceans on plankton blooms.]]></p>
 			</element>
 			<element width="w-50" height="h-80" classes="v-center-overflow">
@@ -162,18 +162,18 @@
 			<params slideType="blue-circle-right"></params>
 			<element width="w-50" height="h-100" padding="pr-5">
 				<section><![CDATA[Modes of Inquiry]]></section>
-				<main><![CDATA[Observing change over time]]></main>
+				<h2subheader><![CDATA[Observing change over time]]></h2subheader>
 				<p><![CDATA[For example, with the aid of ground-based, airborne and satellite data, scientists detect changes in regional and global land, air and ocean temperature.]]></p>
 			</element>
 			<element width="w-50" height="h-80" classes="v-center-overflow">
-				<image><![CDATA[img/media/image5b.png]]></image>
+				<youtube><![CDATA[https://youtu.be/Ni0lppUr_BQ]]></youtube>
 			</element>
 		</slide>
 		<slide data-slideid="5c">
 			<params slideType="blue-circle-right"></params>
 			<element width="w-50" height="h-100" padding="pr-5">
 				<section><![CDATA[Modes of Inquiry]]></section>
-				<main><![CDATA[Comparing ancient artifacts with products of current day processes]]></main>
+				<h2subheader><![CDATA[Comparing ancient artifacts with products of current day processes]]></h2subheader>
 				<p><![CDATA[For example, geologists researching how this cave formed at Craters of the Moon NPP can get clues by examining active lava tubes at places like Hawai’i Volcanoes National Park.]]></p>
 			</element>
 			<element width="w-50" height="h-80" classes="v-center-overflow">
@@ -184,7 +184,7 @@
 			<params slideType="blue-circle-right"></params>
 			<element width="w-50" height="h-100" padding="pr-5">
 				<section><![CDATA[Modes of Inquiry]]></section>
-				<main><![CDATA[Observering spatial gradients]]></main>
+				<h2subheader><![CDATA[Observering spatial gradients]]></h2subheader>
 				<p><![CDATA[This can lead to hypotheses for causation (ex., a gradient of coarse to fine grains often leads to hypotheses of direction of sediment transport).]]></p>
 			</element>
 			<element width="w-50" height="h-80" classes="v-center-overflow">
@@ -195,7 +195,7 @@
 			<params slideType="blue-circle-right"></params>
 			<element width="w-50" height="h-100" padding="pr-5">
 				<section><![CDATA[Modes of Inquiry]]></section>
-				<main><![CDATA[Computer modeling]]></main>
+				<h2subheader><![CDATA[Computer modeling]]></h2subheader>
 				<p><![CDATA[Global climate models allow scientists to manipulate one or several variables to explore causation of changes in processes and make predictions.]]></p>
 			</element>
 			<element width="w-50" height="h-80" classes="v-center-overflow">

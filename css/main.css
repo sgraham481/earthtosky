@@ -487,10 +487,6 @@ Earth To Sky Bootstrap Carousel Approach CSS
     height: 100%;
     top: 0;
 }
-.carousel-inner h2 {
-  color: #fff;
-  text-align: center;
-}
 .carousel-inner p {
   margin: 1rem 0 .75rem;
 }
@@ -564,12 +560,14 @@ Earth To Sky Bootstrap Carousel Approach CSS
     padding: 0 12%;
 }
 
-.container .carousel .item-container .h1 {
+.container .carousel .item-container .h1,
+.container .carousel .item-container .h2 {
     text-align: center;
     margin-top: 2rem;
     margin-bottom: 1.2rem;
 }
-.container .carousel .item-container .item-element:not(.w-100) .h1 {
+.container .carousel .item-container .item-element:not(.w-100) .h1,
+.container .carousel .item-container .item-element:not(.w-100) .h2 {
   text-align: left;
 }
 /*.container .carousel .item-container .main-content {
