@@ -404,7 +404,11 @@ function populateCarousel(){
 																		listtype = slide.childNodes[c].childNodes[d].attributes['type'].nodeValue === "numbered" ? "ol" : "ul";
 																	}
 																	slideHtmlText += '<'+listtype+'>';
-																	slideHtmlText += '<li>total list items: '+slide.childNodes[c].childNodes[d].childNodes.length+'</li>';
+																	for (var e = 0; e < slide.childNodes[c].childNodes[d].childNodes.length; e++) {
+																		if (slide.childNodes[c].childNodes[d].childNodes[e].nodeName === "item"){
+																			slideHtmlText += '<li>'+slide.childNodes[c].childNodes[d].childNodes[e].childNodes[0].nodeValue+'</li>';
+																		}
+																	}
 																	slideHtmlText += '</'+listtype+'>';
 																} else if (slide.childNodes[c].childNodes[d].nodeName === 'hint'){
 																	slideHtmlText += '<button class="btn seenotes"><img src="img/assets/nav_pointer.svg"><span>See Notes</span></button>';
