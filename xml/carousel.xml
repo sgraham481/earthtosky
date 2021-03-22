@@ -158,13 +158,63 @@
 				<image><![CDATA[img/media/image5a.png]]></image>
 			</element>
 		</slide>
-		<slide>
+		<slide data-slideid="5b">
 			<params slideType="blue-circle-right"></params>
-			<full-size-image src="img/media/image8.png"></full-size-image>
+			<element width="w-50" height="h-100" padding="pr-5">
+				<section><![CDATA[Modes of Inquiry]]></section>
+				<main><![CDATA[Observing change over time]]></main>
+				<p><![CDATA[For example, with the aid of ground-based, airborne and satellite data, scientists detect changes in regional and global land, air and ocean temperature.]]></p>
+			</element>
+			<element width="w-50" height="h-80" classes="v-center-overflow">
+				<image><![CDATA[img/media/image5b.png]]></image>
+			</element>
 		</slide>
-		<slide>
+		<slide data-slideid="5c">
 			<params slideType="blue-circle-right"></params>
-			<full-size-image src="img/media/image9.png"></full-size-image>
+			<element width="w-50" height="h-100" padding="pr-5">
+				<section><![CDATA[Modes of Inquiry]]></section>
+				<main><![CDATA[Comparing ancient artifacts with products of current day processes]]></main>
+				<p><![CDATA[For example, geologists researching how this cave formed at Craters of the Moon NPP can get clues by examining active lava tubes at places like Hawai’i Volcanoes National Park.]]></p>
+			</element>
+			<element width="w-50" height="h-80" classes="v-center-overflow">
+				<image><![CDATA[img/media/image5c.png]]></image>
+			</element>
+		</slide>
+		<slide data-slideid="5d">
+			<params slideType="blue-circle-right"></params>
+			<element width="w-50" height="h-100" padding="pr-5">
+				<section><![CDATA[Modes of Inquiry]]></section>
+				<main><![CDATA[Observering spatial gradients]]></main>
+				<p><![CDATA[This can lead to hypotheses for causation (ex., a gradient of coarse to fine grains often leads to hypotheses of direction of sediment transport).]]></p>
+			</element>
+			<element width="w-50" height="h-80" classes="v-center-overflow">
+				<image><![CDATA[img/media/image5d.png]]></image>
+			</element>
+		</slide>
+		<slide data-slideid="5f">
+			<params slideType="blue-circle-right"></params>
+			<element width="w-50" height="h-100" padding="pr-5">
+				<section><![CDATA[Modes of Inquiry]]></section>
+				<main><![CDATA[Computer modeling]]></main>
+				<p><![CDATA[Global climate models allow scientists to manipulate one or several variables to explore causation of changes in processes and make predictions.]]></p>
+			</element>
+			<element width="w-50" height="h-80" classes="v-center-overflow">
+				<image><![CDATA[img/media/image5f.png]]></image>
+			</element>
+		</slide>
+		<slide data-slideid="5summary">
+			<params slideType="blue-circle-right"></params>
+			<element width="w-50" height="h-100" padding="pr-5">
+				<section><![CDATA[Summary]]></section>
+				<p><![CDATA[The discipline of Earth system science is characterized by a holistic systems-thinking approach to studying our home planet.]]></p>
+				<p><![CDATA[Systems are comprised of interactive, interrelated or interdependent components that work together to form a complex whole.]]></p>
+				<p><![CDATA[Each component is made up of elements.]]></p>
+				<p><![CDATA[The Earth system components are the Atmosphere, Geosphere, Hydrosphere, Cryosphere and Biosphere.]]></p>
+				<p><![CDATA[Earth system scientists employ the scientific method and a variety of modes of inquiry to research the processes and behavior of Earth’s component spheres and the system as a whole.]]></p>
+			</element>
+			<element width="w-50" height="h-80" classes="v-center-overflow">
+				<image><![CDATA[img/media/image5-summary.png]]></image>
+			</element>
 		</slide>
 	</part>
 </carousel>
