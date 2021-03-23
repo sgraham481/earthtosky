@@ -106,14 +106,17 @@ function setUpCarouselNavigation() {
 	// Enable Carousel Indicators
 	$(".carousel-indicators li").click(function(){
 		//console.log("click");
-		console.log($(this).attr("data-slideid"));
-		setTOCActiveSlide($(this).attr("data-slideid"));
+		//console.log($(this).attr("data-slideid"));
+		setTimeout(function(){ setBackground(); }, 50);
+		//setTOCActiveSlide($(this).attr("data-slideid"));
 		
 	});
 	$(".carousel-table-of-contents li").click(function(){
 		//console.log("click");
-		console.log($(this).attr("id"));
-		setTOCActiveSlide($(this).attr("id"));
+		//console.log($(this).attr("id"));
+		setTimeout(function(){ setBackground(); }, 50);
+		
+		//setTOCActiveSlide($(this).attr("id"));
 		
 	});
 
@@ -131,7 +134,9 @@ function setUpCarouselNavigation() {
 };
 function goCarouselItem(item){
 	$("#myCarousel").carousel(item);
-	
+	setBackground();
+};
+function setBackground(){
 	$(".slide-backgrounds.on").removeClass("on geo hydro bio cryo atmo");
 	var nextprev = "";
 	if ($(".item.next").length){

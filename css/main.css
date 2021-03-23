@@ -810,6 +810,12 @@ Earth To Sky Bootstrap Carousel Approach CSS
     width: auto;
     top: auto;
 }
+.carousel-indicators li {
+    border: 1px solid #9e9e9e;
+}
+.carousel-indicators .active {
+    background-color: #9e9e9e;
+}
 .carousel-pagination {
     position: absolute;
     bottom: 0;
