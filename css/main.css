@@ -904,10 +904,12 @@ Earth To Sky Bootstrap Carousel Approach CSS
     position: absolute;
     top: 0;
     right: 0;
-    display: none;
+    opacity:0;
+    transition:opacity .5s;
 }
 .sphere-bkgd {
-    display: none;
+    opacity:0;
+    transition:opacity .5s;
 }
 .sphere-bkgds.on.geo .geo-gradient, 
 .sphere-bkgds.on.geo .geo-gfx,
@@ -919,7 +921,7 @@ Earth To Sky Bootstrap Carousel Approach CSS
 .sphere-bkgds.on.atmo .atmo-gfx,
 .sphere-bkgds.on.hydro .hydro-gradient, 
 .sphere-bkgds.on.hydro .hydro-gfx {
-    display: block;
+    opacity:1;
 }
 .sphere-gfx.geo-gfx {
     width: 39%;

@@ -223,4 +223,32 @@
 			</element>
 		</slide>
 	</part>
+	<part>
+		<slide data-slideid="12">
+			<params slideType="geosphere"></params>
+			<toc>Geosphere</toc>
+		</slide>
+		<slide data-slideid="14">
+			<params slideType="hydrosphere"></params>
+			<toc>Hydrosphere</toc>
+		</slide>
+		<slide data-slideid="16">
+			<params slideType="cryosphere"></params>
+			<toc>Cryosphere</toc>
+		</slide>
+		<slide data-slideid="18">
+			<params slideType="biosphere"></params>
+			<toc>Biosphere</toc>
+		</slide>
+		<slide data-slideid="15">
+			<params slideType="atmosphere"></params>
+			<toc>Atmosphere</toc>
+		</slide>
+	</part>
 </carousel>
+
+
+
+
+
+

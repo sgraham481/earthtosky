@@ -132,12 +132,19 @@ function setUpCarouselNavigation() {
 function goCarouselItem(item){
 	$("#myCarousel").carousel(item);
 	
+	$(".slide-backgrounds.on").removeClass("on geo hydro bio cryo atmo");
+	var nextprev = "";
 	if ($(".item.next").length){
-		$(".slide-backgrounds.on").removeClass("on");
-		$(".slide-backgrounds."+$(".item.next").attr("data-background")).addClass("on");
+		nextprev = "next";
 	} else if ($(".item.prev").length){
-		$(".slide-backgrounds.on").removeClass("on");
-		$(".slide-backgrounds."+$(".item.prev").attr("data-background")).addClass("on");
+		nextprev = "prev";
+	}
+	var $bkgd = $(".item."+nextprev).attr("data-background");
+	var $slidebkgd = $(".slide-backgrounds."+$bkgd);
+	if ($bkgd === "sphere-bkgds"){
+		$slidebkgd.addClass("on "+$(".item."+nextprev).attr("data-sphere"));
+	} else {
+		$slidebkgd.addClass("on");
 	}
 	setTimeout(function(){ setTOCActiveSlide($(".carousel-indicators li.active").attr("data-slideid")); }, 200);
 };
@@ -339,9 +346,6 @@ function populateCarousel(){
 													}
 
 												slideHtmlText += '</div>';
-											/*
-											CLOSE SLIDE ITEM;
-	          								*/
 	          								slideHtmlText += '</div>';
 
 	          								$(".carousel-inner").append( $(slideHtmlText) );
@@ -349,7 +353,80 @@ function populateCarousel(){
 											addNewIndicator(slideid, totalslides);
 											//addNewTOCItem(totalslides);
 	          								totalslides++;
-							            }
+							            
+							            } else if ( slideType === "geosphere"){
+											slideHtmlText = '<div class="item '+slideType+(totalslides === 0 ? ' active' : '')+'" data-id="'+totalslides+'" data-background="sphere-bkgds" data-sphere="geo">';
+							            		slideHtmlText += '<div class="item-container d-flex">';
+
+
+
+
+							            		slideHtmlText += '</div>';
+	          								slideHtmlText += '</div>';
+
+	          								$(".carousel-inner").append( $(slideHtmlText) );
+
+											addNewIndicator(slideid, totalslides);
+	          								totalslides++;
+										} else if ( slideType === "cryosphere"){
+											slideHtmlText = '<div class="item '+slideType+(totalslides === 0 ? ' active' : '')+'" data-id="'+totalslides+'" data-background="sphere-bkgds" data-sphere="cryo">';
+							            		slideHtmlText += '<div class="item-container d-flex">';
+
+
+
+
+							            		slideHtmlText += '</div>';
+	          								slideHtmlText += '</div>';
+
+	          								$(".carousel-inner").append( $(slideHtmlText) );
+
+											addNewIndicator(slideid, totalslides);
+	          								totalslides++;
+										} else if ( slideType === "hydrosphere"){
+											slideHtmlText = '<div class="item '+slideType+(totalslides === 0 ? ' active' : '')+'" data-id="'+totalslides+'" data-background="sphere-bkgds" data-sphere="hydro">';
+							            		slideHtmlText += '<div class="item-container d-flex">';
+
+
+
+
+							            		slideHtmlText += '</div>';
+	          								slideHtmlText += '</div>';
+
+	          								$(".carousel-inner").append( $(slideHtmlText) );
+
+											addNewIndicator(slideid, totalslides);
+	          								totalslides++;
+											
+										} else if ( slideType === "biosphere"){
+											 slideHtmlText = '<div class="item '+slideType+(totalslides === 0 ? ' active' : '')+'" data-id="'+totalslides+'" data-background="sphere-bkgds" data-sphere="bio">';
+							            		slideHtmlText += '<div class="item-container d-flex">';
+
+
+
+
+							            		slideHtmlText += '</div>';
+	          								slideHtmlText += '</div>';
+
+	          								$(".carousel-inner").append( $(slideHtmlText) );
+
+											addNewIndicator(slideid, totalslides);
+	          								totalslides++;
+											
+										} else if ( slideType === "atmosphere"){
+											slideHtmlText = '<div class="item '+slideType+(totalslides === 0 ? ' active' : '')+'" data-id="'+totalslides+'" data-background="sphere-bkgds" data-sphere="atmo">';
+							            		slideHtmlText += '<div class="item-container d-flex">';
+
+
+
+
+							            		slideHtmlText += '</div>';
+	          								slideHtmlText += '</div>';
+
+	          								$(".carousel-inner").append( $(slideHtmlText) );
+
+											addNewIndicator(slideid, totalslides);
+	          								totalslides++;
+										}
 							       /* } */
 
 							}
