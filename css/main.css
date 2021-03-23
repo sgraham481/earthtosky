@@ -497,6 +497,7 @@ Earth To Sky Bootstrap Carousel Approach CSS
     overflow: hidden;
 }
 .carousel-static-background,
+.sphere-bkgd,
 .absolute-full-cover-container {
     position: absolute;
     top: 0;
@@ -868,6 +869,119 @@ Earth To Sky Bootstrap Carousel Approach CSS
 .carousel-table-of-contents li.hover, 
 .carousel-table-of-contents li.active {
     background: rgba(1, 31, 58, .9);
+}
+.geo-gradient {
+    background-image: url(../img/assets/geo_bkgd.svg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.cryo-gradient {
+    background-image: url(../img/assets/cryo_bkgd.svg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.hydro-gradient {
+    background-image: url(../img/assets/hydro_bkgd.svg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.bio-gradient {
+    background-image: url(../img/assets/bio_bkgd.svg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.atmo-gradient {
+    background-image: url(../img/assets/atmo_bkgd.svg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.sphere-gfx {
+    position: absolute;
+    top: 0;
+    right: 0;
+    display: none;
+}
+.sphere-bkgd {
+    display: none;
+}
+.sphere-bkgds.on.geo .geo-gradient, 
+.sphere-bkgds.on.geo .geo-gfx,
+.sphere-bkgds.on.cryo .cryo-gradient, 
+.sphere-bkgds.on.cryo .cryo-gfx,
+.sphere-bkgds.on.bio .bio-gradient, 
+.sphere-bkgds.on.bio .bio-gfx,
+.sphere-bkgds.on.atmo .atmo-gradient, 
+.sphere-bkgds.on.atmo .atmo-gfx,
+.sphere-bkgds.on.hydro .hydro-gradient, 
+.sphere-bkgds.on.hydro .hydro-gfx {
+    display: block;
+}
+.sphere-gfx.geo-gfx {
+    width: 39%;
+}
+.sphere-gfx.hydro-gfx {
+    width: 43%;
+}
+.sphere-gfx.cryo-gfx {
+    width: 39%;
+}
+.sphere-gfx.bio-gfx {
+    width: 25%;
+}
+.sphere-gfx.atmo-gfx {
+    width: 44%;
+}
+.pie {
+    position: absolute;
+    bottom: -59%;
+    right: -33.5%;
+    width: 65%;
+    transition: bottom .5s, right .5s;
+}
+.pie img {
+    height: auto;
+    width: 100%;
+    transition: transform .5s;
+}
+.on.geo .pie {
+    bottom: -59.5%;
+    right: -32.5%;
+}
+.on.cryo .pie {
+    bottom: -59.5%;
+    right: -32%;
+}
+.on.atmo .pie {
+    bottom: -57.5%;
+    right: -32%;
+}
+.on.bio .pie {
+    bottom: -59%;
+    right: -33.5%;
+}
+.on.hydro .pie {
+    bottom: -57.5%;
+    right: -33.5%;
+}
+.on.geo .pie img {
+    transform: rotate(70deg);
+}
+.on.cryo .pie img {
+    transform: rotate(146deg);
+}
+.on.atmo .pie img {
+    transform: rotate(217deg);
+}
+.on.bio .pie img {
+    transform: rotate(0deg);
+}
+.on.hydro .pie img {
+    transform: rotate(287deg);
 }
 @media screen and (orientation: portrait) {
   html.mobile {

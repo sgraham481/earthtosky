@@ -116,15 +116,6 @@ function setUpCarouselNavigation() {
 		setTOCActiveSlide($(this).attr("id"));
 		
 	});
-	/*$(".item2").click(function(){
-		$("#myCarousel").carousel(1);
-	});
-	$(".item3").click(function(){
-		$("#myCarousel").carousel(2);
-	});
-	$(".item4").click(function(){
-		$("#myCarousel").carousel(3);
-	});*/
 
 	setCarouselInterval(duration);
 
@@ -139,14 +130,8 @@ function setUpCarouselNavigation() {
 	});
 };
 function goCarouselItem(item){
-	//$("#myCarousel").toggleClass("carousel-fade");
-	//console.log("item: "+item);
-	//console.log("current active: "+$(".item.active").attr("data-id"));
-	
 	$("#myCarousel").carousel(item);
-	//console.log("new active: "+$(".item.next").length);
-	//console.log("new active: "+$(".item.prev").length);
-
+	
 	if ($(".item.next").length){
 		$(".slide-backgrounds.on").removeClass("on");
 		$(".slide-backgrounds."+$(".item.next").attr("data-background")).addClass("on");
@@ -177,14 +162,10 @@ BUILD CAROUSEL OPTIONS
 **********************************************************/
 function populateCarousel(){
 	var x = xmlobj.documentElement.childNodes;
-	/*xmlobj = xml;
-    $xml = $(xml);*/
-    //console.log();
-    //console.log($xml.find("part").length);
-    //console.log($xml.find("part").length);
+	
     var totalslides = 0;
     for (i = 0; i < x.length; i++) {
-		console.log(x[i].nodeName); //+ ": " + x[i].childNodes[0].nodeValue + "<br>";
+		console.log(x[i].nodeName);
 		//console.log(" children: "+x[i].childNodes.length);
 		if (x[i].nodeName === "part"){
 			/*
@@ -239,27 +220,6 @@ function populateCarousel(){
 										var slideType = params.attributes["slideType"].nodeValue;
 
 										/*
-							            <top>
-											<header>
-												<![CDATA[
-													Part 1: About Earth System Science
-												]]>
-											</header>
-											<p>
-												<![CDATA[
-													Earth system scientists take a holistic view of planet Earth, working to gain understanding of the influence of major and minor processes on Earth’s past, current and future conditions. Much of Earth systems science is focused on understanding what drives Earth’s global, regional and local climate patterns, including human activity. A major goal is to improve predictions of future climate under various scenarios of human actions and other variables.
-												]]>
-											</p>
-											<p>
-												<![CDATA[
-													Thinking about nature being interconnected is not unique to Earth system scientists.
-												]]>
-											</p>
-										</top>
-
-										*/
-
-										/*
 										<params slideType="blue-vert-50-50"></params>
 
 							            Attribute by Name: console.log(slide.getElementsByTagName('params')[0].attributes["slideType"]);
@@ -300,32 +260,10 @@ function populateCarousel(){
 														for (var c = 0; c < slide.childNodes.length; c++) {
 											            	//console.log(slide.childNodes[c].nodeName);
 											                if (slide.childNodes[c].nodeName === "top"){
-											                	//console.log("in top");
-											                    //console.log(slide.childNodes[c]);
-											                    //console.log(slide.childNodes[c].childNodes.length);
-											                    //console.log("==============");
-											                	//var top = xmlDoc = parser.parseFromString(slide.getElementsByTagName('top')[0],"text/xml");
-											                    //console.log(top);
+
 											                	for (var d = 0; d < slide.childNodes[c].childNodes.length; d++) {
-											                	    //console.log("top nodeName = "+slide.childNodes[c].childNodes[d].nodeName);
-											                	    if (slide.childNodes[c].childNodes[d].nodeName === 'section'){
-											                	   		//console.log("header present? = "+slide.childNodes[c].getElementsByTagName('header').length);
-											                	   		//console.log("header nodeValue = "+slide.childNodes[c].childNodes[d].nodeValue);
-											                	   		//console.log("header nodeValue = "+slide.childNodes[c].childNodes[d].childNodes[0].nodeValue);
-											                	   		slideHtmlText += "<h1 class='h1 section-header'>"+slide.childNodes[c].childNodes[d].childNodes[0].nodeValue+"</h1>";
-											                	   	} else if (slide.childNodes[c].childNodes[d].nodeName === 'main'){
-											                	   		slideHtmlText += "<h1 class='h1 main-header'>"+slide.childNodes[c].childNodes[d].childNodes[0].nodeValue+"</h1>";
-											                	    } else if (slide.childNodes[c].childNodes[d].nodeName === 'p'){
-											                	    	slideHtmlText += "<p class='main-content'>"+slide.childNodes[c].childNodes[d].childNodes[0].nodeValue+"</p>";
-											                	    }
-											                       //console.log("top nodeValue = "+slide.childNodes[c].childNodes[d].childNodes[0].nodeValue);
 
-											                      /*if (slide.childNodes[c].childNodes[d].nodeName === 'header'){
-													            		slideHtmlText += "<div class='h1'>"+slide.childNodes[c].childNodes[d].childNodes[0].nodeValue+"</div>";
-													            	} else if (slide.childNodes[c].nodeName === 'p') {
-													            		slideHtmlText += "<div class='main-content'>"+slide.childNodes[c].childNodes[d].childNodes[0].nodeValue+"</div>";
-													            	}*/
-
+											                		slideHtmlText += returnElementHTML(slide.childNodes[c].childNodes[d]);
 
 											                    }
 											                }
@@ -339,19 +277,9 @@ function populateCarousel(){
 														slideHtmlText += '<div class="item-container half-height absolute-align-bottom">';
 															if (slide.getElementsByTagName('bottom')[b].attributes['elemType'] === undefined){
 																for (var q=0; q<slide.getElementsByTagName('bottom')[b].childNodes.length; q++ ){
-																	if (slide.getElementsByTagName('bottom')[b].childNodes[q].nodeName === 'section'){
-											                	   		slideHtmlText += '<h1 class="h1 section-header">'+slide.getElementsByTagName('bottom')[b].childNodes[q].childNodes[0].nodeValue+'</h1>';
-											                	   	} else if (slide.getElementsByTagName('bottom')[b].childNodes[q].nodeName === 'main'){
-											                	   		slideHtmlText += '<h1 class="h1 main-header">'+slide.getElementsByTagName('bottom')[b].childNodes[q].childNodes[0].nodeValue+'</h1>';
-											                	    } else if (slide.getElementsByTagName('bottom')[b].childNodes[q].nodeName === 'p'){
-											                	    	slideHtmlText += '<p class="main-content">'+slide.getElementsByTagName('bottom')[b].childNodes[q].childNodes[0].nodeValue+'</p>';
-											                	    } else if (slide.getElementsByTagName('bottom')[b].childNodes[q].nodeName === 'video'){
-											                	    	slideHtmlText += '<p class="main-content" data-src="'+slide.getElementsByTagName('bottom')[b].childNodes[q].childNodes[0].nodeValue+'">'+'ADD VIDEO ELEMENT'+'</p>';
-											                	    } else if (slide.getElementsByTagName('bottom')[b].childNodes[q].nodeName === 'image'){
-											                	    	slideHtmlText += '<div class="display-image">';
-																			slideHtmlText += '<img src="'+slide.getElementsByTagName('bottom')[b].childNodes[q].childNodes[0].nodeValue+'">';
-																		slideHtmlText += '</div>';
-																	}
+
+																	slideHtmlText += returnElementHTML(slide.getElementsByTagName('bottom')[b].childNodes[q]);
+
 											                	}
 															} else {
 																var elementType = slide.getElementsByTagName('bottom')[b].attributes['elemType'].nodeValue;
@@ -361,23 +289,14 @@ function populateCarousel(){
 																		console.log("===========bottom quote object================");
 																		for (var q=0; q<slide.getElementsByTagName('bottom')[b].childNodes.length; q++ ){
 																			console.log(slide.getElementsByTagName('bottom')[b].childNodes[q].nodeName);
-																			if (slide.getElementsByTagName('bottom')[b].childNodes[q].nodeName === "quote"){
-																				slideHtmlText += '<span class="quote-body">'+slide.getElementsByTagName('bottom')[b].childNodes[q].childNodes[0].nodeValue+'</span>';
-																			} else if (slide.getElementsByTagName('bottom')[b].childNodes[q].nodeName === "byline"){
-																					slideHtmlText += '<span class="quote-attribution">'+slide.getElementsByTagName('bottom')[b].childNodes[q].childNodes[0].nodeValue+'</span>';
-																				slideHtmlText += '</div>';
-																			} else if (slide.getElementsByTagName('bottom')[b].childNodes[q].nodeName === "image"){
-																				slideHtmlText += '<div class="display-image">';
-																					slideHtmlText += '<img src="'+slide.getElementsByTagName('bottom')[b].childNodes[q].childNodes[0].nodeValue+'">';
-																				slideHtmlText += '</div>';
-																			}
+
+																			slideHtmlText += returnElementHTML(slide.getElementsByTagName('bottom')[b].childNodes[q]);
+
 																		}
 
 																	slideHtmlText += '</div>';
 																}
 															}
-
-
 
 														/*
 															CLOSE BOTTOM (item-container);
@@ -389,11 +308,9 @@ function populateCarousel(){
 			          								*/
 			          								slideHtmlText += '</div>';
 
-			          								//console.log(slideHtmlText);
-
 			          								$(".carousel-inner").append( $(slideHtmlText) );
 													addNewIndicator(slideid, totalslides);
-													//addNewTOCItem(totalslides);
+													
 			          								totalslides++;
 			          								//console.log("==============================");
 			          								//console.log(" ");
@@ -413,50 +330,14 @@ function populateCarousel(){
 															var classes = slide.childNodes[c].attributes['classes'] === undefined ? '' : ' '+slide.childNodes[c].attributes['classes'].nodeValue;
 															slideHtmlText += '<div class="item-element'+width+height+padding+classes+'">';
 															for (var d = 0; d < slide.childNodes[c].childNodes.length; d++) {
-																if (slide.childNodes[c].childNodes[d].nodeName === 'section'){
-																	slideHtmlText += '<h1 class="h1 section-header">'+slide.childNodes[c].childNodes[d].childNodes[0].nodeValue+'</h1>';
-																} else if (slide.childNodes[c].childNodes[d].nodeName === 'h2subheader'){
-																	slideHtmlText += '<h2 class="h2 sub-header">'+slide.childNodes[c].childNodes[d].childNodes[0].nodeValue+'</h2>';
-																} else if (slide.childNodes[c].childNodes[d].nodeName === 'p'){
-																	slideHtmlText += '<p class="main-content">'+slide.childNodes[c].childNodes[d].childNodes[0].nodeValue+'</p>';
-																} else if (slide.childNodes[c].childNodes[d].nodeName === 'image'){
-																	slideHtmlText += '<img src="'+slide.childNodes[c].childNodes[d].childNodes[0].nodeValue+'">';
-																} else if (slide.childNodes[c].childNodes[d].nodeName === 'list'){
-																	var listtype = "ul";
-																	if (slide.childNodes[c].childNodes[d].attributes["type"]){
-																		listtype = slide.childNodes[c].childNodes[d].attributes['type'].nodeValue === "numbered" ? "ol" : "ul";
-																	}
-																	slideHtmlText += '<'+listtype+'>';
-																	for (var e = 0; e < slide.childNodes[c].childNodes[d].childNodes.length; e++) {
-																		if (slide.childNodes[c].childNodes[d].childNodes[e].nodeName === "item"){
-																			slideHtmlText += '<li>'+slide.childNodes[c].childNodes[d].childNodes[e].childNodes[0].nodeValue+'</li>';
-																		}
-																	}
-																	slideHtmlText += '</'+listtype+'>';
-																} else if (slide.childNodes[c].childNodes[d].nodeName === 'youtube'){
-																	var yturlsplitarray = slide.childNodes[c].childNodes[d].childNodes[0].nodeValue.split('/');
-																	console.log("video");
-																	console.log(slide.childNodes[c].childNodes[d].childNodes[0].nodeValue);
-																	console.log("yturlsplitarray length = "+yturlsplitarray.length);
-																	slideHtmlText += '<iframe id="ytplayer" type="text/html" width="640" height="360" src="https://www.youtube.com/embed/'+yturlsplitarray[(yturlsplitarray.length-1)]+'?autoplay=0&amp;origin='+slide.childNodes[c].childNodes[d].childNodes[0].nodeValue+'" frameborder="0" allowfullscreen></iframe>';
-																} else if (slide.childNodes[c].childNodes[d].nodeName === 'hint'){
-																	slideHtmlText += '<button class="btn seenotes"><img src="img/assets/nav_pointer.svg"><span>See Notes</span></button>';
-																}
+
+																slideHtmlText += returnElementHTML(slide.childNodes[c].childNodes[d]);
+
 															}
 															slideHtmlText += '</div>';
 														}
 													}
 
-													/*
-													    <div class="w-50">
-													        <h1 class="h1 section-header">Part 1: About Earth System Science</h1>
-															<p class="main-content">Earth system scientists take a holistic view of planet Earth, working to gain understanding of the influence of major and minor processes on Earth’s past, current and future conditions.</p>
-													    </div>
-													    <div class="w-50">
-													        <img src="img/assets/gears3.svg">
-													    </div>
-
-													*/
 												slideHtmlText += '</div>';
 											/*
 											CLOSE SLIDE ITEM;
@@ -471,26 +352,6 @@ function populateCarousel(){
 							            }
 							       /* } */
 
-					            //slideHtmlText += '</div>';
-
-					            /*
-					            THIS SHOULD PROBABLY BE SOMETHING WE PUT TOGETHER IN A SEPERATE FUNCTION.
-					            MAYBE THEY ALL SHOULD BE...?
-					            
-					            */
-					            //carouselIndicator = "<li data-target='#myCarousel' data-slide-to='"+totalslides+"' class='"+(totalslides === 0 ? 'active' : '')+"'></li>";
-					            //carouselTocEl =     "<li data-target='#myCarousel' data-slide-to='"+totalslides+"'><img src='img/assets/nav_pointer.svg'>Slide #"+totalslides+"</li>";
-
-					            /*if (slide.getElementsByTagName('full-size-image').length){
-					            	$(".carousel-inner").append( $(slideHtmlText) );
-					            	$(".carousel-indicators").append( $(carouselIndicator) );
-					            	$(".carousel-table-of-contents").append( $(carouselTocEl) );
-					            }*/
-					            //console.log(slideHtmlText);
-					            //console.log(carouselIndicator);
-					            //console.log(carouselTocEl);
-
-					            
 							}
 						} else {
 							console.log("no params");
@@ -502,6 +363,55 @@ function populateCarousel(){
 	}
 
 	setUpCarouselNavigation();
+}
+function returnElementHTML(node){
+
+	var slideHtmlText = "";
+	if (node.nodeName === 'section'){
+   		slideHtmlText += '<h1 class="h1 section-header">'+node.childNodes[0].nodeValue+'</h1>';
+   	} else if (node.nodeName === 'main'){
+   		slideHtmlText += '<h1 class="h1 main-header">'+node.childNodes[0].nodeValue+'</h1>';
+    } else if (node.nodeName === 'h2subheader'){
+		slideHtmlText += '<h2 class="h2 sub-header">'+node.childNodes[0].nodeValue+'</h2>';
+	} else if (node.nodeName === 'p'){
+    	slideHtmlText += '<p class="main-content">'+node.childNodes[0].nodeValue+'</p>';
+    } else if (node.nodeName === "quote"){
+		slideHtmlText += '<span class="quote-body">'+node.childNodes[0].nodeValue+'</span>';
+	} else if (node.nodeName === "byline"){
+			slideHtmlText += '<span class="quote-attribution">'+node.childNodes[0].nodeValue+'</span>';
+		slideHtmlText += '</div>';
+    } else if (node.nodeName === 'video'){
+    	slideHtmlText += '<p class="main-content" data-src="'+node.childNodes[0].nodeValue+'">'+'ADD VIDEO ELEMENT'+'</p>';
+    } else if (node.nodeName === 'image'){
+		slideHtmlText += '<img src="'+node.childNodes[0].nodeValue+'">';
+    } else if (node.nodeName === 'displayimage'){
+    	slideHtmlText += '<div class="display-image">';
+			slideHtmlText += '<img src="'+node.childNodes[0].nodeValue+'">';
+		slideHtmlText += '</div>';
+	} else if (node.nodeName === 'list'){
+		var listtype = "ul";
+		if (node.attributes["type"]){
+			listtype = node.attributes['type'].nodeValue === "numbered" ? "ol" : "ul";
+		}
+		slideHtmlText += '<'+listtype+'>';
+		for (var e = 0; e < node.childNodes.length; e++) {
+			if (node.childNodes[e].nodeName === "item"){
+				slideHtmlText += '<li>'+node.childNodes[e].childNodes[0].nodeValue+'</li>';
+			}
+		}
+		slideHtmlText += '</'+listtype+'>';
+	} else if (node.nodeName === 'youtube'){
+		var yturlsplitarray = node.childNodes[0].nodeValue.split('/');
+		//console.log("video");
+		//console.log(node.childNodes[0].nodeValue);
+		//console.log("yturlsplitarray length = "+yturlsplitarray.length);
+		slideHtmlText += '<iframe id="ytplayer" type="text/html" width="640" height="360" src="https://www.youtube.com/embed/'+yturlsplitarray[(yturlsplitarray.length-1)]+'?autoplay=0&amp;origin='+node.childNodes[0].nodeValue+'" frameborder="0" allowfullscreen></iframe>';
+	} else if (node.nodeName === 'hint'){
+		slideHtmlText += '<button class="btn seenotes"><img src="img/assets/nav_pointer.svg"><span>See Notes</span></button>';
+	}
+
+	return slideHtmlText;
+
 }
 function hasEls(el, name){
 	console.log("has "+name+"?"+el.getElementsByTagName(name).length);
