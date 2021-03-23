@@ -224,25 +224,50 @@
 		</slide>
 	</part>
 	<part>
-		<slide data-slideid="12">
+		<slide data-slideid="13">
 			<params slideType="geosphere"></params>
 			<toc>Geosphere</toc>
+			<element width="w-70" height="h-100">
+				<h2subheader><![CDATA[Elements of the Geosphere includes the surface rocks and soils as well as Earth's interior.]]></h2subheader>
+				<p><![CDATA[Take a look at your photo of your site. Can you identify a few elements of the Geosphere at your location? Label them on your overlay or sketch.]]></p>
+				<hint><![CDATA[The Geosphere includes: the solid part of Earth (mountains, valleys, fields, plains, bedrock, etc.); the not-so-solid interior of the Earth; and the thin layer of soil that covers parts of the solid Earth.]]></hint>
+			</element>
 		</slide>
-		<slide data-slideid="14">
+		<slide data-slideid="15">
 			<params slideType="hydrosphere"></params>
 			<toc>Hydrosphere</toc>
+			<element width="w-70" height="h-100">
+				<h2subheader><![CDATA[Elements of the Hydrosphere include all bodies of surface water as well as ground water.]]></h2subheader>
+				<p><![CDATA[Take a look at your photo of your site. Can you identify a few elements of the Hydrosphere at your location? Label them on your overlay or sketch.]]></p>
+				<hint><![CDATA[The Hydrosphere is all of Earth's bodies of water, including oceans, lakes, rivers, and even the groundwater and Earth's frozen water. As in this tutorial, climate scientists often categorize frozen water as the Cryosphere, while also recognizing it as a part of the Hydrosphere.]]></hint>
+			</element>
 		</slide>
 		<slide data-slideid="16">
 			<params slideType="cryosphere"></params>
 			<toc>Cryosphere</toc>
+			<element width="w-70" height="h-100">
+				<h2subheader><![CDATA[Elements of the Cryosphere include snow and ice.]]></h2subheader>
+				<p><![CDATA[Take a look at your photo of your site. Can you identify a few elements of the Cryosphere at your location? Label them on your overlay or sketch.]]></p>
+				<hint><![CDATA[The Cryosphere is water in its frozen form on Earth’s surface. This includes ice and snow on the ground, sea ice, lake and river ice, glaciers, ice shelves, icebergs and frozen ground (soil or rock in which all or part of the water is frozen). Ground that is frozen all year round is called permafrost.]]></hint>
+			</element>
 		</slide>
-		<slide data-slideid="18">
+		<slide data-slideid="19">
 			<params slideType="biosphere"></params>
 			<toc>Biosphere</toc>
+			<element width="w-70" height="h-100">
+				<h2subheader><![CDATA[Elements of the Biosphere include all living plants and animals, from the smallest single celled organisms to the largest trees and animals on the planet.]]></h2subheader>
+				<p><![CDATA[Take a look at your photo of your site. Can you identify a few elements of the Biosphere at your location? Label them on your overlay or sketch.]]></p>
+				<hint><![CDATA[The Biosphere is the collection of all living things on Earth: plants, animals, bacteria, fungi, algae, and protozoa.]]></hint>
+			</element>
 		</slide>
 		<slide data-slideid="15">
 			<params slideType="atmosphere"></params>
 			<toc>Atmosphere</toc>
+			<element width="w-70" height="h-100">
+				<h2subheader><![CDATA[Elements of the Atmosphere include several different gases (mostly nitrogen and oxygen) as well as clouds, water vapor, and solid particles such as dust and pollen.]]></h2subheader>
+				<p><![CDATA[Take a look at your photo of your site. Can you identify a few elements of the Atmosphere at your location? Label them on your overlay or sketch.]]></p>
+				<hint><![CDATA[The Atmosphere is the blanket of gas that we call air that surrounds Earth. The Atmosphere includes the rain that is falling through the air, clouds, and tiny suspended particles of dust (called aerosols) that are found in air.]]></hint>
+			</element>
 		</slide>
 	</part>
 </carousel>

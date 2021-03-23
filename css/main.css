@@ -965,6 +965,14 @@ Earth To Sky Bootstrap Carousel Approach CSS
 .on.hydro .pie img {
     transform: rotate(287deg);
 }
+.sphere .h2.sub-header {
+    color: #e55100;
+}
+.sphere p.main-content {
+    padding-left: 1rem;
+    border-left: 5px solid #e55100;
+    padding-right: 20%;
+}
 @media screen and (orientation: portrait) {
   html.mobile {
     transform: rotate(-90deg);
