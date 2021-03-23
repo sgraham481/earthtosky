@@ -940,8 +940,8 @@ Earth To Sky Bootstrap Carousel Approach CSS
 }
 .pie {
     position: absolute;
-    bottom: -59%;
-    right: -33.5%;
+    bottom: -58%;
+    right: -32.5%;
     width: 65%;
     transition: bottom .5s, right .5s;
 }
@@ -949,26 +949,6 @@ Earth To Sky Bootstrap Carousel Approach CSS
     height: auto;
     width: 100%;
     transition: transform .5s;
-}
-.on.geo .pie {
-    bottom: -59.5%;
-    right: -32.5%;
-}
-.on.cryo .pie {
-    bottom: -59.5%;
-    right: -32%;
-}
-.on.atmo .pie {
-    bottom: -57.5%;
-    right: -32%;
-}
-.on.bio .pie {
-    bottom: -59%;
-    right: -33.5%;
-}
-.on.hydro .pie {
-    bottom: -57.5%;
-    right: -33.5%;
 }
 .on.geo .pie img {
     transform: rotate(70deg);
