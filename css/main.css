@@ -389,6 +389,12 @@ button.seenotes span {
     font-size: 1rem;
     font-style: italic;
 }
+button.seenotes:hover, 
+button.seenotes:focus, 
+button.seenotes.hover {
+    background-color: #0e2544;
+    color: #ffffff;
+}
 /* ------------------------------------------------ */
 /*    FONT STYLING
   ------------------------------------------------ */
@@ -552,6 +558,12 @@ Earth To Sky Bootstrap Carousel Approach CSS
 }
 .white-yellow-gradient-background {
     background-image: url(../img/assets/8_background.svg);
+    background-position: 100% center;
+    background-repeat: no-repeat;
+    height: 100%;
+}
+.white-blue-gradient-background {
+    background-image: url(../img/assets/part_3_background.svg);
     background-position: 100% center;
     background-repeat: no-repeat;
     height: 100%;

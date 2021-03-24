@@ -493,6 +493,240 @@
 			</element>
 		</slide>
 	</part>
+	<part>
+		<slide data-slideid="31">
+			<params slideType="white-blue-gradient-background" layout="horiz-50-50"></params>
+			<toc>Part 3</toc>
+			<element width="w-50" height="h-100">
+				<section><![CDATA[Earth's Climate System]]></section>
+				<h2subheader><![CDATA[Our planet’s climate system operates at global, regional and local scales, which are linked.]]></h2subheader>
+				<p><![CDATA[For example, pollution from China affects cloud development in the North Pacific and strengthens extratropical cyclones. In turn, these  play an important role in atmospheric circulation, bringing tropical moisture up to temperate latitudes.]]></p>
+				<hint><![CDATA[Optional: read more (hot link Read more to this: https://climate.nasa.gov/news/2218/global-is-the-new-local-pollution-changes-clouds-climate-downstream/ )]]></hint>
+			</element>
+			<element width="w-50" height="h-80" classes="h-center-overflow">
+				<embedvideo><![CDATA[vid/GEOS5_aerosols.mov]]></embedvideo>
+			</element>
+		</slide>
+		<slide data-slideid="32">
+			<params slideType="white-blue-gradient-background" layout="horiz-50-50"></params>
+			<toc>Introduction</toc>
+			<element width="w-50" height="h-100">
+				<section><![CDATA[Introduction]]></section>
+				<p><![CDATA[The climate system is both affected by and in turn affects the overall system in direct and complex ways. It operates at local, regional and global scales.]]></p>
+				<p><![CDATA[A quick glance at this diagram shows the complexity of the climate system – and the many interactions and processes at work. This is why supercomputers are needed to run climate models!]]></p>
+				<p><![CDATA[In this section we’ll be looking at the major drivers of Earth’s climate and touch on why it is changing.]]></p>
+			</element>
+			<element width="w-50" height="h-80" classes="pl-5 v-center-overflow">
+				<image><![CDATA[img/media/image32.png]]></image>
+			</element>
+		</slide>
+		<slide data-slideid="33b">
+			<params slideType="white-blue-gradient-background" layout="horiz-50-50"></params>
+			<toc>Global Drivers - Our Sun</toc>
+			<element width="w-50" height="h-100">
+				<section><![CDATA[What Drives Earth’s Climate on the Global Scale?]]></section>
+				<h2subheader><![CDATA[Our Sun]]></h2subheader>
+				<p><![CDATA[Our Sun’s cycles have an effect over the time scale of millions of years, but do not account for the recent warming of our planet.]]></p>
+				<hint><![CDATA[Optional: for a basic explanation of how solar variation influences our climate see http://www.ucsusa.org/global_warming/science_and_impacts/science/effect-of-sun-on-climate-faq.html#5)]]></hint>
+			</element>
+			<element width="w-50" height="h-80" classes="pl-5 v-center-overflow">
+				<image><![CDATA[img/assets/image33b.jpg]]></image>
+			</element>
+		</slide>
+		<slide data-slideid="33a">
+			<params slideType="white-blue-gradient-background" layout="horiz-50-50"></params>
+			<toc>Global Drivers - Orbital Cycles</toc>
+			<element width="w-50" height="h-100">
+				<section><![CDATA[What Drives Earth’s Climate on the Global Scale?]]></section>
+				<h2subheader><![CDATA[Orbital Cycles]]></h2subheader>
+				<p><![CDATA[Earth’s orbital cycles (Milankovitch cycles) operate separately and together, to influence global climate over very long time scales, triggering the beginning and end of the Ice Ages.]]></p>
+				<hint><![CDATA[Assignment: Please read this short article about the Milankovitch cycles https://climate.nasa.gov/news/2948/milankovitch-orbital-cycles-and-their-role-in-earths-climate/]]></hint>
+			</element>
+			<element width="w-50" height="h-80" classes="pl-5 v-center-overflow">
+				<image><![CDATA[img/assets/image33a.jpg]]></image>
+			</element>
+		</slide>
+		<slide data-slideid="35">
+			<params slideType="white-blue-gradient-background" layout="horiz-50-50"></params>
+			<toc>Global Drivers - Physics</toc>
+			<element width="w-50" height="h-100">
+				<section><![CDATA[What Drives Earth’s Climate on the Global Scale?]]></section>
+				<h2subheader><![CDATA[Physics]]></h2subheader>
+				<p><![CDATA[The laws of physics govern how air and water move and affect atmospheric and oceanic circulation patterns, among other things. Climate scientists rely on known understanding of physics when developing climate models and predictions of climate.]]></p>
+				<list type="bullet">
+					<item><![CDATA[Newton’s Laws of Motion]]></item>
+					<item><![CDATA[Conservation of Energy]]></item>
+					<item><![CDATA[Conservation of Momentum]]></item>
+					<item><![CDATA[Conservation of Angular Momentum]]></item>
+					<item><![CDATA[Newton’s Universal Law of Gravity]]></item>
+				</list>
+			</element>
+			<element width="w-50" height="h-80" classes="pl-5 v-center-overflow">
+				<image><![CDATA[img/assets/image35.jpg]]></image>
+			</element>
+		</slide>
+		<slide data-slideid="34a">
+			<params slideType="white-blue-gradient-background" layout="horiz-50-50"></params>
+			<toc>Global Drivers - Life</toc>
+			<element width="w-50" height="h-100">
+				<section><![CDATA[What Drives Earth’s Climate on the Global Scale?]]></section>
+				<h2subheader><![CDATA[Presence of Life]]></h2subheader>
+				<p><![CDATA[We have seen that living things help circulate matter and energy. Life also contributes to the greenhouse gases that help make Earth’s temperature habitable for people.]]></p>
+				<hint><![CDATA[The visualization to the right shows the seasonal variation of the Biosphere and corresponding CO2 levels in the Atmosphere. As areas green up in spring and summer, plants draw more CO2 from the Atmosphere. White squares indicate CO2 concentrations higher than the trend vs. areas without squares where CO2 concentrations are lower.]]></hint>
+			</element>
+			<element width="w-50" height="h-80" classes="pl-5 v-center-overflow">
+				<embedvideo><![CDATA[vid/CO2_biosphere_w_dates.mp4]]></embedvideo>
+			</element>
+		</slide>
+		<slide data-slideid="34b">
+			<params slideType="white-blue-gradient-background" layout="horiz-50-50"></params>
+			<toc>Global Drivers - Matter Cycling</toc>
+			<element width="w-50" height="h-100">
+				<section><![CDATA[What Drives Earth’s Climate on the Global Scale?]]></section>
+				<h2subheader><![CDATA[Cycling of Matter]]></h2subheader>
+				<p><![CDATA[The cycling of matter links the Earth system components. Examples include the water cycle and the carbon cycle. Alterations in these cycles can cause climate to shift (eg., adding excess CO2 to the atmosphere traps more heat on Earth, in turn changing the climate.)]]></p>
+			</element>
+			<element width="w-50" height="h-80" classes="pl-5 v-center-overflow">
+				<image><![CDATA[img/assets/image34b.jpg]]></image>
+			</element>
+		</slide>
+		<slide data-slideid="36">
+			<params slideType="white-blue-gradient-background" layout="horiz-50-50"></params>
+			<toc>Global Drivers - Coupled Circulation</toc>
+			<element width="w-50" height="h-100">
+				<section><![CDATA[What Drives Earth’s Climate on the Global Scale?]]></section>
+				<h2subheader><![CDATA[Coupled Ocean and Atmospheric Circulation Determine Climate Patterns]]></h2subheader>
+				<p><![CDATA[A major part of the global climate system is comprised of the coupled ocean and atmospheric circulation patterns. These patterns dictate the major climatic zones on our planet and are intimately intertwined with all of Earth’s spheres.)]]></p>
+				<p><![CDATA[A basic understanding of these circulation patterns can help us grasp the global, regional and local ramifications of the changes humans are making to our Atmosphere and ocean.]]></p>
+				<p><![CDATA[Let’s begin with the Atmosphere.]]></p>
+			</element>
+			<element width="w-50" height="h-80" classes="pl-5 v-center-overflow">
+				<youtube><![CDATA[https://youtu.be/xqM83_og1Fc]]></youtube>
+			</element>
+		</slide>
+		<slide data-slideid="37">
+			<params slideType="white-blue-gradient-background" layout="horiz-50-50"></params>
+			<element width="w-50" height="h-100">
+				<section><![CDATA[What Drives Earth’s Climate on the Global Scale?]]></section>
+				<h2subheader><![CDATA[Coupled Ocean and Atmospheric Circulation Determine Climate Patterns]]></h2subheader>
+				<p><![CDATA[Watch this (slightly dated)  4 minute movie to see the effects of surface ocean currents on climate patterns:]]></p>
+				<p><![CDATA[http://www.pbslearningmedia.org/resource/ttv10.sci.ess.watcyc.currents/the-role-of-ocean-currents-in-climate/]]></p>
+				<p><![CDATA[In sum, the ocean and atmospheric circulation patterns are closely linked. Driven by the energy from our Sun and the spinning of the globe, winds and ocean currents distribute heat around our planet.]]></p>
+			</element>
+			<element width="w-50" height="h-80" classes="pl-5 v-center-overflow">
+				<embedvideo><![CDATA[vid/The_OCEAN_ipod_lg.m4v]]></embedvideo>
+			</element>
+		</slide>
+		<slide data-slideid="37a">
+			<params slideType="white-blue-gradient-background" layout="horiz-50-50"></params>
+			<toc>Global Drivers - Cumulative Processes</toc>
+			<element width="w-50" height="h-100">
+				<section><![CDATA[What Drives Earth’s Climate on the Global Scale?]]></section>
+				<h2subheader><![CDATA[Cumulative Effects of Regional and Local Processes and Events]]></h2subheader>
+				<p><![CDATA[For example, cumulative effects of land management practices in various regions around the globe affect the global carbon cycle, in turn impacting global climate.]]></p>
+			</element>
+			<element width="w-50" height="h-80" classes="pl-5 v-center-overflow">
+				<image><![CDATA[img/assets/image37a.jpg]]></image>
+			</element>
+		</slide>
+		<slide data-slideid="38">
+			<params slideType="white-blue-gradient-background" layout="horiz-50-50"></params>
+			<toc>Regional Patterns</toc>
+			<element width="w-50" height="h-100">
+				<section><![CDATA[What Causes Variation in Regional Climate?]]></section>
+				<p><![CDATA[Regional climate patterns involve smaller scale events and processes. They can also be affected by cyclical events that are linked to the global climate. For example, the El Niño - La Niña cycle arises from global oceanic processes. The switch from one phase of this cycle to another impacts climate and weather patterns in Pacific coastal regions and beyond.]]></p>
+			</element>
+			<element width="w-50" height="h-80" classes="pl-5 v-center-overflow">
+				<youtube><![CDATA[https://youtu.be/_titsRUo4t4]]></youtube>
+			</element>
+		</slide>
+		<slide data-slideid="39">
+			<params slideType="white-blue-gradient-background" layout="horiz-50-50"></params>
+			<toc>Local Patterns</toc>
+			<element width="w-50" height="h-100">
+				<section><![CDATA[What Causes Variation in Local Climate?]]></section>
+				<h2subheader><![CDATA[Cumulative Effects of Regional and Local Processes and Events]]></h2subheader>
+				<p><![CDATA[Local climate is dependent upon global and regional processes but is influenced by the local environment and conditions such as topography or land cover. For example, the surface temperature of a local area will depend on whether it's covered in vegetation or pavement.]]></p>
+			</element>
+			<element width="w-50" height="h-80" classes="pl-5 v-center-overflow">
+				<image><![CDATA[img/assets/image39a.jpg]]></image>
+			</element>
+		</slide>
+		<slide data-slideid="40">
+			<params slideType="white-blue-gradient-background" layout="horiz-50-50"></params>
+			<element width="w-50" height="h-100">
+				<section><![CDATA[Why is Earth’s Climate Changing Now?]]></section>
+				<p><![CDATA[By altering the chemical makeup of our Atmosphere through adding additional carbon, we are trapping more of the Sun’s energy. This changes both the Atmosphere and ocean components of Earth’s climate system, which in turn affect the Biosphere, Cryosphere and Geosphere in ways that have global, regional and local consequences.]]></p>
+			</element>
+			<element width="w-50" height="h-80" classes="pl-5 v-center-overflow">
+				<image><![CDATA[img/assets/image40.jpg]]></image>
+			</element>
+		</slide>
+		<slide data-slideid="41">
+			<params slideType="white-blue-gradient-background" layout="horiz-50-50"></params>
+			<toc>Consider Your Site</toc>
+			<element width="w-40" height="h-100">
+				<section><![CDATA[How is Your Site Linked to the Global Climate System?]]></section>
+				<p><![CDATA[Think how the ocean and air currents affect the climate where you live. Do you think the system is changing? Have weather patterns shifted in your location? How might this affect the natural and cultural resources there? How about the global and local processes, the energy flow and the exchange of matter? How will all of these changes affect you, and your visitors? Our longer courses use an Earth systems approach to build the conceptual links between global, regional and local climate change and frame discussions with scientists and fellow interpreters.]]></p>
+			</element>
+			<element width="w-60" height="h-100" classes="pl-5 v-bottom">
+				<image><![CDATA[img/assets/hand_writing_on_photo.png]]></image>
+			</element>
+		</slide>
+		<slide data-slideid="41a">
+			<params slideType="white-blue-gradient-background" layout="horiz-50-50"></params>
+			<toc>Summary of Part 3</toc>
+			<element width="w-50" height="h-100">
+				<section><![CDATA[Summary of Part 3]]></section>
+				<p><![CDATA[Earth’s climate operates on global, regional and local scales, which are linked through various processes governed by fundamental laws of physics.]]></p>
+				<p><![CDATA[Globally, Earth’s climate is determined by the Sun’s cycles, Earth’s orbital cycles, the cycling of matter and flow of energy, and the cumulative effects of regional and local processes.]]></p>
+				<p><![CDATA[The currents of the ocean and the Atmosphere are inextricably linked, distributing heat around the planet. This produces global, regional and local climate and weather patterns.]]></p>
+			</element>
+			<element width="w-50" height="h-80" classes="pl-5 v-center-overflow">
+				<image><![CDATA[img/assets/image41a.png]]></image>
+			</element>
+		</slide>
+		<slide data-slideid="41b">
+			<params slideType="white-blue-gradient-background" layout="horiz-50-50"></params>
+			<element width="w-50" height="h-100">
+				<section><![CDATA[Summary of Part 3]]></section>
+				<p><![CDATA[Regional climate is dependent on global trends, influenced by regional conditions such as land management practices.]]></p>
+				<p><![CDATA[Local climate is impacted by both regional and global scale processes, influenced by localized conditions such as impervious surfaces.]]></p>
+				<p><![CDATA[Earth’s climate is changing because humans are adding excess carbon to the Atmosphere. This is altering all components of the Earth system, leading to widespread impacts at local, regional and global scales.]]></p>
+			</element>
+			<element width="w-50" height="h-80" classes="pl-5 v-center-overflow">
+				<image><![CDATA[img/assets/image41b.png]]></image>
+			</element>
+		</slide>
+		<slide data-slideid="42">
+			<params slideType="white-blue-gradient-background" layout="horiz-50-50"></params>
+			<toc>Moving Forward</toc>
+			<element width="w-50" height="h-100">
+				<section><![CDATA[Moving Forward]]></section>
+				<p><![CDATA[As you learn more about Earth’s climate and global change, or even as you simply think about what is happening in the natural world around you, keep in mind the concept of the Earth system, with its spheres, reservoirs of matter and energy, and processes that drive matter and energy from one sphere to another.]]></p>
+				<p><![CDATA[These concepts can help you better understand the very dynamic nature of our planet and provide a foundation for explaining global climate change and its effects.]]></p>
+				<p><![CDATA[It’s all about connections!]]></p>
+			</element>
+			<element width="w-50" height="h-80" classes="pl-5 v-center-overflow">
+				<image><![CDATA[img/assets/image42.png]]></image>
+			</element>
+		</slide>
+		<slide data-slideid="43">
+			<params slideType="white-blue-gradient-background" layout="horiz-50-50"></params>
+			<toc>Conclusion</toc>
+			<element width="w-50" height="h-100">
+				<section><![CDATA[Conclusion]]></section>
+				<image><![CDATA[img/assets/image43.png]]></image>
+			</element>
+			<element width="w-50" height="h-80" classes="pl-5 v-center-overflow">
+				<quoteElement>
+					<quote><![CDATA[“I believe the best way to begin reconnecting humanity's heart, mind, and soul to nature is for us to share our individual stories.”]]></quote>
+					<byline><![CDATA[– J. Drew Lanham]]></byline>
+					<displayimage><![CDATA[img/assets/davinci.png]]></displayimage>
+				</quoteElement>
+			</element>
+		</slide>
+	</part>
 </carousel>
 
 
