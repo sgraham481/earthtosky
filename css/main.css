@@ -499,7 +499,10 @@ Earth To Sky Bootstrap Carousel Approach CSS
     top: 0;
 }
 .carousel-inner p {
-  margin: 1rem 0 .75rem;
+  margin: 2rem 0;
+}
+.carousel-inner li {
+    margin: 1rem;
 }
 .container .carousel {
     width: 100%;
@@ -561,6 +564,12 @@ Earth To Sky Bootstrap Carousel Approach CSS
 }
 .light-yellow-gradient-background {
     background-image: url(../img/assets/10_background_1.svg);
+    background-position: 100% center;
+    background-repeat: no-repeat;
+    height: 100%;
+}
+.energy-flow-background {
+    background-image: url(../img/assets/24_background.svg);
     background-position: 100% center;
     background-repeat: no-repeat;
     height: 100%;
@@ -1007,12 +1016,14 @@ Earth To Sky Bootstrap Carousel Approach CSS
 .on.hydro .pie img {
     transform: rotate(287deg);
 }
-.sphere .h2.sub-header {
+.part-2 .h2.sub-header {
     color: var(--ess-orange);
 }
-.sphere p.main-content {
+.part-2 p.main-content {
     padding-left: 1rem;
     border-left: 5px solid #e55100;
+}
+.part-2 .sphere p.main-content {
     padding-right: 20%;
 }
 .hand-on-paper {

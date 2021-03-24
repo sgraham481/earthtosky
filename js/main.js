@@ -174,7 +174,7 @@ BUILD CAROUSEL OPTIONS
 **********************************************************/
 function populateCarousel(){
 	var x = xmlobj.documentElement.childNodes;
-	
+	var partnum = 1;
     var totalslides = 0;
     for (i = 0; i < x.length; i++) {
 		console.log(x[i].nodeName);
@@ -185,9 +185,12 @@ function populateCarousel(){
 			*/
 			var part = x[i];
 			var slideid = "";
+			var partclass = "part-"+partnum;
+			partnum++;
+			
 			if (part.childNodes.length){
+
 				for (j = 0; j < part.childNodes.length; j++) {
-					
 					if (part.childNodes[j].nodeName === "slide"){
 						console.log("  >  " + "slide node");
 						/*
@@ -212,7 +215,7 @@ function populateCarousel(){
 						// if full-size-image, then stand in;
 						
 						if (slide.getElementsByTagName('full-size-image').length > 0){
-							slideHtmlText += '<div class="item'+(totalslides === 0 ? ' active' : '')+'" data-id="'+totalslides+'" data-background="'+slideType+'">';
+							slideHtmlText += '<div class="item '+partclass+(totalslides === 0 ? ' active' : '')+'" data-id="'+totalslides+'" data-background="'+slideType+'">';
 								var imgsrc = slide.getElementsByTagName('full-size-image')[0].attributes['src'].nodeValue;
 								slideHtmlText += '<img src="'+imgsrc+'" alt="'+''+'" style="width:100%;">';
 							slideHtmlText += '</div>';
@@ -264,7 +267,7 @@ function populateCarousel(){
 
 								            	for (var b=0; b<getTotalEls(slide, 'bottom'); b++){
 
-													slideHtmlText = '<div class="item blue-bkgd blue-vert-50-50'+(totalslides === 0 ? ' active' : '')+'" data-id="'+totalslides+'" data-background="'+slideType+'">';
+													slideHtmlText = '<div class="item '+partclass+' blue-bkgd blue-vert-50-50'+(totalslides === 0 ? ' active' : '')+'" data-id="'+totalslides+'" data-background="'+slideType+'">';
 														/*
 															GET 'TOP' NODE;
 															IF NO TOP NODE, LOG;
@@ -334,7 +337,7 @@ function populateCarousel(){
 		          							}
 							            } else if ( slideType === "blue-circle-right"){
 											
-							            	slideHtmlText = '<div class="item blue-bkgd blue-circle-right'+(totalslides === 0 ? ' active' : '')+'" data-id="'+totalslides+'" data-background="'+slideType+'">';
+							            	slideHtmlText = '<div class="item '+partclass+' blue-bkgd blue-circle-right'+(totalslides === 0 ? ' active' : '')+'" data-id="'+totalslides+'" data-background="'+slideType+'">';
 							            		slideHtmlText += '<div class="item-container d-flex">';
 
 							            			for (var c = 0; c < slide.childNodes.length; c++) {
@@ -363,7 +366,7 @@ function populateCarousel(){
 	          								totalslides++;
 							            
 							            } else if ( slideType === "geosphere"){
-											slideHtmlText = '<div class="item sphere '+slideType+(totalslides === 0 ? ' active' : '')+'" data-id="'+totalslides+'" data-background="sphere-bkgds" data-sphere="geo">';
+											slideHtmlText = '<div class="item '+partclass+' '+slideType+(totalslides === 0 ? ' active' : '')+'" data-id="'+totalslides+'" data-background="sphere-bkgds" data-sphere="geo">';
 							            		slideHtmlText += '<div class="item-container d-flex">';
 							            			for (var c = 0; c < slide.childNodes.length; c++) {
 														if (slide.childNodes[c].nodeName === "element"){
@@ -388,7 +391,7 @@ function populateCarousel(){
 											addNewIndicator(slideid, totalslides);
 	          								totalslides++;
 										} else if ( slideType === "cryosphere"){
-											slideHtmlText = '<div class="item sphere '+slideType+(totalslides === 0 ? ' active' : '')+'" data-id="'+totalslides+'" data-background="sphere-bkgds" data-sphere="cryo">';
+											slideHtmlText = '<div class="item '+partclass+' '+slideType+(totalslides === 0 ? ' active' : '')+'" data-id="'+totalslides+'" data-background="sphere-bkgds" data-sphere="cryo">';
 							            		slideHtmlText += '<div class="item-container d-flex">';
 							            			for (var c = 0; c < slide.childNodes.length; c++) {
 														if (slide.childNodes[c].nodeName === "element"){
@@ -416,7 +419,7 @@ function populateCarousel(){
 											addNewIndicator(slideid, totalslides);
 	          								totalslides++;
 										} else if ( slideType === "hydrosphere"){
-											slideHtmlText = '<div class="item sphere '+slideType+(totalslides === 0 ? ' active' : '')+'" data-id="'+totalslides+'" data-background="sphere-bkgds" data-sphere="hydro">';
+											slideHtmlText = '<div class="item '+partclass+' '+slideType+(totalslides === 0 ? ' active' : '')+'" data-id="'+totalslides+'" data-background="sphere-bkgds" data-sphere="hydro">';
 							            		slideHtmlText += '<div class="item-container d-flex">';
 							            			for (var c = 0; c < slide.childNodes.length; c++) {
 														if (slide.childNodes[c].nodeName === "element"){
@@ -445,7 +448,7 @@ function populateCarousel(){
 	          								totalslides++;
 											
 										} else if ( slideType === "biosphere"){
-											 slideHtmlText = '<div class="item sphere '+slideType+(totalslides === 0 ? ' active' : '')+'" data-id="'+totalslides+'" data-background="sphere-bkgds" data-sphere="bio">';
+											 slideHtmlText = '<div class="item '+partclass+' '+slideType+(totalslides === 0 ? ' active' : '')+'" data-id="'+totalslides+'" data-background="sphere-bkgds" data-sphere="bio">';
 							            		slideHtmlText += '<div class="item-container d-flex">';
 							            			for (var c = 0; c < slide.childNodes.length; c++) {
 														if (slide.childNodes[c].nodeName === "element"){
@@ -474,7 +477,7 @@ function populateCarousel(){
 	          								totalslides++;
 											
 										} else if ( slideType === "atmosphere"){
-											slideHtmlText = '<div class="item sphere '+slideType+(totalslides === 0 ? ' active' : '')+'" data-id="'+totalslides+'" data-background="sphere-bkgds" data-sphere="atmo">';
+											slideHtmlText = '<div class="item '+partclass+' '+slideType+(totalslides === 0 ? ' active' : '')+'" data-id="'+totalslides+'" data-background="sphere-bkgds" data-sphere="atmo">';
 							            		slideHtmlText += '<div class="item-container d-flex">';
 							            			for (var c = 0; c < slide.childNodes.length; c++) {
 														if (slide.childNodes[c].nodeName === "element"){
@@ -503,7 +506,7 @@ function populateCarousel(){
 	          								totalslides++;
 										} else if (slideType === "pt2-intro-bkgd" || layoutType === "horiz-50-50"){
 
-											slideHtmlText = '<div class="item '+slideType+(totalslides === 0 ? ' active' : '')+'" data-id="'+totalslides+'" data-background="'+slideType+'">';
+											slideHtmlText = '<div class="item '+partclass+' '+slideType+(totalslides === 0 ? ' active' : '')+'" data-id="'+totalslides+'" data-background="'+slideType+'">';
 							            		slideHtmlText += '<div class="item-container d-flex">';
 							            			for (var c = 0; c < slide.childNodes.length; c++) {
 														if (slide.childNodes[c].nodeName === "element"){
