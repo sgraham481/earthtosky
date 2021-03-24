@@ -100,7 +100,7 @@
 				<hint><![CDATA[Some scientists include Cryosphere as a component of the Hydrosphere, and some scientists include the Pedosphere, a.k.a. soils, as a component of the Geosphere.]]></hint>
 			</element>
 			<element width="w-50" height="h-80" classes="v-center-overflow">
-				<image><![CDATA[img/media/image3.png]]></image>
+				<image><![CDATA[img/assets/image3.png]]></image>
 			</element>
 		</slide>
 		<slide data-slideid="3b">
@@ -111,7 +111,7 @@
 				<hint><![CDATA[Some scientists include Cryosphere as a component of the Hydrosphere, and some scientists include the Pedosphere, a.k.a. soils, as a component of the Geosphere.]]></hint>
 			</element>
 			<element width="w-50" height="h-80" classes="v-center-overflow">
-				<image><![CDATA[img/media/image3.png]]></image>
+				<image><![CDATA[img/assets/image3.png]]></image>
 			</element>
 		</slide>
 		<slide data-slideid="4">
@@ -224,6 +224,84 @@
 		</slide>
 	</part>
 	<part>
+		<slide data-slideid="6">
+			<params slideType="pt2-intro-bkgd"></params>
+			<toc>Part 2</toc>
+			<element width="w-45" height="h-100">
+				<image><![CDATA[img/assets/image6.jpg]]></image>
+			</element>
+			<element width="w-50" height="h-100">
+				<section><![CDATA[Part 2: Looking at Earth as a System and Applying that to Your Site]]></section>
+				<quoteElement>
+					<quote><![CDATA[Look deep into nature, and then you will understand everything better.]]></quote>
+					<byline><![CDATA[- Albert Einstein]]></byline>
+					<displayimage><![CDATA[img/assets/davinci.png]]></displayimage>
+				</quoteElement>
+			</element>
+		</slide>
+		<slide data-slideid="7">
+			<params slideType="medium-yellow-gradient-background" layout="horiz-50-50"></params>
+			<toc>Introduction</toc>
+			<element width="w-50" height="h-100" padding="pr-5">
+				<main><![CDATA[Introduction]]></main>
+				<p><![CDATA[In this section we’ll be exploring your site using an Earth systems approach. We’ll help you think about each sphere, and the elements, processes and cycles in each. We’ll help you use your image to identify and label evidence of these things in the landscape in which you work and/or live.]]></p>
+			</element>
+			<element width="w-50" height="h-80" classes="v-center-overflow">
+				<image><![CDATA[img/assets/image3.png]]></image>
+			</element>
+		</slide>
+		<slide data-slideid="8">
+			<params slideType="white-yellow-gradient-background" layout="horiz-50-50"></params>
+			<toc>Interconnected Spheres</toc>
+			<element width="w-50" height="h-100" padding="pr-5">
+				<section><![CDATA[Interconnected Spheres]]></section>
+				<p><![CDATA[The Earth system with all of its spheres is sometimes referred to as a "system of systems."]]></p>
+				<p><![CDATA[Each sphere functions as an open system: the spheres are connected through matter cycling and energy flowing between them, and a variety of global processes. For example, water and carbon are found in every sphere, cycling between them.]]></p>
+				<p><![CDATA[Scientists use the concept of Earth’s spheres as a means of studying the complexity of the planet.]]></p>
+				<hint><![CDATA[Assignment: Watch the 6 minute movie, “Big Idea 3”]]></hint>
+			</element>
+			<element width="w-50" height="h-80" classes="v-center-overflow">
+				<youtube><![CDATA[https://youtu.be/BnpF0ndXk-8]]></youtube>
+			</element>
+		</slide>
+		<slide data-slideid="9">
+			<params slideType="medium-yellow-gradient-background" layout="horiz-50-50"></params>
+			<toc>Spheres and Elements</toc>
+			<element width="w-50" height="h-100" padding="pr-5">
+				<main><![CDATA[Each Sphere is made up of Elements]]></main>
+				<p><![CDATA[For example,]]></p>
+				<p><![CDATA[A bird is an <i>element</i> of the Biosphere<br>A pond is an <i>element</i> of the Hydrosphere<br>A glacier is an <i>element</i> of the Cryosphere<br>CO2 is an <i>element</i> of the Atmosphere<br>Coal is an <i>element</i> of the Geosphere]]></p>
+			</element>
+			<element width="w-50" height="h-80" classes="v-center-overflow">
+				<image><![CDATA[img/assets/image9.png]]></image>
+			</element>
+		</slide>
+		<slide data-slideid="10">
+			<params slideType="light-yellow-gradient-background" layout="horiz-50-50"></params>
+			<element width="w-50" height="h-100" padding="pr-5">
+				<main><![CDATA[Each Sphere is made up of Elements]]></main>
+				<h2subheader><![CDATA[Let's take a brief look at each of Earth's Spheres and elements of each at your site.]]></h2subheader>
+			</element>
+			<element width="w-50" height="h-80" classes="v-center-overflow">
+				<image><![CDATA[img/assets/image10.svg]]></image>
+			</element>
+		</slide>
+		<slide data-slideid="11">
+			<params slideType="white-yellow-gradient-background" layout="horiz-50-50"></params>
+			<toc>Using Your Site Photo</toc>
+			<element width="w-40" height="h-100">
+				<main><![CDATA[Using your Site Photo to Explore a Systems View of Your Site]]></main>
+				<list type="numbered">
+					<item><![CDATA[Find the photo you took of your site, and the tracing paper or plastic overlay.]]></item>
+					<item><![CDATA[Lay the tracing paper or plastic on top of your photo.]]></item>
+					<item><![CDATA[Be sure to have an implement handy that will write on your paper or plastic overlay.]]></item>
+					<item><![CDATA[Use your image to follow along and take notes, as we explore Earth’s system as it applies to your location.]]></item>
+				</list>
+			</element>
+			<element width="w-60" height="h-100" classes="v-bottom">
+				<image><![CDATA[img/assets/hand_writing_on_photo.png]]></image>
+			</element>
+		</slide>
 		<slide data-slideid="13">
 			<params slideType="geosphere"></params>
 			<toc>Geosphere</toc>
@@ -242,7 +320,7 @@
 				<hint><![CDATA[The Hydrosphere is all of Earth's bodies of water, including oceans, lakes, rivers, and even the groundwater and Earth's frozen water. As in this tutorial, climate scientists often categorize frozen water as the Cryosphere, while also recognizing it as a part of the Hydrosphere.]]></hint>
 			</element>
 		</slide>
-		<slide data-slideid="16">
+		<slide data-slideid="17">
 			<params slideType="cryosphere"></params>
 			<toc>Cryosphere</toc>
 			<element width="w-70" height="h-100">
@@ -267,6 +345,130 @@
 				<h2subheader><![CDATA[Elements of the Atmosphere include several different gases (mostly nitrogen and oxygen) as well as clouds, water vapor, and solid particles such as dust and pollen.]]></h2subheader>
 				<p><![CDATA[Take a look at your photo of your site. Can you identify a few elements of the Atmosphere at your location? Label them on your overlay or sketch.]]></p>
 				<hint><![CDATA[The Atmosphere is the blanket of gas that we call air that surrounds Earth. The Atmosphere includes the rain that is falling through the air, clouds, and tiny suspended particles of dust (called aerosols) that are found in air.]]></hint>
+			</element>
+		</slide>
+		<slide data-slideid="22">
+			<params slideType="white-yellow-gradient-background" layout="horiz-50-50"></params>
+			<toc>Matter and Energy</toc>
+			<element width="w-50" height="h-100">
+				<main><![CDATA[Each Sphere Holds Matter and Energy]]></main>
+				<h2subheader><![CDATA[Matter]]></h2subheader>
+				<p><![CDATA[Although it is obvious that the Hydrosphere and Cryosphere hold water, there is also water in the Biosphere, Atmosphere, and in the Geosphere. Each of the spheres also holds oxygen, various forms of carbon, and other chemical elements or materials. All of the matter on Earth can be placed in one or more spheres.]]></p>
+				<h2subheader><![CDATA[Energy]]></h2subheader>
+				<p><![CDATA[Energy in the spheres is mostly in the form of heat energy or chemical energy. There is a vast amount of heat energy in the Atmosphere and Hydrosphere. The greatest source of this heat energy is the Sun.]]></p>
+			</element>
+			<element width="w-50" height="h-80" padding="pl-5" classes="v-center-overflow">
+				<image><![CDATA[img/media/image22.jpg]]></image>
+			</element>
+		</slide>
+		<slide data-slideid="23">
+			<params slideType="white-yellow-gradient-background" layout="horiz-50-50"></params>
+			<toc>Energy Flows, Matter Cycles</toc>
+			<element width="w-50" height="h-100">
+				<main><![CDATA[Energy Flows, Matter Cycles]]></main>
+				<h2subheader><![CDATA[Earth’s Systems are Interconnected by the Flow and Exchange of Energy and Matter]]></h2subheader>
+				<p><![CDATA[Energy and matter are always circulating among the spheres, connecting them in many ways. Sometimes this circulation can happen very quickly, such as when a volcano erupts, moving tons of tiny particles from the Geosphere into the Atmosphere. Other examples of circulation happen much more slowly, such as when a fallen tree decays and nutrients move from the Biosphere to the Geosphere.]]></p>
+			</element>
+			<element width="w-50" height="h-80" padding="pl-5" classes="v-center-overflow">
+				<image><![CDATA[img/assets/images_8_and_23.svg]]></image>
+			</element>
+		</slide>
+		<slide data-slideid="26a">
+			<params slideType="white-yellow-gradient-background" layout="horiz-50-50"></params>
+			<toc>Processes Move Matter</toc>
+			<element width="w-50" height="h-100">
+				<main><![CDATA[Processes Move Matter]]></main>
+				<h2subheader><![CDATA[Whenever matter moves from one sphere into another, some process, driven by energy, causes it to happen. Here are some examples:]]></h2subheader>
+				<p><![CDATA[Water moves from a lake (Hydrosphere) into the air (Atmosphere) by a process called evaporation.]]></p>
+			</element>
+			<element width="w-50" height="h-80" padding="pl-5" classes="v-center-overflow">
+				<image><![CDATA[img/media/image26a.png]]></image>
+			</element>
+		</slide>
+		<slide data-slideid="26b">
+			<params slideType="white-yellow-gradient-background" layout="horiz-50-50"></params>
+			<element width="w-50" height="h-100">
+				<main><![CDATA[Processes Move Matter]]></main>
+				<h2subheader><![CDATA[Whenever matter moves from one sphere into another, some process, driven by energy, causes it to happen. Here are some examples:]]></h2subheader>
+				<p><![CDATA[Carbon dioxide moves from your body (Biosphere) into the air (Atmosphere) by a process called respiration.]]></p>
+			</element>
+			<element width="w-50" height="h-80" padding="pl-5" classes="v-center-overflow">
+				<image><![CDATA[img/media/image26b.png]]></image>
+			</element>
+		</slide>
+		<slide data-slideid="26c">
+			<params slideType="white-yellow-gradient-background" layout="horiz-50-50"></params>
+			<element width="w-50" height="h-100">
+				<main><![CDATA[Processes Move Matter]]></main>
+				<h2subheader><![CDATA[Whenever matter moves from one sphere into another, some process, driven by energy, causes it to happen. Here are some examples:]]></h2subheader>
+				<p><![CDATA[Minerals move from rock (Geosphere) into streams (Hydrosphere) by the processes of weathering and erosion.]]></p>
+			</element>
+			<element width="w-50" height="h-80" padding="pl-5" classes="v-center-overflow">
+				<image><![CDATA[img/media/image26c.png]]></image>
+			</element>
+		</slide>
+		<slide data-slideid="26d">
+			<params slideType="white-yellow-gradient-background" layout="horiz-50-50"></params>
+			<element width="w-50" height="h-100">
+				<main><![CDATA[Processes Move Matter]]></main>
+				<h2subheader><![CDATA[Whenever matter moves from one sphere into another, some process, driven by energy, causes it to happen. Here are some examples:]]></h2subheader>
+				<p><![CDATA[Nutrients and carbon move from a plant (Biosphere) into a bird’s body (Biosphere) by the processes of consumption and digestion.]]></p>
+			</element>
+			<element width="w-50" height="h-80" padding="pl-5" classes="v-center-overflow">
+				<image><![CDATA[img/media/image26d.png]]></image>
+			</element>
+		</slide>
+		<slide data-slideid="27">
+			<params slideType="white-yellow-gradient-background" layout="horiz-50-50"></params>
+			<element width="w-40" height="h-100">
+				<main><![CDATA[Processes Move Matter]]></main>
+				<p><![CDATA[Take another look at your site photo. Can you identify a few ways in which carbon is cycling, and the processes that are moving it within and between spheres? Diagram this on your overlay or sketch.]]></p>
+				<videolink src="https://www.youtube.com/watch?v=85TQHzS88L4"><![CDATA[Learn more about the Carbon Cycle]]></videolink>
+			</element>
+			<element width="w-60" height="h-100" classes="v-bottom">
+				<image><![CDATA[img/assets/hand_writing_on_photo.png]]></image>
+			</element>
+		</slide>
+		<slide data-slideid="28">
+			<params slideType="white-yellow-gradient-background" layout="horiz-50-50"></params>
+			<toc>Check Your Sketch</toc>
+			<element width="w-40" height="h-100">
+				<main><![CDATA[Check Your Sketch]]></main>
+				<h2subheader><![CDATA[Your overlay or sketch should now look something like this example.]]></h2subheader>
+				<p><![CDATA[You’ve been thinking about your site in terms of Earth’s systems. Might you use this approach to help explain the connections between your site and where your visitors live?]]></p>
+			</element>
+			<element width="w-60" height="h-100" classes="v-bottom">
+				<image><![CDATA[img/assets/hand_writing_on_photo.png]]></image>
+			</element>
+		</slide>
+		<slide data-slideid="29">
+			<params slideType="white-yellow-gradient-background" layout="horiz-50-50"></params>
+			<toc>Processes Occur Locally and Globally</toc>
+			<element width="w-50" height="h-100">
+				<section><![CDATA[Processes Occur Locally and Globally]]></section>
+				<h2subheader><![CDATA[You’ve just explored some processes occurring at the local scale of your own site, and are probably thinking about how they are linked to global processes.]]></h2subheader>
+				<p><![CDATA[Pictured to the right is a global-scale example.]]></p>
+				<p><![CDATA[Q: In a few sentences, state the process and the spheres involved.]]></p>
+				<hint><![CDATA[The volcanic eruption of Mount Pinatubo in 1991 sent tons of tiny solid particles from the Geosphere into the Atmosphere.  Once in the Atmosphere, these particles are called aerosols. The aerosols reduced the amount of sunlight that reached Earth. In the United States, the summer of 1992 was the third coldest and third wettest summer in 77 years.]]></hint>
+				<p><![CDATA[Are there processes occurring at your site or in your region that have global consequences?]]></p>
+			</element>
+			<element width="w-50" height="h-80" padding="pl-5" classes="h-center-overflow">
+				<image><![CDATA[img/media/image29.png]]></image>
+			</element>
+		</slide>
+		<slide data-slideid="30">
+			<params slideType="white-yellow-gradient-background" layout="horiz-50-50"></params>
+			<toc>Summary</toc>
+			<element width="w-50" height="h-100">
+				<section><![CDATA[Summary]]></section>
+				<list type="bullet">
+					<item><![CDATA[The Earth system behaves as a single, self-regulating system with physical, chemical, and biological processes.]]></item>
+					<item><![CDATA[The interactions and feedbacks between the system’s components are complex and take place on multiple scales of time and space.]]></item>
+					<item><![CDATA[The focus of Earth system science is understanding the interactions between the oceans and ice, atmosphere, life, geological processes and the land surface, and how those interactions impact each other and lead to changes on our planet.]]></item>
+				</list>
+			</element>
+			<element width="w-50" height="h-80" padding="pl-5" classes="v-center-overflow">
+				<image><![CDATA[img/media/image5-summary.png]]></image>
 			</element>
 		</slide>
 	</part>

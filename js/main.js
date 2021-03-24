@@ -230,7 +230,10 @@ function populateCarousel(){
 							if (params.attributes["slideType"]){
 
 										var slideType = params.attributes["slideType"].nodeValue;
-
+										var layoutType = "";
+										if (params.attributes["layout"]){
+											layoutType = params.attributes["layout"].nodeValue;
+										}
 										/*
 										<params slideType="blue-vert-50-50"></params>
 
@@ -250,7 +253,7 @@ function populateCarousel(){
 										*/
 
 										// into the type of side from the params;
-										if ( slideType === "blue-vert-50-50"){
+										if ( slideType === "blue-vert-50-50" ){
 
 											//console.log("hasEls(slide, 'bottom') = "+hasEls(slide, 'bottom'));
 											if (hasEls(slide, 'bottom') != true){
@@ -298,7 +301,7 @@ function populateCarousel(){
 																if (elementType === "quote"){
 																	slideHtmlText += '<div class="d-flex w-100 h-100">';
 																		slideHtmlText += '<div class="quote">';
-																		console.log("===========bottom quote object================");
+																		//console.log("===========bottom quote object================");
 																		for (var q=0; q<slide.getElementsByTagName('bottom')[b].childNodes.length; q++ ){
 																			console.log(slide.getElementsByTagName('bottom')[b].childNodes[q].nodeName);
 
@@ -498,6 +501,38 @@ function populateCarousel(){
 
 											addNewIndicator(slideid, totalslides);
 	          								totalslides++;
+										} else if (slideType === "pt2-intro-bkgd" || layoutType === "horiz-50-50"){
+
+											slideHtmlText = '<div class="item '+slideType+(totalslides === 0 ? ' active' : '')+'" data-id="'+totalslides+'" data-background="'+slideType+'">';
+							            		slideHtmlText += '<div class="item-container d-flex">';
+							            			for (var c = 0; c < slide.childNodes.length; c++) {
+														if (slide.childNodes[c].nodeName === "element"){
+															var width = slide.childNodes[c].attributes['width'] === undefined ? ' w-50' : ' '+slide.childNodes[c].attributes['width'].nodeValue;
+															var height = slide.childNodes[c].attributes['height'] === undefined ? '' : ' '+slide.childNodes[c].attributes['height'].nodeValue;
+															var padding = slide.childNodes[c].attributes['padding'] === undefined ? '' : ' '+slide.childNodes[c].attributes['padding'].nodeValue;
+															var classes = slide.childNodes[c].attributes['classes'] === undefined ? '' : ' '+slide.childNodes[c].attributes['classes'].nodeValue;
+															slideHtmlText += '<div class="item-element'+width+height+padding+classes+'">';
+															for (var d = 0; d < slide.childNodes[c].childNodes.length; d++) {
+
+																slideHtmlText += returnElementHTML(slide.childNodes[c].childNodes[d]);
+
+															}
+															slideHtmlText += '</div>';
+														}
+													}
+
+
+
+							            		slideHtmlText += '</div>';
+	          								slideHtmlText += '</div>';
+
+	          								$(".carousel-inner").append( $(slideHtmlText) );
+
+											addNewIndicator(slideid, totalslides);
+	          								totalslides++;
+
+
+
 										}
 							       /* } */
 
@@ -536,6 +571,43 @@ function returnElementHTML(node){
     } else if (node.nodeName === 'displayimage'){
     	slideHtmlText += '<div class="display-image">';
 			slideHtmlText += '<img src="'+node.childNodes[0].nodeValue+'">';
+		slideHtmlText += '</div>';
+	} else if (node.nodeName === "quoteElement"){
+		slideHtmlText += '<div class="quote-element d-flex">';
+			
+		/*
+		<div class="quote-element d-flex" style="">
+			<div class="quote">
+				<span class="quote-body"></span>
+				<span class="quote-attribution"></span>
+			</div>
+			<div class="display-image">
+				<img src="img/assets/davinci.png">
+			</div>
+		</div>
+
+					<quote><![CDATA[Look deep into nature, and then you will understand everything better.]]></quote>
+					<byline><![CDATA[- Albert Einstein]]></byline>
+					<displayimage><![CDATA[img/assets/davinci.png]]></displayimage>
+		*/	var quote = "";
+			var byline = "";
+			var img = "";
+			for (var e = 0; e < node.childNodes.length; e++) {
+				if (node.childNodes[e].nodeName === "quote"){
+					quote = node.childNodes[e].childNodes[0].nodeValue;
+				} else if (node.childNodes[e].nodeName === "byline"){
+					byline = node.childNodes[e].childNodes[0].nodeValue;
+				} else if (node.childNodes[e].nodeName === "displayimage"){
+					img = node.childNodes[e].childNodes[0].nodeValue;
+				}
+			}
+			slideHtmlText += '<div class="quote">';
+				slideHtmlText += '<span class="quote-body">'+quote+'</span>';
+				slideHtmlText += '<span class="quote-attribution">'+byline+'</span>';
+			slideHtmlText += '</div>';
+			slideHtmlText += '<div class="display-image">';
+				slideHtmlText += '<img src="'+img+'">';
+			slideHtmlText += '</div>';
 		slideHtmlText += '</div>';
 	} else if (node.nodeName === 'list'){
 		var listtype = "ul";
