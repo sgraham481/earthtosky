@@ -502,6 +502,9 @@ button.seenotes.hover {
   font-style: italic;
 }
 
+.text-align-center {
+    text-align: center;
+}
 
 /* ------------------------------------------------ */
 /*    END FONT STYLING

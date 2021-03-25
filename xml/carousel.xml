@@ -7,10 +7,9 @@
 			<top>
 				<section><![CDATA[Part 1: About Earth System Science]]></section>
 				<p><![CDATA[Earth system scientists take a holistic view of planet Earth, working to gain understanding of the influence of major and minor processes on Earth’s past, current and future conditions. Much of Earth systems science is focused on understanding what drives Earth’s global, regional and local climate patterns, including human activity. A major goal is to improve predictions of future climate under various scenarios of human actions and other variables.]]></p>
-				<p><![CDATA[Thinking about nature being interconnected is not unique to Earth system scientists.]]></p>
+				<p><![CDATA[View this video to get a sense of how and why NASA studies our planet.]]></p>
 			</top>
 			<bottom>
-				<p><![CDATA[Learn how to see. Realize that everything is connected to everything else.]]></p>
 				<video><![CDATA[https://nasa-external-ocomm.app.box.com/s/6dtrji1vnjf4yh5829mczvmh1rthdbvh]]></video>
 			</bottom>
 		</slide>
@@ -18,8 +17,7 @@
 			<params slideType="blue-vert-50-50"></params>
 			<top>
 				<section><![CDATA[Part 1: About Earth System Science]]></section>
-				<p><![CDATA[Earth system scientists take a holistic view of planet Earth, working to gain understanding of the influence of major and minor processes on Earth’s past, current and future conditions. Much of Earth systems science is focused on understanding what drives Earth’s global, regional and local climate patterns, including human activity. A major goal is to improve predictions of future climate under various scenarios of human actions and other variables.]]></p>
-				<p><![CDATA[Thinking about nature being interconnected is not unique to Earth system scientists.]]></p>
+				<p classes="text-align-center"><![CDATA[Earth system scientists are not the only ones to think about how nature is interconnected.]]></p>
 			</top>
 			<bottom elemType="quote">
 				<quote><![CDATA[Learn how to see. Realize that everything is connected to everything else.]]></quote>
@@ -27,19 +25,14 @@
 				<displayimage><![CDATA[img/assets/davinci.png]]></displayimage>
 			</bottom>
 			<bottom elemType="quote">
-				<quote><![CDATA[It really boils down to this: that all life is interrelated. We are all caught in an inescapable network of mutuality, tied into a single garment of destiny. Whatever affects one destiny, affects all indirectly.]]></quote>
-				<byline><![CDATA[- Dr. Martin Luther King, Jr. (1929-1968), Christmas Eve sermon, 1967]]></byline>
-				<displayimage><![CDATA[img/assets/king.png]]></displayimage>
+				<quote><![CDATA[The indigenous understanding has its basis of spirituality in a recognition of the interconnectedness and interdependence of all living things, a holistic and balanced view of the world. All things are bound together. All things connect. What happens to the Earth happens to the children of the earth.]]></quote>
+				<byline><![CDATA[- Rebecca Adamson]]></byline>
+				<displayimage><![CDATA[]]></displayimage>
 			</bottom>
 			<bottom elemType="quote">
 				<quote><![CDATA[In nature we never see anything isolated, but everything in connection with something else which is before it, beside it, under it and over it.]]></quote>
 				<byline><![CDATA[- Johann Wolfgang von Goethe]]></byline>
 				<displayimage><![CDATA[img/assets/goethe.png]]></displayimage>
-			</bottom>
-			<bottom elemType="quote">
-				<quote><![CDATA[One could not pluck a flower without troubling a star.]]></quote>
-				<byline><![CDATA[- Francis Thompson]]></byline>
-				<displayimage><![CDATA[img/assets/thompson.png]]></displayimage>
 			</bottom>
 		</slide>
 		<slide data-slideid="2a">
@@ -69,19 +62,10 @@
 			<element width="w-50" height="h-100" padding="pr-5">
 				<section><![CDATA[Systems Thinking]]></section>
 				<p><![CDATA[Each component is made up of <i>elements</i>. For example, the elements of the circulatory system include blood cells, veins, arteries and heart.]]></p>
-			</element>
-			<element width="w-50" height="h-80">
-				<image><![CDATA[img/media/image2c.png]]></image>
-			</element>
-		</slide>
-		<slide data-slideid="2d">
-			<params slideType="blue-circle-right"></params>
-			<element width="w-50" height="h-100" padding="pr-5">
-				<section><![CDATA[Systems Thinking]]></section>
 				<p><![CDATA[The interaction of components and their interrelated processes create system behavior.]]></p>
 			</element>
-			<element width="w-50" height="h-80" classes="v-center-overflow">
-				<image><![CDATA[img/media/image2d.png]]></image>
+			<element width="w-50" height="h-80" classes="h-center-overflow">
+				<image><![CDATA[img/assets/image2c.png]]></image>
 			</element>
 		</slide>
 		<slide data-slideid="3a">
@@ -117,7 +101,7 @@
 		<slide data-slideid="4">
 			<params slideType="blue-circle-right"></params>
 			<toc>Science Methods</toc>
-			<element width="w-50" height="h-100" padding="pr-5">
+			<element width="w-50" height="h-100">
 				<section><![CDATA[Science Methods]]></section>
 				<p><![CDATA[Earth system scientists use the scientific method; a simplified version is outlined here.]]></p>
 				<list type="numbered">
@@ -129,8 +113,8 @@
 					<item><![CDATA[Use the results and peer feedback to refine the question, ask new questions, make new predictions and/or solidify predictions.]]></item>
 				</list>
 			</element>
-			<element width="w-50" height="h-80" classes="v-center-overflow">
-				<image><![CDATA[img/media/image4.png]]></image>
+			<element width="w-50" height="h-80"  padding="pl-5" classes="v-center-overflow">
+				<image><![CDATA[img/assets/image4.svg]]></image>
 			</element>
 		</slide>
 		<slide data-slideid="5">
@@ -165,12 +149,12 @@
 		</slide>
 		<slide data-slideid="5b">
 			<params slideType="blue-circle-right"></params>
-			<element width="w-50" height="h-100" padding="pr-5">
+			<element width="w-40" height="h-100" padding="pr-5">
 				<section><![CDATA[Modes of Inquiry]]></section>
 				<h2subheader><![CDATA[Observing change over time]]></h2subheader>
 				<p><![CDATA[For example, with the aid of ground-based, airborne and satellite data, scientists detect changes in regional and global land, air and ocean temperature.]]></p>
 			</element>
-			<element width="w-50" height="h-80" classes="v-center-overflow">
+			<element width="w-60" height="h-80" classes="v-center-overflow">
 				<youtube><![CDATA[https://youtu.be/Ni0lppUr_BQ]]></youtube>
 			</element>
 		</slide>
@@ -198,12 +182,12 @@
 		</slide>
 		<slide data-slideid="5f">
 			<params slideType="blue-circle-right"></params>
-			<element width="w-50" height="h-100" padding="pr-5">
+			<element width="w-40" height="h-100" padding="pr-5">
 				<section><![CDATA[Modes of Inquiry]]></section>
 				<h2subheader><![CDATA[Computer modeling]]></h2subheader>
 				<p><![CDATA[Global climate models allow scientists to manipulate one or several variables to explore causation of changes in processes and make predictions.]]></p>
 			</element>
-			<element width="w-50" height="h-80" classes="v-center-overflow">
+			<element width="w-60" height="h-80" classes="v-center-overflow">
 				<youtube><![CDATA[https://youtu.be/Pn3ZKB1XLiQ]]></youtube>
 			</element>
 		</slide>
@@ -212,14 +196,16 @@
 			<toc>Summary</toc>
 			<element width="w-50" height="h-100" padding="pr-5">
 				<section><![CDATA[Summary]]></section>
-				<p><![CDATA[The discipline of Earth system science is characterized by a holistic systems-thinking approach to studying our home planet.]]></p>
-				<p><![CDATA[Systems are comprised of interactive, interrelated or interdependent components that work together to form a complex whole.]]></p>
-				<p><![CDATA[Each component is made up of elements.]]></p>
-				<p><![CDATA[The Earth system components are the Atmosphere, Geosphere, Hydrosphere, Cryosphere and Biosphere.]]></p>
-				<p><![CDATA[Earth system scientists employ the scientific method and a variety of modes of inquiry to research the processes and behavior of Earth’s component spheres and the system as a whole.]]></p>
+				<list type="no-list-style">
+					<item><![CDATA[The discipline of Earth system science is characterized by a holistic systems-thinking approach to studying our home planet.]]></item>
+					<item><![CDATA[Systems are comprised of interactive, interrelated or interdependent components that work together to form a complex whole.]]></item>
+					<item><![CDATA[Each component is made up of elements.]]></item>
+					<item><![CDATA[The Earth system components are the Atmosphere, Geosphere, Hydrosphere, Cryosphere and Biosphere.]]></item>
+					<item><![CDATA[Earth system scientists employ the scientific method and a variety of modes of inquiry to research the processes and behavior of Earth’s component spheres and the system as a whole.]]></item>
+				</list>
 			</element>
 			<element width="w-50" height="h-80" classes="v-center-overflow">
-				<image><![CDATA[img/media/image5-summary.png]]></image>
+				<image><![CDATA[img/assets/image30.png]]></image>
 			</element>
 		</slide>
 	</part>
@@ -495,7 +481,7 @@
 				</list>
 			</element>
 			<element width="w-50" height="h-80" padding="pl-5" classes="v-center-overflow">
-				<image><![CDATA[img/media/image5-summary.png]]></image>
+				<image><![CDATA[img/assets/image30.png]]></image>
 			</element>
 		</slide>
 	</part>
