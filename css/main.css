@@ -14,6 +14,7 @@
 :root {
     --ess-yellow: #ffee8f;
     --ess-orange: #e55100;
+    --ess-dk-blue: #023871;
 
     /* *************************** */
     /* FONT STACKS */
@@ -39,10 +40,17 @@ img {
 }
 ol, ul {
     font-size: 1rem;
-    padding-left: 1rem;
 }
-.blue-bkgd ul {
+.item ul,
+.item ol {
+  padding-left: 0;
+}
+.part-1 ul {
     color: var(--ess-yellow);
+}
+.no-list-style {
+    list-style-type: none;
+    margin-left: -.75rem;
 }
 
 
@@ -422,7 +430,7 @@ button.seenotes.hover {
       font-style: italic;
     }
 */
-.blue-bkgd {
+.part-1 {
     color: #ffffff;
 }
 .italic {
@@ -455,12 +463,19 @@ button.seenotes.hover {
   font-size: 1.2rem;
 }
 
-p.main-content {
+.header .h2.sub-header {
+    margin: 0;
+}
+
+.item p.main-content {
   font-size: 1rem;
 }
 
-.blue-bkgd p.main-content li { /* p */
+.part-1 p.main-content li { /* p */
   color: var(--ess-yellow);
+}
+.part-2.item .section-header {
+  color: var(--ess-dk-blue);
 }
 
 /*Quote text*/
@@ -470,9 +485,9 @@ p.main-content {
   font-weight: 600;
   font-size: 1rem;
 }
-.blue-bkgd .quote .span,
-.blue-bkgd .quote-body,
-.blue-bkgd .quote-attribution {
+.part-1 .quote .span,
+.part-1 .quote-body,
+.part-1 .quote-attribution {
   color: var(--ess-yellow);
 }
 
@@ -508,7 +523,7 @@ Earth To Sky Bootstrap Carousel Approach CSS
   margin: 2rem 0;
 }
 .carousel-inner li {
-    margin: 1rem;
+    margin: .75rem;
 }
 .container .carousel {
     width: 100%;
@@ -708,6 +723,7 @@ Earth To Sky Bootstrap Carousel Approach CSS
     width: 100%;
     align-items: center;
     padding: 0 10%;
+    color: #ffffff;
 }
 .header .logo {
     height: 100%;
@@ -718,11 +734,6 @@ Earth To Sky Bootstrap Carousel Approach CSS
 .header .logo img {
     height: 100%;
     width: auto;
-}
-.header .header-title {
-    color: #ffffff;
-    font-size: 2.5rem;
-    font-weight: bold;
 }
 .header button#hamburger-menu .hamburger-container {
     position: relative;
@@ -912,17 +923,23 @@ Earth To Sky Bootstrap Carousel Approach CSS
 .carousel-table-of-contents li {
     color: #ffffff;
     font-size: 18px;
-    padding: 6px 0px 6px 20px;
+    padding: 6px 0px 6px 40px;
     cursor: pointer;
     position: relative;
+}
+.carousel-table-of-contents li.first-slide-of-part {
+    padding-left: 20px;
 }
 .carousel-table-of-contents li img {
     position: absolute;
     height: 12px;
     width: 15px;
-    left: 2px;
+    left: 17px;
     top: 13px;
     opacity: 0;
+}
+.carousel-table-of-contents li.first-slide-of-part img {
+    left: 2px;
 }
 .carousel-table-of-contents li.active img {
     opacity: 1;
@@ -1031,7 +1048,7 @@ Earth To Sky Bootstrap Carousel Approach CSS
 .part-2 .h2.sub-header {
     color: var(--ess-orange);
 }
-.part-2 p.main-content {
+.item p.call-out{
     padding-left: 1rem;
     border-left: 5px solid #e55100;
 }

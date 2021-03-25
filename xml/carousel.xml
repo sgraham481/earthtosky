@@ -3,7 +3,7 @@
 	<part>
 		<slide data-slideid="1a">
 			<params slideType="blue-vert-50-50"></params>
-			<toc>About Earth System Science</toc>
+			<toc>Part 1: About Earth System Science</toc>
 			<top>
 				<section><![CDATA[Part 1: About Earth System Science]]></section>
 				<p><![CDATA[Earth system scientists take a holistic view of planet Earth, working to gain understanding of the influence of major and minor processes on Earth’s past, current and future conditions. Much of Earth systems science is focused on understanding what drives Earth’s global, regional and local climate patterns, including human activity. A major goal is to improve predictions of future climate under various scenarios of human actions and other variables.]]></p>
@@ -267,22 +267,28 @@
 		<slide data-slideid="9">
 			<params slideType="medium-yellow-gradient-background" layout="horiz-50-50"></params>
 			<toc>Spheres and Elements</toc>
-			<element width="w-50" height="h-100" padding="pr-5">
+			<element width="w-50" height="h-100">
 				<main><![CDATA[Each Sphere is made up of Elements]]></main>
 				<p><![CDATA[For example,]]></p>
-				<p><![CDATA[A bird is an <i>element</i> of the Biosphere<br>A pond is an <i>element</i> of the Hydrosphere<br>A glacier is an <i>element</i> of the Cryosphere<br>CO2 is an <i>element</i> of the Atmosphere<br>Coal is an <i>element</i> of the Geosphere]]></p>
+				<list type="no-list-style">
+					<item><![CDATA[A bird is an <i>element</i> of the Biosphere]]></item>
+					<item><![CDATA[A pond is an <i>element</i> of the Hydrosphere]]></item>
+					<item><![CDATA[A glacier is an <i>element</i> of the Cryosphere]]></item>
+					<item><![CDATA[CO2 is an <i>element</i> of the Atmosphere]]></item>
+					<item><![CDATA[Coal is an <i>element</i> of the Geosphere]]></item>
+				</list>
 			</element>
-			<element width="w-50" height="h-80" classes="v-center-overflow">
+			<element width="w-50" height="h-80" classes="h-center-overflow">
 				<image><![CDATA[img/assets/image9.png]]></image>
 			</element>
 		</slide>
 		<slide data-slideid="10">
 			<params slideType="light-yellow-gradient-background" layout="horiz-50-50"></params>
-			<element width="w-50" height="h-100" padding="pr-5">
+			<element width="w-40" height="h-100">
 				<main><![CDATA[Each Sphere is made up of Elements]]></main>
 				<h2subheader><![CDATA[Let's take a brief look at each of Earth's Spheres and elements of each at your site.]]></h2subheader>
 			</element>
-			<element width="w-50" height="h-80" classes="v-center-overflow">
+			<element width="w-70" height="h-90" classes="h-center-overflow">
 				<image><![CDATA[img/assets/image10.svg]]></image>
 			</element>
 		</slide>
@@ -307,7 +313,7 @@
 			<toc>Geosphere</toc>
 			<element width="w-70" height="h-100" classes="sphere">
 				<h2subheader><![CDATA[Elements of the Geosphere includes the surface rocks and soils as well as Earth's interior.]]></h2subheader>
-				<p><![CDATA[Take a look at your photo of your site. Can you identify a few elements of the Geosphere at your location? Label them on your overlay or sketch.]]></p>
+				<p classes="call-out"><![CDATA[Take a look at your photo of your site. Can you identify a few elements of the Geosphere at your location? Label them on your overlay or sketch.]]></p>
 				<hint><![CDATA[The Geosphere includes: the solid part of Earth (mountains, valleys, fields, plains, bedrock, etc.); the not-so-solid interior of the Earth; and the thin layer of soil that covers parts of the solid Earth.]]></hint>
 			</element>
 		</slide>
@@ -316,7 +322,7 @@
 			<toc>Hydrosphere</toc>
 			<element width="w-70" height="h-100" classes="sphere">
 				<h2subheader><![CDATA[Elements of the Hydrosphere include all bodies of surface water as well as ground water.]]></h2subheader>
-				<p><![CDATA[Take a look at your photo of your site. Can you identify a few elements of the Hydrosphere at your location? Label them on your overlay or sketch.]]></p>
+				<p classes="call-out"><![CDATA[Take a look at your photo of your site. Can you identify a few elements of the Hydrosphere at your location? Label them on your overlay or sketch.]]></p>
 				<hint><![CDATA[The Hydrosphere is all of Earth's bodies of water, including oceans, lakes, rivers, and even the groundwater and Earth's frozen water. As in this tutorial, climate scientists often categorize frozen water as the Cryosphere, while also recognizing it as a part of the Hydrosphere.]]></hint>
 			</element>
 		</slide>
@@ -325,7 +331,7 @@
 			<toc>Cryosphere</toc>
 			<element width="w-70" height="h-100" classes="sphere">
 				<h2subheader><![CDATA[Elements of the Cryosphere include snow and ice.]]></h2subheader>
-				<p><![CDATA[Take a look at your photo of your site. Can you identify a few elements of the Cryosphere at your location? Label them on your overlay or sketch.]]></p>
+				<p classes="call-out"><![CDATA[Take a look at your photo of your site. Can you identify a few elements of the Cryosphere at your location? Label them on your overlay or sketch.]]></p>
 				<hint><![CDATA[The Cryosphere is water in its frozen form on Earth’s surface. This includes ice and snow on the ground, sea ice, lake and river ice, glaciers, ice shelves, icebergs and frozen ground (soil or rock in which all or part of the water is frozen). Ground that is frozen all year round is called permafrost.]]></hint>
 			</element>
 		</slide>
@@ -334,7 +340,7 @@
 			<toc>Biosphere</toc>
 			<element width="w-70" height="h-100" classes="sphere">
 				<h2subheader><![CDATA[Elements of the Biosphere include all living plants and animals, from the smallest single celled organisms to the largest trees and animals on the planet.]]></h2subheader>
-				<p><![CDATA[Take a look at your photo of your site. Can you identify a few elements of the Biosphere at your location? Label them on your overlay or sketch.]]></p>
+				<p classes="call-out"><![CDATA[Take a look at your photo of your site. Can you identify a few elements of the Biosphere at your location? Label them on your overlay or sketch.]]></p>
 				<hint><![CDATA[The Biosphere is the collection of all living things on Earth: plants, animals, bacteria, fungi, algae, and protozoa.]]></hint>
 			</element>
 		</slide>
@@ -343,7 +349,7 @@
 			<toc>Atmosphere</toc>
 			<element width="w-70" height="h-100" classes="sphere">
 				<h2subheader><![CDATA[Elements of the Atmosphere include several different gases (mostly nitrogen and oxygen) as well as clouds, water vapor, and solid particles such as dust and pollen.]]></h2subheader>
-				<p><![CDATA[Take a look at your photo of your site. Can you identify a few elements of the Atmosphere at your location? Label them on your overlay or sketch.]]></p>
+				<p classes="call-out"><![CDATA[Take a look at your photo of your site. Can you identify a few elements of the Atmosphere at your location? Label them on your overlay or sketch.]]></p>
 				<hint><![CDATA[The Atmosphere is the blanket of gas that we call air that surrounds Earth. The Atmosphere includes the rain that is falling through the air, clouds, and tiny suspended particles of dust (called aerosols) that are found in air.]]></hint>
 			</element>
 		</slide>
@@ -390,7 +396,7 @@
 			<params slideType="pt2-slide24a-bkgd" layout="horiz-50-50"></params>
 			<element width="w-60" height="h-100">
 				<h2subheader><![CDATA[Energy is transferred within and between spheres]]></h2subheader>
-				<p><![CDATA[Take another look at your site photo. Can you identify one or two ways in which energy is flowing, and being transferred within and between spheres? Diagram this on your overlay or sketch.]]></p>
+				<p classes="call-out"><![CDATA[Take another look at your site photo. Can you identify one or two ways in which energy is flowing, and being transferred within and between spheres? Diagram this on your overlay or sketch.]]></p>
 				<videolink src="https://www.youtube.com/watch?v=85TQHzS88L4"><![CDATA[Learn more about the Carbon Cycle]]></videolink>
 			</element>
 		</slide>
@@ -443,7 +449,7 @@
 			<params slideType="white-yellow-gradient-background" layout="horiz-50-50"></params>
 			<element width="w-40" height="h-100">
 				<main><![CDATA[Processes Move Matter]]></main>
-				<p><![CDATA[Take another look at your site photo. Can you identify a few ways in which carbon is cycling, and the processes that are moving it within and between spheres? Diagram this on your overlay or sketch.]]></p>
+				<p classes="call-out"><![CDATA[Take another look at your site photo. Can you identify a few ways in which carbon is cycling, and the processes that are moving it within and between spheres? Diagram this on your overlay or sketch.]]></p>
 				<videolink src="https://www.youtube.com/watch?v=85TQHzS88L4"><![CDATA[Learn more about the Carbon Cycle]]></videolink>
 			</element>
 			<element width="w-60" height="h-100" classes="v-bottom">
@@ -456,7 +462,7 @@
 			<element width="w-40" height="h-100">
 				<main><![CDATA[Check Your Sketch]]></main>
 				<h2subheader><![CDATA[Your overlay or sketch should now look something like this example.]]></h2subheader>
-				<p><![CDATA[You’ve been thinking about your site in terms of Earth’s systems. Might you use this approach to help explain the connections between your site and where your visitors live?]]></p>
+				<p classes="call-out"><![CDATA[You’ve been thinking about your site in terms of Earth’s systems. Might you use this approach to help explain the connections between your site and where your visitors live?]]></p>
 			</element>
 			<element width="w-60" height="h-100" classes="v-bottom">
 				<image><![CDATA[img/assets/hand_writing_on_photo.png]]></image>
@@ -469,9 +475,9 @@
 				<section><![CDATA[Processes Occur Locally and Globally]]></section>
 				<h2subheader><![CDATA[You’ve just explored some processes occurring at the local scale of your own site, and are probably thinking about how they are linked to global processes.]]></h2subheader>
 				<p><![CDATA[Pictured to the right is a global-scale example.]]></p>
-				<p><![CDATA[Q: In a few sentences, state the process and the spheres involved.]]></p>
+				<p classes="call-out"><![CDATA[Q: In a few sentences, state the process and the spheres involved.]]></p>
 				<hint><![CDATA[The volcanic eruption of Mount Pinatubo in 1991 sent tons of tiny solid particles from the Geosphere into the Atmosphere.  Once in the Atmosphere, these particles are called aerosols. The aerosols reduced the amount of sunlight that reached Earth. In the United States, the summer of 1992 was the third coldest and third wettest summer in 77 years.]]></hint>
-				<p><![CDATA[Are there processes occurring at your site or in your region that have global consequences?]]></p>
+				<p classes="call-out"><![CDATA[Are there processes occurring at your site or in your region that have global consequences?]]></p>
 			</element>
 			<element width="w-50" height="h-80" padding="pl-5" classes="h-center-overflow">
 				<image><![CDATA[img/media/image29.png]]></image>

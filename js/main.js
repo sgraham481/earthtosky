@@ -107,14 +107,19 @@ function setUpCarouselNavigation() {
 	$(".carousel-indicators li").click(function(){
 		//console.log("click");
 		//console.log($(this).attr("data-slideid"));
-		setTimeout(function(){ setBackground(); }, 50);
+		if ( !$(this).hasClass("active") ){
+			setTimeout(function(){ setBackground(); }, 50);
+		}
 		//setTOCActiveSlide($(this).attr("data-slideid"));
 		
 	});
 	$(".carousel-table-of-contents li").click(function(){
 		//console.log("click");
 		//console.log($(this).attr("id"));
-		setTimeout(function(){ setBackground(); }, 50);
+		if ( !$(this).hasClass("active") ){
+			setTimeout(function(){ setBackground(); }, 50);
+		}
+		
 		
 		//setTOCActiveSlide($(this).attr("id"));
 		
@@ -151,8 +156,18 @@ function setBackground(){
 	} else {
 		$slidebkgd.addClass("on");
 	}
+	setHeader($(".item."+nextprev));
 	setTimeout(function(){ setTOCActiveSlide($(".carousel-indicators li.active").attr("data-slideid")); }, 200);
 };
+function setHeader($item){
+	var partnum = "Part 1";
+	if ($item.hasClass("part-2")){
+		var partnum = "Part 2";
+	} else if ($item.hasClass("part-3")){
+		var partnum = "Part 3";
+	}
+	$(".header-title").html("Earth to Sky Tutorial: "+partnum);
+}
 function resetInterval(){
 	clearInterval(carouselInterval);
 	setCarouselInterval(duration);
@@ -186,8 +201,9 @@ function populateCarousel(){
 			var part = x[i];
 			var slideid = "";
 			var partclass = "part-"+partnum;
+			var slideinpartnum = -1;
 			partnum++;
-			
+
 			if (part.childNodes.length){
 
 				for (j = 0; j < part.childNodes.length; j++) {
@@ -196,6 +212,7 @@ function populateCarousel(){
 						/*
 						SET SLIDE VAR;
 						*/
+						slideinpartnum++;
 						var slide = part.childNodes[j];
 
 						//console.log("    children: "+slide.childNodes.length);
@@ -208,7 +225,7 @@ function populateCarousel(){
 						if (slide.getElementsByTagName('toc').length){
 							slideid = "slide-"+slide.attributes['data-slideid'].nodeValue;
 							var toctitle = slide.getElementsByTagName('toc')[0].childNodes[0].nodeValue;
-							addNewTOCItem(toctitle, slideid, totalslides);
+							addNewTOCItem(toctitle, slideid, totalslides, slideinpartnum);
 						}
 
 						//console.log("fullsize image slide? "+slide.getElementsByTagName('full-size-image').length);
@@ -554,6 +571,7 @@ function populateCarousel(){
 function returnElementHTML(node){
 
 	var slideHtmlText = "";
+	var classes = "";
 	if (node.nodeName === 'section'){
    		slideHtmlText += '<h1 class="h1 section-header">'+node.childNodes[0].nodeValue+'</h1>';
    	} else if (node.nodeName === 'main'){
@@ -561,7 +579,10 @@ function returnElementHTML(node){
     } else if (node.nodeName === 'h2subheader'){
 		slideHtmlText += '<h2 class="h2 sub-header">'+node.childNodes[0].nodeValue+'</h2>';
 	} else if (node.nodeName === 'p'){
-    	slideHtmlText += '<p class="main-content">'+node.childNodes[0].nodeValue+'</p>';
+		if (node.attributes["classes"]){
+			classes = " "+node.attributes["classes"].nodeValue;
+		}
+    	slideHtmlText += '<p class="main-content'+classes+'">'+node.childNodes[0].nodeValue+'</p>';
     } else if (node.nodeName === "quote"){
 		slideHtmlText += '<span class="quote-body">'+node.childNodes[0].nodeValue+'</span>';
 	} else if (node.nodeName === "byline"){
@@ -616,6 +637,7 @@ function returnElementHTML(node){
 		var listtype = "ul";
 		if (node.attributes["type"]){
 			listtype = node.attributes['type'].nodeValue === "numbered" ? "ol" : "ul";
+			listtype = node.attributes['type'].nodeValue === "no-list-style" ? (listtype+" class='no-list-style'") : listtype;
 		}
 		slideHtmlText += '<'+listtype+'>';
 		for (var e = 0; e < node.childNodes.length; e++) {
@@ -658,8 +680,10 @@ function addNewIndicator(slideid, num){
 }
 var tocpage = 1;
 //addNewTOCItem(toctitle, slideid, totalslides);
-function addNewTOCItem(title, slideid, num){
-	var el = "<li id='"+slideid+"' class='"+(tocpage === 1 ? "active" : "")+"' data-target='#myCarousel' data-page='"+tocpage+"' data-slide-to='"+num+"'><img src='img/assets/nav_pointer.svg'>"+title+"</li>";
+function addNewTOCItem(title, slideid, totalslides, thisslidenum){
+	console.log("addNewTOCItem: "+thisslidenum);
+	var isFirstSlide = thisslidenum === 0 ? true : false;
+	var el = "<li id='"+slideid+"' class='"+(isFirstSlide ? "first-slide-of-part" : "")+((isFirstSlide && tocpage) ? " " : "")+(tocpage === 1 ? "active" : "")+"' data-target='#myCarousel' data-page='"+tocpage+"' data-slide-to='"+totalslides+"'><img src='img/assets/nav_pointer.svg'>"+title+"</li>";
 	$(".carousel-table-of-contents").append( $(el) );
 	$(".carousel-pagination .total-pages").html(tocpage);
 	tocpage++;
