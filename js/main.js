@@ -113,6 +113,7 @@ function setUpCarouselNavigation() {
 		//setTOCActiveSlide($(this).attr("data-slideid"));
 		
 	});
+
 	$(".carousel-table-of-contents li").click(function(){
 		//console.log("click");
 		//console.log($(this).attr("id"));
@@ -129,6 +130,7 @@ function setUpCarouselNavigation() {
 
 	// Enable Carousel Controls
 	$(".left").click(function(){
+		console.log("click");
 		goCarouselItem("prev");
 		resetInterval();
 	});

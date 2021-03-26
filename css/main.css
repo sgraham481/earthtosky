@@ -1157,6 +1157,40 @@ Earth To Sky Bootstrap Carousel Approach CSS
 .part-2 .h2.sub-header {
     color: var(--ess-orange);
 }
+.geosphere-bkgd {
+    background-image: url(../img/assets/image12.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.hydrosphere-bkgd {
+    background-image: url(../img/assets/image14.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: #ffffff;
+    text-shadow: 1px 1px 4px rgb(0, 0, 0, .5);
+}
+.cryosphere-bkgd {
+    background-image: url(../img/assets/image16.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.biosphere-bkgd {
+    background-image: url(../img/assets/image18.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: #ffffff;
+    text-shadow: 1px 1px 4px rgb(0, 0, 0, .5);
+}
+.atmosphere-bkgd {
+    background-image: url(../img/assets/image20.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
 .item p.call-out{
     padding-left: 1rem;
     border-left: 5px solid #e55100;

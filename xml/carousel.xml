@@ -305,45 +305,75 @@
 				<image><![CDATA[img/assets/hand_writing_on_photo.png]]></image>
 			</element>
 		</slide>
+		<slide data-slideid="12">
+			<params slideType="geosphere-bkgd" layout="horiz-50-50"></params>
+			<toc>Geosphere</toc>
+			<element width="w-100" height="h-100" classes="sphere">
+				<section><![CDATA[GEOSPHERE]]></section>
+			</element>
+		</slide>
 		<slide data-slideid="13">
 			<params slideType="geosphere"></params>
-			<toc>Geosphere</toc>
 			<element width="w-70" height="h-100" classes="sphere">
 				<h2subheader><![CDATA[Elements of the Geosphere includes the surface rocks and soils as well as Earth's interior.]]></h2subheader>
 				<p classes="call-out"><![CDATA[Take a look at your photo of your site. Can you identify a few elements of the Geosphere at your location? Label them on your overlay or sketch.]]></p>
 				<hint><![CDATA[The Geosphere includes: the solid part of Earth (mountains, valleys, fields, plains, bedrock, etc.); the not-so-solid interior of the Earth; and the thin layer of soil that covers parts of the solid Earth.]]></hint>
 			</element>
 		</slide>
+		<slide data-slideid="14">
+			<params slideType="hydrosphere-bkgd" layout="horiz-50-50"></params>
+			<toc>Hydrosphere</toc>
+			<element width="w-100" height="h-100" classes="sphere">
+				<section><![CDATA[HYDROSPHERE]]></section>
+			</element>
+		</slide>
 		<slide data-slideid="15">
 			<params slideType="hydrosphere"></params>
-			<toc>Hydrosphere</toc>
 			<element width="w-70" height="h-100" classes="sphere">
 				<h2subheader><![CDATA[Elements of the Hydrosphere include all bodies of surface water as well as ground water.]]></h2subheader>
 				<p classes="call-out"><![CDATA[Take a look at your photo of your site. Can you identify a few elements of the Hydrosphere at your location? Label them on your overlay or sketch.]]></p>
 				<hint><![CDATA[The Hydrosphere is all of Earth's bodies of water, including oceans, lakes, rivers, and even the groundwater and Earth's frozen water. As in this tutorial, climate scientists often categorize frozen water as the Cryosphere, while also recognizing it as a part of the Hydrosphere.]]></hint>
 			</element>
 		</slide>
+		<slide data-slideid="16">
+			<params slideType="cryosphere-bkgd" layout="horiz-50-50"></params>
+			<toc>Cryosphere</toc>
+			<element width="w-100" height="h-100" classes="sphere">
+				<section><![CDATA[CRYOSPHERE]]></section>
+			</element>
+		</slide>
 		<slide data-slideid="17">
 			<params slideType="cryosphere"></params>
-			<toc>Cryosphere</toc>
 			<element width="w-70" height="h-100" classes="sphere">
 				<h2subheader><![CDATA[Elements of the Cryosphere include snow and ice.]]></h2subheader>
 				<p classes="call-out"><![CDATA[Take a look at your photo of your site. Can you identify a few elements of the Cryosphere at your location? Label them on your overlay or sketch.]]></p>
 				<hint><![CDATA[The Cryosphere is water in its frozen form on Earth’s surface. This includes ice and snow on the ground, sea ice, lake and river ice, glaciers, ice shelves, icebergs and frozen ground (soil or rock in which all or part of the water is frozen). Ground that is frozen all year round is called permafrost.]]></hint>
 			</element>
 		</slide>
+		<slide data-slideid="18">
+			<params slideType="biosphere-bkgd" layout="horiz-50-50"></params>
+			<toc>Biosphere</toc>
+			<element width="w-100" height="h-100" classes="sphere">
+				<section><![CDATA[BIOSPHERE]]></section>
+			</element>
+		</slide>
 		<slide data-slideid="19">
 			<params slideType="biosphere"></params>
-			<toc>Biosphere</toc>
 			<element width="w-70" height="h-100" classes="sphere">
 				<h2subheader><![CDATA[Elements of the Biosphere include all living plants and animals, from the smallest single celled organisms to the largest trees and animals on the planet.]]></h2subheader>
 				<p classes="call-out"><![CDATA[Take a look at your photo of your site. Can you identify a few elements of the Biosphere at your location? Label them on your overlay or sketch.]]></p>
 				<hint><![CDATA[The Biosphere is the collection of all living things on Earth: plants, animals, bacteria, fungi, algae, and protozoa.]]></hint>
 			</element>
 		</slide>
+		<slide data-slideid="20">
+			<params slideType="atmosphere-bkgd" layout="horiz-50-50"></params>
+			<toc>Atmosphere</toc>
+			<element width="w-100" height="h-100" classes="sphere">
+				<section><![CDATA[ATMOSPHERE]]></section>
+			</element>
+		</slide>
 		<slide data-slideid="21">
 			<params slideType="atmosphere"></params>
-			<toc>Atmosphere</toc>
 			<element width="w-70" height="h-100" classes="sphere">
 				<h2subheader><![CDATA[Elements of the Atmosphere include several different gases (mostly nitrogen and oxygen) as well as clouds, water vapor, and solid particles such as dust and pollen.]]></h2subheader>
 				<p classes="call-out"><![CDATA[Take a look at your photo of your site. Can you identify a few elements of the Atmosphere at your location? Label them on your overlay or sketch.]]></p>
