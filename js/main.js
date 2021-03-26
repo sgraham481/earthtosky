@@ -181,8 +181,8 @@ function setTOCActiveSlide(slideid){
 	console.log("setTOCActiveSlide = "+slideid);
 	$(".carousel-table-of-contents li").removeClass("active");
 	$(".carousel-table-of-contents li#"+slideid).addClass("active");
-	var pagenum = $(".carousel-table-of-contents li#"+slideid).attr("data-page");
-	$(".carousel-pagination .this-page").html(pagenum);
+	var pagenum = $(".carousel-indicators li.active").attr("data-slide-to");
+	$(".carousel-pagination .this-page").html(Number(pagenum)+1);
 	if (!$("#hamburger-menu").hasClass('collapsed')){
 		toggleHamburger();
 	}
@@ -684,6 +684,7 @@ function getTotalEls(el, name){
 function addNewIndicator(slideid, num){
 	var el = "<li data-target='#myCarousel' data-slide-to='"+num+"' data-slideid='"+slideid+"' class='"+(num === 0 ? 'active' : '')+"'></li>";
 	$(".carousel-indicators").append( $(el) );
+	$(".carousel-pagination .total-pages").html(((num)+1));
 }
 var tocpage = 1;
 //addNewTOCItem(toctitle, slideid, totalslides);
@@ -692,7 +693,6 @@ function addNewTOCItem(title, slideid, totalslides, thisslidenum){
 	var isFirstSlide = thisslidenum === 0 ? true : false;
 	var el = "<li id='"+slideid+"' class='"+(isFirstSlide ? "first-slide-of-part" : "")+((isFirstSlide && tocpage) ? " " : "")+(tocpage === 1 ? "active" : "")+"' data-target='#myCarousel' data-page='"+tocpage+"' data-slide-to='"+totalslides+"'><img src='img/assets/nav_pointer.svg'>"+title+"</li>";
 	$(".carousel-table-of-contents").append( $(el) );
-	$(".carousel-pagination .total-pages").html(tocpage);
 	tocpage++;
 
 }
