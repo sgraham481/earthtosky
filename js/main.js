@@ -183,6 +183,9 @@ function setTOCActiveSlide(slideid){
 	$(".carousel-table-of-contents li#"+slideid).addClass("active");
 	var pagenum = $(".carousel-table-of-contents li#"+slideid).attr("data-page");
 	$(".carousel-pagination .this-page").html(pagenum);
+	if (!$("#hamburger-menu").hasClass('collapsed')){
+		toggleHamburger();
+	}
 }
 /**********************************************************
 BUILD CAROUSEL OPTIONS
@@ -578,6 +581,8 @@ function returnElementHTML(node){
    		slideHtmlText += '<h1 class="h1 main-header">'+node.childNodes[0].nodeValue+'</h1>';
     } else if (node.nodeName === 'h2subheader'){
 		slideHtmlText += '<h2 class="h2 sub-header">'+node.childNodes[0].nodeValue+'</h2>';
+	} else if (node.nodeName === 'h3subheader'){
+		slideHtmlText += '<h3 class="h3 sub-header">'+node.childNodes[0].nodeValue+'</h3>';
 	} else if (node.nodeName === 'p'){
 		if (node.attributes["classes"]){
 			classes = " "+node.attributes["classes"].nodeValue;
@@ -651,9 +656,11 @@ function returnElementHTML(node){
 		//console.log("video");
 		//console.log(node.childNodes[0].nodeValue);
 		//console.log("yturlsplitarray length = "+yturlsplitarray.length);
-		slideHtmlText += '<iframe id="ytplayer" type="text/html" width="640" height="360" src="https://www.youtube.com/embed/'+yturlsplitarray[(yturlsplitarray.length-1)]+'?autoplay=0&amp;origin='+node.childNodes[0].nodeValue+'" frameborder="0" allowfullscreen></iframe>';
+		slideHtmlText += '<div class="videoWrapper"><iframe id="ytplayer" type="text/html" width="640" height="360" src="https://www.youtube.com/embed/'+yturlsplitarray[(yturlsplitarray.length-1)]+'?autoplay=0&amp;origin='+node.childNodes[0].nodeValue+'" frameborder="0" allowfullscreen></iframe></div>';
 	} else if (node.nodeName === 'hint'){
-		slideHtmlText += '<button class="btn seenotes"><img src="img/assets/nav_pointer.svg"><span>See Notes</span></button>';
+		slideHtmlText += '<div class="notes"><button class="btn seenotes" onclick="toggleNotes(this)"><img src="img/assets/nav_pointer.svg"><span>See Notes</span></button><p class="note">'+node.childNodes[0].nodeValue+'</p></div>';
+	} else if (node.nodeName === 'note'){
+		slideHtmlText += '<div class="notes"><button class="btn seenotes" onclick="toggleNotes(this)"><img src="img/assets/nav_pointer.svg"><span>See Notes</span></button><p class="note">'+node.childNodes[0].nodeValue+'</p></div>';
 	}
 
 	return slideHtmlText;
@@ -692,6 +699,8 @@ function addNewTOCItem(title, slideid, totalslides, thisslidenum){
 /**********************************************************
 BUILD CAROUSEL OPTIONS
 **********************************************************/
-
+function toggleNotes(el) {
+	$(el).parent().toggleClass('shownotes');
+};
 
 

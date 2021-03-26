@@ -154,7 +154,7 @@
 				<h2subheader><![CDATA[Observing change over time]]></h2subheader>
 				<p><![CDATA[For example, with the aid of ground-based, airborne and satellite data, scientists detect changes in regional and global land, air and ocean temperature.]]></p>
 			</element>
-			<element width="w-60" height="h-80" classes="v-center-overflow">
+			<element width="w-60" height="h-auto">
 				<youtube><![CDATA[https://youtu.be/Ni0lppUr_BQ]]></youtube>
 			</element>
 		</slide>
@@ -173,11 +173,22 @@
 			<params slideType="blue-circle-right"></params>
 			<element width="w-50" height="h-100" padding="pr-5">
 				<section><![CDATA[Modes of Inquiry]]></section>
-				<h2subheader><![CDATA[Observering spatial gradients]]></h2subheader>
+				<h2subheader><![CDATA[Observing spatial gradients]]></h2subheader>
 				<p><![CDATA[This can lead to hypotheses for causation (ex., a gradient of coarse to fine grains often leads to hypotheses of direction of sediment transport).]]></p>
 			</element>
 			<element width="w-50" height="h-80" classes="v-center-overflow">
 				<image><![CDATA[img/media/image5d.png]]></image>
+			</element>
+		</slide>
+		<slide data-slideid="5e">
+			<params slideType="blue-circle-right"></params>
+			<element width="w-50" height="h-100" padding="pr-5">
+				<section><![CDATA[Modes of Inquiry]]></section>
+				<h2subheader><![CDATA[Use of physical models]]></h2subheader>
+				<p><![CDATA[One example of a physical model is a stream table, which can be used for analyzing the physics of stream flow.]]></p>
+			</element>
+			<element width="w-50" height="h-80" classes="h-center-overflow">
+				<image><![CDATA[img/media/image5e.png]]></image>
 			</element>
 		</slide>
 		<slide data-slideid="5f">
@@ -187,7 +198,7 @@
 				<h2subheader><![CDATA[Computer modeling]]></h2subheader>
 				<p><![CDATA[Global climate models allow scientists to manipulate one or several variables to explore causation of changes in processes and make predictions.]]></p>
 			</element>
-			<element width="w-60" height="h-80" classes="v-center-overflow">
+			<element width="w-60" height="h-auto">
 				<youtube><![CDATA[https://youtu.be/Pn3ZKB1XLiQ]]></youtube>
 			</element>
 		</slide>
@@ -221,7 +232,7 @@
 				<quoteElement>
 					<quote><![CDATA[Look deep into nature, and then you will understand everything better.]]></quote>
 					<byline><![CDATA[- Albert Einstein]]></byline>
-					<displayimage><![CDATA[img/assets/davinci.png]]></displayimage>
+					<displayimage><![CDATA[img/assets/image6-1.png]]></displayimage>
 				</quoteElement>
 			</element>
 		</slide>
@@ -239,14 +250,14 @@
 		<slide data-slideid="8">
 			<params slideType="white-yellow-gradient-background" layout="horiz-50-50"></params>
 			<toc>Interconnected Spheres</toc>
-			<element width="w-50" height="h-100" padding="pr-5">
+			<element width="w-40" height="h-100" padding="pr-5">
 				<section><![CDATA[Interconnected Spheres]]></section>
 				<p><![CDATA[The Earth system with all of its spheres is sometimes referred to as a "system of systems."]]></p>
 				<p><![CDATA[Each sphere functions as an open system: the spheres are connected through matter cycling and energy flowing between them, and a variety of global processes. For example, water and carbon are found in every sphere, cycling between them.]]></p>
 				<p><![CDATA[Scientists use the concept of Earth’s spheres as a means of studying the complexity of the planet.]]></p>
-				<hint><![CDATA[Assignment: Watch the 6 minute movie, “Big Idea 3”]]></hint>
+				<p classes="call-out"><![CDATA[Assignment: Watch the 6 minute movie, “Big Idea 3”]]></p>
 			</element>
-			<element width="w-50" height="h-80" classes="v-center-overflow">
+			<element width="w-60" height="h-auto">
 				<youtube><![CDATA[https://youtu.be/BnpF0ndXk-8]]></youtube>
 			</element>
 		</slide>
@@ -342,14 +353,14 @@
 		<slide data-slideid="22">
 			<params slideType="white-yellow-gradient-background" layout="horiz-50-50"></params>
 			<toc>Matter and Energy</toc>
-			<element width="w-50" height="h-100">
-				<main><![CDATA[Each Sphere Holds Matter and Energy]]></main>
-				<h2subheader><![CDATA[Matter]]></h2subheader>
+			<element width="w-70" height="h-100" classes="pt-5 pr-5">
+				<h2subheader><![CDATA[Each Sphere Holds Matter and Energy]]></h2subheader>
+				<h3subheader><![CDATA[Matter]]></h3subheader>
 				<p><![CDATA[Although it is obvious that the Hydrosphere and Cryosphere hold water, there is also water in the Biosphere, Atmosphere, and in the Geosphere. Each of the spheres also holds oxygen, various forms of carbon, and other chemical elements or materials. All of the matter on Earth can be placed in one or more spheres.]]></p>
-				<h2subheader><![CDATA[Energy]]></h2subheader>
+				<h3subheader><![CDATA[Energy]]></h3subheader>
 				<p><![CDATA[Energy in the spheres is mostly in the form of heat energy or chemical energy. There is a vast amount of heat energy in the Atmosphere and Hydrosphere. The greatest source of this heat energy is the Sun.]]></p>
 			</element>
-			<element width="w-50" height="h-80" padding="pl-5" classes="v-center-overflow">
+			<element width="w-30" height="h-80" padding="pl-5" classes="v-center-overflow">
 				<image><![CDATA[img/media/image22.jpg]]></image>
 			</element>
 		</slide>
@@ -585,14 +596,14 @@
 		<slide data-slideid="36">
 			<params slideType="white-blue-gradient-background" layout="horiz-50-50"></params>
 			<toc>Global Drivers - Coupled Circulation</toc>
-			<element width="w-50" height="h-100">
+			<element width="w-40" height="h-100">
 				<section><![CDATA[What Drives Earth’s Climate on the Global Scale?]]></section>
 				<h2subheader><![CDATA[Coupled Ocean and Atmospheric Circulation Determine Climate Patterns]]></h2subheader>
 				<p><![CDATA[A major part of the global climate system is comprised of the coupled ocean and atmospheric circulation patterns. These patterns dictate the major climatic zones on our planet and are intimately intertwined with all of Earth’s spheres.)]]></p>
 				<p><![CDATA[A basic understanding of these circulation patterns can help us grasp the global, regional and local ramifications of the changes humans are making to our Atmosphere and ocean.]]></p>
 				<p><![CDATA[Let’s begin with the Atmosphere.]]></p>
 			</element>
-			<element width="w-50" height="h-80" classes="pl-5 v-center-overflow">
+			<element width="w-60" height="h-auto">
 				<youtube><![CDATA[https://youtu.be/xqM83_og1Fc]]></youtube>
 			</element>
 		</slide>
@@ -624,11 +635,11 @@
 		<slide data-slideid="38">
 			<params slideType="white-blue-gradient-background" layout="horiz-50-50"></params>
 			<toc>Regional Patterns</toc>
-			<element width="w-50" height="h-100">
+			<element width="w-40" height="h-100" classes="pr-5">
 				<section><![CDATA[What Causes Variation in Regional Climate?]]></section>
 				<p><![CDATA[Regional climate patterns involve smaller scale events and processes. They can also be affected by cyclical events that are linked to the global climate. For example, the El Niño - La Niña cycle arises from global oceanic processes. The switch from one phase of this cycle to another impacts climate and weather patterns in Pacific coastal regions and beyond.]]></p>
 			</element>
-			<element width="w-50" height="h-80" classes="pl-5 v-center-overflow">
+			<element width="w-60" height="h-auto">
 				<youtube><![CDATA[https://youtu.be/_titsRUo4t4]]></youtube>
 			</element>
 		</slide>
