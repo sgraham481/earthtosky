@@ -10,7 +10,7 @@
 				<p><![CDATA[View this video to get a sense of how and why NASA studies our planet.]]></p>
 			</top>
 			<bottom>
-				<video><![CDATA[https://nasa-external-ocomm.app.box.com/s/6dtrji1vnjf4yh5829mczvmh1rthdbvh]]></video>
+				<youtube><![CDATA[https://youtu.be/_titsRUo4t4]]></youtube>
 			</bottom>
 		</slide>
 		<slide data-slideid="1a-2bc">
@@ -530,14 +530,14 @@
 		<slide data-slideid="31">
 			<params slideType="white-blue-gradient-background" layout="horiz-50-50"></params>
 			<toc>Part 3</toc>
-			<element width="w-50" height="h-100">
+			<element width="w-40" height="h-100" classes="pr-5">
 				<section><![CDATA[Earth's Climate System]]></section>
 				<h2subheader><![CDATA[Our planet’s climate system operates at global, regional and local scales, which are linked.]]></h2subheader>
 				<p><![CDATA[For example, pollution from China affects cloud development in the North Pacific and strengthens extratropical cyclones. In turn, these  play an important role in atmospheric circulation, bringing tropical moisture up to temperate latitudes.]]></p>
 				<hint><![CDATA[Optional: read more (hot link Read more to this: https://climate.nasa.gov/news/2218/global-is-the-new-local-pollution-changes-clouds-climate-downstream/ )]]></hint>
 			</element>
-			<element width="w-50" height="h-80" classes="h-center-overflow">
-				<embedvideo><![CDATA[vid/GEOS5_aerosols.mov]]></embedvideo>
+			<element width="w-60" height="h-auto">
+				<youtube><![CDATA[https://youtu.be/_titsRUo4t4]]></youtube>
 			</element>
 		</slide>
 		<slide data-slideid="32">
@@ -614,26 +614,26 @@
 		<slide data-slideid="34b">
 			<params slideType="white-blue-gradient-background" layout="horiz-50-50"></params>
 			<toc>Global Drivers - Matter Cycling</toc>
-			<element width="w-50" height="h-100">
+			<element width="w-40" height="h-100" classes="pr-5">
 				<section><![CDATA[What Drives Earth’s Climate on the Global Scale?]]></section>
 				<h2subheader><![CDATA[Cycling of Matter]]></h2subheader>
 				<p><![CDATA[The cycling of matter links the Earth system components. Examples include the water cycle and the carbon cycle. Alterations in these cycles can cause climate to shift (eg., adding excess CO2 to the atmosphere traps more heat on Earth, in turn changing the climate.)]]></p>
 			</element>
-			<element width="w-50" height="h-80" classes="pl-5 v-center-overflow">
+			<element width="w-60" height="h-80" classes="v-center-overflow">
 				<image><![CDATA[img/assets/image34b.jpg]]></image>
 			</element>
 		</slide>
 		<slide data-slideid="36">
 			<params slideType="white-blue-gradient-background" layout="horiz-50-50"></params>
 			<toc>Global Drivers - Coupled Circulation</toc>
-			<element width="w-40" height="h-100">
+			<element width="w-50" height="h-100" classes="pr-5">
 				<section><![CDATA[What Drives Earth’s Climate on the Global Scale?]]></section>
 				<h2subheader><![CDATA[Coupled Ocean and Atmospheric Circulation Determine Climate Patterns]]></h2subheader>
 				<p><![CDATA[A major part of the global climate system is comprised of the coupled ocean and atmospheric circulation patterns. These patterns dictate the major climatic zones on our planet and are intimately intertwined with all of Earth’s spheres.)]]></p>
 				<p><![CDATA[A basic understanding of these circulation patterns can help us grasp the global, regional and local ramifications of the changes humans are making to our Atmosphere and ocean.]]></p>
 				<p><![CDATA[Let’s begin with the Atmosphere.]]></p>
 			</element>
-			<element width="w-60" height="h-auto">
+			<element width="w-50" height="h-auto">
 				<youtube><![CDATA[https://youtu.be/xqM83_og1Fc]]></youtube>
 			</element>
 		</slide>
@@ -673,26 +673,39 @@
 				<youtube><![CDATA[https://youtu.be/_titsRUo4t4]]></youtube>
 			</element>
 		</slide>
-		<slide data-slideid="39">
+		<slide data-slideid="39a">
 			<params slideType="white-blue-gradient-background" layout="horiz-50-50"></params>
 			<toc>Local Patterns</toc>
-			<element width="w-50" height="h-100">
+			<element width="w-40" height="h-100" classes="pr-5">
 				<section><![CDATA[What Causes Variation in Local Climate?]]></section>
 				<h2subheader><![CDATA[Cumulative Effects of Regional and Local Processes and Events]]></h2subheader>
 				<p><![CDATA[Local climate is dependent upon global and regional processes but is influenced by the local environment and conditions such as topography or land cover. For example, the surface temperature of a local area will depend on whether it's covered in vegetation or pavement.]]></p>
+				<p classes="call-out"><![CDATA[Compare the image at right with the image on the following slide.]]></p>
 			</element>
-			<element width="w-50" height="h-80" classes="pl-5 v-center-overflow">
+			<element width="w-60" height="h-80" classes="v-center-overflow">
 				<image><![CDATA[img/assets/image39a.jpg]]></image>
+			</element>
+		</slide>
+		<slide data-slideid="39b">
+			<params slideType="white-blue-gradient-background" layout="horiz-50-50"></params>
+			<element width="w-40" height="h-100" classes="pr-5">
+				<section><![CDATA[What Causes Variation in Local Climate?]]></section>
+				<h2subheader><![CDATA[Cumulative Effects of Regional and Local Processes and Events]]></h2subheader>
+				<p><![CDATA[Local climate is dependent upon global and regional processes but is influenced by the local environment and conditions such as topography or land cover. For example, the surface temperature of a local area will depend on whether it's covered in vegetation or pavement.]]></p>
+				<p classes="call-out"><![CDATA[Compare the image at right with the image on the previous slide.]]></p>
+			</element>
+			<element width="w-60" height="h-80" classes="v-center-overflow">
+				<image><![CDATA[img/assets/image39b.jpg]]></image>
 			</element>
 		</slide>
 		<slide data-slideid="40">
 			<params slideType="white-blue-gradient-background" layout="horiz-50-50"></params>
-			<element width="w-50" height="h-100">
+			<element width="w-40" height="h-100" classes="pr-5">
 				<section><![CDATA[Why is Earth’s Climate Changing Now?]]></section>
 				<p><![CDATA[By altering the chemical makeup of our Atmosphere through adding additional carbon, we are trapping more of the Sun’s energy. This changes both the Atmosphere and ocean components of Earth’s climate system, which in turn affect the Biosphere, Cryosphere and Geosphere in ways that have global, regional and local consequences.]]></p>
 			</element>
-			<element width="w-50" height="h-80" classes="pl-5 v-center-overflow">
-				<image><![CDATA[img/assets/image40.jpg]]></image>
+			<element width="w-60" height="h-80" classes="v-center-overflow">
+				<image><![CDATA[img/assets/image40.png]]></image>
 			</element>
 		</slide>
 		<slide data-slideid="41">

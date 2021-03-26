@@ -627,10 +627,11 @@ Earth To Sky Bootstrap Carousel Approach CSS
     height: 100%;
 }
 .slide-backgrounds {
-    display:none;
+    opacity:0;
+    transition: opacity .5s;
 }
 .slide-backgrounds.on {
-    display:block;
+    opacity:1;
 }
 .absolute-full-cover-container.blue-vert-50-50,
 .absolute-full-cover-container.blue-circle-right {
