@@ -62,7 +62,6 @@
 			<element width="w-50" height="h-100" classes="pr-5 pt-5">
 				<section><![CDATA[Systems Thinking]]></section>
 				<p><![CDATA[Each component is made up of <i>elements</i>. For example, the elements of the circulatory system include blood cells, veins, arteries and heart.]]></p>
-				<p><![CDATA[The interaction of components and their interrelated processes create system behavior.]]></p>
 			</element>
 			<element width="w-50" height="h-80" classes="h-center-overflow">
 				<image><![CDATA[img/assets/image2c.png]]></image>
