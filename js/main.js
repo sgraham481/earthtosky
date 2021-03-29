@@ -597,6 +597,8 @@ function returnElementHTML(node, totalslides){
 		slideHtmlText += '</div>';
     } else if (node.nodeName === 'video'){
     	slideHtmlText += '<p class="main-content" data-src="'+node.childNodes[0].nodeValue+'">'+'ADD VIDEO ELEMENT'+'</p>';
+    } else if (node.nodeName === 'caption'){
+    	slideHtmlText += '<p class="caption">'+node.childNodes[0].nodeValue+'</p>';
     } else if (node.nodeName === 'image'){
 		slideHtmlText += '<img src="'+node.childNodes[0].nodeValue+'">';
     } else if (node.nodeName === 'displayimage'){

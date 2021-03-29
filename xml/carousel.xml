@@ -701,11 +701,12 @@
 			<element width="w-40" height="h-100" classes="pr-5 pt-5">
 				<section><![CDATA[What Causes Variation in Local Climate?]]></section>
 				<h2subheader><![CDATA[Cumulative Effects of Regional and Local Processes and Events]]></h2subheader>
-				<p><![CDATA[Local climate is dependent upon global and regional processes but is influenced by the local environment and conditions such as topography or land cover. For example, the surface temperature of a local area will depend on whether it's covered in vegetation or pavement.]]></p>
-				<p classes="call-out"><![CDATA[Compare the image at right with the image on the following slide.]]></p>
+				<p><![CDATA[Local climate is dependent upon global and regional processes but is influenced by the local environment and conditions such as topography or land cover.]]></p>
+				<p classes="call-out"><![CDATA[Compare these two Landsat satellite images of Atlanta, Georgia, from September 28, 2000. Because vegetation cools the surface through evaporation of water, the most densely vegetated areas are the coolest.]]></p>
 			</element>
-			<element width="w-60" height="h-80" classes="v-center-overflow">
+			<element width="w-60" height="h-100" classes="pt-5">
 				<image><![CDATA[img/assets/image39a.jpg]]></image>
+				<caption><![CDATA[This image depicts land cover. Vegetation is green, hard surfaces are grey/brown.]]></caption>
 			</element>
 		</slide>
 		<slide data-slideid="39b">
@@ -713,11 +714,12 @@
 			<element width="w-40" height="h-100" classes="pr-5 pt-5">
 				<section><![CDATA[What Causes Variation in Local Climate?]]></section>
 				<h2subheader><![CDATA[Cumulative Effects of Regional and Local Processes and Events]]></h2subheader>
-				<p><![CDATA[Local climate is dependent upon global and regional processes but is influenced by the local environment and conditions such as topography or land cover. For example, the surface temperature of a local area will depend on whether it's covered in vegetation or pavement.]]></p>
-				<p classes="call-out"><![CDATA[Compare the image at right with the image on the previous slide.]]></p>
+				<p><![CDATA[Local climate is dependent upon global and regional processes but is influenced by the local environment and conditions such as topography or land cover.]]></p>
+				<p classes="call-out"><![CDATA[Compare these two Landsat satellite images of Atlanta, Georgia, from September 28, 2000. Because vegetation cools the surface through evaporation of water, the most densely vegetated areas are the coolest.]]></p>
 			</element>
-			<element width="w-60" height="h-80" classes="v-center-overflow">
+			<element width="w-60" height="h-100" classes="pt-5">
 				<image><![CDATA[img/assets/image39b.jpg]]></image>
+				<caption><![CDATA[This image is a land surface temperature map. Cooler areas are yellow and hotter ones are red.]]></caption>
 			</element>
 		</slide>
 		<slide data-slideid="40">
