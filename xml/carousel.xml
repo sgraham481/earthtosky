@@ -623,13 +623,13 @@
 		<slide data-slideid="34a">
 			<params slideType="white-blue-gradient-background" layout="horiz-50-50"></params>
 			<toc>Global Drivers - Life</toc>
-			<element width="w-40" height="h-100" classes="pr-5 pt-5">
+			<element width="w-50" height="h-100" classes="pr-5 pt-5">
 				<section><![CDATA[What Drives Earth’s Climate on the Global Scale?]]></section>
 				<h2subheader><![CDATA[Presence of Life]]></h2subheader>
 				<p><![CDATA[We have seen that living things help circulate matter and energy. Life also contributes to the greenhouse gases that help make Earth’s temperature habitable for people.]]></p>
 				<hint><![CDATA[The visualization to the right shows the seasonal variation of the Biosphere and corresponding CO2 levels in the Atmosphere. As areas green up in spring and summer, plants draw more CO2 from the Atmosphere. White squares indicate CO2 concentrations higher than the trend vs. areas without squares where CO2 concentrations are lower.]]></hint>
 			</element>
-			<element width="w-60" height="h-auto">
+			<element width="w-50" height="h-auto">
 				<youtube><![CDATA[https://youtu.be/xqM83_og1Fc]]></youtube>
 			</element>
 		</slide>
@@ -704,7 +704,7 @@
 				<p><![CDATA[Local climate is dependent upon global and regional processes but is influenced by the local environment and conditions such as topography or land cover.]]></p>
 				<p classes="call-out"><![CDATA[Compare these two Landsat satellite images of Atlanta, Georgia, from September 28, 2000. Because vegetation cools the surface through evaporation of water, the most densely vegetated areas are the coolest.]]></p>
 			</element>
-			<element width="w-60" height="h-100" classes="pt-5">
+			<element width="w-60" height="h-80">
 				<image><![CDATA[img/assets/image39a.jpg]]></image>
 				<caption><![CDATA[This image depicts land cover. Vegetation is green, hard surfaces are grey/brown.]]></caption>
 			</element>
@@ -717,7 +717,7 @@
 				<p><![CDATA[Local climate is dependent upon global and regional processes but is influenced by the local environment and conditions such as topography or land cover.]]></p>
 				<p classes="call-out"><![CDATA[Compare these two Landsat satellite images of Atlanta, Georgia, from September 28, 2000. Because vegetation cools the surface through evaporation of water, the most densely vegetated areas are the coolest.]]></p>
 			</element>
-			<element width="w-60" height="h-100" classes="pt-5">
+			<element width="w-60" height="h-80">
 				<image><![CDATA[img/assets/image39b.jpg]]></image>
 				<caption><![CDATA[This image is a land surface temperature map. Cooler areas are yellow and hotter ones are red.]]></caption>
 			</element>

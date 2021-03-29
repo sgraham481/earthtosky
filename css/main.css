@@ -1301,6 +1301,10 @@ Earth To Sky Bootstrap Carousel Approach CSS
 .pt3-intro-bkgd .quote-attribution {
     color: #0b5a9f;
 }
+.pt2-slide24a-bkgd .hand-on-paper {
+    left: 14%;
+    width: 32%;
+}
 /**********************/
 
 @media screen and (orientation: portrait) {
