@@ -140,7 +140,7 @@
 			<params slideType="blue-circle-right"></params>
 			<element width="w-50" height="h-100" classes="pr-5 pt-5">
 				<section><![CDATA[Modes of Inquiry]]></section>
-				<h2subheader><![CDATA[Laboratory xperiment]]></h2subheader>
+				<h2subheader><![CDATA[Laboratory experiment]]></h2subheader>
 				<p><![CDATA[For example, scientists can test chemical reactions and physical processes on small scales in lab settings, such as exposing tanks of phytoplankton to various temperatures to determine the effect of warming oceans on plankton blooms.]]></p>
 			</element>
 			<element width="w-50" height="h-80" classes="v-center-overflow">
