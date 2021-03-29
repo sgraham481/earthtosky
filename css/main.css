@@ -55,6 +55,9 @@ ol, ul {
 .part-1 ul.no-list-style {
     color: #ffffff;
 }
+.item ul.no-list-style {
+    padding-left: 0px;
+}
 
 
 /*

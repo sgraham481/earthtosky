@@ -535,7 +535,7 @@
 			<toc>Summary</toc>
 			<element width="w-50" height="h-100" classes="pt-5">
 				<section><![CDATA[Summary]]></section>
-				<list type="bullet">
+				<list type="no-list-style">
 					<item><![CDATA[The Earth system behaves as a single, self-regulating system with physical, chemical, and biological processes.]]></item>
 					<item><![CDATA[The interactions and feedbacks between the system’s components are complex and take place on multiple scales of time and space.]]></item>
 					<item><![CDATA[The focus of Earth system science is understanding the interactions between the oceans and ice, atmosphere, life, geological processes and the land surface, and how those interactions impact each other and lead to changes on our planet.]]></item>
