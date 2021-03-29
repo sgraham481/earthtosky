@@ -419,6 +419,7 @@
 			<params slideType="pt2-slide24-bkgd" layout="horiz-50-50"></params>
 			<toc>Energy Flows</toc>
 			<element width="w-60" height="h-100" classes="pt-5">
+				<main><![CDATA[Think About How Energy Flows]]></main>
 				<h2subheader><![CDATA[Energy is transferred within and between spheres]]></h2subheader>
 				<p><![CDATA[For example:]]></p>
 				<list type="bullet">
@@ -431,6 +432,7 @@
 		<slide data-slideid="24a">
 			<params slideType="pt2-slide24a-bkgd" layout="horiz-50-50"></params>
 			<element width="w-60" height="h-100" classes="pt-5">
+				<main><![CDATA[Think About How Energy Flows]]></main>
 				<h2subheader><![CDATA[Energy is transferred within and between spheres]]></h2subheader>
 				<p classes="call-out"><![CDATA[Take another look at your site photo. Can you identify one or two ways in which energy is flowing, and being transferred within and between spheres? Diagram this on your overlay or sketch.]]></p>
 				<videolink src="https://www.youtube.com/watch?v=85TQHzS88L4"><![CDATA[Learn more about the Carbon Cycle]]></videolink>
