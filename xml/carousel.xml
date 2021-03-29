@@ -513,8 +513,8 @@
 				<h2subheader><![CDATA[Your overlay or sketch should now look something like this example.]]></h2subheader>
 				<p classes="call-out"><![CDATA[You’ve been thinking about your site in terms of Earth’s systems. Might you use this approach to help explain the connections between your site and where your visitors live?]]></p>
 			</element>
-			<element width="w-60" height="h-100" classes="v-bottom">
-				<image><![CDATA[img/assets/hand_writing_on_photo.png]]></image>
+			<element width="w-60" height="h-auto" classes="pl-5 v-center-overflow">
+				<image><![CDATA[img/assets/image28.jpg]]></image>
 			</element>
 		</slide>
 		<slide data-slideid="29">
