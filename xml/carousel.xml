@@ -4,13 +4,13 @@
 		<slide data-slideid="1a">
 			<params slideType="blue-vert-50-50-background" layout="horiz-50-50"></params>
 			<toc>Part 1: About Earth System Science</toc>
-			<element width="w-40" height="h-100" classes="pr-5">
+			<element width="w-40" height="h-100" classes="pr-5 pt-5">
 				<section><![CDATA[Part 1: About Earth System Science]]></section>
 				<p><![CDATA[Earth system scientists take a holistic view of planet Earth, working to gain understanding of the influence of major and minor processes on Earth’s past, current and future conditions. Much of Earth systems science is focused on understanding what drives Earth’s global, regional and local climate patterns, including human activity. A major goal is to improve predictions of future climate under various scenarios of human actions and other variables.]]></p>
 				<p><![CDATA[View this video to get a sense of how and why NASA studies our planet.]]></p>
 			</element>
 			<element width="w-60" height="h-auto">
-				<youtube><![CDATA[https://youtu.be/_titsRUo4t4]]></youtube>
+				<youtube><![CDATA[https://youtu.be/rWWsTuLICRY]]></youtube>
 			</element>
 		</slide>
 		<slide data-slideid="1a-2bc">
@@ -38,7 +38,7 @@
 		<slide data-slideid="2a">
 			<params slideType="blue-circle-right"></params>
 			<toc>Systems Thinking</toc>
-			<element width="w-50" height="h-100">
+			<element width="w-50" height="h-100" classes="pt-5">
 				<section><![CDATA[Systems Thinking]]></section>
 				<p><![CDATA[Earth system scientists employ systems thinking to gain understanding of how Earth’s overall system works.]]></p>
 				<p><![CDATA[A system can be defined as a group of interacting, interrelated, or interdependent components (or subsystems) that work together to form a complex whole.]]></p>
@@ -49,7 +49,7 @@
 		</slide>
 		<slide data-slideid="2b">
 			<params slideType="blue-circle-right"></params>
-			<element width="w-50" height="h-100" padding="pr-5">
+			<element width="w-50" height="h-100" classes="pr-5 pt-5">
 				<section><![CDATA[Systems Thinking]]></section>
 				<p><![CDATA[A system can be defined as a group of interacting, interrelated, or interdependent <italic>components</italic> (or subsystems) that work together to form a complex whole.]]></p>
 			</element>
@@ -59,7 +59,7 @@
 		</slide>
 		<slide data-slideid="2c">
 			<params slideType="blue-circle-right"></params>
-			<element width="w-50" height="h-100" padding="pr-5">
+			<element width="w-50" height="h-100" classes="pr-5 pt-5">
 				<section><![CDATA[Systems Thinking]]></section>
 				<p><![CDATA[Each component is made up of <i>elements</i>. For example, the elements of the circulatory system include blood cells, veins, arteries and heart.]]></p>
 				<p><![CDATA[The interaction of components and their interrelated processes create system behavior.]]></p>
@@ -71,7 +71,7 @@
 		<slide data-slideid="3a">
 			<params slideType="blue-circle-right"></params>
 			<toc>Components of the Earth System</toc>
-			<element width="w-50" height="h-100" padding="pr-5">
+			<element width="w-50" height="h-100" classes="pr-5 pt-5">
 				<section><![CDATA[Components of the Earth System]]></section>
 				<p><![CDATA[In Earth systems science, the main components of planet Earth are considered to be]]></p>
 				<list type="bullet">
@@ -89,7 +89,7 @@
 		</slide>
 		<slide data-slideid="3b">
 			<params slideType="blue-circle-right"></params>
-			<element width="w-50" height="h-100" padding="pr-5">
+			<element width="w-50" height="h-100" classes="pr-5 pt-5">
 				<section><![CDATA[Components of the Earth System]]></section>
 				<p><![CDATA[Earth system scientists seek to improve understanding of each of these spheres, as well as the interactions between them, to better predict long and short-term changes on our planet.]]></p>
 				<note><![CDATA[Some scientists include Cryosphere as a component of the Hydrosphere, and some scientists include the Pedosphere, a.k.a. soils, as a component of the Geosphere.]]></note>
@@ -101,7 +101,7 @@
 		<slide data-slideid="4">
 			<params slideType="blue-circle-right"></params>
 			<toc>Science Methods</toc>
-			<element width="w-50" height="h-100">
+			<element width="w-50" height="h-100" classes="pt-5">
 				<section><![CDATA[Science Methods]]></section>
 				<p><![CDATA[Earth system scientists use the scientific method; a simplified version is outlined here.]]></p>
 				<list type="numbered">
@@ -120,7 +120,7 @@
 		<slide data-slideid="5">
 			<params slideType="blue-circle-right"></params>
 			<toc>Modes of Inquiry</toc>
-			<element width="w-50" height="h-100" padding="pr-5">
+			<element width="w-50" height="h-100" classes="pr-5 pt-5">
 				<section><![CDATA[Modes of Inquiry]]></section>
 				<p><![CDATA[You may wonder how a scientist could test hypotheses about Earth processes or run an experiment on the entire planet. Scientists employ a variety of modes of inquiry in their analysis of Earth’s systems and processes, including]]></p>
 				<list type="bullet">
@@ -138,7 +138,7 @@
 		</slide>
 		<slide data-slideid="5a">
 			<params slideType="blue-circle-right"></params>
-			<element width="w-50" height="h-100" padding="pr-5">
+			<element width="w-50" height="h-100" classes="pr-5 pt-5">
 				<section><![CDATA[Modes of Inquiry]]></section>
 				<h2subheader><![CDATA[Laboratory Experiment]]></h2subheader>
 				<p><![CDATA[For example, scientists can test chemical reactions and physical processes on small scales in lab settings, such as exposing tanks of phytoplankton to various temperatures to determine the effect of warming oceans on plankton blooms.]]></p>
@@ -149,7 +149,7 @@
 		</slide>
 		<slide data-slideid="5b">
 			<params slideType="blue-circle-right"></params>
-			<element width="w-40" height="h-100" padding="pr-5">
+			<element width="w-40" height="h-100" classes="pr-5 pt-5">
 				<section><![CDATA[Modes of Inquiry]]></section>
 				<h2subheader><![CDATA[Observing change over time]]></h2subheader>
 				<p><![CDATA[For example, with the aid of ground-based, airborne and satellite data, scientists detect changes in regional and global land, air and ocean temperature.]]></p>
@@ -160,7 +160,7 @@
 		</slide>
 		<slide data-slideid="5c">
 			<params slideType="blue-circle-right"></params>
-			<element width="w-50" height="h-100" padding="pr-5">
+			<element width="w-50" height="h-100" classes="pr-5 pt-5">
 				<section><![CDATA[Modes of Inquiry]]></section>
 				<h2subheader><![CDATA[Comparing ancient artifacts with products of current day processes]]></h2subheader>
 				<p><![CDATA[For example, geologists researching how this cave formed at Craters of the Moon NPP can get clues by examining active lava tubes at places like Hawai’i Volcanoes National Park.]]></p>
@@ -171,7 +171,7 @@
 		</slide>
 		<slide data-slideid="5d">
 			<params slideType="blue-circle-right"></params>
-			<element width="w-50" height="h-100" padding="pr-5">
+			<element width="w-50" height="h-100" classes="pr-5 pt-5">
 				<section><![CDATA[Modes of Inquiry]]></section>
 				<h2subheader><![CDATA[Observing spatial gradients]]></h2subheader>
 				<p><![CDATA[This can lead to hypotheses for causation (ex., a gradient of coarse to fine grains often leads to hypotheses of direction of sediment transport).]]></p>
@@ -182,7 +182,7 @@
 		</slide>
 		<slide data-slideid="5e">
 			<params slideType="blue-circle-right"></params>
-			<element width="w-50" height="h-100" padding="pr-5">
+			<element width="w-50" height="h-100" classes="pr-5 pt-5">
 				<section><![CDATA[Modes of Inquiry]]></section>
 				<h2subheader><![CDATA[Use of physical models]]></h2subheader>
 				<p><![CDATA[One example of a physical model is a stream table, which can be used for analyzing the physics of stream flow.]]></p>
@@ -193,7 +193,7 @@
 		</slide>
 		<slide data-slideid="5f">
 			<params slideType="blue-circle-right"></params>
-			<element width="w-40" height="h-100" padding="pr-5">
+			<element width="w-40" height="h-100" classes="pr-5 pt-5">
 				<section><![CDATA[Modes of Inquiry]]></section>
 				<h2subheader><![CDATA[Computer modeling]]></h2subheader>
 				<p><![CDATA[Global climate models allow scientists to manipulate one or several variables to explore causation of changes in processes and make predictions.]]></p>
@@ -205,7 +205,7 @@
 		<slide data-slideid="5summary">
 			<params slideType="blue-circle-right"></params>
 			<toc>Summary</toc>
-			<element width="w-50" height="h-100" padding="pr-5">
+			<element width="w-50" height="h-100" classes="pr-5 pt-5">
 				<section><![CDATA[Summary]]></section>
 				<list type="no-list-style">
 					<item><![CDATA[The discipline of Earth system science is characterized by a holistic systems-thinking approach to studying our home planet.]]></item>
@@ -239,12 +239,12 @@
 		<slide data-slideid="7">
 			<params slideType="medium-yellow-gradient-background" layout="horiz-50-50"></params>
 			<toc>Introduction</toc>
-			<element width="w-50" height="h-100" padding="pr-5">
+			<element width="w-50" height="h-100"  classes="pt-5 pr-5">
 				<main><![CDATA[Introduction]]></main>
 				<p><![CDATA[In this section we’ll be exploring your site using an Earth systems approach. We’ll help you think about each sphere, and the elements, processes and cycles in each. We’ll help you use your image to identify and label evidence of these things in the landscape in which you work and/or live.]]></p>
 			</element>
 			<element width="w-50" height="h-80" classes="v-center-overflow">
-				<image><![CDATA[img/assets/image3.png]]></image>
+				<image><![CDATA[img/assets/image7.png]]></image>
 			</element>
 		</slide>
 		<slide data-slideid="8">
@@ -264,7 +264,7 @@
 		<slide data-slideid="9">
 			<params slideType="medium-yellow-gradient-background" layout="horiz-50-50"></params>
 			<toc>Spheres and Elements</toc>
-			<element width="w-50" height="h-100">
+			<element width="w-50" height="h-100" classes="pt-5">
 				<main><![CDATA[Each Sphere is made up of Elements]]></main>
 				<p><![CDATA[For example,]]></p>
 				<list type="no-list-style">
@@ -281,7 +281,7 @@
 		</slide>
 		<slide data-slideid="10">
 			<params slideType="light-yellow-gradient-background" layout="horiz-50-50"></params>
-			<element width="w-40" height="h-100">
+			<element width="w-40" height="h-100" classes="pt-5">
 				<main><![CDATA[Each Sphere is made up of Elements]]></main>
 				<h2subheader><![CDATA[Let's take a brief look at each of Earth's Spheres and elements of each at your site.]]></h2subheader>
 			</element>
@@ -292,7 +292,7 @@
 		<slide data-slideid="11">
 			<params slideType="white-yellow-gradient-background" layout="horiz-50-50"></params>
 			<toc>Using Your Site Photo</toc>
-			<element width="w-40" height="h-100">
+			<element width="w-40" height="h-100" classes="pt-5">
 				<main><![CDATA[Using your Site Photo to Explore a Systems View of Your Site]]></main>
 				<list type="numbered">
 					<item><![CDATA[Find the photo you took of your site, and the tracing paper or plastic overlay.]]></item>
@@ -314,7 +314,7 @@
 		</slide>
 		<slide data-slideid="13">
 			<params slideType="geosphere"></params>
-			<element width="w-70" height="h-100" classes="sphere">
+			<element width="w-70" height="h-100" classes="sphere pt-5">
 				<h2subheader><![CDATA[Elements of the Geosphere includes the surface rocks and soils as well as Earth's interior.]]></h2subheader>
 				<p classes="call-out"><![CDATA[Take a look at your photo of your site. Can you identify a few elements of the Geosphere at your location? Label them on your overlay or sketch.]]></p>
 				<hint><![CDATA[The Geosphere includes: the solid part of Earth (mountains, valleys, fields, plains, bedrock, etc.); the not-so-solid interior of the Earth; and the thin layer of soil that covers parts of the solid Earth.]]></hint>
@@ -329,7 +329,7 @@
 		</slide>
 		<slide data-slideid="15">
 			<params slideType="hydrosphere"></params>
-			<element width="w-70" height="h-100" classes="sphere">
+			<element width="w-70" height="h-100" classes="sphere pt-5">
 				<h2subheader><![CDATA[Elements of the Hydrosphere include all bodies of surface water as well as ground water.]]></h2subheader>
 				<p classes="call-out"><![CDATA[Take a look at your photo of your site. Can you identify a few elements of the Hydrosphere at your location? Label them on your overlay or sketch.]]></p>
 				<hint><![CDATA[The Hydrosphere is all of Earth's bodies of water, including oceans, lakes, rivers, and even the groundwater and Earth's frozen water. As in this tutorial, climate scientists often categorize frozen water as the Cryosphere, while also recognizing it as a part of the Hydrosphere.]]></hint>
@@ -344,7 +344,7 @@
 		</slide>
 		<slide data-slideid="17">
 			<params slideType="cryosphere"></params>
-			<element width="w-70" height="h-100" classes="sphere">
+			<element width="w-70" height="h-100" classes="sphere pt-5">
 				<h2subheader><![CDATA[Elements of the Cryosphere include snow and ice.]]></h2subheader>
 				<p classes="call-out"><![CDATA[Take a look at your photo of your site. Can you identify a few elements of the Cryosphere at your location? Label them on your overlay or sketch.]]></p>
 				<hint><![CDATA[The Cryosphere is water in its frozen form on Earth’s surface. This includes ice and snow on the ground, sea ice, lake and river ice, glaciers, ice shelves, icebergs and frozen ground (soil or rock in which all or part of the water is frozen). Ground that is frozen all year round is called permafrost.]]></hint>
@@ -359,7 +359,7 @@
 		</slide>
 		<slide data-slideid="19">
 			<params slideType="biosphere"></params>
-			<element width="w-70" height="h-100" classes="sphere">
+			<element width="w-70" height="h-100" classes="sphere pt-5">
 				<h2subheader><![CDATA[Elements of the Biosphere include all living plants and animals, from the smallest single celled organisms to the largest trees and animals on the planet.]]></h2subheader>
 				<p classes="call-out"><![CDATA[Take a look at your photo of your site. Can you identify a few elements of the Biosphere at your location? Label them on your overlay or sketch.]]></p>
 				<hint><![CDATA[The Biosphere is the collection of all living things on Earth: plants, animals, bacteria, fungi, algae, and protozoa.]]></hint>
@@ -374,7 +374,7 @@
 		</slide>
 		<slide data-slideid="21">
 			<params slideType="atmosphere"></params>
-			<element width="w-70" height="h-100" classes="sphere">
+			<element width="w-70" height="h-100" classes="sphere pt-5">
 				<h2subheader><![CDATA[Elements of the Atmosphere include several different gases (mostly nitrogen and oxygen) as well as clouds, water vapor, and solid particles such as dust and pollen.]]></h2subheader>
 				<p classes="call-out"><![CDATA[Take a look at your photo of your site. Can you identify a few elements of the Atmosphere at your location? Label them on your overlay or sketch.]]></p>
 				<hint><![CDATA[The Atmosphere is the blanket of gas that we call air that surrounds Earth. The Atmosphere includes the rain that is falling through the air, clouds, and tiny suspended particles of dust (called aerosols) that are found in air.]]></hint>
@@ -391,13 +391,13 @@
 				<p><![CDATA[Energy in the spheres is mostly in the form of heat energy or chemical energy. There is a vast amount of heat energy in the Atmosphere and Hydrosphere. The greatest source of this heat energy is the Sun.]]></p>
 			</element>
 			<element width="w-30" height="h-80" padding="pl-5" classes="v-center-overflow">
-				<image><![CDATA[img/media/image22.jpg]]></image>
+				<image><![CDATA[img/assets/image22.png]]></image>
 			</element>
 		</slide>
 		<slide data-slideid="23">
 			<params slideType="white-yellow-gradient-background" layout="horiz-50-50"></params>
 			<toc>Energy Flows, Matter Cycles</toc>
-			<element width="w-50" height="h-100">
+			<element width="w-50" height="h-100" classes="pt-5">
 				<main><![CDATA[Energy Flows, Matter Cycles]]></main>
 				<h2subheader><![CDATA[Earth’s Systems are Interconnected by the Flow and Exchange of Energy and Matter]]></h2subheader>
 				<p><![CDATA[Energy and matter are always circulating among the spheres, connecting them in many ways. Sometimes this circulation can happen very quickly, such as when a volcano erupts, moving tons of tiny particles from the Geosphere into the Atmosphere. Other examples of circulation happen much more slowly, such as when a fallen tree decays and nutrients move from the Biosphere to the Geosphere.]]></p>
@@ -409,7 +409,7 @@
 		<slide data-slideid="24">
 			<params slideType="pt2-slide24-bkgd" layout="horiz-50-50"></params>
 			<toc>Energy Flows</toc>
-			<element width="w-60" height="h-100">
+			<element width="w-60" height="h-100" classes="pt-5">
 				<h2subheader><![CDATA[Energy is transferred within and between spheres]]></h2subheader>
 				<p><![CDATA[For example:]]></p>
 				<list type="bullet">
@@ -421,60 +421,71 @@
 		</slide>
 		<slide data-slideid="24a">
 			<params slideType="pt2-slide24a-bkgd" layout="horiz-50-50"></params>
-			<element width="w-60" height="h-100">
+			<element width="w-60" height="h-100" classes="pt-5">
 				<h2subheader><![CDATA[Energy is transferred within and between spheres]]></h2subheader>
 				<p classes="call-out"><![CDATA[Take another look at your site photo. Can you identify one or two ways in which energy is flowing, and being transferred within and between spheres? Diagram this on your overlay or sketch.]]></p>
 				<videolink src="https://www.youtube.com/watch?v=85TQHzS88L4"><![CDATA[Learn more about the Carbon Cycle]]></videolink>
 			</element>
 		</slide>
+		<slide data-slideid="25">
+			<params slideType="white-yellow-gradient-background" layout="horiz-50-50"></params>
+			<toc>Matter Cycles</toc>
+			<element width="w-50" height="h-100" classes="pt-5">
+				<main><![CDATA[Matter Cycles]]></main>
+				<p><![CDATA[Carbon, the major building block of life, continuously cycles within and between the spheres. The carbon cycle is one of the most important interconnections within the Earth system.]]></p>
+			</element>
+			<element width="w-50" height="h-80" padding="pl-5" classes="v-center-overflow">
+				<image><![CDATA[img/assets/image25.jpg]]></image>
+			</element>
+		</slide>
 		<slide data-slideid="26a">
 			<params slideType="white-yellow-gradient-background" layout="horiz-50-50"></params>
 			<toc>Processes Move Matter</toc>
-			<element width="w-50" height="h-100">
+			<element width="w-50" height="h-100" classes="pt-5">
 				<main><![CDATA[Processes Move Matter]]></main>
 				<h2subheader><![CDATA[Whenever matter moves from one sphere into another, some process, driven by energy, causes it to happen. Here are some examples:]]></h2subheader>
 				<p><![CDATA[Water moves from a lake (Hydrosphere) into the air (Atmosphere) by a process called evaporation.]]></p>
 			</element>
 			<element width="w-50" height="h-80" padding="pl-5" classes="v-center-overflow">
-				<image><![CDATA[img/media/image26a.png]]></image>
+				<image><![CDATA[img/assets/image26a.jpg]]></image>
 			</element>
 		</slide>
 		<slide data-slideid="26b">
 			<params slideType="white-yellow-gradient-background" layout="horiz-50-50"></params>
-			<element width="w-50" height="h-100">
+			<element width="w-50" height="h-100" classes="pt-5">
 				<main><![CDATA[Processes Move Matter]]></main>
 				<h2subheader><![CDATA[Whenever matter moves from one sphere into another, some process, driven by energy, causes it to happen. Here are some examples:]]></h2subheader>
 				<p><![CDATA[Carbon dioxide moves from your body (Biosphere) into the air (Atmosphere) by a process called respiration.]]></p>
 			</element>
 			<element width="w-50" height="h-80" padding="pl-5" classes="v-center-overflow">
-				<image><![CDATA[img/media/image26b.png]]></image>
+				<image><![CDATA[img/assets/image26b.jpg]]></image>
 			</element>
 		</slide>
 		<slide data-slideid="26c">
 			<params slideType="white-yellow-gradient-background" layout="horiz-50-50"></params>
-			<element width="w-50" height="h-100">
+			<element width="w-50" height="h-100" classes="pt-5">
 				<main><![CDATA[Processes Move Matter]]></main>
 				<h2subheader><![CDATA[Whenever matter moves from one sphere into another, some process, driven by energy, causes it to happen. Here are some examples:]]></h2subheader>
 				<p><![CDATA[Minerals move from rock (Geosphere) into streams (Hydrosphere) by the processes of weathering and erosion.]]></p>
 			</element>
 			<element width="w-50" height="h-80" padding="pl-5" classes="v-center-overflow">
-				<image><![CDATA[img/media/image26c.png]]></image>
+				<image><![CDATA[img/assets/image26c.jpg]]></image>
 			</element>
 		</slide>
 		<slide data-slideid="26d">
 			<params slideType="white-yellow-gradient-background" layout="horiz-50-50"></params>
-			<element width="w-50" height="h-100">
+			<element width="w-50" height="h-100" classes="pt-5">
 				<main><![CDATA[Processes Move Matter]]></main>
 				<h2subheader><![CDATA[Whenever matter moves from one sphere into another, some process, driven by energy, causes it to happen. Here are some examples:]]></h2subheader>
 				<p><![CDATA[Nutrients and carbon move from a plant (Biosphere) into a bird’s body (Biosphere) by the processes of consumption and digestion.]]></p>
 			</element>
 			<element width="w-50" height="h-80" padding="pl-5" classes="v-center-overflow">
-				<image><![CDATA[img/media/image26d.png]]></image>
+				<image><![CDATA[img/assets/image26d.jpg]]></image>
 			</element>
 		</slide>
 		<slide data-slideid="27">
 			<params slideType="white-yellow-gradient-background" layout="horiz-50-50"></params>
-			<element width="w-40" height="h-100">
+			<element width="w-40" height="h-100" classes="pt-5">
 				<main><![CDATA[Processes Move Matter]]></main>
 				<p classes="call-out"><![CDATA[Take another look at your site photo. Can you identify a few ways in which carbon is cycling, and the processes that are moving it within and between spheres? Diagram this on your overlay or sketch.]]></p>
 				<videolink src="https://www.youtube.com/watch?v=85TQHzS88L4"><![CDATA[Learn more about the Carbon Cycle]]></videolink>
@@ -486,7 +497,7 @@
 		<slide data-slideid="28">
 			<params slideType="white-yellow-gradient-background" layout="horiz-50-50"></params>
 			<toc>Check Your Sketch</toc>
-			<element width="w-40" height="h-100">
+			<element width="w-40" height="h-100" classes="pt-5">
 				<main><![CDATA[Check Your Sketch]]></main>
 				<h2subheader><![CDATA[Your overlay or sketch should now look something like this example.]]></h2subheader>
 				<p classes="call-out"><![CDATA[You’ve been thinking about your site in terms of Earth’s systems. Might you use this approach to help explain the connections between your site and where your visitors live?]]></p>
@@ -507,13 +518,13 @@
 				<p classes="call-out"><![CDATA[Are there processes occurring at your site or in your region that have global consequences?]]></p>
 			</element>
 			<element width="w-40" height="h-80" padding="pl-5" classes="h-center-overflow">
-				<image><![CDATA[img/media/image29.png]]></image>
+				<image><![CDATA[img/assets/image29.jpg]]></image>
 			</element>
 		</slide>
 		<slide data-slideid="30">
 			<params slideType="white-yellow-gradient-background" layout="horiz-50-50"></params>
 			<toc>Summary</toc>
-			<element width="w-50" height="h-100">
+			<element width="w-50" height="h-100" classes="pt-5">
 				<section><![CDATA[Summary]]></section>
 				<list type="bullet">
 					<item><![CDATA[The Earth system behaves as a single, self-regulating system with physical, chemical, and biological processes.]]></item>
@@ -530,50 +541,50 @@
 		<slide data-slideid="31">
 			<params slideType="white-blue-gradient-background" layout="horiz-50-50"></params>
 			<toc>Part 3</toc>
-			<element width="w-40" height="h-100" classes="pr-5">
+			<element width="w-40" height="h-100" classes="pr-5 pt-5">
 				<section><![CDATA[Earth's Climate System]]></section>
 				<h2subheader><![CDATA[Our planet’s climate system operates at global, regional and local scales, which are linked.]]></h2subheader>
 				<p><![CDATA[For example, pollution from China affects cloud development in the North Pacific and strengthens extratropical cyclones. In turn, these  play an important role in atmospheric circulation, bringing tropical moisture up to temperate latitudes.]]></p>
-				<p><![CDATA[Optional: <a href="https://climate.nasa.gov/news/2218/global-is-the-new-local-pollution-changes-clouds-climate-downstream/" target="_blank">Read More<a>]]></p>
+				<p><![CDATA[Optional: <a href="https://climate.nasa.gov/news/2218/global-is-the-new-local-pollution-changes-clouds-climate-downstream/" target="_blank">Read More</a>]]></p>
 			</element>
 			<element width="w-60" height="h-auto">
-				<youtube><![CDATA[https://youtu.be/_titsRUo4t4]]></youtube>
+				<youtube><![CDATA[https://youtu.be/3RulLroREZw]]></youtube>
 			</element>
 		</slide>
 		<slide data-slideid="32">
 			<params slideType="white-blue-gradient-background" layout="horiz-50-50"></params>
 			<toc>Introduction</toc>
-			<element width="w-50" height="h-100">
+			<element width="w-50" height="h-100" classes="pt-5">
 				<section><![CDATA[Introduction]]></section>
 				<p><![CDATA[The climate system is both affected by and in turn affects the overall system in direct and complex ways. It operates at local, regional and global scales.]]></p>
 				<p><![CDATA[A quick glance at this diagram shows the complexity of the climate system – and the many interactions and processes at work. This is why supercomputers are needed to run climate models!]]></p>
 				<p><![CDATA[In this section we’ll be looking at the major drivers of Earth’s climate and touch on why it is changing.]]></p>
 			</element>
 			<element width="w-50" height="h-80" classes="pl-5 v-center-overflow">
-				<image><![CDATA[img/media/image32.png]]></image>
+				<image><![CDATA[img/assets/image32.png]]></image>
 			</element>
 		</slide>
 		<slide data-slideid="33b">
 			<params slideType="white-blue-gradient-background" layout="horiz-50-50"></params>
 			<toc>Global Drivers - Our Sun</toc>
-			<element width="w-50" height="h-100">
+			<element width="w-40" height="h-100" classes="pr-5 pt-5">
 				<section><![CDATA[What Drives Earth’s Climate on the Global Scale?]]></section>
 				<h2subheader><![CDATA[Our Sun]]></h2subheader>
 				<p><![CDATA[Our Sun’s cycles have an effect over the time scale of millions of years, but do not account for the recent warming of our planet.]]></p>
-				<p><![CDATA[Optional: Please read for a basic explanation of how solar variation influences our climate > <a href="http://www.ucsusa.org/global_warming/science_and_impacts/science/effect-of-sun-on-climate-faq.html#5" target="_blank">Open Article<a>]]></p>
+				<p><![CDATA[Optional: Please read for a basic explanation of how solar variation influences our climate > <a href="http://www.ucsusa.org/global_warming/science_and_impacts/science/effect-of-sun-on-climate-faq.html#5" target="_blank">Open Article</a>]]></p>
 			</element>
-			<element width="w-50" height="h-80" classes="pl-5 v-center-overflow">
-				<image><![CDATA[img/assets/image33b.jpg]]></image>
+			<element width="w-60" height="h-auto">
+				<youtube><![CDATA[https://youtu.be/TrShQojyazU]]></youtube>
 			</element>
 		</slide>
 		<slide data-slideid="33a">
 			<params slideType="white-blue-gradient-background" layout="horiz-50-50"></params>
 			<toc>Global Drivers - Orbital Cycles</toc>
-			<element width="w-50" height="h-100">
+			<element width="w-50" height="h-100" classes="pt-5">
 				<section><![CDATA[What Drives Earth’s Climate on the Global Scale?]]></section>
 				<h2subheader><![CDATA[Orbital Cycles]]></h2subheader>
 				<p><![CDATA[Earth’s orbital cycles (Milankovitch cycles) operate separately and together, to influence global climate over very long time scales, triggering the beginning and end of the Ice Ages.]]></p>
-				<p classes="call-out"><![CDATA[Assignment: Please read this short article about the Milankovitch cycles > <a href="https://climate.nasa.gov/news/2948/milankovitch-orbital-cycles-and-their-role-in-earths-climate/" target="_blank">Open Article<a>]]></p>
+				<p classes="call-out"><![CDATA[Assignment: Please read this short article about the Milankovitch cycles > <a href="https://climate.nasa.gov/news/2948/milankovitch-orbital-cycles-and-their-role-in-earths-climate/" target="_blank">Open Article</a>]]></p>
 			</element>
 			<element width="w-50" height="h-80" classes="pl-5 v-center-overflow">
 				<image><![CDATA[img/assets/image33a.jpg]]></image>
@@ -582,7 +593,7 @@
 		<slide data-slideid="35">
 			<params slideType="white-blue-gradient-background" layout="horiz-50-50"></params>
 			<toc>Global Drivers - Physics</toc>
-			<element width="w-50" height="h-100">
+			<element width="w-50" height="h-100" classes="pt-5">
 				<section><![CDATA[What Drives Earth’s Climate on the Global Scale?]]></section>
 				<h2subheader><![CDATA[Physics]]></h2subheader>
 				<p><![CDATA[The laws of physics govern how air and water move and affect atmospheric and oceanic circulation patterns, among other things. Climate scientists rely on known understanding of physics when developing climate models and predictions of climate.]]></p>
@@ -601,20 +612,20 @@
 		<slide data-slideid="34a">
 			<params slideType="white-blue-gradient-background" layout="horiz-50-50"></params>
 			<toc>Global Drivers - Life</toc>
-			<element width="w-50" height="h-100">
+			<element width="w-40" height="h-100" classes="pr-5 pt-5">
 				<section><![CDATA[What Drives Earth’s Climate on the Global Scale?]]></section>
 				<h2subheader><![CDATA[Presence of Life]]></h2subheader>
 				<p><![CDATA[We have seen that living things help circulate matter and energy. Life also contributes to the greenhouse gases that help make Earth’s temperature habitable for people.]]></p>
 				<hint><![CDATA[The visualization to the right shows the seasonal variation of the Biosphere and corresponding CO2 levels in the Atmosphere. As areas green up in spring and summer, plants draw more CO2 from the Atmosphere. White squares indicate CO2 concentrations higher than the trend vs. areas without squares where CO2 concentrations are lower.]]></hint>
 			</element>
-			<element width="w-50" height="h-auto">
+			<element width="w-60" height="h-auto">
 				<youtube><![CDATA[https://youtu.be/xqM83_og1Fc]]></youtube>
 			</element>
 		</slide>
 		<slide data-slideid="34b">
 			<params slideType="white-blue-gradient-background" layout="horiz-50-50"></params>
 			<toc>Global Drivers - Matter Cycling</toc>
-			<element width="w-40" height="h-100" classes="pr-5">
+			<element width="w-40" height="h-100" classes="pr-5 pt-5">
 				<section><![CDATA[What Drives Earth’s Climate on the Global Scale?]]></section>
 				<h2subheader><![CDATA[Cycling of Matter]]></h2subheader>
 				<p><![CDATA[The cycling of matter links the Earth system components. Examples include the water cycle and the carbon cycle. Alterations in these cycles can cause climate to shift (eg., adding excess CO2 to the atmosphere traps more heat on Earth, in turn changing the climate.)]]></p>
@@ -626,7 +637,7 @@
 		<slide data-slideid="36">
 			<params slideType="white-blue-gradient-background" layout="horiz-50-50"></params>
 			<toc>Global Drivers - Coupled Circulation</toc>
-			<element width="w-50" height="h-100" classes="pr-5">
+			<element width="w-50" height="h-100" classes="pr-5 pt-5">
 				<section><![CDATA[What Drives Earth’s Climate on the Global Scale?]]></section>
 				<h2subheader><![CDATA[Coupled Ocean and Atmospheric Circulation Determine Climate Patterns]]></h2subheader>
 				<p><![CDATA[A major part of the global climate system is comprised of the coupled ocean and atmospheric circulation patterns. These patterns dictate the major climatic zones on our planet and are intimately intertwined with all of Earth’s spheres.)]]></p>
@@ -639,21 +650,21 @@
 		</slide>
 		<slide data-slideid="37">
 			<params slideType="white-blue-gradient-background" layout="horiz-50-50"></params>
-			<element width="w-50" height="h-100">
+			<element width="w-50" height="h-100" classes="pr-5 pt-5">
 				<section><![CDATA[What Drives Earth’s Climate on the Global Scale?]]></section>
 				<h2subheader><![CDATA[Coupled Ocean and Atmospheric Circulation Determine Climate Patterns]]></h2subheader>
 				<p><![CDATA[Watch this (slightly dated)  4 minute movie to see the effects of surface ocean currents on climate patterns:]]></p>
-				<p><![CDATA[http://www.pbslearningmedia.org/resource/ttv10.sci.ess.watcyc.currents/the-role-of-ocean-currents-in-climate/]]></p>
+				<p><![CDATA[<a href="http://www.pbslearningmedia.org/resource/ttv10.sci.ess.watcyc.currents/the-role-of-ocean-currents-in-climate/" target="_blank">Open Website In New Window</a>]]></p>
 				<p><![CDATA[In sum, the ocean and atmospheric circulation patterns are closely linked. Driven by the energy from our Sun and the spinning of the globe, winds and ocean currents distribute heat around our planet.]]></p>
 			</element>
 			<element width="w-50" height="h-auto">
-				<youtube><![CDATA[https://youtu.be/xqM83_og1Fc]]></youtube>
+				<youtube><![CDATA[https://youtu.be/ljp12PcCCt4]]></youtube>
 			</element>
 		</slide>
 		<slide data-slideid="37a">
 			<params slideType="white-blue-gradient-background" layout="horiz-50-50"></params>
 			<toc>Global Drivers - Cumulative Processes</toc>
-			<element width="w-50" height="h-100">
+			<element width="w-50" height="h-100" classes="pt-5">
 				<section><![CDATA[What Drives Earth’s Climate on the Global Scale?]]></section>
 				<h2subheader><![CDATA[Cumulative Effects of Regional and Local Processes and Events]]></h2subheader>
 				<p><![CDATA[For example, cumulative effects of land management practices in various regions around the globe affect the global carbon cycle, in turn impacting global climate.]]></p>
@@ -665,7 +676,7 @@
 		<slide data-slideid="38">
 			<params slideType="white-blue-gradient-background" layout="horiz-50-50"></params>
 			<toc>Regional Patterns</toc>
-			<element width="w-40" height="h-100" classes="pr-5">
+			<element width="w-40" height="h-100" classes="pr-5 pt-5">
 				<section><![CDATA[What Causes Variation in Regional Climate?]]></section>
 				<p><![CDATA[Regional climate patterns involve smaller scale events and processes. They can also be affected by cyclical events that are linked to the global climate. For example, the El Niño - La Niña cycle arises from global oceanic processes. The switch from one phase of this cycle to another impacts climate and weather patterns in Pacific coastal regions and beyond.]]></p>
 			</element>
@@ -676,7 +687,7 @@
 		<slide data-slideid="39a">
 			<params slideType="white-blue-gradient-background" layout="horiz-50-50"></params>
 			<toc>Local Patterns</toc>
-			<element width="w-40" height="h-100" classes="pr-5">
+			<element width="w-40" height="h-100" classes="pr-5 pt-5">
 				<section><![CDATA[What Causes Variation in Local Climate?]]></section>
 				<h2subheader><![CDATA[Cumulative Effects of Regional and Local Processes and Events]]></h2subheader>
 				<p><![CDATA[Local climate is dependent upon global and regional processes but is influenced by the local environment and conditions such as topography or land cover. For example, the surface temperature of a local area will depend on whether it's covered in vegetation or pavement.]]></p>
@@ -688,7 +699,7 @@
 		</slide>
 		<slide data-slideid="39b">
 			<params slideType="white-blue-gradient-background" layout="horiz-50-50"></params>
-			<element width="w-40" height="h-100" classes="pr-5">
+			<element width="w-40" height="h-100" classes="pr-5 pt-5">
 				<section><![CDATA[What Causes Variation in Local Climate?]]></section>
 				<h2subheader><![CDATA[Cumulative Effects of Regional and Local Processes and Events]]></h2subheader>
 				<p><![CDATA[Local climate is dependent upon global and regional processes but is influenced by the local environment and conditions such as topography or land cover. For example, the surface temperature of a local area will depend on whether it's covered in vegetation or pavement.]]></p>
@@ -700,7 +711,7 @@
 		</slide>
 		<slide data-slideid="40">
 			<params slideType="white-blue-gradient-background" layout="horiz-50-50"></params>
-			<element width="w-40" height="h-100" classes="pr-5">
+			<element width="w-40" height="h-100" classes="pr-5 pt-5">
 				<section><![CDATA[Why is Earth’s Climate Changing Now?]]></section>
 				<p><![CDATA[By altering the chemical makeup of our Atmosphere through adding additional carbon, we are trapping more of the Sun’s energy. This changes both the Atmosphere and ocean components of Earth’s climate system, which in turn affect the Biosphere, Cryosphere and Geosphere in ways that have global, regional and local consequences.]]></p>
 			</element>
@@ -711,7 +722,7 @@
 		<slide data-slideid="41">
 			<params slideType="white-blue-gradient-background" layout="horiz-50-50"></params>
 			<toc>Consider Your Site</toc>
-			<element width="w-40" height="h-100">
+			<element width="w-40" height="h-100" classes="pt-5">
 				<section><![CDATA[How is Your Site Linked to the Global Climate System?]]></section>
 				<p><![CDATA[Think how the ocean and air currents affect the climate where you live. Do you think the system is changing? Have weather patterns shifted in your location? How might this affect the natural and cultural resources there? How about the global and local processes, the energy flow and the exchange of matter? How will all of these changes affect you, and your visitors? Our longer courses use an Earth systems approach to build the conceptual links between global, regional and local climate change and frame discussions with scientists and fellow interpreters.]]></p>
 			</element>
@@ -722,53 +733,53 @@
 		<slide data-slideid="41a">
 			<params slideType="white-blue-gradient-background" layout="horiz-50-50"></params>
 			<toc>Summary of Part 3</toc>
-			<element width="w-50" height="h-100">
+			<element width="w-50" height="h-100" classes="pt-5">
 				<section><![CDATA[Summary of Part 3]]></section>
 				<p><![CDATA[Earth’s climate operates on global, regional and local scales, which are linked through various processes governed by fundamental laws of physics.]]></p>
 				<p><![CDATA[Globally, Earth’s climate is determined by the Sun’s cycles, Earth’s orbital cycles, the cycling of matter and flow of energy, and the cumulative effects of regional and local processes.]]></p>
 				<p><![CDATA[The currents of the ocean and the Atmosphere are inextricably linked, distributing heat around the planet. This produces global, regional and local climate and weather patterns.]]></p>
 			</element>
 			<element width="w-50" height="h-80" classes="pl-5 v-center-overflow">
-				<image><![CDATA[img/assets/image41a.png]]></image>
+				<image><![CDATA[img/assets/image30.png]]></image>
 			</element>
 		</slide>
 		<slide data-slideid="41b">
 			<params slideType="white-blue-gradient-background" layout="horiz-50-50"></params>
-			<element width="w-50" height="h-100">
+			<element width="w-50" height="h-100" classes="pt-5">
 				<section><![CDATA[Summary of Part 3]]></section>
 				<p><![CDATA[Regional climate is dependent on global trends, influenced by regional conditions such as land management practices.]]></p>
 				<p><![CDATA[Local climate is impacted by both regional and global scale processes, influenced by localized conditions such as impervious surfaces.]]></p>
 				<p><![CDATA[Earth’s climate is changing because humans are adding excess carbon to the Atmosphere. This is altering all components of the Earth system, leading to widespread impacts at local, regional and global scales.]]></p>
 			</element>
 			<element width="w-50" height="h-80" classes="pl-5 v-center-overflow">
-				<image><![CDATA[img/assets/image41b.png]]></image>
+				<image><![CDATA[img/assets/image30.png]]></image>
 			</element>
 		</slide>
 		<slide data-slideid="42">
 			<params slideType="white-blue-gradient-background" layout="horiz-50-50"></params>
 			<toc>Moving Forward</toc>
-			<element width="w-50" height="h-100">
+			<element width="w-50" height="h-100" classes="pr-5 pt-5">
 				<section><![CDATA[Moving Forward]]></section>
 				<p><![CDATA[As you learn more about Earth’s climate and global change, or even as you simply think about what is happening in the natural world around you, keep in mind the concept of the Earth system, with its spheres, reservoirs of matter and energy, and processes that drive matter and energy from one sphere to another.]]></p>
 				<p><![CDATA[These concepts can help you better understand the very dynamic nature of our planet and provide a foundation for explaining global climate change and its effects.]]></p>
 				<p><![CDATA[It’s all about connections!]]></p>
 			</element>
-			<element width="w-50" height="h-80" classes="pl-5 v-center-overflow">
-				<image><![CDATA[img/assets/image42.png]]></image>
+			<element width="w-50" height="h-auto">
+				<youtube><![CDATA[https://youtu.be/R6gRYYIDNEU]]></youtube>
 			</element>
 		</slide>
 		<slide data-slideid="43">
-			<params slideType="white-blue-gradient-background" layout="horiz-50-50"></params>
+			<params slideType="pt3-intro-bkgd white-blue-gradient-background" layout="horiz-50-50"></params>
 			<toc>Conclusion</toc>
+			<element width="w-45" height="h-100">
+				<image><![CDATA[img/assets/image43.jpg]]></image>
+			</element>
 			<element width="w-50" height="h-100">
 				<section><![CDATA[Conclusion]]></section>
-				<image><![CDATA[img/assets/image43.png]]></image>
-			</element>
-			<element width="w-50" height="h-80" classes="pl-5 v-center-overflow">
 				<quoteElement>
 					<quote><![CDATA[“I believe the best way to begin reconnecting humanity's heart, mind, and soul to nature is for us to share our individual stories.”]]></quote>
 					<byline><![CDATA[– J. Drew Lanham]]></byline>
-					<displayimage><![CDATA[img/assets/davinci.png]]></displayimage>
+					<displayimage><![CDATA[img/assets/image43-1.png]]></displayimage>
 				</quoteElement>
 			</element>
 		</slide>

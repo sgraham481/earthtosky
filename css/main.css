@@ -481,6 +481,9 @@ p.hint {
     font-size: .8rem;
     width: 40%;
 }
+.part-3 p.hint {
+    width: 70%;
+}
 .hints.showhints p.hint {
     display: block;
 }
@@ -766,6 +769,12 @@ Earth To Sky Bootstrap Carousel Approach CSS
 .mobile .container .carousel .item-container.absolute-align-top {
     top: 0;
     bottom: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.absolute-align-top .title-wrapper {
+    margin-bottom:2rem;
 }
 .carousel-inner .item {
     height: 100%;
@@ -1259,23 +1268,31 @@ Earth To Sky Bootstrap Carousel Approach CSS
 }
 
 /**********************/
-/*CUSTOM PART 2 INTRO */
+/*CUSTOM PART 2, 3 INTRO */
 /**********************/
-.pt2-intro-bkgd .item-container {
+.pt2-intro-bkgd .item-container,
+.pt3-intro-bkgd .item-container {
     padding-left: 0!important;
 }
-.pt2-intro-bkgd .quote-element {
+.pt2-intro-bkgd .quote-element,
+.pt3-intro-bkgd .quote-element {
     height: 49%;
     position: absolute;
     bottom: 17%;
 }
-.pt2-intro-bkgd .quote {
+.pt2-intro-bkgd .quote,
+.pt3-intro-bkgd .quote {
     padding: 0;
 }
 .pt2-intro-bkgd .quote .span, 
 .pt2-intro-bkgd .quote-body, 
 .pt2-intro-bkgd .quote-attribution {
     color: #ffffff;
+}
+.pt3-intro-bkgd .quote .span, 
+.pt3-intro-bkgd .quote-body, 
+.pt3-intro-bkgd .quote-attribution {
+    color: #0b5a9f;
 }
 /**********************/
 

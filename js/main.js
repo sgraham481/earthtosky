@@ -294,7 +294,7 @@ function populateCarousel(){
 															GET 'TOP' NODE;
 															IF NO TOP NODE, LOG;
 														*/
-														slideHtmlText += "<div class='item-container half-height absolute-align-top'>";
+														slideHtmlText += "<div class='item-container half-height absolute-align-top'><div class='title-wrapper'>";
 														//console.log("hasEls(slide, 'top') = "+hasEls(slide, 'top'));
 
 														for (var c = 0; c < slide.childNodes.length; c++) {
@@ -308,7 +308,7 @@ function populateCarousel(){
 											                    }
 											                }
 											            }
-														slideHtmlText += '</div>';
+														slideHtmlText += '</div></div>';
 
 			          									/*
 															LOOP ON BOTTOM
