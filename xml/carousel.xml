@@ -394,10 +394,10 @@
 			<toc>Matter and Energy</toc>
 			<element width="w-70" height="h-100" classes="pt-5 pr-5">
 				<h2subheader><![CDATA[Each Sphere Holds Matter and Energy]]></h2subheader>
-				<h3subheader><![CDATA[Matter]]></h3subheader>
-				<p><![CDATA[Although it is obvious that the Hydrosphere and Cryosphere hold water, there is also water in the Biosphere, Atmosphere, and in the Geosphere. Each of the spheres also holds oxygen, various forms of carbon, and other chemical elements or materials. All of the matter on Earth can be placed in one or more spheres.]]></p>
 				<h3subheader><![CDATA[Energy]]></h3subheader>
 				<p><![CDATA[Energy in the spheres is mostly in the form of heat energy or chemical energy. There is a vast amount of heat energy in the Atmosphere and Hydrosphere. The greatest source of this heat energy is the Sun.]]></p>
+				<h3subheader><![CDATA[Matter]]></h3subheader>
+				<p><![CDATA[Although it is obvious that the Hydrosphere and Cryosphere hold water, there is also water in the Biosphere, Atmosphere, and in the Geosphere. Each of the spheres also holds oxygen, various forms of carbon, and other chemical elements or materials. All of the matter on Earth can be placed in one or more spheres.]]></p>
 			</element>
 			<element width="w-30" height="h-80" padding="pl-5" classes="v-center-overflow">
 				<image><![CDATA[img/assets/image22.png]]></image>
