@@ -473,6 +473,59 @@ p.note {
     margin: .5rem 0;
     display: block;
 }
+.hints {
+    margin-top: 2rem;
+}
+p.hint {
+    display: none;
+    font-size: .8rem;
+    width: 40%;
+}
+.hints.showhints p.hint {
+    display: block;
+}
+button.seehint {
+    padding: 3rem 4rem;
+    border: dashed 2px #e55100;
+    border-radius: 6px;
+}
+button.seehint span {
+    font-size: 1rem;
+    color: var(--ess-orange);
+}
+button.seehint img {
+    height: 40px;
+    max-width: 40px;
+    margin-right: 10px;
+    transition: transform .5s;
+}
+button.seehint:hover, 
+button.seehint:focus, 
+button.seehint.hover {
+    border: dashed 4px #e55100;
+    outline: none;
+    box-shadow: none;
+}
+.hints.showhints {
+    display: flex;
+    align-items: flex-start;
+}
+.hints.showhints button.seehint {
+    border: none;
+    padding: 0;
+}
+.hints.showhints button.seehint span {
+    display: none;
+}
+.hints.showhints button.seehint div img {
+    transform: rotate(90deg);
+    height: 20px;
+    max-width: 20px;
+}
+.hints.showhints p.hint {
+    display: block;
+    margin-top: 0;
+}
 .videoWrapper {
     position: relative;
     padding-bottom: 56.25%;
@@ -606,7 +659,7 @@ Earth To Sky Bootstrap Carousel Approach CSS
     top: 0;
 }
 .carousel-inner p {
-  margin: 2rem 0;
+  margin: 1.5rem 0;
 }
 .carousel-inner li {
     margin: .75rem 0;
@@ -728,8 +781,7 @@ Earth To Sky Bootstrap Carousel Approach CSS
 .container .carousel .item-container .h1,
 .container .carousel .item-container .h2 {
     text-align: center;
-    margin-top: 2rem;
-    margin-bottom: 1.2rem;
+    margin: 1.5rem 0;
 }
 .container .carousel .item-container .item-element {
     position: relative;

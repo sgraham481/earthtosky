@@ -303,7 +303,7 @@ function populateCarousel(){
 
 											                	for (var d = 0; d < slide.childNodes[c].childNodes.length; d++) {
 
-											                		slideHtmlText += returnElementHTML(slide.childNodes[c].childNodes[d]);
+											                		slideHtmlText += returnElementHTML(slide.childNodes[c].childNodes[d], totalslides);
 
 											                    }
 											                }
@@ -318,7 +318,7 @@ function populateCarousel(){
 															if (slide.getElementsByTagName('bottom')[b].attributes['elemType'] === undefined){
 																for (var q=0; q<slide.getElementsByTagName('bottom')[b].childNodes.length; q++ ){
 
-																	slideHtmlText += returnElementHTML(slide.getElementsByTagName('bottom')[b].childNodes[q]);
+																	slideHtmlText += returnElementHTML(slide.getElementsByTagName('bottom')[b].childNodes[q], totalslides);
 
 											                	}
 															} else {
@@ -330,7 +330,7 @@ function populateCarousel(){
 																		for (var q=0; q<slide.getElementsByTagName('bottom')[b].childNodes.length; q++ ){
 																			console.log(slide.getElementsByTagName('bottom')[b].childNodes[q].nodeName);
 
-																			slideHtmlText += returnElementHTML(slide.getElementsByTagName('bottom')[b].childNodes[q]);
+																			slideHtmlText += returnElementHTML(slide.getElementsByTagName('bottom')[b].childNodes[q], totalslides);
 
 																		}
 
@@ -371,7 +371,7 @@ function populateCarousel(){
 															slideHtmlText += '<div class="item-element'+width+height+padding+classes+'">';
 															for (var d = 0; d < slide.childNodes[c].childNodes.length; d++) {
 
-																slideHtmlText += returnElementHTML(slide.childNodes[c].childNodes[d]);
+																slideHtmlText += returnElementHTML(slide.childNodes[c].childNodes[d], totalslides);
 
 															}
 															slideHtmlText += '</div>';
@@ -399,7 +399,7 @@ function populateCarousel(){
 															slideHtmlText += '<div class="item-element'+width+height+padding+classes+'">';
 															for (var d = 0; d < slide.childNodes[c].childNodes.length; d++) {
 
-																slideHtmlText += returnElementHTML(slide.childNodes[c].childNodes[d]);
+																slideHtmlText += returnElementHTML(slide.childNodes[c].childNodes[d], totalslides);
 
 															}
 															slideHtmlText += '</div>';
@@ -424,7 +424,7 @@ function populateCarousel(){
 															slideHtmlText += '<div class="item-element'+width+height+padding+classes+'">';
 															for (var d = 0; d < slide.childNodes[c].childNodes.length; d++) {
 
-																slideHtmlText += returnElementHTML(slide.childNodes[c].childNodes[d]);
+																slideHtmlText += returnElementHTML(slide.childNodes[c].childNodes[d], totalslides);
 
 															}
 															slideHtmlText += '</div>';
@@ -452,7 +452,7 @@ function populateCarousel(){
 															slideHtmlText += '<div class="item-element'+width+height+padding+classes+'">';
 															for (var d = 0; d < slide.childNodes[c].childNodes.length; d++) {
 
-																slideHtmlText += returnElementHTML(slide.childNodes[c].childNodes[d]);
+																slideHtmlText += returnElementHTML(slide.childNodes[c].childNodes[d], totalslides);
 
 															}
 															slideHtmlText += '</div>';
@@ -481,7 +481,7 @@ function populateCarousel(){
 															slideHtmlText += '<div class="item-element'+width+height+padding+classes+'">';
 															for (var d = 0; d < slide.childNodes[c].childNodes.length; d++) {
 
-																slideHtmlText += returnElementHTML(slide.childNodes[c].childNodes[d]);
+																slideHtmlText += returnElementHTML(slide.childNodes[c].childNodes[d], totalslides);
 
 															}
 															slideHtmlText += '</div>';
@@ -510,7 +510,7 @@ function populateCarousel(){
 															slideHtmlText += '<div class="item-element'+width+height+padding+classes+'">';
 															for (var d = 0; d < slide.childNodes[c].childNodes.length; d++) {
 
-																slideHtmlText += returnElementHTML(slide.childNodes[c].childNodes[d]);
+																slideHtmlText += returnElementHTML(slide.childNodes[c].childNodes[d], totalslides);
 
 															}
 															slideHtmlText += '</div>';
@@ -539,7 +539,7 @@ function populateCarousel(){
 															slideHtmlText += '<div class="item-element'+width+height+padding+classes+'">';
 															for (var d = 0; d < slide.childNodes[c].childNodes.length; d++) {
 
-																slideHtmlText += returnElementHTML(slide.childNodes[c].childNodes[d]);
+																slideHtmlText += returnElementHTML(slide.childNodes[c].childNodes[d], totalslides);
 
 															}
 															slideHtmlText += '</div>';
@@ -573,7 +573,7 @@ function populateCarousel(){
 
 	setUpCarouselNavigation();
 }
-function returnElementHTML(node){
+function returnElementHTML(node, totalslides){
 
 	var slideHtmlText = "";
 	var classes = "";
@@ -658,9 +658,9 @@ function returnElementHTML(node){
 		//console.log("video");
 		//console.log(node.childNodes[0].nodeValue);
 		//console.log("yturlsplitarray length = "+yturlsplitarray.length);
-		slideHtmlText += '<div class="videoWrapper"><iframe id="ytplayer" type="text/html" width="640" height="360" src="https://www.youtube.com/embed/'+yturlsplitarray[(yturlsplitarray.length-1)]+'?autoplay=0&amp;origin='+node.childNodes[0].nodeValue+'" frameborder="0" allowfullscreen></iframe></div>';
+		slideHtmlText += '<div class="videoWrapper"><iframe id="ytplayer'+totalslides+'" type="text/html" width="640" height="360" src="https://www.youtube.com/embed/'+yturlsplitarray[(yturlsplitarray.length-1)]+'??enablejsapi=1&autoplay=0&amp;origin='+node.childNodes[0].nodeValue+'" frameborder="0" allowfullscreen></iframe></div>';
 	} else if (node.nodeName === 'hint'){
-		slideHtmlText += '<div class="notes"><button class="btn seenotes" onclick="toggleNotes(this)"><img src="img/assets/nav_pointer.svg"><span>See Notes</span></button><p class="note">'+node.childNodes[0].nodeValue+'</p></div>';
+		slideHtmlText += '<div class="hints"><button class="btn seehint" onclick="toggleHints(this)"><span>(hint)</span><div><img src="img/assets/hint_hand.svg"></div></button><p class="hint">'+node.childNodes[0].nodeValue+'</p></div>';
 	} else if (node.nodeName === 'note'){
 		slideHtmlText += '<div class="notes"><button class="btn seenotes" onclick="toggleNotes(this)"><img src="img/assets/nav_pointer.svg"><span>See Notes</span></button><p class="note">'+node.childNodes[0].nodeValue+'</p></div>';
 	}
@@ -704,5 +704,42 @@ BUILD CAROUSEL OPTIONS
 function toggleNotes(el) {
 	$(el).parent().toggleClass('shownotes');
 };
+function toggleHints(el) {
+	$(el).parent().toggleClass('showhints');
+};
+// https://developers.google.com/youtube/iframe_api_reference
 
+// global variable for the player
+var player;
 
+// this function gets called when API is ready to use
+function onYouTubePlayerAPIReady() {
+	console.log("onYouTubePlayerAPIReady()");
+  // create the global player from the specific iframe (#video)
+  player = new YT.Player("ytplayer0", {
+    events: {
+      // call this function when player is ready to use
+      onReady: onPlayerReady
+    }
+  });
+}
+
+function onPlayerReady(event) {
+	console.log("onPlayerReady()");
+  // bind events
+  /*var playButton = document.getElementById("play-button");
+  playButton.addEventListener("click", function () {
+    player.playVideo();
+  });
+
+  var pauseButton = document.getElementById("pause-button");
+  pauseButton.addEventListener("click", function () {
+    player.pauseVideo();
+  });*/
+}
+
+// Inject YouTube API script
+var tag = document.createElement("script");
+tag.src = "//www.youtube.com/player_api";
+var firstScriptTag = document.getElementsByTagName("script")[0];
+firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);

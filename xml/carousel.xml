@@ -2,16 +2,16 @@
 <carousel>
 	<part>
 		<slide data-slideid="1a">
-			<params slideType="blue-vert-50-50"></params>
+			<params slideType="blue-vert-50-50-background" layout="horiz-50-50"></params>
 			<toc>Part 1: About Earth System Science</toc>
-			<top>
+			<element width="w-40" height="h-100" classes="pr-5">
 				<section><![CDATA[Part 1: About Earth System Science]]></section>
 				<p><![CDATA[Earth system scientists take a holistic view of planet Earth, working to gain understanding of the influence of major and minor processes on Earth’s past, current and future conditions. Much of Earth systems science is focused on understanding what drives Earth’s global, regional and local climate patterns, including human activity. A major goal is to improve predictions of future climate under various scenarios of human actions and other variables.]]></p>
 				<p><![CDATA[View this video to get a sense of how and why NASA studies our planet.]]></p>
-			</top>
-			<bottom>
+			</element>
+			<element width="w-60" height="h-auto">
 				<youtube><![CDATA[https://youtu.be/_titsRUo4t4]]></youtube>
-			</bottom>
+			</element>
 		</slide>
 		<slide data-slideid="1a-2bc">
 			<params slideType="blue-vert-50-50"></params>
@@ -22,17 +22,17 @@
 			<bottom elemType="quote">
 				<quote><![CDATA[Learn how to see. Realize that everything is connected to everything else.]]></quote>
 				<byline><![CDATA[- Leonardo Da Vinci, 1452-1519]]></byline>
-				<displayimage><![CDATA[img/assets/davinci.png]]></displayimage>
+				<displayimage><![CDATA[img/assets/image1a.png]]></displayimage>
 			</bottom>
 			<bottom elemType="quote">
 				<quote><![CDATA[The indigenous understanding has its basis of spirituality in a recognition of the interconnectedness and interdependence of all living things, a holistic and balanced view of the world. All things are bound together. All things connect. What happens to the Earth happens to the children of the earth.]]></quote>
 				<byline><![CDATA[- Rebecca Adamson]]></byline>
-				<displayimage><![CDATA[]]></displayimage>
+				<displayimage><![CDATA[img/assets/image1b.png]]></displayimage>
 			</bottom>
 			<bottom elemType="quote">
 				<quote><![CDATA[In nature we never see anything isolated, but everything in connection with something else which is before it, beside it, under it and over it.]]></quote>
 				<byline><![CDATA[- Johann Wolfgang von Goethe]]></byline>
-				<displayimage><![CDATA[img/assets/goethe.png]]></displayimage>
+				<displayimage><![CDATA[img/assets/image1c.png]]></displayimage>
 			</bottom>
 		</slide>
 		<slide data-slideid="2a">
@@ -81,7 +81,7 @@
 					<item><![CDATA[Ice, snow, glaciers, ice sheets, ice caps (Cryosphere)]]></item>
 					<item><![CDATA[All living things (Biosphere)]]></item>
 				</list>
-				<hint><![CDATA[Some scientists include Cryosphere as a component of the Hydrosphere, and some scientists include the Pedosphere, a.k.a. soils, as a component of the Geosphere.]]></hint>
+				<note><![CDATA[Some scientists include Cryosphere as a component of the Hydrosphere, and some scientists include the Pedosphere, a.k.a. soils, as a component of the Geosphere.]]></note>
 			</element>
 			<element width="w-50" height="h-80" classes="v-center-overflow">
 				<image><![CDATA[img/assets/image3.png]]></image>
@@ -92,7 +92,7 @@
 			<element width="w-50" height="h-100" padding="pr-5">
 				<section><![CDATA[Components of the Earth System]]></section>
 				<p><![CDATA[Earth system scientists seek to improve understanding of each of these spheres, as well as the interactions between them, to better predict long and short-term changes on our planet.]]></p>
-				<hint><![CDATA[Some scientists include Cryosphere as a component of the Hydrosphere, and some scientists include the Pedosphere, a.k.a. soils, as a component of the Geosphere.]]></hint>
+				<note><![CDATA[Some scientists include Cryosphere as a component of the Hydrosphere, and some scientists include the Pedosphere, a.k.a. soils, as a component of the Geosphere.]]></note>
 			</element>
 			<element width="w-50" height="h-80" classes="v-center-overflow">
 				<image><![CDATA[img/assets/image3.png]]></image>
@@ -133,7 +133,7 @@
 				</list>
 			</element>
 			<element width="w-50" height="h-80" classes="v-center-overflow">
-				<image><![CDATA[img/media/image5.png]]></image>
+				<image><![CDATA[img/assets/image5.jpg]]></image>
 			</element>
 		</slide>
 		<slide data-slideid="5a">
@@ -144,7 +144,7 @@
 				<p><![CDATA[For example, scientists can test chemical reactions and physical processes on small scales in lab settings, such as exposing tanks of phytoplankton to various temperatures to determine the effect of warming oceans on plankton blooms.]]></p>
 			</element>
 			<element width="w-50" height="h-80" classes="v-center-overflow">
-				<image><![CDATA[img/media/image5a.png]]></image>
+				<image><![CDATA[img/assets/image5a.jpg]]></image>
 			</element>
 		</slide>
 		<slide data-slideid="5b">
@@ -166,7 +166,7 @@
 				<p><![CDATA[For example, geologists researching how this cave formed at Craters of the Moon NPP can get clues by examining active lava tubes at places like Hawai’i Volcanoes National Park.]]></p>
 			</element>
 			<element width="w-50" height="h-80" classes="v-center-overflow">
-				<image><![CDATA[img/media/image5c.png]]></image>
+				<image><![CDATA[img/assets/image5c.jpg]]></image>
 			</element>
 		</slide>
 		<slide data-slideid="5d">
@@ -177,7 +177,7 @@
 				<p><![CDATA[This can lead to hypotheses for causation (ex., a gradient of coarse to fine grains often leads to hypotheses of direction of sediment transport).]]></p>
 			</element>
 			<element width="w-50" height="h-80" classes="v-center-overflow">
-				<image><![CDATA[img/media/image5d.png]]></image>
+				<image><![CDATA[img/assets/image5d.jpg]]></image>
 			</element>
 		</slide>
 		<slide data-slideid="5e">
@@ -188,7 +188,7 @@
 				<p><![CDATA[One example of a physical model is a stream table, which can be used for analyzing the physics of stream flow.]]></p>
 			</element>
 			<element width="w-50" height="h-80" classes="h-center-overflow">
-				<image><![CDATA[img/media/image5e.png]]></image>
+				<image><![CDATA[img/assets/image5e.jpg]]></image>
 			</element>
 		</slide>
 		<slide data-slideid="5f">
@@ -498,15 +498,15 @@
 		<slide data-slideid="29">
 			<params slideType="white-yellow-gradient-background" layout="horiz-50-50"></params>
 			<toc>Processes Occur Locally and Globally</toc>
-			<element width="w-50" height="h-100">
+			<element width="w-60" height="h-100">
 				<section><![CDATA[Processes Occur Locally and Globally]]></section>
 				<h2subheader><![CDATA[You’ve just explored some processes occurring at the local scale of your own site, and are probably thinking about how they are linked to global processes.]]></h2subheader>
 				<p><![CDATA[Pictured to the right is a global-scale example.]]></p>
 				<p classes="call-out"><![CDATA[Q: In a few sentences, state the process and the spheres involved.]]></p>
-				<hint><![CDATA[The volcanic eruption of Mount Pinatubo in 1991 sent tons of tiny solid particles from the Geosphere into the Atmosphere.  Once in the Atmosphere, these particles are called aerosols. The aerosols reduced the amount of sunlight that reached Earth. In the United States, the summer of 1992 was the third coldest and third wettest summer in 77 years.]]></hint>
+				<p><![CDATA[A: The volcanic eruption of Mount Pinatubo in 1991 sent tons of tiny solid particles from the Geosphere into the Atmosphere. Once in the Atmosphere, these particles are called aerosols. The aerosols reduced the amount of sunlight that reached Earth. In the United States, the summer of 1992 was the third coldest and third wettest summer in 77 years.]]></p>
 				<p classes="call-out"><![CDATA[Are there processes occurring at your site or in your region that have global consequences?]]></p>
 			</element>
-			<element width="w-50" height="h-80" padding="pl-5" classes="h-center-overflow">
+			<element width="w-40" height="h-80" padding="pl-5" classes="h-center-overflow">
 				<image><![CDATA[img/media/image29.png]]></image>
 			</element>
 		</slide>
@@ -534,7 +534,7 @@
 				<section><![CDATA[Earth's Climate System]]></section>
 				<h2subheader><![CDATA[Our planet’s climate system operates at global, regional and local scales, which are linked.]]></h2subheader>
 				<p><![CDATA[For example, pollution from China affects cloud development in the North Pacific and strengthens extratropical cyclones. In turn, these  play an important role in atmospheric circulation, bringing tropical moisture up to temperate latitudes.]]></p>
-				<hint><![CDATA[Optional: read more (hot link Read more to this: https://climate.nasa.gov/news/2218/global-is-the-new-local-pollution-changes-clouds-climate-downstream/ )]]></hint>
+				<p><![CDATA[Optional: <a href="https://climate.nasa.gov/news/2218/global-is-the-new-local-pollution-changes-clouds-climate-downstream/" target="_blank">Read More<a>]]></p>
 			</element>
 			<element width="w-60" height="h-auto">
 				<youtube><![CDATA[https://youtu.be/_titsRUo4t4]]></youtube>
@@ -560,7 +560,7 @@
 				<section><![CDATA[What Drives Earth’s Climate on the Global Scale?]]></section>
 				<h2subheader><![CDATA[Our Sun]]></h2subheader>
 				<p><![CDATA[Our Sun’s cycles have an effect over the time scale of millions of years, but do not account for the recent warming of our planet.]]></p>
-				<hint><![CDATA[Optional: for a basic explanation of how solar variation influences our climate see http://www.ucsusa.org/global_warming/science_and_impacts/science/effect-of-sun-on-climate-faq.html#5)]]></hint>
+				<p><![CDATA[Optional: Please read for a basic explanation of how solar variation influences our climate > <a href="http://www.ucsusa.org/global_warming/science_and_impacts/science/effect-of-sun-on-climate-faq.html#5" target="_blank">Open Article<a>]]></p>
 			</element>
 			<element width="w-50" height="h-80" classes="pl-5 v-center-overflow">
 				<image><![CDATA[img/assets/image33b.jpg]]></image>
@@ -573,7 +573,7 @@
 				<section><![CDATA[What Drives Earth’s Climate on the Global Scale?]]></section>
 				<h2subheader><![CDATA[Orbital Cycles]]></h2subheader>
 				<p><![CDATA[Earth’s orbital cycles (Milankovitch cycles) operate separately and together, to influence global climate over very long time scales, triggering the beginning and end of the Ice Ages.]]></p>
-				<hint><![CDATA[Assignment: Please read this short article about the Milankovitch cycles https://climate.nasa.gov/news/2948/milankovitch-orbital-cycles-and-their-role-in-earths-climate/]]></hint>
+				<p classes="call-out"><![CDATA[Assignment: Please read this short article about the Milankovitch cycles > <a href="https://climate.nasa.gov/news/2948/milankovitch-orbital-cycles-and-their-role-in-earths-climate/" target="_blank">Open Article<a>]]></p>
 			</element>
 			<element width="w-50" height="h-80" classes="pl-5 v-center-overflow">
 				<image><![CDATA[img/assets/image33a.jpg]]></image>
@@ -607,8 +607,8 @@
 				<p><![CDATA[We have seen that living things help circulate matter and energy. Life also contributes to the greenhouse gases that help make Earth’s temperature habitable for people.]]></p>
 				<hint><![CDATA[The visualization to the right shows the seasonal variation of the Biosphere and corresponding CO2 levels in the Atmosphere. As areas green up in spring and summer, plants draw more CO2 from the Atmosphere. White squares indicate CO2 concentrations higher than the trend vs. areas without squares where CO2 concentrations are lower.]]></hint>
 			</element>
-			<element width="w-50" height="h-80" classes="pl-5 v-center-overflow">
-				<embedvideo><![CDATA[vid/CO2_biosphere_w_dates.mp4]]></embedvideo>
+			<element width="w-50" height="h-auto">
+				<youtube><![CDATA[https://youtu.be/xqM83_og1Fc]]></youtube>
 			</element>
 		</slide>
 		<slide data-slideid="34b">
@@ -646,8 +646,8 @@
 				<p><![CDATA[http://www.pbslearningmedia.org/resource/ttv10.sci.ess.watcyc.currents/the-role-of-ocean-currents-in-climate/]]></p>
 				<p><![CDATA[In sum, the ocean and atmospheric circulation patterns are closely linked. Driven by the energy from our Sun and the spinning of the globe, winds and ocean currents distribute heat around our planet.]]></p>
 			</element>
-			<element width="w-50" height="h-80" classes="pl-5 v-center-overflow">
-				<embedvideo><![CDATA[vid/The_OCEAN_ipod_lg.m4v]]></embedvideo>
+			<element width="w-50" height="h-auto">
+				<youtube><![CDATA[https://youtu.be/xqM83_og1Fc]]></youtube>
 			</element>
 		</slide>
 		<slide data-slideid="37a">
