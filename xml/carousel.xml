@@ -67,6 +67,16 @@
 				<image><![CDATA[img/assets/image2c.png]]></image>
 			</element>
 		</slide>
+		<slide data-slideid="2d">
+			<params slideType="blue-circle-right"></params>
+			<element width="w-50" height="h-100" classes="pr-5 pt-5">
+				<section><![CDATA[Systems Thinking]]></section>
+				<p><![CDATA[The interaction of components and their interrelated processes create system behavior.]]></p>
+			</element>
+			<element width="w-50" height="h-80" classes="h-center-overflow">
+				<image><![CDATA[img/assets/image2d.jpg]]></image>
+			</element>
+		</slide>
 		<slide data-slideid="3a">
 			<params slideType="blue-circle-right"></params>
 			<toc>Components of the Earth System</toc>
