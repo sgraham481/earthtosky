@@ -51,7 +51,7 @@
 			<params slideType="blue-circle-right"></params>
 			<element width="w-50" height="h-100" classes="pr-5 pt-5">
 				<section><![CDATA[Systems Thinking]]></section>
-				<p><![CDATA[A system can be defined as a group of interacting, interrelated, or interdependent <italic>components</italic> (or subsystems) that work together to form a complex whole.]]></p>
+				<p><![CDATA[A familiar example of a system with interdependent <i>components</i> is the human body. The <i>components</i> of the human body’s system are the skeletal system, nervous system, circulatory system, digestive system, etc.]]></p>
 			</element>
 			<element width="w-50" height="h-70" classes="h-center-overflow">
 				<image><![CDATA[img/assets/human_subsystems.png]]></image>
@@ -140,7 +140,7 @@
 			<params slideType="blue-circle-right"></params>
 			<element width="w-50" height="h-100" classes="pr-5 pt-5">
 				<section><![CDATA[Modes of Inquiry]]></section>
-				<h2subheader><![CDATA[Laboratory Experiment]]></h2subheader>
+				<h2subheader><![CDATA[Laboratory xperiment]]></h2subheader>
 				<p><![CDATA[For example, scientists can test chemical reactions and physical processes on small scales in lab settings, such as exposing tanks of phytoplankton to various temperatures to determine the effect of warming oceans on plankton blooms.]]></p>
 			</element>
 			<element width="w-50" height="h-80" classes="v-center-overflow">
