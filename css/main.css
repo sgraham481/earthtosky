@@ -494,7 +494,7 @@ p.note {
 p.hint {
     display: none;
     font-size: 0.867rem;
-    width: 40%;
+    width: 37%;
 }
 .part-3 p.hint {
     width: 70%;
@@ -1234,21 +1234,59 @@ Earth To Sky Bootstrap Carousel Approach CSS
     height: auto;
     width: 100%;
     transition: transform .5s;
+    transition-delay: .5s;
 }
+
+.geo .pie img {
+    transform: rotate(-20deg);
+    transition-delay: 0s;
+    transition: transform .01s;
+}
+.cryo .pie img {
+    transform: rotate(56deg);
+    transition-delay: 0s;
+    transition: transform .01s;
+}
+.atmo .pie img {
+    transform: rotate(127deg);
+    transition-delay: 0s;
+    transition: transform .01s;
+}
+.bio .pie img {
+    transform: rotate(-90deg);
+    transition-delay: 0s;
+    transition: transform .01s;
+}
+.hydro .pie img {
+    transform: rotate(197deg);
+    transition-delay: 0s;
+    transition: transform .01s;
+}
+
 .on.geo .pie img {
     transform: rotate(70deg);
+    transition-delay: 0s;
+    transition: transform .5s;
 }
 .on.cryo .pie img {
     transform: rotate(146deg);
+    transition-delay: 0s;
+    transition: transform .5s;
 }
 .on.atmo .pie img {
     transform: rotate(217deg);
+    transition-delay: 0s;
+    transition: transform .5s;
 }
 .on.bio .pie img {
     transform: rotate(0deg);
+    transition-delay: 0s;
+    transition: transform .5s;
 }
 .on.hydro .pie img {
     transform: rotate(287deg);
+    transition-delay: 0s;
+    transition: transform .5s;
 }
 .part-2 .h2.sub-header {
     color: var(--ess-orange);
@@ -1303,6 +1341,12 @@ Earth To Sky Bootstrap Carousel Approach CSS
     bottom: 0;
     left: 33%;
     width: 36%;
+}
+.sphere-bkgds .hand-on-paper {
+    position: absolute;
+    bottom: 0;
+    left: 36%;
+    width: 32%;
 }
 
 /**********************/
@@ -1425,6 +1469,12 @@ Earth To Sky Bootstrap Carousel Approach CSS
     border-radius: 12px 12px 0 0;
     padding: 8px 24px 4px;
   }
+  .sphere-bkgds .hand-on-paper {
+    position: absolute;
+    bottom: 0;
+    left: 33%;
+    width: 36%;
+}
 }
 @media (min-width: 1200px) {
   html {

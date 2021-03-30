@@ -21,7 +21,7 @@
 			</top>
 			<bottom elemType="quote">
 				<quote><![CDATA[Learn how to see. Realize that everything is connected to everything else.]]></quote>
-				<byline><![CDATA[- Leonardo Da Vinci, 1452-1519]]></byline>
+				<byline><![CDATA[- Leonardo Da Vinci]]></byline>
 				<displayimage><![CDATA[img/assets/image1a.png]]></displayimage>
 			</bottom>
 			<bottom elemType="quote">
@@ -90,7 +90,6 @@
 					<item><![CDATA[Ice, snow, glaciers, ice sheets, ice caps (Cryosphere)]]></item>
 					<item><![CDATA[All living things (Biosphere)]]></item>
 				</list>
-				<note><![CDATA[Some scientists include Cryosphere as a component of the Hydrosphere, and some scientists include the Pedosphere, a.k.a. soils, as a component of the Geosphere.]]></note>
 			</element>
 			<element width="w-50" height="h-80" classes="v-center-overflow">
 				<image><![CDATA[img/assets/image3.png]]></image>
@@ -215,7 +214,7 @@
 			<params slideType="blue-circle-right"></params>
 			<toc>Summary</toc>
 			<element width="w-50" height="h-100" classes="pr-5 pt-5">
-				<section><![CDATA[Summary]]></section>
+				<section><![CDATA[Summary of Part 1]]></section>
 				<list type="no-list-style">
 					<item><![CDATA[The discipline of Earth system science is characterized by a holistic systems-thinking approach to studying our home planet.]]></item>
 					<item><![CDATA[Systems are comprised of interactive, interrelated or interdependent components that work together to form a complex whole.]]></item>
@@ -237,7 +236,7 @@
 				<image><![CDATA[img/assets/image6.jpg]]></image>
 			</element>
 			<element width="w-50" height="h-100" classes="pt-4">
-				<section><![CDATA[Part 2: Looking at Earth as a System and Applying that to Your Site]]></section>
+				<section><![CDATA[Part 2: Looking at Earth as a System and Applying That to Your Site]]></section>
 				<quoteElement>
 					<quote><![CDATA[Look deep into nature, and then you will understand everything better.]]></quote>
 					<byline><![CDATA[- Albert Einstein]]></byline>
@@ -274,7 +273,7 @@
 			<params slideType="medium-yellow-gradient-background" layout="horiz-50-50"></params>
 			<toc>Spheres and Elements</toc>
 			<element width="w-50" height="h-100" classes="pt-5">
-				<main><![CDATA[Each Sphere is made up of Elements]]></main>
+				<main><![CDATA[Each Sphere is Made Up of Elements]]></main>
 				<p><![CDATA[For example,]]></p>
 				<list type="no-list-style">
 					<item><![CDATA[A bird is an <i>element</i> of the Biosphere]]></item>
@@ -291,7 +290,7 @@
 		<slide data-slideid="10">
 			<params slideType="light-yellow-gradient-background" layout="horiz-50-50"></params>
 			<element width="w-40" height="h-100" classes="pt-5">
-				<main><![CDATA[Each Sphere is made up of Elements]]></main>
+				<main><![CDATA[Each Sphere is Made Up of Elements]]></main>
 				<h2subheader><![CDATA[Let's take a brief look at each of Earth's Spheres and elements of each at your site.]]></h2subheader>
 			</element>
 			<element width="w-60" height="h-90" classes="v-center-overflow">
@@ -302,7 +301,7 @@
 			<params slideType="white-yellow-gradient-background" layout="horiz-50-50"></params>
 			<toc>Using Your Site Photo</toc>
 			<element width="w-40" height="h-100" classes="pt-5">
-				<main><![CDATA[Using your Site Photo to Explore a Systems View of Your Site]]></main>
+				<main><![CDATA[Using Your Site Photo to Explore a Systems View of Your Site]]></main>
 				<list type="numbered">
 					<item><![CDATA[Find the photo you took of your site, and the tracing paper or plastic overlay.]]></item>
 					<item><![CDATA[Lay the tracing paper or plastic on top of your photo.]]></item>
@@ -408,11 +407,11 @@
 			<toc>Energy Flows, Matter Cycles</toc>
 			<element width="w-50" height="h-100" classes="pt-5">
 				<main><![CDATA[Energy Flows, Matter Cycles]]></main>
-				<h2subheader><![CDATA[Earth’s Systems are Interconnected by the Flow and Exchange of Energy and Matter]]></h2subheader>
+				<h2subheader><![CDATA[Earth’s Spheres are Interconnected by the Flow and Exchange of Energy and Matter]]></h2subheader>
 				<p><![CDATA[Energy and matter are always circulating among the spheres, connecting them in many ways. Sometimes this circulation can happen very quickly, such as when a volcano erupts, moving tons of tiny particles from the Geosphere into the Atmosphere. Other examples of circulation happen much more slowly, such as when a fallen tree decays and nutrients move from the Biosphere to the Geosphere.]]></p>
 			</element>
-			<element width="w-50" height="h-80" padding="pl-5" classes="v-center-overflow">
-				<image><![CDATA[img/assets/images_8_and_23.svg]]></image>
+			<element width="w-50" height="h-auto">
+				<youtube><![CDATA[https://youtu.be/R6gRYYIDNEU]]></youtube>
 			</element>
 		</slide>
 		<slide data-slideid="24">
@@ -536,7 +535,7 @@
 			<params slideType="white-yellow-gradient-background" layout="horiz-50-50"></params>
 			<toc>Summary</toc>
 			<element width="w-50" height="h-100" classes="pt-5">
-				<section><![CDATA[Summary]]></section>
+				<section><![CDATA[Summary of Part 2]]></section>
 				<list type="no-list-style">
 					<item><![CDATA[The Earth system behaves as a single, self-regulating system with physical, chemical, and biological processes.]]></item>
 					<item><![CDATA[The interactions and feedbacks between the system’s components are complex and take place on multiple scales of time and space.]]></item>
@@ -553,10 +552,10 @@
 			<params slideType="white-blue-gradient-background" layout="horiz-50-50"></params>
 			<toc>Part 3</toc>
 			<element width="w-40" height="h-100" classes="pr-5 pt-5">
-				<section><![CDATA[Earth's Climate System]]></section>
+				<section><![CDATA[Part 3: Earth's Climate System]]></section>
 				<h2subheader><![CDATA[Our planet’s climate system operates at global, regional and local scales, which are linked.]]></h2subheader>
 				<p><![CDATA[For example, pollution from China affects cloud development in the North Pacific and strengthens extratropical cyclones. In turn, these  play an important role in atmospheric circulation, bringing tropical moisture up to temperate latitudes.]]></p>
-				<p><![CDATA[Optional: <a href="https://climate.nasa.gov/news/2218/global-is-the-new-local-pollution-changes-clouds-climate-downstream/" target="_blank">Read More</a>]]></p>
+				<p><![CDATA[Optional: <a href="https://climate.nasa.gov/blog/2953/there-is-no-impending-mini-ice-age/" target="_blank">Read More</a>]]></p>
 			</element>
 			<element width="w-60" height="h-auto">
 				<youtube><![CDATA[https://youtu.be/3RulLroREZw]]></youtube>
@@ -625,7 +624,7 @@
 			<toc>Global Drivers - Life</toc>
 			<element width="w-50" height="h-100" classes="pr-5 pt-5">
 				<section><![CDATA[What Drives Earth’s Climate on the Global Scale?]]></section>
-				<h2subheader><![CDATA[Presence of Life]]></h2subheader>
+				<h2subheader><![CDATA[Presence of life]]></h2subheader>
 				<p><![CDATA[We have seen that living things help circulate matter and energy. Life also contributes to the greenhouse gases that help make Earth’s temperature habitable for people.]]></p>
 			</element>
 			<element width="w-60" height="h-70">
@@ -638,7 +637,7 @@
 			<toc>Global Drivers - Matter Cycling</toc>
 			<element width="w-40" height="h-100" classes="pr-5 pt-5">
 				<section><![CDATA[What Drives Earth’s Climate on the Global Scale?]]></section>
-				<h2subheader><![CDATA[Cycling of Matter]]></h2subheader>
+				<h2subheader><![CDATA[Cycling of matter]]></h2subheader>
 				<p><![CDATA[The cycling of matter links the Earth system components. Examples include the water cycle and the carbon cycle. Alterations in these cycles can cause climate to shift (eg., adding excess CO2 to the atmosphere traps more heat on Earth, in turn changing the climate.)]]></p>
 			</element>
 			<element width="w-60" height="h-80" classes="v-center-overflow">
@@ -650,7 +649,7 @@
 			<toc>Global Drivers - Coupled Circulation</toc>
 			<element width="w-50" height="h-100" classes="pr-5 pt-5">
 				<section><![CDATA[What Drives Earth’s Climate on the Global Scale?]]></section>
-				<h2subheader><![CDATA[Coupled Ocean and Atmospheric Circulation Determine Climate Patterns]]></h2subheader>
+				<h2subheader><![CDATA[Coupled ocean and atmospheric circulation determine climate patterns]]></h2subheader>
 				<p><![CDATA[A major part of the global climate system is comprised of the coupled ocean and atmospheric circulation patterns. These patterns dictate the major climatic zones on our planet and are intimately intertwined with all of Earth’s spheres.)]]></p>
 				<p><![CDATA[A basic understanding of these circulation patterns can help us grasp the global, regional and local ramifications of the changes humans are making to our Atmosphere and ocean.]]></p>
 				<p><![CDATA[Let’s begin with the Atmosphere.]]></p>
@@ -663,13 +662,13 @@
 			<params slideType="white-blue-gradient-background" layout="horiz-50-50"></params>
 			<element width="w-50" height="h-100" classes="pr-5 pt-5">
 				<section><![CDATA[What Drives Earth’s Climate on the Global Scale?]]></section>
-				<h2subheader><![CDATA[Coupled Ocean and Atmospheric Circulation Determine Climate Patterns]]></h2subheader>
+				<h2subheader><![CDATA[Coupled ocean and atmospheric circulation determine climate patterns]]></h2subheader>
 				<p><![CDATA[Watch this (slightly dated)  4 minute movie to see the effects of surface ocean currents on climate patterns:]]></p>
 				<p><![CDATA[<a href="http://www.pbslearningmedia.org/resource/ttv10.sci.ess.watcyc.currents/the-role-of-ocean-currents-in-climate/" target="_blank">Open Website In New Window</a>]]></p>
 				<p><![CDATA[In sum, the ocean and atmospheric circulation patterns are closely linked. Driven by the energy from our Sun and the spinning of the globe, winds and ocean currents distribute heat around our planet.]]></p>
 			</element>
 			<element width="w-50" height="h-auto">
-				<youtube><![CDATA[https://youtu.be/ljp12PcCCt4]]></youtube>
+				<youtube><![CDATA[https://youtu.be/42pEHvkv8aQ ]]></youtube>
 			</element>
 		</slide>
 		<slide data-slideid="37a">
@@ -677,7 +676,7 @@
 			<toc>Global Drivers - Cumulative Processes</toc>
 			<element width="w-50" height="h-100" classes="pt-5">
 				<section><![CDATA[What Drives Earth’s Climate on the Global Scale?]]></section>
-				<h2subheader><![CDATA[Cumulative Effects of Regional and Local Processes and Events]]></h2subheader>
+				<h2subheader><![CDATA[Cumulative effects of regional and local processes and events]]></h2subheader>
 				<p><![CDATA[For example, cumulative effects of land management practices in various regions around the globe affect the global carbon cycle, in turn impacting global climate.]]></p>
 			</element>
 			<element width="w-50" height="h-80" classes="pl-5 v-center-overflow">
@@ -700,7 +699,7 @@
 			<toc>Local Patterns</toc>
 			<element width="w-40" height="h-100" classes="pr-5 pt-5">
 				<section><![CDATA[What Causes Variation in Local Climate?]]></section>
-				<h2subheader><![CDATA[Cumulative Effects of Regional and Local Processes and Events]]></h2subheader>
+				<h2subheader><![CDATA[Cumulative effects of regional and local processes and events]]></h2subheader>
 				<p><![CDATA[Local climate is dependent upon global and regional processes but is influenced by the local environment and conditions such as topography or land cover.]]></p>
 				<p classes="call-out"><![CDATA[Compare these two Landsat satellite images of Atlanta, Georgia, from September 28, 2000. Because vegetation cools the surface through evaporation of water, the most densely vegetated areas are the coolest.]]></p>
 			</element>
@@ -713,7 +712,7 @@
 			<params slideType="white-blue-gradient-background" layout="horiz-50-50"></params>
 			<element width="w-40" height="h-100" classes="pr-5 pt-5">
 				<section><![CDATA[What Causes Variation in Local Climate?]]></section>
-				<h2subheader><![CDATA[Cumulative Effects of Regional and Local Processes and Events]]></h2subheader>
+				<h2subheader><![CDATA[Cumulative effects of regional and local processes and events]]></h2subheader>
 				<p><![CDATA[Local climate is dependent upon global and regional processes but is influenced by the local environment and conditions such as topography or land cover.]]></p>
 				<p classes="call-out"><![CDATA[Compare these two Landsat satellite images of Atlanta, Georgia, from September 28, 2000. Because vegetation cools the surface through evaporation of water, the most densely vegetated areas are the coolest.]]></p>
 			</element>

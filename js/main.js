@@ -154,7 +154,8 @@ function setBackground(){
 	var $bkgd = $(".item."+nextprev).attr("data-background");
 	var $slidebkgd = $(".slide-backgrounds."+$bkgd);
 	if ($bkgd === "sphere-bkgds"){
-		$slidebkgd.addClass("on "+$(".item."+nextprev).attr("data-sphere"));
+		$slidebkgd.addClass($(".item."+nextprev).attr("data-sphere"));
+		setTimeout(function(){ $slidebkgd.addClass("on"); }, 50);
 	} else {
 		$slidebkgd.addClass("on");
 	}
