@@ -43,13 +43,13 @@
 				<p><![CDATA[Earth system scientists employ systems thinking to gain understanding of how Earth’s overall system works.]]></p>
 				<p><![CDATA[A system can be defined as a group of interacting, interrelated, or interdependent components that work together to form a complex whole.]]></p>
 			</element>
-			<element width="w-40" padding="pl-5">
+			<element width="w-40" padding="pr-5">
 				<image><![CDATA[img/assets/gears3.svg]]></image>
 			</element>
 		</slide>
 		<slide data-slideid="2b">
 			<params slideType="blue-circle-right"></params>
-			<element width="w-50" height="h-100" classes="pr-5 pt-5">
+			<element width="w-45" height="h-100" classes="pr-5 pt-5">
 				<section><![CDATA[Systems Thinking]]></section>
 				<p><![CDATA[A familiar example of a system with interdependent <i>components</i> is the human body. The <i>components</i> of the human body’s system are the skeletal system, nervous system, circulatory system, digestive system, etc.]]></p>
 			</element>
@@ -122,7 +122,7 @@
 					<item><![CDATA[Use the results and peer feedback to refine the question, ask new questions, make new predictions and/or solidify predictions.]]></item>
 				</list>
 			</element>
-			<element width="w-50" height="h-80"  padding="pl-5" classes="v-center-overflow">
+			<element width="w-50" height="h-70" classes="pr-5 h-center-overflow">
 				<image><![CDATA[img/assets/image4.svg]]></image>
 			</element>
 		</slide>
@@ -169,12 +169,12 @@
 		</slide>
 		<slide data-slideid="5c">
 			<params slideType="blue-circle-right"></params>
-			<element width="w-50" height="h-100" classes="pr-5 pt-5">
+			<element width="w-40" height="h-100" classes="pr-5 pt-5">
 				<section><![CDATA[Modes of Inquiry]]></section>
 				<h2subheader><![CDATA[Comparing ancient artifacts with products of current day processes]]></h2subheader>
 				<p><![CDATA[For example, geologists researching how this cave formed at Craters of the Moon NPP can get clues by examining active lava tubes at places like Hawai’i Volcanoes National Park.]]></p>
 			</element>
-			<element width="w-50" height="h-80" classes="v-center-overflow">
+			<element width="w-60" height="h-80" classes="v-center-overflow">
 				<image><![CDATA[img/assets/image5c.jpg]]></image>
 			</element>
 		</slide>
@@ -236,7 +236,7 @@
 			<element width="w-45" height="h-100">
 				<image><![CDATA[img/assets/image6.jpg]]></image>
 			</element>
-			<element width="w-50" height="h-100">
+			<element width="w-50" height="h-100" classes="pt-4">
 				<section><![CDATA[Part 2: Looking at Earth as a System and Applying that to Your Site]]></section>
 				<quoteElement>
 					<quote><![CDATA[Look deep into nature, and then you will understand everything better.]]></quote>
@@ -294,7 +294,7 @@
 				<main><![CDATA[Each Sphere is made up of Elements]]></main>
 				<h2subheader><![CDATA[Let's take a brief look at each of Earth's Spheres and elements of each at your site.]]></h2subheader>
 			</element>
-			<element width="w-70" height="h-90" classes="h-center-overflow">
+			<element width="w-60" height="h-90" classes="v-center-overflow">
 				<image><![CDATA[img/assets/image10.svg]]></image>
 			</element>
 		</slide>
@@ -318,7 +318,7 @@
 			<params slideType="geosphere-bkgd" layout="horiz-50-50"></params>
 			<toc>Geosphere</toc>
 			<element width="w-100" height="h-100" classes="sphere">
-				<section><![CDATA[GEOSPHERE]]></section>
+				<section><![CDATA[Geosphere]]></section>
 			</element>
 		</slide>
 		<slide data-slideid="13">
@@ -333,7 +333,7 @@
 			<params slideType="hydrosphere-bkgd" layout="horiz-50-50"></params>
 			<toc>Hydrosphere</toc>
 			<element width="w-100" height="h-100" classes="sphere">
-				<section><![CDATA[HYDROSPHERE]]></section>
+				<section><![CDATA[Hydrosphere]]></section>
 			</element>
 		</slide>
 		<slide data-slideid="15">
@@ -348,7 +348,7 @@
 			<params slideType="cryosphere-bkgd" layout="horiz-50-50"></params>
 			<toc>Cryosphere</toc>
 			<element width="w-100" height="h-100" classes="sphere">
-				<section><![CDATA[CRYOSPHERE]]></section>
+				<section><![CDATA[Cryosphere]]></section>
 			</element>
 		</slide>
 		<slide data-slideid="17">
@@ -363,7 +363,7 @@
 			<params slideType="biosphere-bkgd" layout="horiz-50-50"></params>
 			<toc>Biosphere</toc>
 			<element width="w-100" height="h-100" classes="sphere">
-				<section><![CDATA[BIOSPHERE]]></section>
+				<section><![CDATA[Biosphere]]></section>
 			</element>
 		</slide>
 		<slide data-slideid="19">
@@ -378,7 +378,7 @@
 			<params slideType="atmosphere-bkgd" layout="horiz-50-50"></params>
 			<toc>Atmosphere</toc>
 			<element width="w-100" height="h-100" classes="sphere">
-				<section><![CDATA[ATMOSPHERE]]></section>
+				<section><![CDATA[Atmosphere]]></section>
 			</element>
 		</slide>
 		<slide data-slideid="21">
@@ -399,7 +399,7 @@
 				<h3subheader><![CDATA[Matter]]></h3subheader>
 				<p><![CDATA[Although it is obvious that the Hydrosphere and Cryosphere hold water, there is also water in the Biosphere, Atmosphere, and in the Geosphere. Each of the spheres also holds oxygen, various forms of carbon, and other chemical elements or materials. All of the matter on Earth can be placed in one or more spheres.]]></p>
 			</element>
-			<element width="w-30" height="h-80" padding="pl-5" classes="v-center-overflow">
+			<element width="w-30" height="h-70" padding="pl-5" classes="h-center-overflow">
 				<image><![CDATA[img/assets/image22.png]]></image>
 			</element>
 		</slide>
@@ -441,11 +441,11 @@
 		<slide data-slideid="25">
 			<params slideType="white-yellow-gradient-background" layout="horiz-50-50"></params>
 			<toc>Matter Cycles</toc>
-			<element width="w-50" height="h-100" classes="pt-5">
+			<element width="w-40" height="h-100" classes="pt-5">
 				<main><![CDATA[Matter Cycles]]></main>
 				<p><![CDATA[Carbon, the major building block of life, continuously cycles within and between the spheres. The carbon cycle is one of the most important interconnections within the Earth system.]]></p>
 			</element>
-			<element width="w-50" height="h-80" padding="pl-5" classes="v-center-overflow">
+			<element width="w-60" height="h-80" padding="pl-5" classes="v-center-overflow">
 				<image><![CDATA[img/assets/image25.jpg]]></image>
 			</element>
 		</slide>
@@ -468,7 +468,7 @@
 				<h2subheader><![CDATA[Whenever matter moves from one sphere into another, some process, driven by energy, causes it to happen. Here are some examples:]]></h2subheader>
 				<p><![CDATA[Carbon dioxide moves from your body (Biosphere) into the air (Atmosphere) by a process called respiration.]]></p>
 			</element>
-			<element width="w-50" height="h-80" padding="pl-5" classes="v-center-overflow">
+			<element width="w-50" height="h-70" padding="pl-5" classes="h-center-overflow">
 				<image><![CDATA[img/assets/image26b.jpg]]></image>
 			</element>
 		</slide>
@@ -525,7 +525,7 @@
 				<h2subheader><![CDATA[You’ve just explored some processes occurring at the local scale of your own site, and are probably thinking about how they are linked to global processes.]]></h2subheader>
 				<p><![CDATA[Pictured to the right is a global-scale example.]]></p>
 				<p classes="call-out"><![CDATA[Q: In a few sentences, state the process and the spheres involved.]]></p>
-				<p><![CDATA[A: The volcanic eruption of Mount Pinatubo in 1991 sent tons of tiny solid particles from the Geosphere into the Atmosphere. Once in the Atmosphere, these particles are called aerosols. The aerosols reduced the amount of sunlight that reached Earth. In the United States, the summer of 1992 was the third coldest and third wettest summer in 77 years.]]></p>
+				<p classes="call-out-noline"><![CDATA[A: The volcanic eruption of Mount Pinatubo in 1991 sent tons of tiny solid particles from the Geosphere into the Atmosphere. Once in the Atmosphere, these particles are called aerosols. The aerosols reduced the amount of sunlight that reached Earth. In the United States, the summer of 1992 was the third coldest and third wettest summer in 77 years.]]></p>
 				<p classes="call-out"><![CDATA[Are there processes occurring at your site or in your region that have global consequences?]]></p>
 			</element>
 			<element width="w-40" height="h-80" padding="pl-5" classes="h-center-overflow">
@@ -565,13 +565,13 @@
 		<slide data-slideid="32">
 			<params slideType="white-blue-gradient-background" layout="horiz-50-50"></params>
 			<toc>Introduction</toc>
-			<element width="w-50" height="h-100" classes="pt-5">
+			<element width="w-45" height="h-100" classes="pt-5">
 				<section><![CDATA[Introduction]]></section>
 				<p><![CDATA[The climate system is both affected by and in turn affects the overall system in direct and complex ways. It operates at local, regional and global scales.]]></p>
 				<p><![CDATA[A quick glance at this diagram shows the complexity of the climate system – and the many interactions and processes at work. This is why supercomputers are needed to run climate models!]]></p>
 				<p><![CDATA[In this section we’ll be looking at the major drivers of Earth’s climate and touch on why it is changing.]]></p>
 			</element>
-			<element width="w-50" height="h-80" classes="pl-5 v-center-overflow">
+			<element width="w-50" height="h-80" classes="h-center-overflow">
 				<image><![CDATA[img/assets/image32.png]]></image>
 			</element>
 		</slide>
@@ -627,10 +627,10 @@
 				<section><![CDATA[What Drives Earth’s Climate on the Global Scale?]]></section>
 				<h2subheader><![CDATA[Presence of Life]]></h2subheader>
 				<p><![CDATA[We have seen that living things help circulate matter and energy. Life also contributes to the greenhouse gases that help make Earth’s temperature habitable for people.]]></p>
-				<hint><![CDATA[The visualization to the right shows the seasonal variation of the Biosphere and corresponding CO2 levels in the Atmosphere. As areas green up in spring and summer, plants draw more CO2 from the Atmosphere. White squares indicate CO2 concentrations higher than the trend vs. areas without squares where CO2 concentrations are lower.]]></hint>
 			</element>
-			<element width="w-50" height="h-auto">
+			<element width="w-60" height="h-70">
 				<youtube><![CDATA[https://youtu.be/K1xZIb1AX0A]]></youtube>
+				<caption><![CDATA[This visualization shows the seasonal variation of the Biosphere and corresponding CO2 levels in the Atmosphere. As areas green up in spring and summer, plants draw more CO2 from the Atmosphere. White squares indicate CO2 concentrations higher than the trend vs. areas without squares where CO2 concentrations are lower.]]></caption>
 			</element>
 		</slide>
 		<slide data-slideid="34b">
@@ -788,7 +788,6 @@
 				<image><![CDATA[img/assets/image43.jpg]]></image>
 			</element>
 			<element width="w-50" height="h-100">
-				<section><![CDATA[Conclusion]]></section>
 				<quoteElement>
 					<quote><![CDATA[“I believe the best way to begin reconnecting humanity's heart, mind, and soul to nature is for us to share our individual stories.”]]></quote>
 					<byline><![CDATA[– J. Drew Lanham]]></byline>

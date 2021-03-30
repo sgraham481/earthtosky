@@ -324,7 +324,7 @@ function populateCarousel(){
 															} else {
 																var elementType = slide.getElementsByTagName('bottom')[b].attributes['elemType'].nodeValue;
 																if (elementType === "quote"){
-																	slideHtmlText += '<div class="d-flex w-100 h-100">';
+																	slideHtmlText += '<div class="d-flex w-100 h-100 py-5">';
 																		slideHtmlText += '<div class="quote">';
 																		//console.log("===========bottom quote object================");
 																		for (var q=0; q<slide.getElementsByTagName('bottom')[b].childNodes.length; q++ ){
@@ -664,7 +664,7 @@ function returnElementHTML(node, totalslides){
 	} else if (node.nodeName === 'hint'){
 		slideHtmlText += '<div class="hints"><button class="btn seehint" onclick="toggleHints(this)"><span>(hint)</span><div><img src="img/assets/hint_hand.svg"></div></button><p class="hint">'+node.childNodes[0].nodeValue+'</p></div>';
 	} else if (node.nodeName === 'note'){
-		slideHtmlText += '<div class="notes"><button class="btn seenotes" onclick="toggleNotes(this)"><img src="img/assets/nav_pointer.svg"><span>See Notes</span></button><p class="note">'+node.childNodes[0].nodeValue+'</p></div>';
+		slideHtmlText += '<div class="notes"><button class="btn seenotes" onclick="toggleNotes(this)"><img src="img/assets/nav_pointer.svg"><span>Notes</span></button><p class="note">'+node.childNodes[0].nodeValue+'</p></div>';
 	}
 
 	return slideHtmlText;
