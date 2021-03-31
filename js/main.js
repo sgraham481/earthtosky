@@ -13,8 +13,16 @@ $(function(){
 	}
 	//setUpCarouselNavigation();
 });
+document.addEventListener('keydown', (event) => {
+  const keyName = event.key;
+  if (keyName === 'ArrowRight' || keyName === 'ArrowLeft') {
+  		//console.log("arrow button pressed");
+    	setBackground();
+  }
+}, false);
+
 function getXML(){
-	console.log("getXML()");
+	//console.log("getXML()");
 	$.ajax({
         type: "GET",
         url: "xml/carousel.xml",
@@ -24,7 +32,7 @@ function getXML(){
 }
 
 function parseDATAXml(xml) {
-    console.log(xml);
+    //console.log(xml);
     xmlobj = xml;
     $xml = $(xml);
     populateCarousel();
@@ -114,11 +122,13 @@ function setUpCarouselNavigation() {
 		
 	});
 
-	$(".carousel-table-of-contents li").click(function(){
+	$(".carousel-table-of-contents li button").click(function(){
 		//console.log("click");
 		//console.log($(this).attr("id"));
 		if ( !$(this).hasClass("active") ){
-			setTimeout(function(){ setBackground(); }, 50);
+			var num = $(this).attr("data-slide-to");
+			goCarouselItem(Number(num));
+			//setTimeout(function(){ setBackground(); }, 50);
 		}
 		
 		
@@ -130,7 +140,7 @@ function setUpCarouselNavigation() {
 
 	// Enable Carousel Controls
 	$(".left").click(function(){
-		console.log("click");
+		//console.log("click");
 		goCarouselItem("prev");
 		resetInterval();
 	});
@@ -140,27 +150,32 @@ function setUpCarouselNavigation() {
 	});
 };
 function goCarouselItem(item){
+	//console.log("goCarouselItem");
 	$("#myCarousel").carousel(item);
 	setBackground();
 };
 function setBackground(){
-	$(".slide-backgrounds.on").removeClass("on geo hydro bio cryo atmo");
+	//console.log("setBackground()");
+	
 	var nextprev = "";
 	if ($(".item.next").length){
 		nextprev = "next";
 	} else if ($(".item.prev").length){
 		nextprev = "prev";
 	}
-	var $bkgd = $(".item."+nextprev).attr("data-background");
-	var $slidebkgd = $(".slide-backgrounds."+$bkgd);
-	if ($bkgd === "sphere-bkgds"){
-		$slidebkgd.addClass($(".item."+nextprev).attr("data-sphere"));
-		setTimeout(function(){ $slidebkgd.addClass("on"); }, 50);
-	} else {
-		$slidebkgd.addClass("on");
+	if (nextprev != ""){
+		$(".slide-backgrounds.on").removeClass("on geo hydro bio cryo atmo");
+		var $bkgd = $(".item."+nextprev).attr("data-background");
+		var $slidebkgd = $(".slide-backgrounds."+$bkgd);
+		if ($bkgd === "sphere-bkgds"){
+			$slidebkgd.addClass($(".item."+nextprev).attr("data-sphere"));
+			setTimeout(function(){ $slidebkgd.addClass("on"); }, 50);
+		} else {
+			$slidebkgd.addClass("on");
+		}
+		setHeader($(".item."+nextprev));
+		setTimeout(function(){ setTOCActiveSlide($(".carousel-indicators li.active").attr("data-slideid")); }, 200);
 	}
-	setHeader($(".item."+nextprev));
-	setTimeout(function(){ setTOCActiveSlide($(".carousel-indicators li.active").attr("data-slideid")); }, 200);
 };
 function setHeader($item){
 	var partnum = "Part 1";
@@ -181,9 +196,9 @@ function setCarouselInterval(duration) {
 	}
 };
 function setTOCActiveSlide(slideid){
-	console.log("setTOCActiveSlide = "+slideid);
-	$(".carousel-table-of-contents li").removeClass("active");
-	$(".carousel-table-of-contents li#"+slideid).addClass("active");
+	//console.log("setTOCActiveSlide = "+slideid);
+	$(".carousel-table-of-contents li button").removeClass("active");
+	$(".carousel-table-of-contents li button#"+slideid).addClass("active");
 	var pagenum = $(".carousel-indicators li.active").attr("data-slide-to");
 	$(".carousel-pagination .this-page").html(Number(pagenum)+1);
 	if (!$("#hamburger-menu").hasClass('collapsed')){
@@ -198,7 +213,7 @@ function populateCarousel(){
 	var partnum = 1;
     var totalslides = 0;
     for (i = 0; i < x.length; i++) {
-		console.log(x[i].nodeName);
+		//console.log(x[i].nodeName);
 		//console.log(" children: "+x[i].childNodes.length);
 		if (x[i].nodeName === "part"){
 			/*
@@ -214,7 +229,7 @@ function populateCarousel(){
 
 				for (j = 0; j < part.childNodes.length; j++) {
 					if (part.childNodes[j].nodeName === "slide"){
-						console.log("  >  " + "slide node");
+						//console.log("  >  " + "slide node");
 						/*
 						SET SLIDE VAR;
 						*/
@@ -329,7 +344,7 @@ function populateCarousel(){
 																		slideHtmlText += '<div class="quote">';
 																		//console.log("===========bottom quote object================");
 																		for (var q=0; q<slide.getElementsByTagName('bottom')[b].childNodes.length; q++ ){
-																			console.log(slide.getElementsByTagName('bottom')[b].childNodes[q].nodeName);
+																			//console.log(slide.getElementsByTagName('bottom')[b].childNodes[q].nodeName);
 
 																			slideHtmlText += returnElementHTML(slide.getElementsByTagName('bottom')[b].childNodes[q], totalslides);
 
@@ -578,33 +593,40 @@ function returnElementHTML(node, totalslides){
 
 	var slideHtmlText = "";
 	var classes = "";
+	var imgalt = "no description provided";
 	if (node.nodeName === 'section'){
-   		slideHtmlText += '<h1 class="h1 section-header">'+node.childNodes[0].nodeValue+'</h1>';
+   		slideHtmlText += '<h1 tabindex="0" class="h1 section-header">'+node.childNodes[0].nodeValue+'</h1>';
    	} else if (node.nodeName === 'main'){
-   		slideHtmlText += '<h1 class="h1 main-header">'+node.childNodes[0].nodeValue+'</h1>';
+   		slideHtmlText += '<h1 tabindex="0" class="h1 main-header">'+node.childNodes[0].nodeValue+'</h1>';
     } else if (node.nodeName === 'h2subheader'){
-		slideHtmlText += '<h2 class="h2 sub-header">'+node.childNodes[0].nodeValue+'</h2>';
+		slideHtmlText += '<h2 tabindex="0" class="h2 sub-header">'+node.childNodes[0].nodeValue+'</h2>';
 	} else if (node.nodeName === 'h3subheader'){
-		slideHtmlText += '<h3 class="h3 sub-header">'+node.childNodes[0].nodeValue+'</h3>';
+		slideHtmlText += '<h3 tabindex="0" class="h3 sub-header">'+node.childNodes[0].nodeValue+'</h3>';
 	} else if (node.nodeName === 'p'){
 		if (node.attributes["classes"]){
 			classes = " "+node.attributes["classes"].nodeValue;
 		}
-    	slideHtmlText += '<p class="main-content'+classes+'">'+node.childNodes[0].nodeValue+'</p>';
+    	slideHtmlText += '<p tabindex="0" class="main-content'+classes+'">'+node.childNodes[0].nodeValue+'</p>';
     } else if (node.nodeName === "quote"){
-		slideHtmlText += '<span class="quote-body">'+node.childNodes[0].nodeValue+'</span>';
+		slideHtmlText += '<p tabindex="0" class="quote-body">'+node.childNodes[0].nodeValue+'</p>';
 	} else if (node.nodeName === "byline"){
-			slideHtmlText += '<span class="quote-attribution">'+node.childNodes[0].nodeValue+'</span>';
+			slideHtmlText += '<p tabindex="0" class="quote-attribution">'+node.childNodes[0].nodeValue+'</p>';
 		slideHtmlText += '</div>';
     } else if (node.nodeName === 'video'){
-    	slideHtmlText += '<p class="main-content" data-src="'+node.childNodes[0].nodeValue+'">'+'ADD VIDEO ELEMENT'+'</p>';
+    	slideHtmlText += '<p tabindex="0" class="main-content" data-src="'+node.childNodes[0].nodeValue+'">'+'ADD VIDEO ELEMENT'+'</p>';
     } else if (node.nodeName === 'caption'){
-    	slideHtmlText += '<p class="caption">'+node.childNodes[0].nodeValue+'</p>';
+    	slideHtmlText += '<p tabindex="0" class="caption">'+node.childNodes[0].nodeValue+'</p>';
     } else if (node.nodeName === 'image'){
-		slideHtmlText += '<img src="'+node.childNodes[0].nodeValue+'">';
+    	if (node.attributes["alt"]){
+			imgalt = node.attributes['alt'].nodeValue;
+		}
+		slideHtmlText += '<img tabindex="0" src="'+node.childNodes[0].nodeValue+'" alt="'+imgalt+'">';
     } else if (node.nodeName === 'displayimage'){
+    	if (node.attributes["alt"]){
+			imgalt = node.attributes['alt'].nodeValue;
+		}
     	slideHtmlText += '<div class="display-image">';
-			slideHtmlText += '<img src="'+node.childNodes[0].nodeValue+'">';
+			slideHtmlText += '<img tabindex="0" src="'+node.childNodes[0].nodeValue+'" alt="'+imgalt+'">';
 		slideHtmlText += '</div>';
 	} else if (node.nodeName === "quoteElement"){
 		slideHtmlText += '<div class="quote-element d-flex">';
@@ -626,6 +648,7 @@ function returnElementHTML(node, totalslides){
 		*/	var quote = "";
 			var byline = "";
 			var img = "";
+			var imgalt = "no description provided";
 			for (var e = 0; e < node.childNodes.length; e++) {
 				if (node.childNodes[e].nodeName === "quote"){
 					quote = node.childNodes[e].childNodes[0].nodeValue;
@@ -633,14 +656,17 @@ function returnElementHTML(node, totalslides){
 					byline = node.childNodes[e].childNodes[0].nodeValue;
 				} else if (node.childNodes[e].nodeName === "displayimage"){
 					img = node.childNodes[e].childNodes[0].nodeValue;
+					if (node.attributes["alt"]){
+						imgalt = node.attributes['alt'].nodeValue;
+					}
 				}
 			}
 			slideHtmlText += '<div class="quote">';
-				slideHtmlText += '<span class="quote-body">'+quote+'</span>';
-				slideHtmlText += '<span class="quote-attribution">'+byline+'</span>';
+				slideHtmlText += '<p tabindex="0" class="quote-body">'+quote+'</p>';
+				slideHtmlText += '<p tabindex="0" class="quote-attribution">'+byline+'</p>';
 			slideHtmlText += '</div>';
 			slideHtmlText += '<div class="display-image">';
-				slideHtmlText += '<img src="'+img+'">';
+				slideHtmlText += '<img tabindex="0" src="'+img+'" alt="'+imgalt+'">';
 			slideHtmlText += '</div>';
 		slideHtmlText += '</div>';
 	} else if (node.nodeName === 'list'){
@@ -652,7 +678,7 @@ function returnElementHTML(node, totalslides){
 		slideHtmlText += '<'+listtype+'>';
 		for (var e = 0; e < node.childNodes.length; e++) {
 			if (node.childNodes[e].nodeName === "item"){
-				slideHtmlText += '<li>'+node.childNodes[e].childNodes[0].nodeValue+'</li>';
+				slideHtmlText += '<li><p tabindex="0">'+node.childNodes[e].childNodes[0].nodeValue+'</p></li>';
 			}
 		}
 		slideHtmlText += '</'+listtype+'>';
@@ -661,18 +687,18 @@ function returnElementHTML(node, totalslides){
 		//console.log("video");
 		//console.log(node.childNodes[0].nodeValue);
 		//console.log("yturlsplitarray length = "+yturlsplitarray.length);
-		slideHtmlText += '<div class="videoWrapper"><iframe id="ytplayer'+totalslides+'" type="text/html" width="640" height="360" src="https://www.youtube.com/embed/'+yturlsplitarray[(yturlsplitarray.length-1)]+'??enablejsapi=1&autoplay=0&amp;origin='+node.childNodes[0].nodeValue+'" frameborder="0" allowfullscreen></iframe></div>';
+		slideHtmlText += '<div class="videoWrapper"><iframe aria-label="youtube video" id="ytplayer'+totalslides+'" type="text/html" width="640" height="360" src="https://www.youtube.com/embed/'+yturlsplitarray[(yturlsplitarray.length-1)]+'??enablejsapi=1&autoplay=0&amp;origin='+node.childNodes[0].nodeValue+'" frameborder="0" allowfullscreen></iframe></div>';
 	} else if (node.nodeName === 'hint'){
-		slideHtmlText += '<div class="hints"><button class="btn seehint" onclick="toggleHints(this)"><span>(hint)</span><div><img src="img/assets/hint_hand.svg"></div></button><p class="hint">'+node.childNodes[0].nodeValue+'</p></div>';
+		slideHtmlText += '<div class="hints"><button class="btn seehint" onclick="toggleHints(this)"><span>(hint)</span><div><img src="img/assets/hint_hand.svg"></div></button><p tabindex="0" class="hint">'+node.childNodes[0].nodeValue+'</p></div>';
 	} else if (node.nodeName === 'note'){
-		slideHtmlText += '<div class="notes"><button class="btn seenotes" onclick="toggleNotes(this)"><img src="img/assets/nav_pointer.svg"><span>Notes</span></button><p class="note">'+node.childNodes[0].nodeValue+'</p></div>';
+		slideHtmlText += '<div class="notes"><button class="btn seenotes" onclick="toggleNotes(this)"><img src="img/assets/nav_pointer.svg"><span>Notes</span></button><p tabindex="0" class="note">'+node.childNodes[0].nodeValue+'</p></div>';
 	}
 
 	return slideHtmlText;
 
 }
 function hasEls(el, name){
-	console.log("has "+name+"?"+el.getElementsByTagName(name).length);
+	//console.log("has "+name+"?"+el.getElementsByTagName(name).length);
 	return el.getElementsByTagName(name).length > 0 ? true : false;
 }
 function getEl(el, name, num){
@@ -694,9 +720,9 @@ function addNewIndicator(slideid, num){
 var tocpage = 1;
 //addNewTOCItem(toctitle, slideid, totalslides);
 function addNewTOCItem(title, slideid, totalslides, thisslidenum){
-	console.log("addNewTOCItem: "+thisslidenum);
+	//console.log("addNewTOCItem: "+thisslidenum);
 	var isFirstSlide = thisslidenum === 0 ? true : false;
-	var el = "<li id='"+slideid+"' class='"+(isFirstSlide ? "first-slide-of-part" : "")+((isFirstSlide && tocpage) ? " " : "")+(tocpage === 1 ? "active" : "")+"' data-target='#myCarousel' data-page='"+tocpage+"' data-slide-to='"+totalslides+"'><img src='img/assets/nav_pointer.svg'>"+title+"</li>";
+	var el = "<li><button id='"+slideid+"' class='btn"+(isFirstSlide ? " first-slide-of-part" : "")+((isFirstSlide && tocpage) ? " " : "")+(tocpage === 1 ? "active" : "")+"' data-target='#myCarousel' data-page='"+tocpage+"' data-slide-to='"+totalslides+"'><img role='presentation' src='img/assets/nav_pointer.svg'>"+title+"</button></li>";
 	$(".carousel-table-of-contents").append( $(el) );
 	tocpage++;
 

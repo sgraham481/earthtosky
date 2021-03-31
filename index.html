@@ -34,9 +34,9 @@ carousel fade:          https://stackoverflow.com/questions/18548731/bootstrap-3
   <div class="container">
     <div class="header blue-bkgd">
       <div class="logo">
-        <img src="img/assets/ets_logo.svg">
+        <img src="img/assets/ets_logo.svg" alt="Earth to Sky Logo">
       </div>
-      <h2 class="h2 sub-header header-title">Earth to Sky Tutorial: Part 1</h2>
+      <h2 tabindex="0" class="h2 sub-header header-title">Earth to Sky Tutorial: Part 1</h2>
       <button onclick="toggleHamburger()" class="btn collapsed" id="hamburger-menu" aria-label="open mobile menu">
         <div class="GO-hamburger-container">
             <div style="display: block;" id="nav-icon3">
@@ -49,7 +49,8 @@ carousel fade:          https://stackoverflow.com/questions/18548731/bootstrap-3
       </button>
     </div>
     <div id="myCarousel" class="carousel slide carousel-fade bkgd-1" data-interval="false">
-      <img src="img/media/image0.png" style="width:100%;opacity:0;pointer-events:none;">
+      <img role='presentation' src="img/assets/part_3_background.svg" style="width:100%;opacity:0;pointer-events:none;">
+      <ul class="carousel-table-of-contents collapsed"></ul>
       <div class="absolute-full-cover-container slide-backgrounds blue-vert-50-50 blue-vert-50-50-background on">
           <div class="half-height quote-background"></div>
       </div>
@@ -65,35 +66,35 @@ carousel fade:          https://stackoverflow.com/questions/18548731/bootstrap-3
       <div class="absolute-full-cover-container slide-backgrounds pt2-slide24-bkgd energy-flow-background"></div>
       <div class="absolute-full-cover-container slide-backgrounds pt2-slide24a-bkgd energy-flow-background">
         <div class="hand-on-paper">
-            <img src="img/assets/hand_writing_on_photo.png">
+            <img src="img/assets/hand_writing_on_photo.png" alt="hand with pen writing on photo">
           </div>
       </div>
       <div class="absolute-full-cover-container slide-backgrounds sphere-bkgds">
-          <div class="sphere-bkgd geo-gradient"></div>
-          <div class="sphere-bkgd cryo-gradient"></div>
-          <div class="sphere-bkgd hydro-gradient"></div>
-          <div class="sphere-bkgd bio-gradient"></div>
-          <div class="sphere-bkgd atmo-gradient"></div>
+          <div class="sphere-bkgd geo-gradient" role='presentation'></div>
+          <div class="sphere-bkgd cryo-gradient" role='presentation'></div>
+          <div class="sphere-bkgd hydro-gradient" role='presentation'></div>
+          <div class="sphere-bkgd bio-gradient" role='presentation'></div>
+          <div class="sphere-bkgd atmo-gradient" role='presentation'></div>
           <div class="pie">
-            <img src="img/assets/pie_2.svg">
+            <img src="img/assets/pie_2.svg" role='presentation'>
           </div>
           <div class="sphere-gfx geo-gfx">
-            <img src="img/assets/geo_gfx.png">
+            <img src="img/assets/geo_gfx.png" role='presentation'>
           </div>
           <div class="sphere-gfx cryo-gfx">
-            <img src="img/assets/cryo_gfx.png">
+            <img src="img/assets/cryo_gfx.png" role='presentation'>
           </div>
           <div class="sphere-gfx hydro-gfx">
-            <img src="img/assets/hydro_gfx.png">
+            <img src="img/assets/hydro_gfx.png" role='presentation'>
           </div>
           <div class="sphere-gfx bio-gfx">
-            <img src="img/assets/bio_gfx.png">
+            <img src="img/assets/bio_gfx.png" role='presentation'>
           </div>
           <div class="sphere-gfx atmo-gfx">
-            <img src="img/assets/atmo_gfx.png">
+            <img src="img/assets/atmo_gfx.png" role='presentation'>
           </div>
           <div class="hand-on-paper">
-            <img src="img/assets/hand_writing_on_photo.png">
+            <img src="img/assets/hand_writing_on_photo.png" alt="hand with pen writing on photo">
           </div>
       </div>
       <!-- Indicators -->
@@ -103,20 +104,19 @@ carousel fade:          https://stackoverflow.com/questions/18548731/bootstrap-3
       <div class="carousel-inner"></div>
 
       <!-- Left and right controls -->
-      <a class="left carousel-control" href="#myCarousel" data-slide="prev">
-        <span class="carousel-arrow-left"><img src="img/assets/carousel_arrow.svg"></span>
-        <span class="sr-only">Previous</span>
+      <a id="arrow-left" class="left carousel-control" href="#myCarousel" data-slide="prev">
+        <span class="carousel-arrow-left"><img src="img/assets/carousel_arrow.svg" role='presentation'></span>
+        <span class="sr-only">Go Previous Slide</span>
       </a>
-      <a class="right carousel-control" href="#myCarousel" data-slide="next">
-        <span class="carousel-arrow-right"><img src="img/assets/carousel_arrow.svg"></span>
-        <span class="sr-only">Next</span>
+      <a id="arrow-right" class="right carousel-control" href="#myCarousel" data-slide="next">
+        <span class="carousel-arrow-right"><img src="img/assets/carousel_arrow.svg" role='presentation'></span>
+        <span class="sr-only">Go Next Slide</span>
       </a>
       <div class="carousel-pagination">
           <span class="this-page">1</span>
           <span class="concat-spacer">of</span>
           <span class="total-pages">42</span>
       </div>
-      <ul class="carousel-table-of-contents collapsed"></ul>
     </div>
   </div>
 

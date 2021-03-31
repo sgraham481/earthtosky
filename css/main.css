@@ -28,11 +28,21 @@ html {
   line-height: 1.36182;
 }
 
+body {
+    background-color: #000000;
+}
+
 body .container {
     font-family: var(--open-sans);
     font-weight: 400;
     font-style: normal;
     color: #000000;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 0;
+    margin: 0;
 }
 img {
     width: 100%;
@@ -686,6 +696,9 @@ Earth To Sky Bootstrap Carousel Approach CSS
 .carousel-inner li {
     margin: .75rem 0;
 }
+.carousel-inner li p {
+    margin: 0;
+}
 .container .carousel {
     width: 100%;
     height: 100%;
@@ -1078,7 +1091,7 @@ Earth To Sky Bootstrap Carousel Approach CSS
 .carousel-indicators {
     margin: 0!important;
     bottom: -10px;
-    opacity: .2;
+    opacity: 0;
     left: 0!important;
     width: auto;
     top: auto;
@@ -1124,18 +1137,21 @@ Earth To Sky Bootstrap Carousel Approach CSS
 }
 .carousel-table-of-contents.collapsed {
     right: -40%;
+    display: none;
 }
-.carousel-table-of-contents li {
+.carousel-table-of-contents li button {
     color: #ffffff;
-    font-size: 18px;
+    font-size: 1rem;
     padding: 6px 0px 6px 40px;
     cursor: pointer;
     position: relative;
+    width: 100%;
+    text-align: left;
 }
 .carousel-table-of-contents li.first-slide-of-part {
     padding-left: 20px;
 }
-.carousel-table-of-contents li img {
+.carousel-table-of-contents li button img {
     position: absolute;
     height: 12px;
     width: 15px;
@@ -1143,17 +1159,22 @@ Earth To Sky Bootstrap Carousel Approach CSS
     top: 13px;
     opacity: 0;
 }
-.carousel-table-of-contents li.first-slide-of-part img {
+.carousel-table-of-contents li button.first-slide-of-part img {
     left: 2px;
 }
-.carousel-table-of-contents li.active img {
+.carousel-table-of-contents li button.first-slide-of-part {
+    padding: 6px 0px 6px 20px;
+}
+.carousel-table-of-contents li button.active img {
     opacity: 1;
 }
-.carousel-table-of-contents li:hover, 
-.carousel-table-of-contents li:focus, 
-.carousel-table-of-contents li.hover, 
-.carousel-table-of-contents li.active {
+.carousel-table-of-contents li button:hover, 
+.carousel-table-of-contents li button:focus, 
+.carousel-table-of-contents li button.hover, 
+.carousel-table-of-contents li button.active {
     background: rgba(1, 31, 58, .9);
+    color: #ffffff;
+    border: 1px solid rgb(27 68 105 / 90%);
 }
 .geo-gradient {
     background-image: url(../img/assets/geo_bkgd.svg);

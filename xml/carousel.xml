@@ -22,17 +22,17 @@
 			<bottom elemType="quote">
 				<quote><![CDATA[Learn how to see. Realize that everything is connected to everything else.]]></quote>
 				<byline><![CDATA[- Leonardo Da Vinci]]></byline>
-				<displayimage><![CDATA[img/assets/image1a.png]]></displayimage>
+				<displayimage alt="portrait of Leonardo Da Vinci"><![CDATA[img/assets/image1a.png]]></displayimage>
 			</bottom>
 			<bottom elemType="quote">
 				<quote><![CDATA[The indigenous understanding has its basis of spirituality in a recognition of the interconnectedness and interdependence of all living things, a holistic and balanced view of the world. All things are bound together. All things connect. What happens to the Earth happens to the children of the earth.]]></quote>
 				<byline><![CDATA[- Rebecca Adamson]]></byline>
-				<displayimage><![CDATA[img/assets/image1b.png]]></displayimage>
+				<displayimage alt="portrait of Rebecca Adamson"><![CDATA[img/assets/image1b.png]]></displayimage>
 			</bottom>
 			<bottom elemType="quote">
 				<quote><![CDATA[In nature we never see anything isolated, but everything in connection with something else which is before it, beside it, under it and over it.]]></quote>
 				<byline><![CDATA[- Johann Wolfgang von Goethe]]></byline>
-				<displayimage><![CDATA[img/assets/image1c.png]]></displayimage>
+				<displayimage alt="portrait of Johann Wolfgang von Goethe"><![CDATA[img/assets/image1c.png]]></displayimage>
 			</bottom>
 		</slide>
 		<slide data-slideid="2a">
@@ -44,7 +44,7 @@
 				<p><![CDATA[A system can be defined as a group of interacting, interrelated, or interdependent components that work together to form a complex whole.]]></p>
 			</element>
 			<element width="w-40" padding="pr-5">
-				<image><![CDATA[img/assets/gears3.svg]]></image>
+				<image alt="gears"><![CDATA[img/assets/gears3.svg]]></image>
 			</element>
 		</slide>
 		<slide data-slideid="2b">
@@ -54,7 +54,7 @@
 				<p><![CDATA[A familiar example of a system with interdependent <i>components</i> is the human body. The <i>components</i> of the human body’s system are the skeletal system, nervous system, circulatory system, digestive system, etc.]]></p>
 			</element>
 			<element width="w-50" height="h-70" classes="h-center-overflow">
-				<image><![CDATA[img/assets/human_subsystems.png]]></image>
+				<image alt="human subsystems"><![CDATA[img/assets/human_subsystems.png]]></image>
 			</element>
 		</slide>
 		<slide data-slideid="2c">
@@ -64,7 +64,7 @@
 				<p><![CDATA[Each component is made up of <i>elements</i>. For example, the elements of the circulatory system include blood cells, veins, arteries and heart.]]></p>
 			</element>
 			<element width="w-50" height="h-80" classes="h-center-overflow">
-				<image><![CDATA[img/assets/image2c.png]]></image>
+				<image alt="circulatory system depiction"><![CDATA[img/assets/image2c.png]]></image>
 			</element>
 		</slide>
 		<slide data-slideid="2d">
@@ -74,7 +74,7 @@
 				<p><![CDATA[The interaction of components and their interrelated processes create system behavior.]]></p>
 			</element>
 			<element width="w-50" height="h-80" classes="h-center-overflow">
-				<image><![CDATA[img/assets/image2d.jpg]]></image>
+				<image alt="person overlooking ravine"><![CDATA[img/assets/image2d.jpg]]></image>
 			</element>
 		</slide>
 		<slide data-slideid="3a">
@@ -92,7 +92,7 @@
 				</list>
 			</element>
 			<element width="w-50" height="h-80" classes="v-center-overflow">
-				<image><![CDATA[img/assets/image3.png]]></image>
+				<image alt="earth component spheres"><![CDATA[img/assets/image3.png]]></image>
 			</element>
 		</slide>
 		<slide data-slideid="3b">
@@ -103,7 +103,7 @@
 				<note><![CDATA[Some scientists include Cryosphere as a component of the Hydrosphere, and some scientists include the Pedosphere, a.k.a. soils, as a component of the Geosphere.]]></note>
 			</element>
 			<element width="w-50" height="h-80" classes="v-center-overflow">
-				<image><![CDATA[img/assets/image3.png]]></image>
+				<image alt="earth component spheres"><![CDATA[img/assets/image3.png]]></image>
 			</element>
 		</slide>
 		<slide data-slideid="4">
@@ -122,7 +122,7 @@
 				</list>
 			</element>
 			<element width="w-50" height="h-70" classes="pr-5 h-center-overflow">
-				<image><![CDATA[img/assets/image4.svg]]></image>
+				<image alt="numbers in circular pattern"><![CDATA[img/assets/image4.svg]]></image>
 			</element>
 		</slide>
 		<slide data-slideid="5">
@@ -174,7 +174,7 @@
 				<p><![CDATA[For example, geologists researching how this cave formed at Craters of the Moon NPP can get clues by examining active lava tubes at places like Hawai’i Volcanoes National Park.]]></p>
 			</element>
 			<element width="w-60" height="h-80" classes="v-center-overflow">
-				<image><![CDATA[img/assets/image5c.jpg]]></image>
+				<image alt="Two images. first image is lava tube cave at craters of the moon national park and preserve. second image is lava tube at hawai'i volcanoes"><![CDATA[img/assets/image5c.jpg]]></image>
 			</element>
 		</slide>
 		<slide data-slideid="5d">
@@ -240,7 +240,7 @@
 				<quoteElement>
 					<quote><![CDATA[Look deep into nature, and then you will understand everything better.]]></quote>
 					<byline><![CDATA[- Albert Einstein]]></byline>
-					<displayimage><![CDATA[img/assets/image6-1.png]]></displayimage>
+					<displayimage alt="portrait of Albert Einstein"><![CDATA[img/assets/image6-1.png]]></displayimage>
 				</quoteElement>
 			</element>
 		</slide>
