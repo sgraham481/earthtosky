@@ -704,6 +704,7 @@ Earth To Sky Bootstrap Carousel Approach CSS
     height: 100%;
     position: relative;
     overflow: hidden;
+    background-color: #ffffff;
 }
 .carousel-static-background,
 .sphere-bkgd,
@@ -1163,8 +1164,9 @@ Earth To Sky Bootstrap Carousel Approach CSS
     height: 12px;
     width: 15px;
     left: 17px;
-    top: 13px;
+    top: 50%;
     opacity: 0;
+    transform: translateY(-50%);
 }
 .carousel-table-of-contents li button.first-slide-of-part img {
     left: 2px;

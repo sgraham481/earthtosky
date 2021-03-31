@@ -2,7 +2,7 @@
 <carousel>
 	<part>
 		<slide data-slideid="1a">
-			<params slideType="blue-vert-50-50-background" layout="horiz-50-50"></params>
+			<params slideType="blue-flat-50-50-background" layout="horiz-50-50"></params>
 			<toc>Part 1: About Earth System Science</toc>
 			<element width="w-40" height="h-100" classes="pr-5 pt-5">
 				<section><![CDATA[Part 1: About Earth System Science]]></section>
