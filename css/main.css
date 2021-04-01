@@ -504,7 +504,7 @@ p.note {
 p.hint {
     display: none;
     font-size: 0.867rem;
-    width: 37%;
+    width: 30%;
 }
 .part-3 p.hint {
     width: 70%;
@@ -513,7 +513,7 @@ p.hint {
     display: block;
 }
 button.seehint {
-    padding: 3rem 4rem;
+    padding: 4rem 4.5rem;
     border: dashed 2px #e55100;
     border-radius: 6px;
 }
