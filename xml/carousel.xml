@@ -90,8 +90,9 @@
 					<item><![CDATA[Ice, snow, glaciers, ice sheets, ice caps (Cryosphere)]]></item>
 					<item><![CDATA[All living things (Biosphere)]]></item>
 				</list>
+				<note><![CDATA[Some scientists include Cryosphere as a component of the Hydrosphere, and some scientists include the Pedosphere, a.k.a. soils, as a component of the Geosphere.]]></note>
 			</element>
-			<element width="w-50" height="h-80" classes="v-center-overflow">
+			<element width="w-50" height="h-80" classes="">
 				<image alt="earth component spheres"><![CDATA[img/assets/image3.png]]></image>
 			</element>
 		</slide>
@@ -99,10 +100,9 @@
 			<params slideType="blue-circle-right"></params>
 			<element width="w-50" height="h-100" classes="pr-5 pt-5">
 				<section><![CDATA[Components of the Earth System]]></section>
-				<p><![CDATA[Earth system scientists seek to improve understanding of each of these spheres, as well as the interactions between them, to better predict long and short-term changes on our planet.]]></p>
-				<note><![CDATA[Some scientists include Cryosphere as a component of the Hydrosphere, and some scientists include the Pedosphere, a.k.a. soils, as a component of the Geosphere.]]></note>
+				<p><![CDATA[Earth system scientists seek to improve our understanding of each of these spheres, as well as the interactions between them, to better predict long and short-term changes on our planet.]]></p>
 			</element>
-			<element width="w-50" height="h-80" classes="v-center-overflow">
+			<element width="w-50" height="h-80" classes="">
 				<image alt="earth component spheres"><![CDATA[img/assets/image3.png]]></image>
 			</element>
 		</slide>
@@ -140,7 +140,7 @@
 					<item><![CDATA[Computer modeling]]></item>
 				</list>
 			</element>
-			<element width="w-50" height="h-80" classes="v-center-overflow">
+			<element width="w-50" height="h-80" classes="">
 				<image><![CDATA[img/assets/image5.jpg]]></image>
 			</element>
 		</slide>
@@ -151,7 +151,7 @@
 				<h2subheader><![CDATA[Laboratory experiment]]></h2subheader>
 				<p><![CDATA[For example, scientists can test chemical reactions and physical processes on small scales in lab settings, such as exposing tanks of phytoplankton to various temperatures to determine the effect of warming oceans on plankton blooms.]]></p>
 			</element>
-			<element width="w-50" height="h-80" classes="v-center-overflow">
+			<element width="w-50" height="h-80" classes="">
 				<image><![CDATA[img/assets/image5a.jpg]]></image>
 			</element>
 		</slide>
@@ -173,7 +173,7 @@
 				<h2subheader><![CDATA[Comparing ancient artifacts with products of current day processes]]></h2subheader>
 				<p><![CDATA[For example, geologists researching how this cave formed at Craters of the Moon NPP can get clues by examining active lava tubes at places like Hawai’i Volcanoes National Park.]]></p>
 			</element>
-			<element width="w-60" height="h-80" classes="v-center-overflow">
+			<element width="w-60" height="h-80" classes="">
 				<image alt="Two images. first image is lava tube cave at craters of the moon national park and preserve. second image is lava tube at hawai'i volcanoes"><![CDATA[img/assets/image5c.jpg]]></image>
 			</element>
 		</slide>
@@ -184,7 +184,7 @@
 				<h2subheader><![CDATA[Observing spatial gradients]]></h2subheader>
 				<p><![CDATA[This can lead to hypotheses for causation (ex., a gradient of coarse to fine grains often leads to hypotheses of direction of sediment transport).]]></p>
 			</element>
-			<element width="w-50" height="h-80" classes="v-center-overflow">
+			<element width="w-50" height="h-80" classes="">
 				<image><![CDATA[img/assets/image5d.jpg]]></image>
 			</element>
 		</slide>
@@ -223,7 +223,7 @@
 					<item><![CDATA[Earth system scientists employ the scientific method and a variety of modes of inquiry to research the processes and behavior of Earth’s component spheres and the system as a whole.]]></item>
 				</list>
 			</element>
-			<element width="w-50" height="h-80" classes="v-center-overflow">
+			<element width="w-50" height="h-80" classes="">
 				<image><![CDATA[img/assets/image30.png]]></image>
 			</element>
 		</slide>
@@ -251,7 +251,7 @@
 				<main><![CDATA[Introduction]]></main>
 				<p><![CDATA[In this section we’ll be exploring your site using an Earth systems approach. We’ll help you think about each sphere, and the elements, processes and cycles in each. We’ll help you use your image to identify and label evidence of these things in the landscape in which you work and/or live.]]></p>
 			</element>
-			<element width="w-50" height="h-80" classes="v-center-overflow">
+			<element width="w-50" height="h-80" classes="">
 				<image><![CDATA[img/assets/image7.png]]></image>
 			</element>
 		</slide>
@@ -279,7 +279,7 @@
 					<item><![CDATA[A bird is an <i>element</i> of the Biosphere]]></item>
 					<item><![CDATA[A pond is an <i>element</i> of the Hydrosphere]]></item>
 					<item><![CDATA[A glacier is an <i>element</i> of the Cryosphere]]></item>
-					<item><![CDATA[CO2 is an <i>element</i> of the Atmosphere]]></item>
+					<item><![CDATA[CO<sub>2</sub> is an <i>element</i> of the Atmosphere]]></item>
 					<item><![CDATA[Coal is an <i>element</i> of the Geosphere]]></item>
 				</list>
 			</element>
@@ -293,7 +293,7 @@
 				<main><![CDATA[Each Sphere is Made Up of Elements]]></main>
 				<h2subheader><![CDATA[Let's take a brief look at each of Earth's Spheres and elements of each at your site.]]></h2subheader>
 			</element>
-			<element width="w-60" height="h-90" classes="v-center-overflow">
+			<element width="w-60" height="h-90" classes="">
 				<image><![CDATA[img/assets/image10.svg]]></image>
 			</element>
 		</slide>
@@ -440,11 +440,11 @@
 		<slide data-slideid="25">
 			<params slideType="white-yellow-gradient-background" layout="horiz-50-50"></params>
 			<toc>Matter Cycles</toc>
-			<element width="w-40" height="h-100" classes="pt-5">
+			<element width="w-30" height="h-100" classes="pt-5">
 				<main><![CDATA[Matter Cycles]]></main>
 				<p><![CDATA[Carbon, the major building block of life, continuously cycles within and between the spheres. The carbon cycle is one of the most important interconnections within the Earth system.]]></p>
 			</element>
-			<element width="w-60" height="h-80" padding="pl-5" classes="v-center-overflow">
+			<element width="w-70" height="h-80" padding="pl-5" classes="">
 				<image><![CDATA[img/assets/image25.jpg]]></image>
 			</element>
 		</slide>
@@ -456,7 +456,7 @@
 				<h2subheader><![CDATA[Whenever matter moves from one sphere into another, some process, driven by energy, causes it to happen. Here are some examples:]]></h2subheader>
 				<p><![CDATA[Water moves from a lake (Hydrosphere) into the air (Atmosphere) by a process called evaporation.]]></p>
 			</element>
-			<element width="w-50" height="h-80" padding="pl-5" classes="v-center-overflow">
+			<element width="w-50" height="h-80" padding="pl-5" classes="">
 				<image><![CDATA[img/assets/image26a.jpg]]></image>
 			</element>
 		</slide>
@@ -478,7 +478,7 @@
 				<h2subheader><![CDATA[Whenever matter moves from one sphere into another, some process, driven by energy, causes it to happen. Here are some examples:]]></h2subheader>
 				<p><![CDATA[Minerals move from rock (Geosphere) into streams (Hydrosphere) by the processes of weathering and erosion.]]></p>
 			</element>
-			<element width="w-50" height="h-80" padding="pl-5" classes="v-center-overflow">
+			<element width="w-50" height="h-80" padding="pl-5" classes="">
 				<image><![CDATA[img/assets/image26c.jpg]]></image>
 			</element>
 		</slide>
@@ -489,7 +489,7 @@
 				<h2subheader><![CDATA[Whenever matter moves from one sphere into another, some process, driven by energy, causes it to happen. Here are some examples:]]></h2subheader>
 				<p><![CDATA[Nutrients and carbon move from a plant (Biosphere) into a bird’s body (Biosphere) by the processes of consumption and digestion.]]></p>
 			</element>
-			<element width="w-50" height="h-80" padding="pl-5" classes="v-center-overflow">
+			<element width="w-50" height="h-80" padding="pl-5" classes="">
 				<image><![CDATA[img/assets/image26d.jpg]]></image>
 			</element>
 		</slide>
@@ -512,7 +512,7 @@
 				<h2subheader><![CDATA[Your overlay or sketch should now look something like this example.]]></h2subheader>
 				<p classes="call-out"><![CDATA[You’ve been thinking about your site in terms of Earth’s systems. Might you use this approach to help explain the connections between your site and where your visitors live?]]></p>
 			</element>
-			<element width="w-60" height="h-auto" classes="pl-5 v-center-overflow">
+			<element width="w-60" height="h-auto" classes="pl-5 ">
 				<image><![CDATA[img/assets/image28.jpg]]></image>
 			</element>
 		</slide>
@@ -542,7 +542,7 @@
 					<item><![CDATA[The focus of Earth system science is understanding the interactions between the oceans and ice, atmosphere, life, geological processes and the land surface, and how those interactions impact each other and lead to changes on our planet.]]></item>
 				</list>
 			</element>
-			<element width="w-50" height="h-80" padding="pl-5" classes="v-center-overflow">
+			<element width="w-50" height="h-80" padding="pl-5" classes="">
 				<image><![CDATA[img/assets/image30.png]]></image>
 			</element>
 		</slide>
@@ -555,10 +555,11 @@
 				<section><![CDATA[Part 3: Earth's Climate System]]></section>
 				<h2subheader><![CDATA[Our planet’s climate system operates at global, regional and local scales, which are linked.]]></h2subheader>
 				<p><![CDATA[For example, pollution from China affects cloud development in the North Pacific and strengthens extratropical cyclones. In turn, these  play an important role in atmospheric circulation, bringing tropical moisture up to temperate latitudes.]]></p>
-				<p><![CDATA[Optional: <a href="https://climate.nasa.gov/blog/2953/there-is-no-impending-mini-ice-age/" target="_blank">Read More</a>]]></p>
+				<p><![CDATA[Optional: <a href="https://climate.nasa.gov/news/2218/global-is-the-new-local-pollution-changes-clouds-climate-downstream/" target="_blank">Read More About This Research</a>]]></p>
 			</element>
 			<element width="w-60" height="h-auto">
 				<youtube><![CDATA[https://youtu.be/3RulLroREZw]]></youtube>
+				<caption><![CDATA[This video shows aerosol emission and transport from September 1, 2006 to April 10, 2007. Red and yellow dots indicate wildfires and human-initiated burning as detected by NASA satellites.]]></caption>
 			</element>
 		</slide>
 		<slide data-slideid="32">
@@ -581,7 +582,7 @@
 				<section><![CDATA[What Drives Earth’s Climate on the Global Scale?]]></section>
 				<h2subheader><![CDATA[Our Sun]]></h2subheader>
 				<p><![CDATA[Our Sun’s cycles have an effect over the time scale of millions of years, but do not account for the recent warming of our planet.]]></p>
-				<p><![CDATA[Optional: Please read for a basic explanation of how solar variation influences our climate > <a href="http://www.ucsusa.org/global_warming/science_and_impacts/science/effect-of-sun-on-climate-faq.html#5" target="_blank">Open Article</a>]]></p>
+				<p><![CDATA[Optional: Please read for a basic explanation of how solar variation influences our climate > <a href="https://climate.nasa.gov/blog/2953/there-is-no-impending-mini-ice-age/" target="_blank">Open Article</a>]]></p>
 			</element>
 			<element width="w-60" height="h-auto">
 				<youtube><![CDATA[https://youtu.be/TrShQojyazU]]></youtube>
@@ -596,7 +597,7 @@
 				<p><![CDATA[Earth’s orbital cycles (Milankovitch cycles) operate separately and together, to influence global climate over very long time scales, triggering the beginning and end of the Ice Ages.]]></p>
 				<p classes="call-out"><![CDATA[Assignment: Please read this short article about the Milankovitch cycles > <a href="https://climate.nasa.gov/news/2948/milankovitch-orbital-cycles-and-their-role-in-earths-climate/" target="_blank">Open Article</a>]]></p>
 			</element>
-			<element width="w-50" height="h-80" classes="pl-5 v-center-overflow">
+			<element width="w-50" height="h-80" classes="pl-5">
 				<image><![CDATA[img/assets/image33a.jpg]]></image>
 			</element>
 		</slide>
@@ -615,7 +616,7 @@
 					<item><![CDATA[Newton’s Universal Law of Gravity]]></item>
 				</list>
 			</element>
-			<element width="w-50" height="h-80" classes="pl-5 v-center-overflow">
+			<element width="w-50" height="h-80" classes="pl-5">
 				<image><![CDATA[img/assets/image35.jpg]]></image>
 			</element>
 		</slide>
@@ -629,7 +630,7 @@
 			</element>
 			<element width="w-60" height="h-70">
 				<youtube><![CDATA[https://youtu.be/K1xZIb1AX0A]]></youtube>
-				<caption><![CDATA[This visualization shows the seasonal variation of the Biosphere and corresponding CO2 levels in the Atmosphere. As areas green up in spring and summer, plants draw more CO2 from the Atmosphere. White squares indicate CO2 concentrations higher than the trend vs. areas without squares where CO2 concentrations are lower.]]></caption>
+				<caption><![CDATA[This visualization shows the seasonal variation of the Biosphere and corresponding CO<sub>2</sub> levels in the Atmosphere. As areas green up in spring and summer, plants draw more CO<sub>2</sub> from the Atmosphere. White squares indicate CO<sub>2</sub> concentrations higher than the trend vs. areas without squares where CO<sub>2</sub> concentrations are lower.]]></caption>
 			</element>
 		</slide>
 		<slide data-slideid="34b">
@@ -638,9 +639,9 @@
 			<element width="w-40" height="h-100" classes="pr-5 pt-5">
 				<section><![CDATA[What Drives Earth’s Climate on the Global Scale?]]></section>
 				<h2subheader><![CDATA[Cycling of matter]]></h2subheader>
-				<p><![CDATA[The cycling of matter links the Earth system components. Examples include the water cycle and the carbon cycle. Alterations in these cycles can cause climate to shift (eg., adding excess CO2 to the atmosphere traps more heat on Earth, in turn changing the climate.)]]></p>
+				<p><![CDATA[The cycling of matter links the Earth system components. Examples include the water cycle and the carbon cycle. Alterations in these cycles can cause climate to shift (eg., adding excess CO<sub>2</sub> to the atmosphere traps more heat on Earth, in turn changing the climate.)]]></p>
 			</element>
-			<element width="w-60" height="h-80" classes="v-center-overflow">
+			<element width="w-60" height="h-80" classes="">
 				<image><![CDATA[img/assets/image34b.jpg]]></image>
 			</element>
 		</slide>
@@ -679,7 +680,7 @@
 				<h2subheader><![CDATA[Cumulative effects of regional and local processes and events]]></h2subheader>
 				<p><![CDATA[For example, cumulative effects of land management practices in various regions around the globe affect the global carbon cycle, in turn impacting global climate.]]></p>
 			</element>
-			<element width="w-50" height="h-80" classes="pl-5 v-center-overflow">
+			<element width="w-50" height="h-80" classes="pl-5">
 				<image><![CDATA[img/assets/image37a.jpg]]></image>
 			</element>
 		</slide>
@@ -727,7 +728,7 @@
 				<section><![CDATA[Why is Earth’s Climate Changing Now?]]></section>
 				<p><![CDATA[By altering the chemical makeup of our Atmosphere through adding additional carbon, we are trapping more of the Sun’s energy. This changes both the Atmosphere and ocean components of Earth’s climate system, which in turn affect the Biosphere, Cryosphere and Geosphere in ways that have global, regional and local consequences.]]></p>
 			</element>
-			<element width="w-60" height="h-80" classes="v-center-overflow">
+			<element width="w-60" height="h-80" classes="">
 				<image><![CDATA[img/assets/image40.png]]></image>
 			</element>
 		</slide>
@@ -751,7 +752,7 @@
 				<p><![CDATA[Globally, Earth’s climate is determined by the Sun’s cycles, Earth’s orbital cycles, the cycling of matter and flow of energy, and the cumulative effects of regional and local processes.]]></p>
 				<p><![CDATA[The currents of the ocean and the Atmosphere are inextricably linked, distributing heat around the planet. This produces global, regional and local climate and weather patterns.]]></p>
 			</element>
-			<element width="w-50" height="h-80" classes="pl-5 v-center-overflow">
+			<element width="w-50" height="h-80" classes="pl-5 ">
 				<image><![CDATA[img/assets/image30.png]]></image>
 			</element>
 		</slide>
@@ -763,7 +764,7 @@
 				<p><![CDATA[Local climate is impacted by both regional and global scale processes, influenced by localized conditions such as impervious surfaces.]]></p>
 				<p><![CDATA[Earth’s climate is changing because humans are adding excess carbon to the Atmosphere. This is altering all components of the Earth system, leading to widespread impacts at local, regional and global scales.]]></p>
 			</element>
-			<element width="w-50" height="h-80" classes="pl-5 v-center-overflow">
+			<element width="w-50" height="h-80" classes="pl-5 ">
 				<image><![CDATA[img/assets/image30.png]]></image>
 			</element>
 		</slide>
