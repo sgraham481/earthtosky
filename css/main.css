@@ -460,6 +460,7 @@ button.seenotes.hover {
     outline: 0;
     padding: 6px 1rem;
     border: 1px solid rgba(255,255,255,.4);
+    border: none!important;
 }
 .notes.shownotes button.seenotes {
     padding: 6px 1rem;
@@ -489,15 +490,73 @@ button.seenotes.hover {
 .notes.shownotes button.seenotes img {
     transform: rotate(90deg);
 }
-p.note {
-    display: none;
+.notes p.note {
+    /*display: none;
     transition: margin .5s;
+    margin: 0!important;
+    transition: margin .5s;*/
     margin: 0;
+    transition: margin .5s, height .5s;
+    overflow: hidden;
+    /*height: 0px;*/
+    height: auto;
+    position: absolute;
+    opacity: 0;
+    display: none;
 }
+/*
 .notes.shownotes p.note {
     margin: .5rem 0;
     display: block;
 }
+*/
+/* answer mod to notes */
+.notes.answer, 
+.notes.shownotes.answer {
+    position: relative;
+    background-color: unset;
+    bottom: auto;
+    width: auto;
+    padding: 0;
+    overflow: hidden;
+    transition: height .5s;
+    margin-left: -4px;
+}
+.answer button.seenotes,
+.answer button.seenotes:hover, 
+.answer button.seenotes:focus, 
+.answer button.seenotes.hover,
+.notes.shownotes.answer button.seenotes,
+.notes.shownotes.answer button.seenotes:hover, 
+.notes.shownotes.answer button.seenotes:focus, 
+.notes.shownotes.answer button.seenotes.hover {
+    padding: 6px 0;
+    box-shadow: none!important;
+    margin-left: 0;
+}
+.answer button.seenotes:hover, 
+.answer button.seenotes:focus, 
+.answer button.seenotes.hover {
+    background-color: unset;
+    color: #000;
+    outline: 1px solid rgba(255,255,255,.0);
+    border: 1px solid rgba(255,255,255,.0);
+}
+.answer button.seenotes span {
+    margin-left: -7px;
+}
+.answer button.seenotes img {
+    margin-right: 1rem;
+}
+.answer p.note {
+    font-size: 1rem;
+    display: block;
+    padding: .5rem 0 .5rem 4px;
+    margin: 0!important;
+    transition: none;
+    opacity: 1;
+}
+/***********************/
 .hints {
     margin-top: 2rem;
 }
@@ -599,6 +658,24 @@ p.caption {
 */
 .part-1 {
     color: #ffffff;
+}
+.part-3.blue-bkgd {
+    color: #fff;
+}
+.blue-bkgd a.btn {
+    font-size: 1rem;
+    background-color: #1d395e;
+    color: #bfddff;
+    transition: padding .5s, background-color .5s;
+}
+.blue-bkgd a.btn:hover, 
+.blue-bkgd a.btn:focus, 
+.blue-bkgd a.btn.hover {
+    padding-left: 1.5rem;
+    background-color: #0a1d35;
+    border: 1px solid #356094;
+    padding-right: 1.5rem;
+    color: #fff;
 }
 .italic {
   font-style: italic;

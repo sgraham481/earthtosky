@@ -10,7 +10,7 @@
 				<p><![CDATA[View this video to get a sense of how and why NASA studies our planet.]]></p>
 			</element>
 			<element width="w-60" height="h-auto">
-				<youtube><![CDATA[https://youtu.be/rWWsTuLICRY]]></youtube>
+				<youtube params="loop=1&amp;end=5&amp;autoplay=1&amp;mute=1"><![CDATA[https://youtu.be/rWWsTuLICRY]]></youtube>
 			</element>
 		</slide>
 		<slide data-slideid="1a-2bc">
@@ -535,7 +535,8 @@
 				<h2subheader><![CDATA[You’ve just explored some processes occurring at the local scale of your own site, and are probably thinking about how they are linked to global processes.]]></h2subheader>
 				<p><![CDATA[Pictured to the right is a global-scale example.]]></p>
 				<p classes="call-out"><![CDATA[Q: In a few sentences, state the process and the spheres involved.]]></p>
-				<p classes="call-out-noline"><![CDATA[A: The volcanic eruption of Mount Pinatubo in 1991 sent tons of tiny solid particles from the Geosphere into the Atmosphere. Once in the Atmosphere, these particles are called aerosols. The aerosols reduced the amount of sunlight that reached Earth. In the United States, the summer of 1992 was the third coldest and third wettest summer in 77 years.]]></p>
+				<!--<p classes="call-out-noline"><![CDATA[A: The volcanic eruption of Mount Pinatubo in 1991 sent tons of tiny solid particles from the Geosphere into the Atmosphere. Once in the Atmosphere, these particles are called aerosols. The aerosols reduced the amount of sunlight that reached Earth. In the United States, the summer of 1992 was the third coldest and third wettest summer in 77 years.]]></p>-->
+				<note classes="answer"><![CDATA[The volcanic eruption of Mount Pinatubo in 1991 sent tons of tiny solid particles from the Geosphere into the Atmosphere. Once in the Atmosphere, these particles are called aerosols. The aerosols reduced the amount of sunlight that reached Earth. In the United States, the summer of 1992 was the third coldest and third wettest summer in 77 years.]]></note>
 				<p classes="call-out"><![CDATA[Are there processes occurring at your site or in your region that have global consequences?]]></p>
 			</element>
 			<element width="w-40" height="h-80" padding="pl-5" classes="h-center-overflow">
@@ -662,12 +663,13 @@
 			<element width="w-50" height="h-100" classes="pr-5 pt-5">
 				<section><![CDATA[What Drives Earth’s Climate on the Global Scale?]]></section>
 				<h2subheader><![CDATA[Coupled ocean and atmospheric circulation determine climate patterns]]></h2subheader>
-				<p><![CDATA[A major part of the global climate system is comprised of the coupled ocean and atmospheric circulation patterns. These patterns dictate the major climatic zones on our planet and are intimately intertwined with all of Earth’s spheres.)]]></p>
+				<p><![CDATA[A major part of the global climate system is comprised of the coupled ocean and atmospheric circulation patterns. These patterns dictate the major climatic zones on our planet and are intimately intertwined with all of Earth’s spheres.]]></p>
 				<p><![CDATA[A basic understanding of these circulation patterns can help us grasp the global, regional and local ramifications of the changes humans are making to our Atmosphere and ocean.]]></p>
 				<p><![CDATA[Let’s begin with the Atmosphere.]]></p>
 			</element>
 			<element width="w-50" height="h-auto">
 				<youtube><![CDATA[https://youtu.be/xqM83_og1Fc]]></youtube>
+				<caption><![CDATA[This second in a series of videos from the UK Met Office describes global ocean and atmospheric circulation.]]></caption>
 			</element>
 		</slide>
 		<slide data-slideid="37">
@@ -680,7 +682,12 @@
 				<p><![CDATA[In sum, the ocean and atmospheric circulation patterns are closely linked. Driven by the energy from our Sun and the spinning of the globe, winds and ocean currents distribute heat around our planet.]]></p>
 			</element>
 			<element width="w-50" height="h-auto">
-				<youtube><![CDATA[https://youtu.be/42pEHvkv8aQ ]]></youtube>
+				<element width="w-100" height="h-50" classes="py-2">
+					<youtube><![CDATA[https://youtu.be/42pEHvkv8aQ]]></youtube>
+				</element>
+				<element width="w-100" height="h-50" classes="py-2">
+					<youtube><![CDATA[https://youtu.be/42pEHvkv8aQ]]></youtube>
+				</element>
 			</element>
 		</slide>
 		<slide data-slideid="37a">
@@ -713,11 +720,11 @@
 				<section><![CDATA[What Causes Variation in Local Climate?]]></section>
 				<h2subheader><![CDATA[Cumulative effects of regional and local processes and events]]></h2subheader>
 				<p><![CDATA[Local climate is dependent upon global and regional processes but is influenced by the local environment and conditions such as topography or land cover.]]></p>
-				<p classes="call-out"><![CDATA[Compare these two Landsat satellite images of Atlanta, Georgia, from September 28, 2000. Because vegetation cools the surface through evaporation of water, the most densely vegetated areas are the coolest.]]></p>
+				<p classes="call-out"><![CDATA[Comparing a Landsat satellite image of vegetation with one of surface heat reveals that the most densely vegetated areas are coolest. (Compare this image with next slide.)]]></p>
 			</element>
 			<element width="w-60" height="h-80">
-				<image><![CDATA[img/assets/image39a.jpg]]></image>
-				<caption><![CDATA[This image depicts land cover. Vegetation is green, hard surfaces are grey/brown.]]></caption>
+				<image linktoslide="61"><![CDATA[img/assets/image39a.jpg]]></image>
+				<caption><![CDATA[Landsat image of Atlanta, Georgia, from September 28, 2000. This image depicts land cover. Vegetation is green, hard surfaces are grey/brown.]]></caption>
 			</element>
 		</slide>
 		<slide data-slideid="39b">
@@ -726,11 +733,11 @@
 				<section><![CDATA[What Causes Variation in Local Climate?]]></section>
 				<h2subheader><![CDATA[Cumulative effects of regional and local processes and events]]></h2subheader>
 				<p><![CDATA[Local climate is dependent upon global and regional processes but is influenced by the local environment and conditions such as topography or land cover.]]></p>
-				<p classes="call-out"><![CDATA[Compare these two Landsat satellite images of Atlanta, Georgia, from September 28, 2000. Because vegetation cools the surface through evaporation of water, the most densely vegetated areas are the coolest.]]></p>
+				<p classes="call-out"><![CDATA[Comparing a Landsat satellite image of vegetation with one of surface heat reveals that the most densely vegetated areas are coolest. (Compare this image with previous slide.)]]></p>
 			</element>
 			<element width="w-60" height="h-80">
-				<image><![CDATA[img/assets/image39b.jpg]]></image>
-				<caption><![CDATA[This image is a land surface temperature map. Cooler areas are yellow and hotter ones are red.]]></caption>
+				<image linktoslide="60"><![CDATA[img/assets/image39b.jpg]]></image>
+				<caption><![CDATA[Landsat image of Atlanta, Georgia, from September 28, 2000. This image is a land surface temperature map. Cooler areas are yellow and hotter ones are red.]]></caption>
 			</element>
 		</slide>
 		<slide data-slideid="40">
@@ -804,6 +811,18 @@
 					<byline><![CDATA[– J. Drew Lanham]]></byline>
 					<displayimage><![CDATA[img/assets/image43-1.png]]></displayimage>
 				</quoteElement>
+			</element>
+		</slide>
+		<slide data-slideid="44">
+			<params slideType="blue-circle-right"></params>
+			<element width="w-60" height="h-100" classes="pt-5">
+				<section><![CDATA[This concludes Earth Systems Science:<br>The Context for Climate]]></section>
+				<p><![CDATA[Consectetur eius eum expedita fuga ipsum, modi non nulla officia officiis, perspiciatis quaerat, repudiandae sequi tempore.]]></p>
+				<p><![CDATA[<a class="btn" href="http://www.google.com" target="_blank">Click Here to Return to the Earth to Sky Website</a>]]></p>
+				<p><![CDATA[<a class="btn" href="#myCarousel" data-slide="next">Click Here to restart the tutorial</a>]]></p>
+			</element>
+			<element width="w-40" padding="px-5">
+				<image alt="earth to sky logo"><![CDATA[img/assets/ets_logo.svg]]></image>
 			</element>
 		</slide>
 	</part>

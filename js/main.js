@@ -174,7 +174,9 @@ function setBackground(){
 			$slidebkgd.addClass("on");
 		}
 		setHeader($(".item."+nextprev));
-		setTimeout(function(){ setTOCActiveSlide($(".carousel-indicators li.active").attr("data-slideid")); }, 200);
+		setTimeout(function(){ 
+			setTOCActiveSlide($(".carousel-indicators li.active").attr("data-slideid"));
+		}, 200);
 	}
 };
 function setHeader($item){
@@ -204,6 +206,16 @@ function setTOCActiveSlide(slideid){
 	if (!$("#hamburger-menu").hasClass('collapsed')){
 		toggleHamburger();
 	}
+	setTimeout(function(){
+		console.log(".notes.answer ?"+$(".notes.answer").length); 
+		$(".notes.answer").each(function( index ) {
+			console.log("button?"+$( this ).children("button").length);
+		  	console.log("button height ?"+$( this ).children("button").outerHeight());
+		  	$( this ).css({
+		  		height: $( this ).children("button").outerHeight()
+		  	})
+		});
+	}, 50);
 }
 /**********************************************************
 BUILD CAROUSEL OPTIONS
@@ -554,8 +566,19 @@ function populateCarousel(){
 															var classes = slide.childNodes[c].attributes['classes'] === undefined ? '' : ' '+slide.childNodes[c].attributes['classes'].nodeValue;
 															slideHtmlText += '<div class="item-element'+width+height+padding+classes+'">';
 															for (var d = 0; d < slide.childNodes[c].childNodes.length; d++) {
-
-																slideHtmlText += returnElementHTML(slide.childNodes[c].childNodes[d], totalslides);
+																if (slide.childNodes[c].childNodes[d].nodeName === "element"){
+																	width = slide.childNodes[c].childNodes[d].attributes['width'] === undefined ? ' w-50' : ' '+slide.childNodes[c].childNodes[d].attributes['width'].nodeValue;
+																	height = slide.childNodes[c].childNodes[d].attributes['height'] === undefined ? '' : ' '+slide.childNodes[c].childNodes[d].attributes['height'].nodeValue;
+																	padding = slide.childNodes[c].childNodes[d].attributes['padding'] === undefined ? '' : ' '+slide.childNodes[c].childNodes[d].attributes['padding'].nodeValue;
+																	classes = slide.childNodes[c].childNodes[d].attributes['classes'] === undefined ? '' : ' '+slide.childNodes[c].childNodes[d].attributes['classes'].nodeValue;
+																	slideHtmlText += '<div class="item-element'+width+height+padding+classes+'">';
+																		for (var e = 0; e < slide.childNodes[c].childNodes[d].childNodes.length; e++) {
+																			slideHtmlText += returnElementHTML(slide.childNodes[c].childNodes[d].childNodes[e], totalslides);
+																		}
+																	slideHtmlText += '</div>';
+																} else {
+																	slideHtmlText += returnElementHTML(slide.childNodes[c].childNodes[d], totalslides);
+																}
 
 															}
 															slideHtmlText += '</div>';
@@ -620,7 +643,7 @@ function returnElementHTML(node, totalslides){
     	if (node.attributes["alt"]){
 			imgalt = node.attributes['alt'].nodeValue;
 		}
-		slideHtmlText += '<img tabindex="0" src="'+node.childNodes[0].nodeValue+'" alt="'+imgalt+'">';
+		slideHtmlText += (node.attributes["linktoslide"] ? '<a href="#myCarousel" data-slide-to="'+node.attributes['linktoslide'].nodeValue+'">' : '')+'<img tabindex="0" src="'+node.childNodes[0].nodeValue+'" alt="'+imgalt+'">'+(node.attributes["linktoslide"] ? '</a>' : '');
     } else if (node.nodeName === 'displayimage'){
     	if (node.attributes["alt"]){
 			imgalt = node.attributes['alt'].nodeValue;
@@ -684,14 +707,27 @@ function returnElementHTML(node, totalslides){
 		slideHtmlText += '</'+listtype+'>';
 	} else if (node.nodeName === 'youtube'){
 		var yturlsplitarray = node.childNodes[0].nodeValue.split('/');
+		var params = "";
+		if (node.attributes["params"]){
+			params = node.attributes['params'].nodeValue;
+		}
 		//console.log("video");
 		//console.log(node.childNodes[0].nodeValue);
 		//console.log("yturlsplitarray length = "+yturlsplitarray.length);
-		slideHtmlText += '<div class="videoWrapper"><iframe aria-label="youtube video" id="ytplayer'+totalslides+'" type="text/html" width="640" height="360" src="https://www.youtube.com/embed/'+yturlsplitarray[(yturlsplitarray.length-1)]+'??enablejsapi=1&autoplay=0&amp;origin='+node.childNodes[0].nodeValue+'" frameborder="0" allowfullscreen></iframe></div>';
+		slideHtmlText += '<div class="videoWrapper"><iframe aria-label="youtube video" class="yt_player_iframe" id="ytplayer'+totalslides+'" type="text/html" width="640" height="360" src="https://www.youtube.com/embed/'+yturlsplitarray[(yturlsplitarray.length-1)]+'?playlist='+yturlsplitarray[(yturlsplitarray.length-1)]+'&amp;'+params+'" frameborder="0" allowfullscreen="true" allowscriptaccess="always"></iframe></div>';
 	} else if (node.nodeName === 'hint'){
 		slideHtmlText += '<div class="hints"><button class="btn seehint" onclick="toggleHints(this)"><span>(hint)</span><div><img src="img/assets/hint_hand.svg"></div></button><p tabindex="0" class="hint">'+node.childNodes[0].nodeValue+'</p></div>';
 	} else if (node.nodeName === 'note'){
-		slideHtmlText += '<div class="notes"><button class="btn seenotes" onclick="toggleNotes(this)"><img src="img/assets/nav_pointer.svg"><span>Notes</span></button><p tabindex="0" class="note">'+node.childNodes[0].nodeValue+'</p></div>';
+		var img_orange = "";
+		var button_label = "Notes";
+		var jsclickevt = "toggleNotes";
+		if (node.attributes["classes"]){
+			classes = " "+node.attributes["classes"].nodeValue;
+			img_orange = classes.includes("answer") ? "_orange" : "";
+			button_label = classes.includes("answer") ? "Answer" : "Notes";
+			jsclickevt = classes.includes("answer") ? "toggleAnswer" : "toggleNotes";
+		}
+		slideHtmlText += '<div class="notes'+classes+'"><button class="btn seenotes" onclick="'+jsclickevt+'(this)"><img src="img/assets/nav_pointer'+img_orange+'.svg"><span>'+button_label+'</span></button><p tabindex="0" class="note">'+node.childNodes[0].nodeValue+'</p></div>';
 	}
 
 	return slideHtmlText;
@@ -731,7 +767,65 @@ function addNewTOCItem(title, slideid, totalslides, thisslidenum){
 BUILD CAROUSEL OPTIONS
 **********************************************************/
 function toggleNotes(el) {
+	var isclosing = $(el).parent().hasClass('shownotes');
 	$(el).parent().toggleClass('shownotes');
+	if (isclosing){
+		$(el).siblings('p').css({
+			height: $(el).siblings('p').outerHeight(),
+			opacity: '0'
+		});
+		setTimeout(function(){
+			$(el).siblings('p').css({
+				height: '0px',
+				margin: '0px',
+			});
+			setTimeout(function(){
+				$(el).siblings('p').removeAttr("style");
+			}, 500);
+		}, 50);
+	} else {
+		$(el).siblings('p').css({
+			display: 'block',
+		});
+		setTimeout(function(){
+			// set the height;
+			var h = $(el).siblings('p').outerHeight();
+			// set style to 0;
+
+			$(el).siblings('p').css({
+				height: '0px',
+				position: 'relative',
+				opacity: '1'
+			});
+			setTimeout(function(){
+				$(el).siblings('p').css({
+					height: h,
+					margin: '.5rem 0'
+				});
+				setTimeout(function(){
+					$(el).siblings('p').css({
+						height: 'auto',
+					});
+				}, 500);
+			}, 50);
+		}, 50);
+	};
+};
+function toggleAnswer(el) {
+	$(el).parent().toggleClass('shownotes');
+
+	setTimeout(function(){
+		console.log("open? "+$(el).parent().hasClass("shownotes"));
+		console.log("button height: "+$(el).outerHeight());
+		var h = $(el).outerHeight();
+		if ($(el).parent().hasClass("shownotes")){
+			console.log("p height: "+$(el).siblings('p').outerHeight());
+			h += $(el).siblings('p').outerHeight();
+		}
+		$(el).parent().css({
+			height: h
+		});
+	}, 50);
 };
 function toggleHints(el) {
 	$(el).parent().toggleClass('showhints');
