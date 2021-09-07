@@ -10,7 +10,7 @@
 				<p><![CDATA[View this video to get a sense of how and why NASA studies our planet.]]></p>
 			</element>
 			<element width="w-60" height="h-auto">
-				<youtube params="loop=1&amp;end=5&amp;autoplay=1&amp;mute=1"><![CDATA[https://youtu.be/rWWsTuLICRY]]></youtube>
+				<youtube params="loop=1&amp;end=5&amp;autoplay=0&amp;mute=1"><![CDATA[https://youtu.be/rWWsTuLICRY]]></youtube>
 			</element>
 		</slide>
 		<slide data-slideid="1a-2bc">
