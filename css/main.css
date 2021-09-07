@@ -667,13 +667,16 @@ p.caption {
     background-color: #1d395e;
     color: #bfddff;
     transition: padding .5s, background-color .5s;
+    padding: .75rem 1rem;
+    border: 2px solid #608fc7;
+    border-radius: 16px;
 }
 .blue-bkgd a.btn:hover, 
 .blue-bkgd a.btn:focus, 
 .blue-bkgd a.btn.hover {
     padding-left: 1.5rem;
     background-color: #0a1d35;
-    border: 1px solid #356094;
+    border: 2px solid #608fc7;
     padding-right: 1.5rem;
     color: #fff;
 }

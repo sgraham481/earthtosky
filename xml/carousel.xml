@@ -817,7 +817,7 @@
 			<params slideType="blue-circle-right"></params>
 			<element width="w-60" height="h-100" classes="pt-5">
 				<section><![CDATA[This concludes Earth Systems Science:<br>The Context for Climate]]></section>
-				<p><![CDATA[Consectetur eius eum expedita fuga ipsum, modi non nulla officia officiis, perspiciatis quaerat, repudiandae sequi tempore.]]></p>
+				<p classes="pt-3 pb-4"><![CDATA[Consectetur eius eum expedita fuga ipsum, modi non nulla officia officiis, perspiciatis quaerat, repudiandae sequi tempore.]]></p>
 				<p><![CDATA[<a class="btn" href="http://www.google.com" target="_blank">Click Here to Return to the Earth to Sky Website</a>]]></p>
 				<p><![CDATA[<a class="btn" href="#myCarousel" data-slide="next">Click Here to restart the tutorial</a>]]></p>
 			</element>
