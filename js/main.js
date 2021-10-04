@@ -1,8 +1,12 @@
 var isMobile = false;
 var xmlobj;
 var $xml;
-
+var jqready = false;
+var ytready = false;
 $(function(){
+	jqready = true;
+
+	console.log("jquery ready, is youtube? "+ytready);
 	//console.log("jquery ready");
 	getXML();
 	checkMobile();
@@ -11,8 +15,10 @@ $(function(){
 		$('html').addClass('mobile');
 		setMobileOrientationViaWHCompare();
 	}
+
 	//setUpCarouselNavigation();
 });
+
 document.addEventListener('keydown', (event) => {
   const keyName = event.key;
   if (keyName === 'ArrowRight' || keyName === 'ArrowLeft') {
@@ -108,6 +114,9 @@ var carouselInterval;
 var duration = 3000;
 var isAuto = false;
 function setUpCarouselNavigation() {
+
+	//createYoutubeEmbeds();
+
 	// Activate Carousel
  	$("#myCarousel").carousel();
 
@@ -133,7 +142,6 @@ function setUpCarouselNavigation() {
 		
 		
 		//setTOCActiveSlide($(this).attr("id"));
-		
 	});
 
 	setCarouselInterval(duration);
@@ -148,6 +156,9 @@ function setUpCarouselNavigation() {
 		goCarouselItem("next");
 		resetInterval();
 	});
+
+
+	checkYoutubeOnPage(0);
 };
 function goCarouselItem(item){
 	//console.log("goCarouselItem");
@@ -197,7 +208,22 @@ function setCarouselInterval(duration) {
 		carouselInterval = setInterval(function(){ goCarouselItem("next"); }, duration);
 	}
 };
+var hasvideo = false;
+
 function setTOCActiveSlide(slideid){
+
+	// stop player;
+	if (hasvideo){
+		player.stopVideo();
+		$(".videoWrapper iframe").each(function( index ) {
+			$( this ).closest(".videoWrapper").append("<div id='"+$( this ).closest(".videoWrapper").attr("data-id")+"'></div>");
+			$( this ).remove();
+			
+		});
+		hasvideo = false;
+	}
+	// remove embed;
+
 	//console.log("setTOCActiveSlide = "+slideid);
 	$(".carousel-table-of-contents li button").removeClass("active");
 	$(".carousel-table-of-contents li button#"+slideid).addClass("active");
@@ -206,6 +232,12 @@ function setTOCActiveSlide(slideid){
 	if (!$("#hamburger-menu").hasClass('collapsed')){
 		toggleHamburger();
 	}
+	//console.log(".carousel-inner .item.active data-id = "+$(".carousel-inner .item.active").length);
+	//console.log(".carousel-inner .item.active data-id = "+pagenum);
+	//console.log(".videoWrapper total"+$(".carousel-inner .item").eq(pagenum).find(".videoWrapper").length);
+
+	checkYoutubeOnPage(pagenum);
+	
 	setTimeout(function(){
 		console.log(".notes.answer ?"+$(".notes.answer").length); 
 		$(".notes.answer").each(function( index ) {
@@ -215,8 +247,69 @@ function setTOCActiveSlide(slideid){
 		  		height: $( this ).children("button").outerHeight()
 		  	})
 		});
-	}, 50);
+		
+	}, 200);
+
 }
+
+function checkYoutubeOnPage(pagenum){
+
+	$(".carousel-inner .item").eq(pagenum).find(".videoWrapper").each(function( index ) {
+
+		hasvideo = true;
+		/*
+		data-params
+		data-ytid="rWWsTuLICRY"
+		id="ytplayer0"
+		*/
+		//console.log("data-params: "+$( this ).attr("data-params"));
+		//console.log("data-ytid: "+$( this ).attr("data-ytid"));
+		//console.log("id: "+$( this ).attr("data-id"));
+		//var yt = '<iframe aria-label="youtube video" class="yt_player_iframe" id="'+$(this).children("div").eq(0).attr("id")+'" type="text/html" width="640" height="360" src="https://www.youtube.com/embed/'+$( this ).children("div").eq(0).attr("data-ytid")+'?playlist='+$( this ).children("div").eq(0).attr("data-ytid")+'&amp;'+params+'" frameborder="0" allowfullscreen="true" allowscriptaccess="always"></iframe></div>';
+		
+		let paramsString = $( this ).attr("data-params");
+		const paramsList = paramsString.split("&");
+		let param = "";
+
+		let controls = 1;
+		let autoplay = 0;
+		let loop = 0;
+		let mute = 0;
+
+		for (let x of paramsList) {
+			if (x.split("=")[0] === "controls"){
+				controls = isNaN(x.split("=")[1]) ? controls : Number(x.split("=")[1]);
+		    } else if (x.split("=")[0] === "autoplay"){
+		    	autoplay = isNaN(x.split("=")[1]) ? autoplay : Number(x.split("=")[1]);
+		    } else if (x.split("=")[0] === "loop"){
+				loop = isNaN(x.split("=")[1]) ? loop : Number(x.split("=")[1]);
+		    } else if (x.split("=")[0] === "mute"){
+		    	mute = isNaN(x.split("=")[1]) ? mute : Number(x.split("=")[1]);
+		    }
+		}
+		
+		player = new YT.Player($( this ).attr("data-id"), {
+          height: '360',
+          width: '640',
+          videoId: $( this ).attr("data-ytid"),
+          playerVars: { 
+          	'controls': controls,
+          	'autoplay': autoplay,
+          	'loop': loop,
+          	'mute': mute,
+          	'playlist' : $( this ).attr("data-ytid")
+          },
+
+          events: {
+            'onReady': onPlayerReady,
+            'onStateChange': onPlayerStateChange
+          }
+        });
+
+	});
+
+}
+
 /**********************************************************
 BUILD CAROUSEL OPTIONS
 **********************************************************/
@@ -714,7 +807,8 @@ function returnElementHTML(node, totalslides){
 		//console.log("video");
 		//console.log(node.childNodes[0].nodeValue);
 		//console.log("yturlsplitarray length = "+yturlsplitarray.length);
-		slideHtmlText += '<div class="videoWrapper"><iframe aria-label="youtube video" class="yt_player_iframe" id="ytplayer'+totalslides+'" type="text/html" width="640" height="360" src="https://www.youtube.com/embed/'+yturlsplitarray[(yturlsplitarray.length-1)]+'?playlist='+yturlsplitarray[(yturlsplitarray.length-1)]+'&amp;'+params+'" frameborder="0" allowfullscreen="true" allowscriptaccess="always"></iframe></div>';
+		slideHtmlText += '<div class="videoWrapper" data-params="'+params+'" data-ytid="'+yturlsplitarray[(yturlsplitarray.length-1)]+'" data-id="ytplayer'+totalslides+'"><div id="ytplayer'+totalslides+'"></div></div>';
+		//'<iframe aria-label="youtube video" class="yt_player_iframe" id="ytplayer'+totalslides+'" type="text/html" width="640" height="360" src="https://www.youtube.com/embed/'+yturlsplitarray[(yturlsplitarray.length-1)]+'?playlist='+yturlsplitarray[(yturlsplitarray.length-1)]+'&amp;'+params+'" frameborder="0" allowfullscreen="true" allowscriptaccess="always"></iframe></div>';
 	} else if (node.nodeName === 'hint'){
 		slideHtmlText += '<div class="hints"><button class="btn seehint" onclick="toggleHints(this)"><span>(hint)</span><div><img src="img/assets/hint_hand.svg"></div></button><p tabindex="0" class="hint">'+node.childNodes[0].nodeValue+'</p></div>';
 	} else if (node.nodeName === 'note'){
@@ -832,37 +926,139 @@ function toggleHints(el) {
 };
 // https://developers.google.com/youtube/iframe_api_reference
 
+// 3. This function creates an <iframe> (and YouTube player)
+      //    after the API code downloads.
+      var player;
+      var playerObjList = [[]];
+      function onYouTubeIframeAPIReady() {
+
+      	ytready = true;
+
+		console.log("youtube ready, is youtube? "+jqready);
+
+      	console.log("onYouTubeIframeAPIReady()");
+
+      	//createYoutubeEmbeds();
+      	
+      }
+      function createYoutubeEmbed(){
+      		console.log("videoWapper exists "+$(".videoWrapper").length);
+
+      	setTimeout(function(){
+
+      		
+
+	        /*player = new YT.Player('ytplayer0', {
+	          height: '360',
+	          width: '640',
+	          videoId: 'rWWsTuLICRY',
+	          playerVars: { 'autoplay': 1, 'controls': 1, 'mute': 1 },
+
+	          events: {
+	            'onReady': onPlayerReady,
+	            'onStateChange': onPlayerStateChange
+	          }
+	        });*/
+
+	        /*
+			use the slide data-id for the array position
+	        */
+
+
+
+	        playerObjList[0][0] =
+	        	new YT.Player('ytplayer0', {
+				          height: '360',
+				          width: '640',
+				          videoId: 'rWWsTuLICRY',
+				          playerVars: { 'autoplay': 1, 'controls': 1, 'mute': 1, 'loop': 1 },
+
+				          events: {
+				            'onReady': onPlayerReady,
+				            'onStateChange': onPlayerStateChange
+				          }
+				        });
+        }, 2000);
+
+      }
+      // 4. The API will call this function when the video player is ready.
+      function onPlayerReady(event) {
+      	console.log("onPlayerReady");
+        //playerObjList[0][0].playVideo();
+        //setTimeout(stopVideo, 4000);
+      }
+
+      // 5. The API calls this function when the player's state changes.
+      //    The function indicates that when playing a video (state=1),
+      //    the player should play for six seconds and then stop.
+      var done = false;
+      function onPlayerStateChange(event) {
+      	console.log("onPlayerStateChange");
+        if (event.data == YT.PlayerState.PLAYING && !done) {
+          done = true;
+        }
+      }
+
+      function stopVideo() {
+      	console.log("stopVideo");
+        playerObjList[0][0].stopVideo();
+        setTimeout(startVideo, 4000);
+      }
+      function startVideo() {
+      	console.log("startVideo");
+        playerObjList[0][0].playVideo();
+      }
+
+
+
+
+
+
+
+
+
+/*
 // global variable for the player
 var player;
 
 // this function gets called when API is ready to use
 function onYouTubePlayerAPIReady() {
 	console.log("onYouTubePlayerAPIReady()");
-  // create the global player from the specific iframe (#video)
-  player = new YT.Player("ytplayer0", {
-    events: {
-      // call this function when player is ready to use
-      onReady: onPlayerReady
-    }
-  });
+
+	console.log("ytplayer0 exists"+$("#ytplayer0").length);
+	setTimeout(function(){
+		console.log("ytplayer0 exists"+$("#ytplayer0").length);
+		  // create the global player from the specific iframe (#video)
+		  player = new YT.Player("ytplayer0", {
+		    events: {
+		      // call this function when player is ready to use
+		      onReady: onPlayerReady
+		    }
+		  });
+  	}, 2000);
 }
 
 function onPlayerReady(event) {
 	console.log("onPlayerReady()");
-  // bind events
-  /*var playButton = document.getElementById("play-button");
-  playButton.addEventListener("click", function () {
-    player.playVideo();
-  });
-
-  var pauseButton = document.getElementById("pause-button");
-  pauseButton.addEventListener("click", function () {
-    player.pauseVideo();
-  });*/
+  	player.playVideo();
 }
+function onPlayerReady(event) {
+	console.log("onPlayerReady()");
+  // bind events
+  //var playButton = document.getElementById("play-button");
+  setTimeout(function(){
+  	console.log("click");
+  		
+	}, 2000);
+
+  //var pauseButton = document.getElementById("pause-button");
+  //pauseButton.addEventListener("click", function () {
+    //player.pauseVideo();
+  //});
+}*/
 
 // Inject YouTube API script
-var tag = document.createElement("script");
+/*var tag = document.createElement("script");
 tag.src = "//www.youtube.com/player_api";
 var firstScriptTag = document.getElementsByTagName("script")[0];
-firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);*/

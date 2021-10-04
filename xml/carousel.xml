@@ -10,7 +10,7 @@
 				<p><![CDATA[View this video to get a sense of how and why NASA studies our planet.]]></p>
 			</element>
 			<element width="w-60" height="h-auto">
-				<youtube params="loop=1&amp;end=5&amp;autoplay=0&amp;mute=1"><![CDATA[https://youtu.be/rWWsTuLICRY]]></youtube>
+				<youtube><![CDATA[https://youtu.be/rWWsTuLICRY]]></youtube>
 			</element>
 		</slide>
 		<slide data-slideid="1a-2bc">
@@ -163,7 +163,7 @@
 				<p><![CDATA[For example, with the aid of ground-based, airborne and satellite data, scientists detect changes in regional and global land, air and ocean temperature.]]></p>
 			</element>
 			<element width="w-60" height="h-auto">
-				<youtube><![CDATA[https://youtu.be/Ni0lppUr_BQ]]></youtube>
+				<youtube params="loop=1&amp;autoplay=1&amp;mute=1"><![CDATA[https://youtu.be/2BE1pUtZTMo]]></youtube>
 			</element>
 		</slide>
 		<slide data-slideid="5c">
@@ -265,7 +265,7 @@
 				<p><![CDATA[Scientists use the concept of Earth’s spheres as a means of studying the complexity of the planet.]]></p>
 			</element>
 			<element width="w-60" height="h-auto">
-				<youtube><![CDATA[https://youtu.be/fCjX0BOu61A]]></youtube>
+				<youtube params="loop=1&amp;autoplay=1&amp;mute=1"><![CDATA[https://youtu.be/fCjX0BOu61A]]></youtube>
 			</element>
 		</slide>
 		<slide data-slideid="8a">
@@ -422,7 +422,7 @@
 				<p><![CDATA[Energy and matter are always circulating among the spheres, connecting them in many ways. Sometimes this circulation can happen very quickly, such as when a volcano erupts, moving tons of tiny particles from the Geosphere into the Atmosphere. Other examples of circulation happen much more slowly, such as when a fallen tree decays and nutrients move from the Biosphere to the Geosphere.]]></p>
 			</element>
 			<element width="w-50" height="h-auto">
-				<youtube><![CDATA[https://youtu.be/R6gRYYIDNEU]]></youtube>
+				<youtube params="loop=1&amp;autoplay=1&amp;mute=1"><![CDATA[https://youtu.be/R6gRYYIDNEU]]></youtube>
 			</element>
 		</slide>
 		<slide data-slideid="24">
@@ -570,8 +570,8 @@
 				<p><![CDATA[Optional: <a href="https://climate.nasa.gov/news/2218/global-is-the-new-local-pollution-changes-clouds-climate-downstream/" target="_blank">Read More About This Research</a>]]></p>
 			</element>
 			<element width="w-60" height="h-auto">
-				<youtube><![CDATA[https://youtu.be/3RulLroREZw]]></youtube>
-				<caption><![CDATA[This video shows aerosol emission and transport from September 1, 2006 to April 10, 2007. Red and yellow dots indicate wildfires and human-initiated burning as detected by NASA satellites.]]></caption>
+				<youtube params="loop=1&amp;autoplay=1&amp;mute=1"><![CDATA[https://youtu.be/3RulLroREZw]]></youtube>
+				<caption><![CDATA[This video shows aerosol emission and transport from September 1, 2006 to April 10, 2007. Red and yellow dots indicate wildfires and human-initiated burning as detected by NASA satellites. Note: Video has no sound.]]></caption>
 			</element>
 		</slide>
 		<slide data-slideid="32">
@@ -597,20 +597,47 @@
 				<p><![CDATA[Optional: Please read for a basic explanation of how solar variation influences our climate > <a href="https://climate.nasa.gov/blog/2953/there-is-no-impending-mini-ice-age/" target="_blank">Open Article</a>]]></p>
 			</element>
 			<element width="w-60" height="h-auto">
-				<youtube><![CDATA[https://youtu.be/TrShQojyazU]]></youtube>
+				<youtube params="loop=1&amp;autoplay=1&amp;mute=1"><![CDATA[https://youtu.be/d1q8wKZlEvE]]></youtube>
+				<caption><![CDATA[Solar material twists above the sun’s surface in this close-up captured by NASA’s Solar Dynamics Observatory on June 7–8, 2016. Note: Video has no sound.]]></caption>
 			</element>
 		</slide>
 		<slide data-slideid="33a">
 			<params slideType="white-blue-gradient-background" layout="horiz-50-50"></params>
 			<toc>Global Drivers - Orbital Cycles</toc>
-			<element width="w-50" height="h-100" classes="pt-5">
+			<element width="w-40" height="h-100" classes="pr-5 pt-5">
 				<section><![CDATA[What Drives Earth’s Climate on the Global Scale?]]></section>
 				<h2subheader><![CDATA[Orbital Cycles]]></h2subheader>
 				<p><![CDATA[Earth’s orbital cycles (Milankovitch cycles) operate separately and together, to influence global climate over very long time scales, triggering the beginning and end of the Ice Ages.]]></p>
 				<p classes="call-out"><![CDATA[Assignment: Please read this short article about the Milankovitch cycles > <a href="https://climate.nasa.gov/news/2948/milankovitch-orbital-cycles-and-their-role-in-earths-climate/" target="_blank">Open Article</a>]]></p>
 			</element>
-			<element width="w-50" height="h-80" classes="pl-5">
-				<image><![CDATA[img/assets/image33a.jpg]]></image>
+			<element width="w-60" height="h-auto">
+				<youtube params="loop=1&amp;autoplay=1&amp;mute=1"><![CDATA[https://youtu.be/JdLcToe-Fwk]]></youtube>
+			</element>
+		</slide>
+		<slide data-slideid="33c">
+			<params slideType="white-blue-gradient-background" layout="horiz-50-50"></params>
+			<toc>Global Drivers - Orbital Cycles</toc>
+			<element width="w-40" height="h-100" classes="pr-5 pt-5">
+				<section><![CDATA[What Drives Earth’s Climate on the Global Scale?]]></section>
+				<h2subheader><![CDATA[Orbital Cycles]]></h2subheader>
+				<p><![CDATA[Earth’s orbital cycles (Milankovitch cycles) operate separately and together, to influence global climate over very long time scales, triggering the beginning and end of the Ice Ages.]]></p>
+				<p classes="call-out"><![CDATA[Assignment: Please read this short article about the Milankovitch cycles > <a href="https://climate.nasa.gov/news/2948/milankovitch-orbital-cycles-and-their-role-in-earths-climate/" target="_blank">Open Article</a>]]></p>
+			</element>
+			<element width="w-60" height="h-auto">
+				<youtube params="loop=1&amp;autoplay=1&amp;mute=1"><![CDATA[https://youtu.be/haSjiDhRA7E]]></youtube>
+			</element>
+		</slide>
+		<slide data-slideid="33d">
+			<params slideType="white-blue-gradient-background" layout="horiz-50-50"></params>
+			<toc>Global Drivers - Orbital Cycles</toc>
+			<element width="w-40" height="h-100" classes="pr-5 pt-5">
+				<section><![CDATA[What Drives Earth’s Climate on the Global Scale?]]></section>
+				<h2subheader><![CDATA[Orbital Cycles]]></h2subheader>
+				<p><![CDATA[Earth’s orbital cycles (Milankovitch cycles) operate separately and together, to influence global climate over very long time scales, triggering the beginning and end of the Ice Ages.]]></p>
+				<p classes="call-out"><![CDATA[Assignment: Please read this short article about the Milankovitch cycles > <a href="https://climate.nasa.gov/news/2948/milankovitch-orbital-cycles-and-their-role-in-earths-climate/" target="_blank">Open Article</a>]]></p>
+			</element>
+			<element width="w-60" height="h-auto">
+				<youtube params="loop=1&amp;autoplay=1&amp;mute=1"><![CDATA[https://youtu.be/BbOOuHlojkA]]></youtube>
 			</element>
 		</slide>
 		<slide data-slideid="35">
@@ -635,14 +662,14 @@
 		<slide data-slideid="34a">
 			<params slideType="white-blue-gradient-background" layout="horiz-50-50"></params>
 			<toc>Global Drivers - Life</toc>
-			<element width="w-50" height="h-100" classes="pr-5 pt-5">
+			<element width="w-40" height="h-100" classes="pr-5 pt-5">
 				<section><![CDATA[What Drives Earth’s Climate on the Global Scale?]]></section>
 				<h2subheader><![CDATA[Presence of life]]></h2subheader>
 				<p><![CDATA[We have seen that living things help circulate matter and energy. Life also contributes to the greenhouse gases that help make Earth’s temperature habitable for people.]]></p>
 			</element>
-			<element width="w-60" height="h-70">
-				<youtube><![CDATA[https://youtu.be/K1xZIb1AX0A]]></youtube>
-				<caption><![CDATA[This visualization shows the seasonal variation of the Biosphere and corresponding CO<sub>2</sub> levels in the Atmosphere. As areas green up in spring and summer, plants draw more CO<sub>2</sub> from the Atmosphere. White squares indicate CO<sub>2</sub> concentrations higher than the trend vs. areas without squares where CO<sub>2</sub> concentrations are lower.]]></caption>
+			<element width="w-60" height="h-auto">
+				<youtube params="loop=1&amp;autoplay=1&amp;mute=1"><![CDATA[https://youtu.be/K1xZIb1AX0A]]></youtube>
+				<caption><![CDATA[This visualization shows the seasonal variation of the Biosphere and corresponding CO<sub>2</sub> levels in the Atmosphere. As areas green up in spring and summer, plants draw more CO<sub>2</sub> from the Atmosphere. White squares indicate CO<sub>2</sub> concentrations higher than the trend vs. areas without squares where CO<sub>2</sub> concentrations are lower. Note: Video has no sound.]]></caption>
 			</element>
 		</slide>
 		<slide data-slideid="34b">
@@ -685,6 +712,18 @@
 				<element width="w-100" height="h-50" classes="py-2">
 					<youtube><![CDATA[https://youtu.be/42pEHvkv8aQ]]></youtube>
 				</element>
+			</element>
+		</slide>
+		<slide data-slideid="37b">
+			<params slideType="white-blue-gradient-background" layout="horiz-50-50"></params>
+			<element width="w-50" height="h-100" classes="pr-5 pt-5">
+				<section><![CDATA[What Drives Earth’s Climate on the Global Scale?]]></section>
+				<h2subheader><![CDATA[Coupled ocean and atmospheric circulation determine climate patterns]]></h2subheader>
+				<p><![CDATA[Watch this (slightly dated)  4 minute movie to see the effects of surface ocean currents on climate patterns:]]></p>
+				<p><![CDATA[<a href="http://www.pbslearningmedia.org/resource/ttv10.sci.ess.watcyc.currents/the-role-of-ocean-currents-in-climate/" target="_blank">Open Website In New Window</a>]]></p>
+				<p><![CDATA[In sum, the ocean and atmospheric circulation patterns are closely linked. Driven by the energy from our Sun and the spinning of the globe, winds and ocean currents distribute heat around our planet.]]></p>
+			</element>
+			<element width="w-50" height="h-auto">
 				<element width="w-100" height="h-50" classes="py-2">
 					<youtube><![CDATA[https://youtu.be/42pEHvkv8aQ]]></youtube>
 				</element>
@@ -711,6 +750,7 @@
 			</element>
 			<element width="w-60" height="h-auto">
 				<youtube><![CDATA[https://youtu.be/_titsRUo4t4]]></youtube>
+				<caption><![CDATA[One example of regional climate patterns is the El Niño/La Niña cycle, which arises from global oceanic processes. The switch from one phase of this cycle to another impacts climate and weather patterns in Pacific coastal regions and beyond.]]></caption>
 			</element>
 		</slide>
 		<slide data-slideid="39a">
@@ -789,14 +829,14 @@
 		<slide data-slideid="42">
 			<params slideType="white-blue-gradient-background" layout="horiz-50-50"></params>
 			<toc>Moving Forward</toc>
-			<element width="w-50" height="h-100" classes="pr-5 pt-5">
+			<element width="w-40" height="h-100" classes="pr-5 pt-5">
 				<section><![CDATA[Moving Forward]]></section>
 				<p><![CDATA[As you learn more about Earth’s climate and global change, or even as you simply think about what is happening in the natural world around you, keep in mind the concept of the Earth system, with its spheres, reservoirs of matter and energy, and processes that drive matter and energy from one sphere to another.]]></p>
 				<p><![CDATA[These concepts can help you better understand the very dynamic nature of our planet and provide a foundation for explaining global climate change and its effects.]]></p>
 				<p><![CDATA[It’s all about connections!]]></p>
 			</element>
-			<element width="w-50" height="h-auto">
-				<youtube><![CDATA[https://youtu.be/R6gRYYIDNEU]]></youtube>
+			<element width="w-60" height="h-auto">
+				<youtube params="loop=1&amp;autoplay=1&amp;mute=1"><![CDATA[https://youtu.be/R6gRYYIDNEU]]></youtube>
 			</element>
 		</slide>
 		<slide data-slideid="43">
