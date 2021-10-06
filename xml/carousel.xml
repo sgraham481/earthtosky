@@ -730,16 +730,14 @@
 			</element>
 		</slide>
 		<slide data-slideid="37a">
-			<params slideType="white-blue-gradient-background" layout="horiz-50-50"></params>
+			<params slideType="background-image" image="img/assets/image37a-full.jpg" layout="horiz-50-50"></params>
 			<toc>Global Drivers - Cumulative Processes</toc>
-			<element width="w-50" height="h-100" classes="pt-5">
+			<element width="w-40" height="h-100" classes="pt-5 px-4 dark-bkgd-7 white-content">
 				<section><![CDATA[What Drives Earth’s Climate on the Global Scale?]]></section>
 				<h2subheader><![CDATA[Cumulative effects of regional and local processes and events]]></h2subheader>
 				<p><![CDATA[For example, cumulative effects of land management practices in various regions around the globe affect the global carbon cycle, in turn impacting global climate.]]></p>
 			</element>
-			<element width="w-50" height="h-80" classes="pl-5">
-				<image><![CDATA[img/assets/image37a.jpg]]></image>
-			</element>
+			<element width="w-60" height="h-100"></element>
 		</slide>
 		<slide data-slideid="38">
 			<params slideType="white-blue-gradient-background" layout="horiz-50-50"></params>
@@ -859,7 +857,7 @@
 				<section><![CDATA[This concludes Earth Systems Science:<br>The Context for Climate]]></section>
 				<p classes="pt-3 pb-4"><![CDATA[Consectetur eius eum expedita fuga ipsum, modi non nulla officia officiis, perspiciatis quaerat, repudiandae sequi tempore.]]></p>
 				<p><![CDATA[<a class="btn" href="http://www.google.com" target="_blank">Click Here to Return to the Earth to Sky Website</a>]]></p>
-				<p><![CDATA[<a class="btn" href="#myCarousel" data-slide="next">Click Here to restart the tutorial</a>]]></p>
+				<p><![CDATA[<a class="btn right" href="#myCarousel" data-slide="next">Click Here to restart the tutorial</a>]]></p>
 			</element>
 			<element width="w-40" padding="px-5">
 				<image alt="earth to sky logo"><![CDATA[img/assets/ets_logo.svg]]></image>

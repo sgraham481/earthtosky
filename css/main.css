@@ -432,7 +432,32 @@ textarea {
     display: flex;
     align-items: flex-end;
 }
-
+.dark-bkgd-5 {
+  background-color: rgba(0,0,0,.5);
+}
+.dark-bkgd-6 {
+  background-color: rgba(0,0,0,.6);
+}
+.dark-bkgd-7 {
+  background-color: rgba(0,0,0,.7);
+}
+.dark-bkgd-8 {
+  background-color: rgba(0,0,0,.8);
+}
+.dark-bkgd-9 {
+  background-color: rgba(0,0,0,.9);
+}
+.dark-bkgd-10 {
+  background-color: rgba(0,0,0,1);
+}
+.white-content {
+  color: #ffffff;
+}
+.background-image {
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
 button.seenotes {
     display: flex;
     align-items: center;

@@ -157,7 +157,7 @@ function setUpCarouselNavigation() {
 		resetInterval();
 	});
 
-
+	// for initial set up, first carousel item check for video;
 	checkYoutubeOnPage(0);
 };
 function goCarouselItem(item){
@@ -376,9 +376,13 @@ function populateCarousel(){
 							if (params.attributes["slideType"]){
 
 										var slideType = params.attributes["slideType"].nodeValue;
+										var imageSrc = "";
 										var layoutType = "";
 										if (params.attributes["layout"]){
 											layoutType = params.attributes["layout"].nodeValue;
+										}
+										if (params.attributes["image"]){
+											imageSrc = params.attributes["image"].nodeValue;
 										}
 										/*
 										<params slideType="blue-vert-50-50"></params>
@@ -649,8 +653,13 @@ function populateCarousel(){
 	          								totalslides++;
 										} else if (slideType === "pt2-intro-bkgd" || layoutType === "horiz-50-50"){
 
-											slideHtmlText = '<div class="item '+partclass+' '+slideType+(totalslides === 0 ? ' active' : '')+'" data-id="'+totalslides+'" data-background="'+slideType+'">';
-							            		slideHtmlText += '<div class="item-container d-flex">';
+											if (slideType === "background-image"){
+												slideHtmlText = '<div style="background-image:url('+imageSrc+');" class="item '+partclass+' '+slideType+(totalslides === 0 ? ' active' : '')+'" data-id="'+totalslides+'" data-background="'+slideType+'">';
+											} else {
+												slideHtmlText = '<div class="item '+partclass+' '+slideType+(totalslides === 0 ? ' active' : '')+'" data-id="'+totalslides+'" data-background="'+slideType+'">';
+											}
+
+												slideHtmlText += '<div class="item-container d-flex">';
 							            			for (var c = 0; c < slide.childNodes.length; c++) {
 														if (slide.childNodes[c].nodeName === "element"){
 															var width = slide.childNodes[c].attributes['width'] === undefined ? ' w-50' : ' '+slide.childNodes[c].attributes['width'].nodeValue;
@@ -927,138 +936,40 @@ function toggleHints(el) {
 // https://developers.google.com/youtube/iframe_api_reference
 
 // 3. This function creates an <iframe> (and YouTube player)
-      //    after the API code downloads.
-      var player;
-      var playerObjList = [[]];
-      function onYouTubeIframeAPIReady() {
-
-      	ytready = true;
-
-		console.log("youtube ready, is youtube? "+jqready);
-
-      	console.log("onYouTubeIframeAPIReady()");
-
-      	//createYoutubeEmbeds();
-      	
-      }
-      function createYoutubeEmbed(){
-      		console.log("videoWapper exists "+$(".videoWrapper").length);
-
-      	setTimeout(function(){
-
-      		
-
-	        /*player = new YT.Player('ytplayer0', {
-	          height: '360',
-	          width: '640',
-	          videoId: 'rWWsTuLICRY',
-	          playerVars: { 'autoplay': 1, 'controls': 1, 'mute': 1 },
-
-	          events: {
-	            'onReady': onPlayerReady,
-	            'onStateChange': onPlayerStateChange
-	          }
-	        });*/
-
-	        /*
-			use the slide data-id for the array position
-	        */
-
-
-
-	        playerObjList[0][0] =
-	        	new YT.Player('ytplayer0', {
-				          height: '360',
-				          width: '640',
-				          videoId: 'rWWsTuLICRY',
-				          playerVars: { 'autoplay': 1, 'controls': 1, 'mute': 1, 'loop': 1 },
-
-				          events: {
-				            'onReady': onPlayerReady,
-				            'onStateChange': onPlayerStateChange
-				          }
-				        });
-        }, 2000);
-
-      }
-      // 4. The API will call this function when the video player is ready.
-      function onPlayerReady(event) {
-      	console.log("onPlayerReady");
-        //playerObjList[0][0].playVideo();
-        //setTimeout(stopVideo, 4000);
-      }
-
-      // 5. The API calls this function when the player's state changes.
-      //    The function indicates that when playing a video (state=1),
-      //    the player should play for six seconds and then stop.
-      var done = false;
-      function onPlayerStateChange(event) {
-      	console.log("onPlayerStateChange");
-        if (event.data == YT.PlayerState.PLAYING && !done) {
-          done = true;
-        }
-      }
-
-      function stopVideo() {
-      	console.log("stopVideo");
-        playerObjList[0][0].stopVideo();
-        setTimeout(startVideo, 4000);
-      }
-      function startVideo() {
-      	console.log("startVideo");
-        playerObjList[0][0].playVideo();
-      }
-
-
-
-
-
-
-
-
-
-/*
-// global variable for the player
+//    after the API code downloads.
 var player;
-
-// this function gets called when API is ready to use
-function onYouTubePlayerAPIReady() {
-	console.log("onYouTubePlayerAPIReady()");
-
-	console.log("ytplayer0 exists"+$("#ytplayer0").length);
-	setTimeout(function(){
-		console.log("ytplayer0 exists"+$("#ytplayer0").length);
-		  // create the global player from the specific iframe (#video)
-		  player = new YT.Player("ytplayer0", {
-		    events: {
-		      // call this function when player is ready to use
-		      onReady: onPlayerReady
-		    }
-		  });
-  	}, 2000);
+var playerObjList = [[]];
+function onYouTubeIframeAPIReady() {
+	ytready = true;
+	//console.log("youtube ready, is youtube? "+jqready);
+	//console.log("onYouTubeIframeAPIReady()");
+	//createYoutubeEmbeds();
+	
+}
+// 4. The API will call this function when the video player is ready.
+function onPlayerReady(event) {
+	//console.log("onPlayerReady");
+	//playerObjList[0][0].playVideo();
+	//setTimeout(stopVideo, 4000);
 }
 
-function onPlayerReady(event) {
-	console.log("onPlayerReady()");
-  	player.playVideo();
+// 5. The API calls this function when the player's state changes.
+//    The function indicates that when playing a video (state=1),
+//    the player should play for six seconds and then stop.
+var done = false;
+function onPlayerStateChange(event) {
+  	//console.log("onPlayerStateChange");
+    if (event.data == YT.PlayerState.PLAYING && !done) {
+      done = true;
+    }
 }
-function onPlayerReady(event) {
-	console.log("onPlayerReady()");
-  // bind events
-  //var playButton = document.getElementById("play-button");
-  setTimeout(function(){
-  	console.log("click");
-  		
-	}, 2000);
 
-  //var pauseButton = document.getElementById("pause-button");
-  //pauseButton.addEventListener("click", function () {
-    //player.pauseVideo();
-  //});
-}*/
-
-// Inject YouTube API script
-/*var tag = document.createElement("script");
-tag.src = "//www.youtube.com/player_api";
-var firstScriptTag = document.getElementsByTagName("script")[0];
-firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);*/
+function stopVideo() {
+  	//console.log("stopVideo");
+    playerObjList[0][0].stopVideo();
+    setTimeout(startVideo, 4000);
+}
+function startVideo() {
+	//console.log("startVideo");
+	playerObjList[0][0].playVideo();
+}
