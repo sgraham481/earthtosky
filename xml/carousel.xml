@@ -604,14 +604,14 @@
 		<slide data-slideid="33a">
 			<params slideType="white-blue-gradient-background" layout="horiz-50-50"></params>
 			<toc>Global Drivers - Orbital Cycles</toc>
-			<element width="w-40" height="h-100" classes="pr-5 pt-5">
+			<element width="w-40" height="h-100" classes="pt-5">
 				<section><![CDATA[What Drives Earth’s Climate on the Global Scale?]]></section>
 				<h2subheader><![CDATA[Orbital Cycles]]></h2subheader>
 				<p><![CDATA[Earth’s orbital cycles (Milankovitch cycles) operate separately and together, to influence global climate over very long time scales, triggering the beginning and end of the Ice Ages.]]></p>
 				<p classes="call-out"><![CDATA[Assignment: Please read this short article about the Milankovitch cycles > <a href="https://climate.nasa.gov/news/2948/milankovitch-orbital-cycles-and-their-role-in-earths-climate/" target="_blank">Open Article</a>]]></p>
 			</element>
-			<element width="w-60" height="h-auto">
-				<youtube params="loop=1&amp;autoplay=1&amp;mute=1"><![CDATA[https://youtu.be/JdLcToe-Fwk]]></youtube>
+			<element width="w-60" height="h-80" classes="pl-5">h-center-overflow
+				<image><![CDATA[img/assets/gif_eccentricity.gif]]></image>
 			</element>
 		</slide>
 		<slide data-slideid="33c">
@@ -623,21 +623,21 @@
 				<p><![CDATA[Earth’s orbital cycles (Milankovitch cycles) operate separately and together, to influence global climate over very long time scales, triggering the beginning and end of the Ice Ages.]]></p>
 				<p classes="call-out"><![CDATA[Assignment: Please read this short article about the Milankovitch cycles > <a href="https://climate.nasa.gov/news/2948/milankovitch-orbital-cycles-and-their-role-in-earths-climate/" target="_blank">Open Article</a>]]></p>
 			</element>
-			<element width="w-60" height="h-auto">
-				<youtube params="loop=1&amp;autoplay=1&amp;mute=1"><![CDATA[https://youtu.be/haSjiDhRA7E]]></youtube>
+			<element width="w-60" height="h-80" classes="h-center-overflow">
+				<image><![CDATA[img/assets/gif_obliquity.gif]]></image>
 			</element>
 		</slide>
 		<slide data-slideid="33d">
 			<params slideType="white-blue-gradient-background" layout="horiz-50-50"></params>
 			<toc>Global Drivers - Orbital Cycles</toc>
-			<element width="w-40" height="h-100" classes="pr-5 pt-5">
+			<element width="w-40" height="h-100" classes="pt-5">
 				<section><![CDATA[What Drives Earth’s Climate on the Global Scale?]]></section>
 				<h2subheader><![CDATA[Orbital Cycles]]></h2subheader>
 				<p><![CDATA[Earth’s orbital cycles (Milankovitch cycles) operate separately and together, to influence global climate over very long time scales, triggering the beginning and end of the Ice Ages.]]></p>
 				<p classes="call-out"><![CDATA[Assignment: Please read this short article about the Milankovitch cycles > <a href="https://climate.nasa.gov/news/2948/milankovitch-orbital-cycles-and-their-role-in-earths-climate/" target="_blank">Open Article</a>]]></p>
 			</element>
-			<element width="w-60" height="h-auto">
-				<youtube params="loop=1&amp;autoplay=1&amp;mute=1"><![CDATA[https://youtu.be/BbOOuHlojkA]]></youtube>
+			<element width="w-60" height="h-80" classes="h-center-overflow">
+				<image><![CDATA[img/assets/gif_axial_precession.gif]]></image>
 			</element>
 		</slide>
 		<slide data-slideid="35">
@@ -725,7 +725,7 @@
 			</element>
 			<element width="w-50" height="h-auto">
 				<element width="w-100" height="h-50" classes="py-2">
-					<youtube><![CDATA[https://youtu.be/42pEHvkv8aQ]]></youtube>
+					<youtube><![CDATA[https://youtu.be/waugJxSOt9w]]></youtube>
 				</element>
 			</element>
 		</slide>

@@ -22,7 +22,7 @@ $(function(){
 document.addEventListener('keydown', (event) => {
   const keyName = event.key;
   if (keyName === 'ArrowRight' || keyName === 'ArrowLeft') {
-  		//console.log("arrow button pressed");
+  		console.log("arrow button pressed");
     	setBackground();
   }
 }, false);
@@ -197,7 +197,7 @@ function setHeader($item){
 	} else if ($item.hasClass("part-3")){
 		var partnum = "Part 3";
 	}
-	$(".header-title").html("Earth to Sky Tutorial: "+partnum);
+	$(".header-title").html("A Context For Climate Change: "+partnum);
 }
 function resetInterval(){
 	clearInterval(carouselInterval);
